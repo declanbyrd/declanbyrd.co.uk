@@ -1,0 +1,16 @@
+:root {
+  --surface: #121212;
+  --surface-text: #ffffff;
+  --link-text: #a5d687;
+  --title-font: "PT Sans", sans-serif;
+}
+
+body {
+  background-color: var(--surface);
+  color: var(--surface-text);
+  font-family: var(--title-font);
+}
+
+a {
+  color: var(--link-text);
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{renderData.title or title or metadata.title}}</title>
+    <meta name="Description" content="{{renderData.description or description or metadata.description}}">
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                {%- for entry in collections.all | eleventyNavigation %}
+                    <li class="nav-item {% if entry.url == page.url %} nav-item active{% endif %}">
+                        <a href="{{entry.url | url}}">{{entry.title}}</a>
+                    </li>
+                {%- endfor %}
+            </ul>
+        </nav>
+        <h1 class="title">
+            <a href="{{'/' | url}}">{{metadata.title}}</a>
+        </h1>
+    </header>
+
+    <main>
+        {{content | safe}}
+    </main>
+</body>
+<footer>
+    {% block script %}{% endblock %}
+</footer>
+</html>
