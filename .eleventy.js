@@ -24,6 +24,7 @@ module.exports = eleventyConfig => {
   );
 
   eleventyConfig.addPassthroughCopy('css');
+  eleventyConfig.addPassthroughCopy('img');
 
   return {
     dir: {
@@ -31,7 +32,7 @@ module.exports = eleventyConfig => {
       output: 'dist',
       data: `_data`,
     },
-    templateFormats: ['njk', 'md', 'css', 'js'],
+    templateFormats: ['njk', 'md', 'css', 'svg'],
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',
   };

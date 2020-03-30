@@ -6,11 +6,13 @@
     <title>{{renderData.title or title or metadata.title}}</title>
     <meta name="Description" content="{{renderData.description or description or metadata.description}}">
     <link rel="stylesheet" href="/css/index.css">
-    
 </head>
 <body>
     <header>
-        {% include '_navigation.njk' %}
+        <div class="header-nav">
+            {% include '_navigation.njk' %}
+            {% include '_social-links.njk' %}
+        </div>
         <h1 class="title">
             <a href="{{'/' | url}}">{{metadata.title}}</a>
         </h1>
@@ -23,8 +25,5 @@
     </main>
 </body>
 <footer>
-    {% block scripts %}
-        {{ content }}
-    {% endblock %}
 </footer>
 </html>

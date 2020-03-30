@@ -14,10 +14,18 @@
 
 :root {
   /* Colours and Typography */
-  --header-color: #000000;
-  --surface: #202020;
-  --surface-text: #ffffff;
+  --primary: #000504;
+  --primary-light: #2c2f2e;
+  --primary-dark: #000000;
+  --secondary: #00a380;
+  --secondary-light: #54d5af;
+  --secondary-dark: #007354;
+
+  --primary-text: #ffffff;
+  --secondary-text: #000000;
   --title-font: 'PtSans', Fallback, sans-serif;
+  --size-title: 4rem;
+  --size-h2: 3.125rem;
 
   /* Spacing */
   --page-gutter: 5vw;
@@ -35,8 +43,8 @@ html {
 }
 
 body {
-  background-color: var(--surface);
-  color: var(--surface-text);
+  background-color: var(--primary);
+  color: var(--primary-text);
   font-family: var(--title-font);
   margin: 0;
   grid-area: 3 / 2 / 4 / 3;
@@ -52,13 +60,26 @@ nav ul {
 }
 
 header a {
-  color: var(--surface-text);
+  color: var(--primary-text);
   text-decoration: none;
 }
 
-header a:hover {
-  color: var(--surface-text);
+a:hover {
+  color: var(--secondary);
   text-decoration: underline;
+}
+
+header .title {
+  grid-area: 2 / 2 / 3 / 3;
+  font-size: var(--size-title);
+}
+
+main a {
+  color: var(--link-color);
+}
+
+p {
+  font-size: 1.25rem;
 }
 
 .nav-item {
@@ -70,8 +91,63 @@ header a:hover {
   font-weight: 100;
 }
 
-header .title {
-  grid-area: 2 / 2 / 3 / 3;
-  color: var(--surface-text);
-  font-size: 48px;
+.post-preview {
+  display: flex;
+}
+
+.tag {
+  color: var(--secondary-light);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+.flex-icon {
+  display: flex;
+  align-items: center;
+}
+
+.flex-icon > img {
+  margin-right: 0.35rem;
+}
+
+.post-preview footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-tags .flex-icon {
+  margin-left: 0.5rem;
+}
+
+.photo-gallery {
+  column-count: 1;
+}
+
+.photo-item {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 600px) {
+  .photo-gallery {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 960px) {
+  .photo-gallery {
+    column-count: 3;
+  }
 }
