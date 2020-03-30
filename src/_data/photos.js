@@ -19,8 +19,6 @@ const createFlickrUrl = photo => {
 module.exports = async function() {
   const url = `https://www.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=${process.env.API_KEY}&user_id=${process.env.USER_ID}&extras=date_taken&format=json&nojsoncallback=1`;
 
-  console.log(url);
-
   const res = await axios.get(url);
   const data = res.data;
   const photos = data.photos.photo;
@@ -31,6 +29,5 @@ module.exports = async function() {
   photos.forEach(photo => {
     photo.url = createFlickrUrl(photo);
   });
-  console.log(photos);
   return photos;
 };
