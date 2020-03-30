@@ -9,10 +9,7 @@ module.exports = eleventyConfig => {
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
-  eleventyConfig.addFilter(
-    'dateDisplay',
-    require('./src/site/_filters/dates.js')
-  );
+  eleventyConfig.addFilter('dateDisplay', require('./src/_filters/dates.js'));
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter('previewCollection', (array, n) => {
@@ -20,13 +17,10 @@ module.exports = eleventyConfig => {
     return preview;
   });
 
-  eleventyConfig.addCollection(
-    'tagList',
-    require('./src/site/_filters/getTagList')
-  );
+  eleventyConfig.addCollection('tagList', require('./src/_filters/getTagList'));
 
   eleventyConfig.addCollection('posts', collection =>
-    collection.getFilteredByGlob('src/site/blog/*.md').reverse()
+    collection.getFilteredByGlob('src/blog/*.md').reverse()
   );
 
   eleventyConfig.addPassthroughCopy('css');
