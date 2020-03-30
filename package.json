@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "My homepage",
   "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
-    "debug": "set DEBUG=Eleventy* & eleventy"
+    "debug": "set DEBUG=Eleventy* & eleventy",
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
@@ -26,8 +25,10 @@
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-navigation": "^0.1.5",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "luxon": "^1.22.2",
-    "markdown-it": "^10.0.0",
-    "markdown-it-anchor": "^5.2.5"
+    "node-fetch": "^2.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0"
   }
 }

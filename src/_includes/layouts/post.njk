@@ -1,6 +1,6 @@
----
-layout: layouts/base.njk
----
+{% extends 'layouts/page.njk' %}
+
+{% block content %}
 
 <h1>{{ title }}</h1>
 
@@ -9,3 +9,5 @@ layout: layouts/base.njk
 <button>
     <a href="{{'/' | url}}">Home</a>
 </button>
+
+{% endblock %}

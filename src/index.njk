@@ -1,0 +1,13 @@
+{% extends 'layouts/page.njk' %}
+
+{% block content %}
+        
+  <h1>Most Recent Posts</h1>
+
+  {% set postslist = collections.posts | previewCollection(-3) %}
+  {% set postslistCounter = collections.posts | length %}
+  {% include "postsList.njk" %}
+
+  <p>More posts can be found in <a href="{{ '/blog/' | url }}">the blog</a>.</p>
+
+{% endblock %}
