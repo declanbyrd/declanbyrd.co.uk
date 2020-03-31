@@ -2,6 +2,8 @@ const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const syntaxHighlighting = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = eleventyConfig => {
+  eleventyConfig.setUseGitIgnore(false);
+
   eleventyConfig.addPlugin(syntaxHighlighting, { templateFormats: 'md' });
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
@@ -23,8 +25,9 @@ module.exports = eleventyConfig => {
     collection.getFilteredByGlob('src/blog/*.md').reverse()
   );
 
-  eleventyConfig.addPassthroughCopy('css');
-  eleventyConfig.addPassthroughCopy('img');
+  eleventyConfig.addPassthroughCopy('src/css');
+  eleventyConfig.addPassthroughCopy('src/img');
+  eleventyConfig.addPassthroughCopy('src/fonts');
 
   return {
     dir: {
@@ -32,7 +35,7 @@ module.exports = eleventyConfig => {
       output: 'dist',
       data: `_data`,
     },
-    templateFormats: ['njk', 'md', 'css', 'svg'],
+    templateFormats: ['njk', 'md'],
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',
   };

@@ -1,35 +1,29 @@
 {% for post in postslist | reverse %}
 <article class="post-preview">
-  <div class="post-content">
-    <header>
-      <h2>
-        <a href="{{ post.url | url }}">
-          {{ post.data.title }}
-        </a>
-      </h2>
-    </header>
-    <section>
-      <p>
-        {{ post.data.description }}
-      </p>
-    </section>
-    <footer>
-      <span class="flex-icon">
-        <img alt="Icon showing a calendar" src="/img/calendar.svg" />
-        <time class="postlist-date" datetime="{{ post.date }}">{{
-          post.date | dateDisplay
-        }}</time>
-      </span>
-      <div class="post-tags">
-        {% for tag in post.data.tags %} {%- if collections.tagList.indexOf(tag)
-        != -1 -%} {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <span class="flex-icon">
-          <img alt="Icon showing a label" src="/img/label.svg" />
-          <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-        </span>
-        {%- endif -%} {% endfor %}
-      </div>
-    </footer>
-  </div>
+  <header>
+    <span class="post-data">
+      {{ post.data.blogTopic }}
+      <time class="postlist-date" datetime="{{ post.date }}">{{
+        post.date | dateDisplay
+      }}</time>
+    </span>
+    <h2 class="post-title">
+      <a href="{{ post.url | url }}">
+        {{ post.data.title }}
+      </a>
+    </h2>
+  </header>
+  <p>
+    {{ post.data.description }}
+  </p>
+  <footer class="post-tags">
+    {% for tag in post.data.tags %} {%- if collections.tagList.indexOf(tag) !=
+    -1 -%} {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+    <span class="flex-icon">
+      <img alt="Icon showing a label" src="/img/label.svg" />
+      <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+    </span>
+    {%- endif -%} {% endfor %}
+  </footer>
 </article>
 {% endfor %}

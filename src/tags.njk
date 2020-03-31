@@ -3,23 +3,14 @@ pagination:
   data: collections
   size: 1
   alias: tag
-  filter:
-    - all
-    - nav
-    - post
-    - posts
-    - tagList
-  addAllPagesToCollections: true
-layout: layouts/page.njk
-renderData:
-  title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag | slug }}/
 ---
-{% block content %}
-<h1>Tagged “{{ tag }}”</h1>
 
-{% set postslist = collections[ tag ] %}
-{% include "postsList.njk" %}
-
-<p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
-{% endblock %}
+{% extends 'layouts/page.njk' %} {% set postslist = collections[ tag ] %} {%
+block header %}
+<h1>Posts tagged with: “{{ tag }}”</h1>
+<p>There are {{ postslist.length }} posts about {{ tag }}</p>
+<p>
+  See <a href="{{ '/tags/' | url }}">more tags</a> that I have written about.
+</p>
+{% endblock %} {% block content %} {%include "postsList.njk" %} {% endblock %}

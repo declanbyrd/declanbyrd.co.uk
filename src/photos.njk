@@ -1,5 +1,5 @@
 ---
-title: Photos
+title: My Photos
 description: Photos I've taken!
 flickrUrl: https://www.flickr.com/photos/declanbyrd
 eleventyNavigation:
@@ -7,23 +7,27 @@ eleventyNavigation:
   order: 3
 ---
 
-{% extends 'layouts/page.njk' %}
+{% extends 'layouts/page.njk' %} {% block header %}
+<h2 class="page-title">{{ title }}</h2>
+<p>
+  This is where you will find photos that I post to my
+  <a href="{{ flickrUrl }}">Flickr</a> account.
+</p>
 
+<p>
+  {% endblock %} {% block content %}
+</p>
 
-{% block content %}
+<section class="photo-gallery">
+  {% for photo in photos %}
+  <a href="{{ flickrUrl }}/{{ photo.id }}">
+    <img
+      class="photo-item"
+      src="{{ photo.url }}"
+      alt="Photo of {{ photo.caption }}"
+    />
+  </a>
+  {% endfor %}
+</section>
 
-  <h1>My Photos</h1>
-
-  <p>
-    This is where you will find photos that I post to my <a href="{{flickrUrl}}">Flickr</a> account.
-  <p>
-
-    <section class="photo-gallery">
-      {% for photo in photos %}
-          <a href="{{flickrUrl}}/{{photo.id}}">
-        <img class="photo-item" src="{{photo.url}}" alt="Photo of {{photo.caption}}" />
-        </a>
-      {% endfor %}
-    </section>
- 
 {% endblock %}

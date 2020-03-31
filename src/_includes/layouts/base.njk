@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{renderData.title or title or metadata.title}}</title>
-    <meta name="Description" content="{{renderData.description or description or metadata.description}}">
-    <link rel="stylesheet" href="/css/index.css">
-</head>
-<body>
-    <header>
-        <div class="header-nav">
-            {% include '_navigation.njk' %}
-            {% include '_social-links.njk' %}
-        </div>
-        <h1 class="title">
-            <a href="{{'/' | url}}">{{metadata.title}}</a>
-        </h1>
+    <meta
+      name="Description"
+      content="{{renderData.description or description or metadata.description}}"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-navigation" role="navigation">
+        {% include '_navigation.njk' %} {% include '_social-links.njk' %}
+      </div>
+      <h1 class="logo">
+        <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+      </h1>
     </header>
 
-    <main>
-        {% block content %}
-            {{ content | safe }}
+    <main class="page-content">
+      <header class="content-header">
+        {% block header %}
+        {{ content | safe }}
         {% endblock %}
+      </header>
+      {% block content %}
+      {{ content | safe }}
+      {% endblock %}
     </main>
-</body>
-<footer>
-</footer>
+  </body>
+  <footer></footer>
 </html>

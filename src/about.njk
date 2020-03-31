@@ -1,17 +1,23 @@
 ---
 title: About Me
-description: Everything you need to know about me!
+description: Hi, I'm Declan. I'm a final year software engineering student at the University of Portsmouth in the UK.
 eleventyNavigation:
   key: About
   order: 2
 ---
 
-{% extends 'layouts/page.njk' %}
+{% extends 'layouts/page.njk' %} {% block header %}
+<div class="profile-header">
+  <img
+    class="squared-photo"
+    src="../img/profile-image.jpg"
+    alt="Picture of Declan"
+  />
+  <div class="profile-intro">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+    <p></p>
+  </div>
+</div>
 
-{% block content %}
-        
-  <h1>{{title}}</h1>
-
-  {{description}}
-
-{% endblock %}
+{% endblock %} {% block content %} {% endblock %}

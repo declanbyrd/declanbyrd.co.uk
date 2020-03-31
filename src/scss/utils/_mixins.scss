@@ -1,0 +1,35 @@
+@use 'variables';
+
+@mixin logo {
+  font-family: 'PT Sans';
+  font-size: 4rem;
+  letter-spacing: -0.031rem;
+  color: variables.$primary-text;
+  text-decoration: underline solid variables.$secondary;
+}
+
+@mixin page-titles {
+  font-family: 'Pt Sans';
+  font-size: 2.125rem;
+  color: variables.$primary-text;
+  text-decoration: underline solid variables.$secondary;
+}
+
+@mixin blog-titles {
+  font-family: 'Pt Sans';
+  font-size: 1.5rem;
+  color: variables.$primary-text;
+  text-decoration: underline solid variables.$secondary;
+}
+
+@mixin blog-topic-date {
+  font-family: 'Didact Gothic';
+  font-size: 0.875rem;
+  letter-spacing: 0.025rem;
+  color: variables.$secondary;
+}
+
+@mixin squared-photo {
+  border-radius: 0.313rem;
+  max-width: 10rem;
+}
