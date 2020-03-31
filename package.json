@@ -4,7 +4,8 @@
   "description": "My homepage",
   "scripts": {
     "debug": "set DEBUG=Eleventy* & eleventy",
-    "build": "npx eleventy",
+    "build": "npm run sass & npx eleventy",
+    "build:eleventy": "npx eleventy",
     "sass": "sass --style=compressed src/scss/styles.scss src/css/styles.css",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
