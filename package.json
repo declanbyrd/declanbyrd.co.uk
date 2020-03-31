@@ -4,6 +4,7 @@
   "description": "My homepage",
   "scripts": {
     "debug": "set DEBUG=Eleventy* & eleventy",
+    "prebuild": "npm run sass",
     "build": "npm run sass & npx eleventy",
     "build:eleventy": "npx eleventy",
     "sass": "sass --style=compressed src/scss/styles.scss src/css/styles.css",
