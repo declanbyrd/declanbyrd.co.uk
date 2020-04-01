@@ -2,10 +2,13 @@
 
 @mixin logo {
   font-family: 'PT Sans';
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: -0.031rem;
   color: variables.$primary-text;
   text-decoration: underline solid variables.$secondary;
+  @media screen and (min-width: variables.$breakpoint-x-small) {
+    font-size: 4rem;
+  }
 }
 
 @mixin page-titles {
@@ -26,10 +29,11 @@
   font-family: 'Didact Gothic';
   font-size: 0.875rem;
   letter-spacing: 0.025rem;
-  color: variables.$secondary;
+  color: variables.$secondary-light;
 }
 
 @mixin squared-photo {
   border-radius: 0.313rem;
   max-width: 10rem;
+  display: block;
 }

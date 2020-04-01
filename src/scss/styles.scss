@@ -74,20 +74,25 @@ nav {
 
 .content-header {
   margin: 0 0 3rem 0;
+  a {
+    color: $primary-text;
+    text-decoration: underline solid $secondary;
+    &:visited {
+      text-decoration: underline solid $primary-text;
+    }
+  }
   .page-title {
     @include page-titles;
   }
   .profile-header {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    @media screen and (min-width: $breakpoint-medium) {
-      flex-direction: row;
-    }
     .squared-photo {
       @include squared-photo;
-      align-self: center;
-      margin-right: 1rem;
+      float: none;
+      margin: 0 auto;
+      @media screen and (min-width: $breakpoint-medium) {
+        float: left;
+        margin: 0 1rem 1rem 0;
+      }
     }
     .profile-intro {
       h1 {
@@ -100,13 +105,18 @@ nav {
 
 .page-content {
   a {
-    color: $secondary;
+    color: $primary-text;
+    text-decoration: underline solid $secondary;
     &:visited {
-      color: $primary-text;
+      text-decoration: underline solid $primary-text;
     }
   }
   .tag-list {
     list-style: url(../img/label.svg);
+    .tag {
+      color: $primary-text;
+      text-decoration: underline solid $secondary;
+    }
   }
   .blog-post {
     &.title {
@@ -156,6 +166,7 @@ nav {
     }
     .tag {
       color: $secondary-light;
+      text-decoration: underline solid $secondary-light;
     }
   }
 }
