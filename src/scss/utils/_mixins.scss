@@ -6,7 +6,7 @@
   letter-spacing: -0.031rem;
   color: variables.$primary-text;
   text-decoration: underline solid variables.$secondary;
-  @media screen and (min-width: variables.$breakpoint-x-small) {
+  @media screen and (min-width: variables.$breakpoint-small) {
     font-size: 4rem;
   }
 }
