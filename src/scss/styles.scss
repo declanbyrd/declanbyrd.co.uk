@@ -3,7 +3,7 @@
 @import 'utils/syntax';
 
 :root {
-  font-size: 16px;
+  font-size: 18px;
   @media screen and (min-width: $breakpoint-small) {
     font-size: 18px;
   }
@@ -36,6 +36,13 @@ nav {
   }
 }
 
+.page-footer {
+  margin: 2rem 0;
+  a {
+    @include links;
+  }
+}
+
 .page-header {
   .page-navigation {
     display: flex;
@@ -65,7 +72,7 @@ nav {
   }
   .logo {
     grid-area: 2 / 2 / 3 / 3;
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
     a {
       @include logo;
     }
@@ -105,11 +112,7 @@ nav {
 
 .page-content {
   a {
-    color: $primary-text;
-    text-decoration: underline solid $secondary;
-    &:visited {
-      text-decoration: underline solid $primary-text;
-    }
+    @include links;
   }
   .tag-list {
     list-style: url(../img/label.svg);
@@ -121,6 +124,7 @@ nav {
   .blog-post {
     &.title {
       @include page-titles;
+      margin: 0.2rem 0 1rem 0;
     }
     &.data {
       @include blog-topic-date;
@@ -130,7 +134,30 @@ nav {
         margin-left: 0.5rem;
       }
     }
-    &.tags {
+    &.content {
+      a {
+        @include links;
+      }
+      p {
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 80vw;
+          @media screen and (min-width: $breakpoint-small) {
+            max-width: 70vw;
+          }
+        }
+      }
+      blockquote {
+        background-color: $primary-light;
+        border-left: 0.625rem solid $secondary;
+        margin: 1.5rem 0;
+        padding: 1rem 1.25rem 1rem 0.625rem;
+        p {
+          display: inline;
+          margin: 0;
+        }
+      }
     }
   }
 }

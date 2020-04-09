@@ -37,3 +37,14 @@
   max-width: 10rem;
   display: block;
 }
+
+@mixin links {
+  color: variables.$primary-text;
+  text-decoration: underline solid variables.$secondary;
+  &:hover {
+    opacity: 60%;
+  }
+  &:visited {
+    text-decoration: underline solid $primary-text;
+  }
+}
