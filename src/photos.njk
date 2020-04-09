@@ -11,12 +11,11 @@ eleventyNavigation:
 <h2 class="page-title">{{ title }}</h2>
 <p>
   This is where you will find photos that I post to my
-  <a href="{{ flickrUrl }}">Flickr</a> account.
+  <a href="{{ flickrUrl }}">Flickr</a> account. There's no likes, followers or
+  24 hour vanishing stories here.
 </p>
 
-<p>
-  {% endblock %} {% block content %}
-</p>
+{% endblock %} {% block content %}
 
 <section class="photo-gallery">
   {% for photo in photos %}
