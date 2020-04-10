@@ -1,6 +1,6 @@
 ---
 title: My experience with Google foo.bar
-description: I stumbled upon an invite only coding challenge created by Google to hire developers. I did one challenge, in a language I haven't used in a few years, then realised I should do the rest once I no longer have university deadlines.
+description: I stumbled upon an invite only coding challenge created by Google to hire developers. I did one challenge, in a language I haven't used in a few years, then realized I should do the rest once I no longer have university deadlines.
 blogTopic: Rabbit Hole
 tags: ['Python', 'Code Challenge']
 date: Created
@@ -44,7 +44,7 @@ Do you wish to proceed and start your first challenge?
 
 By this point I was naive to think as long as I could submit my answers in Javascript I'll probably be able to do the first challenge. I got a nice little story about the evil Commander Lambda and how I was the world's only hope, followed by an indication that the 48 hour time limit was starting and where the challenge was located in the terminals file explorer. I won't explain the challenge or what my answer was just in case Google decide to do their own search and find this blog post.
 
-The instructions added more background to the work I would do to help sabotage Commander Lambda's plans and what code was expected to do. It was going well, right up to the point where it said which languages could be used. Python or Java. I hadn't used either since my first year of university so I'm then sat there looking like the man face palming emoji (🤦‍♂️) as I decide I should probably pick a language and do it there and then so the timer doesn't run out.
+The instructions added more background to the work I would do to help sabotage Commander Lambda's plans and what my code was expected to do. It was going well, right up to the point where it said which languages could be used. Python or Java. I hadn't used either since my first year of university so I'm then sat there looking like the man face palming emoji (🤦‍♂️). I decide I should probably pick a language and do it there and then so the timer doesn't run out.
 
 I eventually put together a Python solution using my first year notes that I'd backed up online as reference. There's a built in editor next to the terminal to put the code in but there's no error messages, syntax highlighting or indication that things are going right so I wrote mine in VS code. To see if the code works there's a `verify` command in the terminal that basically runs some unit tests. When they all pass, the code can be submitted and the timer stops.
 
@@ -55,5 +55,3 @@ I finished the first challenge in 1 hour 58 minutes and 1 second although I did 
 There's a progress indicator that appears showing your progress across 5 levels and a piece of animated ascii art above it. Each level is made up for more challenges with two challenges needed to complete level 2. Fortunately I can now finish the rest of the challenges at a much later date, like when I don't have university deadlines.
 
 ![alt-text](../../img/foo-bar/status-end-of-challenge1.jpg 'Table showing 100% for level 1')
-
----

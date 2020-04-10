@@ -38,6 +38,8 @@ nav {
 
 .page-footer {
   margin: 2rem 0;
+  border-top: 0.2rem solid $secondary;
+  padding-top: 1rem;
   a {
     @include links;
   }
@@ -135,10 +137,18 @@ nav {
       }
     }
     &.content {
+      line-height: 1.5rem;
       a {
         @include links;
       }
       p {
+        code {
+          background-color: $primary-light;
+          color: $secondary-light;
+          padding: 0 0.2rem;
+          font-weight: 400;
+          border-radius: 0.2rem;
+        }
         img {
           display: block;
           margin: 0 auto;
