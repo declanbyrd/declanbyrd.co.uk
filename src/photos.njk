@@ -21,6 +21,7 @@ eleventyNavigation:
   {% for photo in photos %}
   <a href="{{ flickrUrl }}/{{ photo.id }}">
     <img
+      loading="lazy"
       class="photo-item"
       src="{{ photo.url }}"
       alt="Photo of {{ photo.caption }}"
