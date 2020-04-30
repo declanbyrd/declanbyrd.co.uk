@@ -8,7 +8,7 @@ sections:
   path: src/blog
   label: Blog
   create: documents
-  match: "**/*"
+  match: "**/*.md"
   exclude: ".json"
   new_doc_ext: md
 upload_dir: src/img
