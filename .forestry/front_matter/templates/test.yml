@@ -1,0 +1,25 @@
+---
+label: Blog template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: description
+  config:
+    required: true
+- type: text
+  name: blogTopic
+  label: blogTopic
+  config:
+    required: true
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: date
+  label: date
