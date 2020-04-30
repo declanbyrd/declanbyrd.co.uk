@@ -1,7 +1,13 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const syntaxHighlighting = require('@11ty/eleventy-plugin-syntaxhighlight');
 
-module.exports = eleventyConfig => {
+module.exports = (eleventyConfig) => {
+  if (process.env.ELEVENTY_ENV == 'staging') {
+    eleventyConfig.setBrowserSyncConfig({
+      host: '0.0.0.0',
+    });
+  }
+
   eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addPlugin(syntaxHighlighting, { templateFormats: 'md' });
@@ -21,7 +27,7 @@ module.exports = eleventyConfig => {
 
   eleventyConfig.addCollection('tagList', require('./src/_filters/getTagList'));
 
-  eleventyConfig.addCollection('posts', collection =>
+  eleventyConfig.addCollection('posts', (collection) =>
     collection.getFilteredByGlob('src/blog/*.md').reverse()
   );
 
