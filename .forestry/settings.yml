@@ -17,6 +17,9 @@ front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
+  preview_env:
+  - API_KEY=e5c46f00ab64c21b71b7034e80f87f2c
+  - USER_ID=184328968%40N05
   preview_output_directory: dist
   install_dependencies_command: npm install
   preview_docker_image: forestryio/node:10
