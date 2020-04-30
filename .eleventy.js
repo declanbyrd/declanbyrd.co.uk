@@ -2,12 +2,6 @@ const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const syntaxHighlighting = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = (eleventyConfig) => {
-  if (process.env.ELEVENTY_ENV == 'staging') {
-    eleventyConfig.setBrowserSyncConfig({
-      host: '0.0.0.0',
-    });
-  }
-
   eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addPlugin(syntaxHighlighting, { templateFormats: 'md' });
