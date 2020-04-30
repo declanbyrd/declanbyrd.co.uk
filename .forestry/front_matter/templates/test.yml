@@ -1,0 +1,19 @@
+---
+label: Test
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: blogTopic
+  label: blogTopic
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: date
+  label: date
