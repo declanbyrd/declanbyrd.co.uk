@@ -5,12 +5,18 @@ fields:
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - type: textarea
   name: description
   label: description
+  config:
+    required: true
 - type: text
   name: blogTopic
   label: blogTopic
+  config:
+    required: true
 - type: list
   name: tags
   label: tags
