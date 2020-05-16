@@ -1,12 +1,13 @@
 ---
 title: My experience with Google foo.bar
-description: I stumbled upon an invite only coding challenge created by Google to hire developers. I did one challenge, in a language I haven't used in a few years, then realized I should do the rest once I no longer have university deadlines.
+description: I stumbled upon an invite only coding challenge created by Google to hire developers. I wrote about how it happened, what I did and why the timing was not ideal.
+tldr: I stumbled upon an invite only coding challenge created by Google to hire developers. I did one challenge, in a language I haven't used in a few years, then realized I should do the rest once I no longer have university deadlines.
 blogTopic: Rabbit Hole
 tags: ['Python', 'Code Challenge']
 date: Created
 ---
 
-> TLDR: {{description}}
+> TLDR: {{tldr}}
 
 It's Thursday 9th April 2020, the UK is in its third week of lock down and I've been working on my dissertation in between Animal Crossing: New Horizons sessions during what would have been an Easter break.
 
