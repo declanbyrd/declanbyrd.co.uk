@@ -11,7 +11,12 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
-  eleventyConfig.addFilter('dateDisplay', require('./src/_filters/dates.js'));
+  eleventyConfig.addFilter(
+    'dateDisplay',
+    require('./src/_filters/readableDates.js')
+  );
+
+  eleventyConfig.addFilter('utcDate', require('./src/_filters/utcDate.js'));
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter('previewCollection', (array, n) => {

@@ -3,7 +3,7 @@
   <header>
     <span class="post-data">
       {{ post.data.blogTopic }}
-      <time class="postlist-date" datetime="{{ post.date }}">{{
+      <time class="postlist-date" datetime="{{ post.date | utcDate }}">{{
         post.date | dateDisplay
       }}</time>
     </span>
