@@ -3,7 +3,7 @@
 {% block header %}
   <span class="blog-post data">
     {{ blogTopic }}
-    <time class="blog-post date" datetime="{{ page.date | htmlDateTime }}">{{page.date}}</time>
+    <time class="blog-post date" datetime="{{ page.date | htmlDateTime }}">{{page.date | dateDisplay}}</time>
   </span>
   <h1 class="blog-post title">{{ title }}</h1>
   <aside class="blog-post post-tags">
