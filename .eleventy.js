@@ -1,11 +1,13 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const syntaxHighlighting = require('@11ty/eleventy-plugin-syntaxhighlight');
+const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addPlugin(syntaxHighlighting, { templateFormats: 'md' });
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(inclusiveLangPlugin);
 
   eleventyConfig.setDataDeepMerge(true);
 
