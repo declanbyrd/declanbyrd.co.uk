@@ -1,28 +1,28 @@
 {% extends 'layouts/base.njk' %}
 
-  {% block header %}
+{% block header %}
   <span class="blog-post data">
     {{ blogTopic }}
-    <time class="blog-post date" datetime="{{ page.date }}">{{
-      page.date | dateDisplay
-    }}</time>
+    <time class="blog-post date" datetime="{{ page.date }}">{{page.date | htmlDateTime}}</time>
   </span>
   <h1 class="blog-post title">{{ title }}</h1>
   <footer class="blog-post post-tags">
-    {% for tag in tags %} {%- if collections.tagList.indexOf(tag) !=
-      -1 -%} {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-      <span class="flex-icon">
-        <img alt="Icon showing a label" src="/img/label.svg" />
-        <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-      </span>
-      {%- endif -%} {% endfor %}
+    {% for tag in tags %} 
+      {%- if collections.tagList.indexOf(tag) != -1 -%} 
+      {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+        <span class="flex-icon">
+          <img alt="Icon showing a label" src="/img/label.svg" />
+          <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+        </span>
+      {%- endif -%} 
+    {% endfor %}
   </footer>
-  {% endblock %} {% block content %}
+{% endblock %} 
+  
+{% block content %}
 
   <article class="blog-post content">
     {{ content | safe }}
   </article>
 
-
-  {% endblock %}
-</article>
+{% endblock %}

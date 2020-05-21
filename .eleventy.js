@@ -33,7 +33,6 @@ module.exports = (eleventyConfig) => {
     collection.getFilteredByGlob('src/blog/*.md').reverse()
   );
 
-  eleventyConfig.addPassthroughCopy('src/css');
   eleventyConfig.addPassthroughCopy('src/img');
   eleventyConfig.addPassthroughCopy('src/fonts');
 

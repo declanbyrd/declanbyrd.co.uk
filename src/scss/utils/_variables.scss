@@ -24,8 +24,8 @@ $breakpoint-x-large: 1920px;
 // Typography
 @font-face {
   font-family: 'Didact Gothic';
-  src: url('../fonts/didactgothic-regular-webfont.woff2') format('woff2'),
-    url('../fonts/didactgothic-regular-webfont.woff') format('woff');
+  src: url('/fonts/didactgothic-regular-webfont.woff2') format('woff2'),
+    url('/fonts/didactgothic-regular-webfont.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -33,8 +33,8 @@ $breakpoint-x-large: 1920px;
 
 @font-face {
   font-family: 'PT Sans';
-  src: url('../fonts/ptsans-regular-webfont.woff2') format('woff2'),
-    url('../fonts/ptsans-regular-webfont.woff') format('woff');
+  src: url('/fonts/ptsans-regular-webfont.woff2') format('woff2'),
+    url('/fonts/ptsans-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
