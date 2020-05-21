@@ -7,27 +7,29 @@ eleventyNavigation:
   order: 3
 ---
 
-{% extends 'layouts/page.njk' %} {% block header %}
-<h2 class="page-title">{{ title }}</h2>
-<p>
-  This is where you will find photos that I post to my
-  <a href="{{ flickrUrl }}">Flickr</a> account. There's no likes, followers or
-  24 hour vanishing stories here.
-</p>
+{% extends 'layouts/page.njk' %} 
 
-{% endblock %} {% block content %}
+{% block header %}
+  <h2 id="myPhotos" class="page-title">{{ title }}</h2>
+  <p>
+    This is where you will find photos that I post to my
+    <a href="{{ flickrUrl }}">Flickr</a> account. There's no likes, followers or
+    24 hour vanishing stories here.
+  </p>
+{% endblock %} 
 
-<section class="photo-gallery">
-  {% for photo in photos %}
-  <a href="{{ flickrUrl }}/{{ photo.id }}">
-    <img
-      loading="lazy"
-      class="photo-item"
-      src="{{ photo.url }}"
-      alt="Photo of {{ photo.caption }}"
-    />
-  </a>
-  {% endfor %}
-</section>
-
+{% block content %}
+  <section class="photo-gallery">
+    {% for photo in photos %}
+      <a href="{{ flickrUrl }}/{{ photo.id }}">
+        <img
+          loading="lazy"
+          class="photo-item"
+          src="{{ photo.url }}"
+          alt="Photo of {{ photo.caption }}"
+        />
+        <span class="hidden">Link to Flickr page for {{photo.caption}}</span>
+      </a>
+    {% endfor %}
+  </section>
 {% endblock %}

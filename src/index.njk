@@ -1,9 +1,5 @@
-{% extends 'layouts/page.njk' %}
-
-{% block content %}
-  <section class="post-feed">
-  {% set postslist = collections.posts | previewCollection(-7) %}
-  {% set postslistCounter = collections.posts | length %}
-  {% include "postsList.njk" %}
-</section>
+{% extends 'layouts/page.njk' %} 
+{% block content %} {% set postslist =collections.posts | previewCollection(-7) %} 
+{% set postslistCounter = collections.posts | length %} 
+{% include "postsList.njk" %} 
 {% endblock %}

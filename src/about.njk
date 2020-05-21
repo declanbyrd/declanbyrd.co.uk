@@ -5,7 +5,9 @@ eleventyNavigation:
   order: 2
 ---
 
-{% extends 'layouts/page.njk' %} {% block header %}
+{% extends 'layouts/page.njk' %} 
+
+{% block header %}
 <div class="profile-header">
   <div class="profile-intro">
     <h1>{{ title }}</h1>
@@ -23,16 +25,18 @@ eleventyNavigation:
   </div>
 </div>
 
-{% endblock %} {% block content %}
+{% endblock %} 
 
-<p>
-  Most of my projects are written in HTML5, CSS and JavaScript or ES6 if you're
-  after specifics but I've also done some work with Python, Java and Lua while
-  at university. I think the best thing about developing for the web is that the
-  capabilities of what browsers can do is constantly changing. Whether that's
-  implementing augmented reality, powering feature phones or making it possible
-  for all major browsers to have the same features to make it easier for
-  developers.
-</p>
+{% block content %}
+
+  <p>
+    Most of my projects are written in HTML5, CSS and JavaScript or ES6 if you're
+    after specifics but I've also done some work with Python, Java and Lua while
+    at university. I think the best thing about developing for the web is that the
+    capabilities of what browsers can do is constantly changing. Whether that's
+    implementing augmented reality, powering feature phones or making it possible
+    for all major browsers to have the same features to make it easier for
+    developers.
+  </p>
 
 {% endblock %}

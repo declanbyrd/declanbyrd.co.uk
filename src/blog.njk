@@ -10,14 +10,15 @@ eleventyNavigation:
   order: 1
 ---
 
-{% extends 'layouts/page.njk' %} {% block header %}
-<h2 class="page-title">{{ title }}</h2>
-<p>{{ description }}</p>
-{% endblock %} {% block content %}
+{% extends 'layouts/page.njk' %} 
 
-<section class="post-feed">
-  {% set postslist = posts %} {% set postslistCounter = collections.posts |
-  length %} {% include "postsList.njk" %}
-</section>
+{% block header %}
+  <h2 class="page-title">{{ title }}</h2>
+  <p>{{ description }}</p>
+{% endblock %}
 
+{% block content %} 
+  {% set postslist = posts %} 
+  {% set postslistCounter = collections.posts | length %} 
+  {% include "postsList.njk" %}
 {% endblock %}

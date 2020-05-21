@@ -2,18 +2,21 @@
 permalink: /tags/
 ---
 
-{% extends 'layouts/page.njk' %} {% block header %}
-<h1>Tags</h1>
-{% endblock %} {% block content %}
-<ul class="tag-list">
-  {% for tag in collections.tagList %} {% set tagUrl %}/tags/{{
-    tag | slug
-  }}/{% endset %}
-  <li>
-    <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a> ({{
-      collections[tag].length
-    }})
-  </li>
-  {% endfor %}
-</ul>
+{% extends 'layouts/page.njk' %} 
+{% block header %}
+  <h1>Tags</h1>
+{% endblock %} 
+
+{% block content %}
+  <ul class="tag-list">
+    {% for tag in collections.tagList %} 
+      {% set tagUrl %}/tags/{{tag | slug}}/{% endset %}
+      <li>
+        <a href="{{ tagUrl | url }}" class="tag">
+          {{ tag }}
+        </a> 
+        ({{collections[tag].length}})
+      </li>
+    {% endfor %}
+  </ul>
 {% endblock %}
