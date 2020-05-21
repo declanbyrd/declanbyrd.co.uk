@@ -19,7 +19,7 @@
   <footer class="post-tags">
     {% for tag in post.data.tags %} {%- if collections.tagList.indexOf(tag) !=
     -1 -%} {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-    <span class="flex-icon" role="tag">
+    <span class="flex-icon" role="link">
       <img alt="Icon showing a label" src="/img/label.svg" />
       <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
     </span>

@@ -28,6 +28,7 @@ $breakpoint-x-large: 1920px;
     url('../fonts/didactgothic-regular-webfont.woff') format('woff');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -36,4 +37,5 @@ $breakpoint-x-large: 1920px;
     url('../fonts/ptsans-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }

@@ -1,4 +1,5 @@
 node_modules
 dist
 .env
-src/css
+src/_includes/css/*
+.netlify
