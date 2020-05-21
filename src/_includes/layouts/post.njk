@@ -3,10 +3,10 @@
 {% block header %}
   <span class="blog-post data">
     {{ blogTopic }}
-    <time class="blog-post date" datetime="{{ page.date }}">{{page.date | htmlDateTime}}</time>
+    <time class="blog-post date" datetime="{{ page.date | htmlDateTime }}">{{page.date}}</time>
   </span>
   <h1 class="blog-post title">{{ title }}</h1>
-  <footer class="blog-post post-tags">
+  <aside class="blog-post post-tags">
     {% for tag in tags %} 
       {%- if collections.tagList.indexOf(tag) != -1 -%} 
       {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
@@ -16,7 +16,7 @@
         </span>
       {%- endif -%} 
     {% endfor %}
-  </footer>
+  </aside>
 {% endblock %} 
   
 {% block content %}
