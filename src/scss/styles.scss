@@ -2,21 +2,18 @@
 @import 'utils/mixins';
 @import 'utils/syntax';
 
-:root {
+html {
+  display: grid;
+  grid-template-columns: $page-gutter-small 1fr $page-gutter-small;
+  @media screen and (min-width: $breakpoint-small) {
+    grid-template-columns: $page-gutter 1fr $page-gutter;
+  }
   font-size: 18px;
   @media screen and (min-width: $breakpoint-small) {
     font-size: 18px;
   }
   @media screen and (min-width: $breakpoint-medium) {
     font-size: 20px;
-  }
-}
-
-html {
-  display: grid;
-  grid-template-columns: $page-gutter-small 1fr $page-gutter-small;
-  @media screen and (min-width: $breakpoint-small) {
-    grid-template-columns: $page-gutter 1fr $page-gutter;
   }
 }
 
@@ -65,9 +62,27 @@ nav {
 
     .social-links {
       a {
+        display: inline-block;
         text-decoration: none;
-        .social-icon:hover {
-          opacity: 60%;
+        width: 1.75rem;
+        height: 1.75rem;
+        margin-left: 0.5rem;
+        .hidden {
+          width: 1px;
+          height: 1px;
+          border: 0;
+          clip: rect(0 0 0 0);
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+        }
+        .social-icon {
+          width: 1.75rem;
+          height: 1.75rem;
+          &:hover {
+            opacity: 60%;
+          }
         }
       }
     }
