@@ -8,7 +8,9 @@
       name="Description"
       content="{{renderData.description or description or metadata.description}}"
     />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <style>
+      {% include "css/styles.css" %}
+    </style>
   </head>
   <body>
     <header class="page-header">

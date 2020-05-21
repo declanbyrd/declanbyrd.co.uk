@@ -7,7 +7,7 @@
     "prebuild": "npm run sass",
     "build": "npm run sass & npx eleventy",
     "build:eleventy": "npx eleventy",
-    "sass": "sass --style=compressed src/scss/styles.scss src/css/styles.css",
+    "sass": "sass --style=compressed src/scss/styles.scss src/_includes/css/styles.css",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
     "start": "npm-run-all sass --parallel watch:*"
