@@ -16,7 +16,10 @@ module.exports = (eleventyConfig) => {
     require('./src/_filters/readableDates.js')
   );
 
-  eleventyConfig.addFilter('utcDate', require('./src/_filters/utcDate.js'));
+  eleventyConfig.addFilter(
+    'htmlDateTime',
+    require('./src/_filters/htmlDateTime.js')
+  );
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter('previewCollection', (array, n) => {
