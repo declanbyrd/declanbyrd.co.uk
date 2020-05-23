@@ -108,10 +108,15 @@ main {
     @include links;
   }
   .tag-list {
-    list-style: url(../img/label.svg);
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 0.5rem 0;
+    }
     .tag {
       color: $primary-text;
       text-decoration: underline solid $secondary;
+      margin-right: 0.3rem;
     }
   }
 
@@ -178,35 +183,26 @@ main {
   }
 }
 
+.flex-icon {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem 0 0;
+  img {
+    margin-right: 0.35rem;
+  }
+}
+
 .post-tags {
   display: flex;
   flex-direction: row;
-  .flex-icon {
-    display: flex;
-    align-items: center;
-    margin: 0 0.5rem 0 0;
-    img {
-      margin-right: 0.35rem;
-    }
-    .tag {
-      color: $secondary-light;
-      text-decoration: underline solid $secondary-light;
-    }
+  .tag {
+    color: $secondary-light;
+    text-decoration: underline solid $secondary-light;
   }
 }
 
 .photo-gallery {
   column-count: 1;
-  .hidden {
-    width: 1px;
-    height: 1px;
-    border: 0;
-    clip: rect(0 0 0 0);
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-  }
   .photo-item {
     width: 100%;
     margin-bottom: 1.25rem;

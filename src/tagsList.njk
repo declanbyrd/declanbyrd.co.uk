@@ -5,15 +5,16 @@ permalink: /tags/
 {% extends 'layouts/page.njk' %} 
 
 {% block content %}
-<h1>Tags</h1>
+<h2>Tags</h2>
   <ul class="tag-list">
     {% for tag in collections.tagList %} 
       {% set tagUrl %}/tags/{{tag | slug}}/{% endset %}
-      <li>
+      <li class="flex-icon">
+        <img alt="Icon showing a label" src="/img/label.svg" />
         <a href="{{ tagUrl | url }}" class="tag">
           {{ tag }}
         </a> 
-        ({{collections[tag].length}})
+        ( {{collections[tag].length}} )
       </li>
     {% endfor %}
   </ul>
