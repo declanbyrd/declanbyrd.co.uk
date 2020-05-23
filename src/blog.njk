@@ -12,12 +12,9 @@ eleventyNavigation:
 
 {% extends 'layouts/page.njk' %} 
 
-{% block header %}
+{% block content %}
   <h2 class="page-title">{{ title }}</h2>
   <p>{{ description }}</p>
-{% endblock %}
-
-{% block content %} 
   {% set postslist = posts %} 
   {% set postslistCounter = collections.posts | length %} 
   {% include "postsList.njk" %}

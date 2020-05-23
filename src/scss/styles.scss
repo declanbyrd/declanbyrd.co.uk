@@ -33,14 +33,7 @@ nav {
   }
 }
 
-.page-footer {
-  margin: 2rem 0;
-  border-top: 0.2rem solid $secondary;
-  padding-top: 1rem;
-  a {
-    @include links;
-  }
-}
+// Page Heading
 
 .page-header {
   .page-navigation {
@@ -52,14 +45,9 @@ nav {
       list-style: none;
       margin: 0 1.25rem 0 0;
       a {
-        color: $primary-text;
-        text-decoration: underline solid $secondary;
-        &:hover {
-          opacity: 60%;
-        }
+        @include links;
       }
     }
-
     .social-links {
       a {
         display: inline-block;
@@ -67,16 +55,6 @@ nav {
         width: 1.75rem;
         height: 1.75rem;
         margin-left: 0.5rem;
-        .hidden {
-          width: 1px;
-          height: 1px;
-          border: 0;
-          clip: rect(0 0 0 0);
-          margin: -1px;
-          overflow: hidden;
-          padding: 0;
-          position: absolute;
-        }
         .social-icon {
           width: 1.75rem;
           height: 1.75rem;
@@ -96,60 +74,59 @@ nav {
   }
 }
 
-.content-header {
-  margin: 0 0 3rem 0;
-  a {
-    color: $primary-text;
-    text-decoration: underline solid $secondary;
-    &:visited {
-      text-decoration: underline solid $primary-text;
-    }
-  }
-  p {
-    line-height: 1.5;
-  }
-  .page-title {
-    @include page-titles;
-  }
-  .profile-header {
-    .squared-photo {
-      @include squared-photo;
-      float: none;
-      margin: 0 auto;
-      @media screen and (min-width: $breakpoint-medium) {
-        float: left;
-        margin: 0 1rem 1rem 0;
-      }
-    }
-    .profile-intro {
-      h1 {
-        margin-top: 0;
-        @include page-titles;
-      }
-    }
-  }
-}
+// Page footer
 
-.page-content {
+.page-footer {
+  margin: 2rem 0;
+  border-top: 0.2rem solid $secondary;
+  padding-top: 1rem;
   a {
     @include links;
   }
+}
+
+.squared-photo {
+  @include squared-photo;
+  float: none;
+  margin: 0 auto;
+  @media screen and (min-width: $breakpoint-medium) {
+    float: left;
+    margin: 0 1rem 1rem 0;
+  }
+}
+
+// Page content
+
+main {
+  h2 {
+    @include page-titles;
+  }
   p {
     line-height: 1.5;
   }
+  a {
+    @include links;
+  }
   .tag-list {
-    list-style: url(../img/label.svg);
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 0.5rem 0;
+    }
     .tag {
       color: $primary-text;
       text-decoration: underline solid $secondary;
+      margin-right: 0.3rem;
     }
   }
+
+  // Blog Posts
+
   .blog-post {
-    &.title {
-      @include page-titles;
+    .title {
       margin: 0.2rem 0 1rem 0;
     }
-    &.data {
+    .data {
       @include blog-topic-date;
       font-size: 1rem;
       time {
@@ -157,36 +134,31 @@ nav {
         margin-left: 0.5rem;
       }
     }
-    &.content {
-      a {
-        @include links;
-      }
-      p {
-        code {
-          background-color: $primary-light;
-          color: $secondary-light;
-          padding: 0 0.2rem;
-          font-weight: 400;
-          border-radius: 0.2rem;
-        }
-        img {
-          display: block;
-          margin: 0 auto;
-          max-width: 80vw;
-          @media screen and (min-width: $breakpoint-small) {
-            max-width: 70vw;
-          }
-        }
-      }
-      blockquote {
+    p {
+      code {
         background-color: $primary-light;
-        border-left: 0.625rem solid $secondary;
-        margin: 1.5rem 0;
-        padding: 1rem 1.25rem 1rem 0.625rem;
-        p {
-          display: inline;
-          margin: 0;
+        color: $secondary-light;
+        padding: 0 0.2rem;
+        font-weight: 400;
+        border-radius: 0.2rem;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80vw;
+        @media screen and (min-width: $breakpoint-small) {
+          max-width: 70vw;
         }
+      }
+    }
+    blockquote {
+      background-color: $primary-light;
+      border-left: 0.625rem solid $secondary;
+      margin: 1.5rem 0;
+      padding: 1rem 1.25rem 1rem 0.625rem;
+      p {
+        display: inline;
+        margin: 0;
       }
     }
   }
@@ -195,11 +167,11 @@ nav {
 .post-preview {
   display: flex;
   flex-direction: column;
-  margin: 0 0 3rem 0;
+  margin: 3rem 0;
   .post-title {
     margin: 0;
     a {
-      @include blog-titles;
+      @include page-titles;
     }
   }
   .post-data {
@@ -211,35 +183,26 @@ nav {
   }
 }
 
+.flex-icon {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem 0 0;
+  img {
+    margin-right: 0.35rem;
+  }
+}
+
 .post-tags {
   display: flex;
   flex-direction: row;
-  .flex-icon {
-    display: flex;
-    align-items: center;
-    margin: 0 0.5rem 0 0;
-    img {
-      margin-right: 0.35rem;
-    }
-    .tag {
-      color: $secondary-light;
-      text-decoration: underline solid $secondary-light;
-    }
+  .tag {
+    color: $secondary-light;
+    text-decoration: underline solid $secondary-light;
   }
 }
 
 .photo-gallery {
   column-count: 1;
-  .hidden {
-    width: 1px;
-    height: 1px;
-    border: 0;
-    clip: rect(0 0 0 0);
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-  }
   .photo-item {
     width: 100%;
     margin-bottom: 1.25rem;
@@ -252,4 +215,15 @@ nav {
   @media screen and (min-width: $breakpoint-medium) {
     column-count: 3;
   }
+}
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }

@@ -7,10 +7,9 @@ eleventyNavigation:
 
 {% extends 'layouts/page.njk' %} 
 
-{% block header %}
-<div class="profile-header">
-  <div class="profile-intro">
-    <h1>{{ title }}</h1>
+{% block content %}
+
+    <h2>{{ title }}</h2>
     <img
       class="squared-photo"
       src="../img/profile-image.jpg"
@@ -22,12 +21,6 @@ eleventyNavigation:
       degree, I enjoy spending time with my dog, understanding how things on the
       web work and watching Brighton and Hove Albion Football Club.
     </p>
-  </div>
-</div>
-
-{% endblock %} 
-
-{% block content %}
 
   <p>
     Most of my projects are written in HTML5, CSS and JavaScript or ES6 if you're
