@@ -18,13 +18,6 @@
   text-decoration: underline solid variables.$secondary;
 }
 
-@mixin blog-titles {
-  font-family: 'Pt Sans', sans-serif;
-  font-size: 1.5rem;
-  color: variables.$primary-text;
-  text-decoration: underline solid variables.$secondary;
-}
-
 @mixin blog-topic-date {
   font-family: 'Didact Gothic', sans-serif;
   font-size: 0.875rem;
@@ -43,8 +36,5 @@
   text-decoration: underline solid variables.$secondary;
   &:hover {
     opacity: 60%;
-  }
-  &:visited {
-    text-decoration: underline solid $primary-text;
   }
 }

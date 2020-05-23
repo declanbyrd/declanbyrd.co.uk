@@ -9,16 +9,13 @@ eleventyNavigation:
 
 {% extends 'layouts/page.njk' %} 
 
-{% block header %}
-  <h2 id="myPhotos" class="page-title">{{ title }}</h2>
+{% block content %}
+  <h2 class="page-title">{{ title }}</h2>
   <p>
     This is where you will find photos that I post to my
     <a href="{{ flickrUrl }}">Flickr</a> account. There's no likes, followers or
     24 hour vanishing stories here.
   </p>
-{% endblock %} 
-
-{% block content %}
   <section class="photo-gallery">
     {% for photo in photos %}
       <a href="{{ flickrUrl }}/{{ photo.id }}">

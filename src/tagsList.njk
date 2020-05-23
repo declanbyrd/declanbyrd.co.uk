@@ -3,11 +3,9 @@ permalink: /tags/
 ---
 
 {% extends 'layouts/page.njk' %} 
-{% block header %}
-  <h1>Tags</h1>
-{% endblock %} 
 
 {% block content %}
+<h1>Tags</h1>
   <ul class="tag-list">
     {% for tag in collections.tagList %} 
       {% set tagUrl %}/tags/{{tag | slug}}/{% endset %}
