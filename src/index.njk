@@ -1,5 +1,6 @@
 {% extends 'layouts/page.njk' %} 
-{% block content %} {% set postslist =collections.posts | previewCollection(-7) %} 
+{% block content %} 
+{% set postslist =collections.posts | previewCollection(-7) %} 
 {% set postslistCounter = collections.posts | length %} 
 {% include "postsList.njk" %} 
 {% endblock %}
