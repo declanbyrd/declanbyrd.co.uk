@@ -23,6 +23,11 @@ body {
   font-family: 'Didact Gothic';
   margin: 0;
   grid-area: 3 / 2 / 4 / 3;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+  &.loaded {
+    opacity: 100%;
+  }
 }
 
 nav {
