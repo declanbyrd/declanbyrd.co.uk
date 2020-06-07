@@ -1,0 +1,20 @@
+{% extends 'layouts/page.njk' %}
+
+{% block content %}
+
+  <article class="photo-item">
+    <div class="flex-item photo">
+      <h1>
+        <a href="/photos">
+          Photos
+        </a>
+      </h1>
+      <time class="date" datetime="{{ page.date | htmlDateTime }}">{{page.date | dateDisplay}}</time>
+    </div>
+    {{ content | safe }}
+    {% for item in photo %}
+      <img src="{{item.url}}" alt="{{item.alt}}" class="photo large">
+    {% endfor %}
+  </article>
+
+{% endblock %}

@@ -23,6 +23,8 @@ module.exports = (eleventyConfig) => {
     require('./src/_filters/htmlDateTime.js')
   );
 
+  eleventyConfig.addFilter('year', require('./src/_filters/getYear.js'));
+
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter('previewCollection', (array, n) => {
     const preview = n < 0 ? array.slice(n) : array.slice(0, n);
@@ -33,6 +35,9 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addCollection('posts', (collection) =>
     collection.getFilteredByGlob('src/content/blog/*.md').reverse()
+  );
+  eleventyConfig.addCollection('photos', (collection) =>
+    collection.getFilteredByGlob('src/content/photos/*.md').reverse()
   );
 
   eleventyConfig.addPassthroughCopy('src/img');
