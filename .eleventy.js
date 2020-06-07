@@ -32,18 +32,19 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addCollection('tagList', require('./src/_filters/getTagList'));
 
   eleventyConfig.addCollection('posts', (collection) =>
-    collection.getFilteredByGlob('src/blog/*.md').reverse()
+    collection.getFilteredByGlob('src/content/blog/*.md').reverse()
   );
 
   eleventyConfig.addPassthroughCopy('src/img');
-  eleventyConfig.addPassthroughCopy('src/fonts');
-  eleventyConfig.addPassthroughCopy('src/scripts');
+  eleventyConfig.addPassthroughCopy('src/assets/fonts');
+  eleventyConfig.addPassthroughCopy('src/assets/icons');
+  eleventyConfig.addPassthroughCopy('src/assets/scripts');
 
   return {
     dir: {
       input: 'src',
       output: 'dist',
-      data: `_data`,
+      data: `data`,
     },
     templateFormats: ['njk', 'md'],
     htmlTemplateEngine: 'njk',
