@@ -10,8 +10,8 @@ permalink: /tags/
     {% for tag in collections.tagList %} 
       {% set tagUrl %}/tags/{{tag | slug}}/{% endset %}
       <li class="flex-icon">
-        <svg width="20" height="20" role="img" aria-labelled-by="labelTitle" focusable="false" class="icon label">
-          <title id="labelTitle">Label</title>
+        <svg width="20" height="20" role="img" aria-labelled-by="{{tag}}labelTitle" focusable="false" class="icon label">
+          <title id="{{tag}}labelTitle">Label</title>
           <use href="/assets/icons/icons.svg#label"></use>
         </svg>
         <a href="{{ tagUrl | url }}" class="tag">
