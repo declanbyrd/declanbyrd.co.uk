@@ -91,16 +91,6 @@ nav {
   }
 }
 
-.squared-photo {
-  @include squared-photo;
-  float: none;
-  margin: 0 auto;
-  @media screen and (min-width: $breakpoint-medium) {
-    float: left;
-    margin: 0 1rem 1rem 0;
-  }
-}
-
 // Page content
 
 main {
@@ -283,5 +273,22 @@ main {
     &.large {
       margin-bottom: 1rem;
     }
+  }
+}
+
+.flex-image {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $breakpoint-medium) {
+    flex-direction: row-reverse;
+  }
+  .squared-photo {
+    @include squared-photo;
+    margin: 0 auto;
+    @media screen and (min-width: $breakpoint-medium) {
+      margin-left: 3rem;
+    }
+    flex: 1 0 auto;
+    max-height: 15rem;
   }
 }

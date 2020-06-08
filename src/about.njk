@@ -10,26 +10,30 @@ eleventyNavigation:
 {% block content %}
 
     <h2>{{ title }}</h2>
-    <img
-      class="squared-photo"
-      src="/img/profile.jpg?nf_resize=fit&amp;h=800"
-      alt="Picture of Declan"
-    />
-    <p>
-      Hi, I'm Declan. I'm a final year BSc Software Engineering student at the
-      University of Portsmouth in the UK. When I'm not working towards my
-      degree, I enjoy spending time with my dog, understanding how things on the
-      web work and watching Brighton and Hove Albion Football Club.
-    </p>
+    <div class="flex-image">
+      <img
+        class="squared-photo"
+        src="/img/profile.jpg?nf_resize=fit&amp;h=800"
+        alt="White male with short brown hair wearing a blue and white horizontal stripe t-shirt"
+      />
+      <div>
+        <p>
+          Hi, I'm Declan. I'm a final year BSc Software Engineering student at the
+          University of Portsmouth in the UK. When I'm not working towards my
+          degree, I enjoy spending time with my dog, understanding how things on the
+          web work and watching Brighton and Hove Albion Football Club.
+        </p>
 
-  <p>
-    Most of my projects are written in HTML5, CSS and JavaScript or ES6 if you're
-    after specifics but I've also done some work with Python, Java and Lua while
-    at university. I think the best thing about developing for the web is that the
-    capabilities of what browsers can do is constantly changing. Whether that's
-    implementing augmented reality, powering feature phones or making it possible
-    for all major browsers to have the same features to make it easier for
-    developers.
-  </p>
+        <p>
+          Most of my projects are written in HTML5, CSS and JavaScript or ES6 if you're
+          after specifics but I've also done some work with Python, Java and Lua while
+          at university. I think the best thing about developing for the web is that the
+          capabilities of what browsers can do is constantly changing. Whether that's
+          implementing augmented reality, powering feature phones or making it possible
+          for all major browsers to have the same features to make it easier for
+          developers.
+        </p>
+      </div>
+    </div>
 
 {% endblock %}
