@@ -2,6 +2,10 @@
 @import 'utils/mixins';
 @import 'utils/syntax';
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   display: grid;
   grid-template-columns: $page-gutter-small 1fr $page-gutter-small;
