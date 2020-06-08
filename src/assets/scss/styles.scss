@@ -259,7 +259,7 @@ main {
 .flex-item {
   display: flex;
   align-items: baseline;
-  &.photo {
+  &.photo-page {
     h1 {
       padding-right: 1rem;
       margin-right: 1rem;
@@ -271,17 +271,14 @@ main {
   }
 }
 
-.photo-item {
-  .photo {
-    position: relative;
-    max-width: 100%;
-    @media screen and (min-width: $breakpoint-small) {
-      width: 70vw;
-      max-width: 55rem;
-    }
-    &.large {
-      margin-bottom: 1rem;
-    }
+.photo {
+  position: relative;
+  max-width: 100%;
+  @media screen and (min-width: $breakpoint-small) {
+    height: 50vh;
+  }
+  &.large {
+    margin-bottom: 1rem;
   }
 }
 
