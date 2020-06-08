@@ -21,7 +21,7 @@ eleventyNavigation:
           alt="{{ item.data.photo[0].alt }}"
         />
         {% if item.data.photo.length > 1 %}
-          <svg width="30" height="30" role="img" aria-labelled-by="{{item.url}}Title" focusable="false" class="icon gallery">
+          <svg width="30" height="30" role="img" aria-labelledby="{{item.url}}Title" focusable="false" class="icon gallery">
             <title id="{{item.url}}Title">Gallery</title>
             <use href="/assets/icons/icons.svg#gallery"></use>
           </svg>
