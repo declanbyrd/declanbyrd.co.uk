@@ -21,8 +21,8 @@
         {%- if collections.tagList.indexOf(tag) != -1 -%} 
           {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
             <span class="flex-icon" role="group">
-              <svg width="20" height="20" role="img" aria-labelledby="{{tag}}labelTitle" focusable="false" class="icon label">
-                <title id="{{tag}}labelTitle">Label</title>
+              <svg width="20" height="20" role="img" aria-labelledby="{{tag | slug}}LabelTitle" focusable="false" class="icon label">
+                <title id="{{tag | slug}}LabelTitle">Label</title>
                 <use href="/assets/icons/icons.svg#label"></use>
               </svg>
               <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
