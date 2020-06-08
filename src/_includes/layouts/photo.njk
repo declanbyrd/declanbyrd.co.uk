@@ -13,7 +13,7 @@
     </div>
     {{ content | safe }}
     {% for item in photo %}
-      <img src="{{item.url}}" alt="{{item.alt}}" class="photo large">
+      <img src="{{item.url}}?nf_resize=fit&amp;h=800" alt="{{item.alt}}" class="photo large">
     {% endfor %}
   </article>
 

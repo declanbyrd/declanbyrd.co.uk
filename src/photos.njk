@@ -17,7 +17,7 @@ eleventyNavigation:
         <img
           loading="lazy"
           class="photo-item"
-          src="{{ item.data.photo[0].url }}"
+          src="{{ item.data.photo[0].url }}?nf_resize=fit&amp;h=800"
           alt="{{ item.data.photo[0].alt }}"
         />
         {% if item.data.photo.length > 1 %}
