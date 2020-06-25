@@ -62,7 +62,7 @@ body {
     align-items: center;
     .nav-item {
       flex: 0 1 6rem;
-      text-align: center;
+      text-align: left;
       @include footer-nav-links;
     }
   }
