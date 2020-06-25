@@ -4,7 +4,7 @@ description: I stumbled upon an invite only coding challenge created by Google t
 tldr: I stumbled upon an invite only coding challenge created by Google to hire developers. I did one challenge, in a language I haven't used in a few years, then realized I should do the rest once I no longer have university deadlines.
 blogTopic: Rabbit Hole
 tags: ['Python', 'Code Challenge']
-date: Created
+date: 2020-04-09
 ---
 
 > TLDR: {{tldr}}
