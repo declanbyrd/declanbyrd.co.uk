@@ -8,17 +8,7 @@
 
 html {
   display: grid;
-  grid-template-columns: $page-gutter-small 1fr $page-gutter-small;
-  @media screen and (min-width: $breakpoint-small) {
-    grid-template-columns: $page-gutter 1fr $page-gutter;
-  }
-  font-size: 18px;
-  @media screen and (min-width: $breakpoint-small) {
-    font-size: 18px;
-  }
-  @media screen and (min-width: $breakpoint-medium) {
-    font-size: 20px;
-  }
+  grid-template-columns: [leftgutter] $page-gutter [main] auto [rightgutter] $page-gutter;
 }
 
 body {
@@ -50,23 +40,6 @@ nav {
       margin: 0 0.95rem 0 0;
       a {
         @include links;
-      }
-    }
-    .social-links {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      a {
-        display: inline-block;
-        text-decoration: none;
-        width: 1.75rem;
-        height: 1.75rem;
-        margin-left: 0.5rem;
-        svg {
-          &:hover {
-            opacity: 60%;
-          }
-        }
       }
     }
   }
@@ -140,10 +113,7 @@ main {
       img {
         display: block;
         margin: 0 auto;
-        max-width: 80vw;
-        @media screen and (min-width: $breakpoint-small) {
-          max-width: 70vw;
-        }
+        max-width: 70vw;
       }
     }
     blockquote {
@@ -201,16 +171,9 @@ main {
   list-style: none;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-auto-rows: 15rem;
 
-  @media screen and (min-width: $breakpoint-small) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media screen and (min-width: $breakpoint-medium) {
-    grid-template-columns: repeat(3, 1fr);
-  }
   li {
     position: relative;
     display: flex;
@@ -292,5 +255,23 @@ main {
     }
     flex: 1 0 auto;
     max-height: 15rem;
+  }
+}
+
+.social-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  a {
+    display: inline-block;
+    text-decoration: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-left: 0.5rem;
+    svg {
+      &:hover {
+        opacity: 60%;
+      }
+    }
   }
 }
