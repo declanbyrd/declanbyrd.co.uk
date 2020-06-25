@@ -6,7 +6,7 @@ permalink: /tags/
 
 {% block content %}
 <h2 class="page-title">Tags</h2>
-<p> A complete list of tags that are associated with entries in the <a href="/blog">Journal</p>
+<p> A complete list of tags that are associated with entries in the <a href="/journal">Journal</p>
   <ul class="tag-list">
     {% for tag in collections.tagList %} 
       {% set tagUrl %}/tags/{{tag | slug}}/{% endset %}
