@@ -39,9 +39,6 @@ pre[class*='language-'] {
   word-wrap: normal;
   white-space: pre;
   max-width: 80vw;
-  @media screen and (min-width: variables.$breakpoint-small) {
-    max-width: 65vw;
-  }
 }
 
 :not(pre) > code[class*='language-'],

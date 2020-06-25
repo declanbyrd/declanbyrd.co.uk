@@ -14,12 +14,10 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-navigation" role="navigation">
-        {% include '_navigation.njk' %} {% include '_social-links.njk' %}
-      </div>
       <h1 class="logo">
         <a href="{{ '/' | url }}">{{ metadata.title }}</a>
       </h1>
+        {% include '_navigation.njk' %} 
     </header>
 
       {% block page %}
@@ -27,8 +25,8 @@
       {% endblock %}
     
     <footer class="page-footer">
-      Made by Declan with <a href="https://www.11ty.dev/">Eleventy</a> and
-      hosted on <a href="https://www.netlify.com/">Netlify</a>.
+      {% include '_footer-navigation.njk' %}
+      {% include '_social-links.njk' %}
       <script type="text/javascript" src="/assets/scripts/animation.js" defer></script>
     </footer>
   </body>

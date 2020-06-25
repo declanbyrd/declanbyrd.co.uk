@@ -11,22 +11,14 @@ $primary-text: #ffffff;
 $secondary-text: #000000;
 
 // Spacing
-$page-gutter: 15vw;
-$page-gutter-small: 5vw;
-
-//Breakpoints
-$breakpoint-x-small: 400px;
-$breakpoint-small: 600px;
-$breakpoint-medium: 960px;
-$breakpoint-large: 1280px;
-$breakpoint-x-large: 1920px;
+$page-gutter: 7.5vw;
 
 // Typography
 @font-face {
   font-family: 'Didact Gothic';
   src: url('/assets/fonts/didactgothic-regular-webfont.woff2') format('woff2'),
     url('/assets/fonts/didactgothic-regular-webfont.woff') format('woff');
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -35,7 +27,7 @@ $breakpoint-x-large: 1920px;
   font-family: 'PT Sans';
   src: url('/assets/fonts/ptsans-regular-webfont.woff2') format('woff2'),
     url('/assets/fonts/ptsans-regular-webfont.woff') format('woff');
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }

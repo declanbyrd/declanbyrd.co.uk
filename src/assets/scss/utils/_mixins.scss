@@ -1,26 +1,69 @@
 @use 'variables';
 
-@mixin logo {
+@mixin header-links {
   font-family: 'PT Sans', sans-serif;
-  font-size: 3rem;
   letter-spacing: -0.031rem;
-  color: variables.$primary-text;
-  text-decoration: underline solid variables.$secondary;
-  @media screen and (min-width: variables.$breakpoint-small) {
-    font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.25rem;
+  font-size: min(max(1.25rem, 4vw), 2rem);
+  font-size: clamp(1.25rem, 4vw, 2rem);
+  a {
+    color: variables.$primary-text;
+    text-decoration: underline solid variables.$secondary;
+  }
+}
+
+@mixin header-nav-links {
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: -0.031rem;
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.25rem;
+  font-size: min(max(1.25rem, 3vw), 1.5rem);
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  a {
+    color: variables.$primary-text;
+    text-decoration: underline solid variables.$secondary;
+  }
+}
+
+@mixin footer-nav-links {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  font-size: 1rem;
+  font-size: min(max(1rem, 2vw), 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  a {
+    color: variables.$primary-text;
+    text-decoration: underline solid variables.$secondary;
   }
 }
 
 @mixin page-titles {
   font-family: 'Pt Sans', sans-serif;
-  font-size: 2.125rem;
+  font-weight: 400;
+  font-size: 1.75rem;
+  font-size: min(max(1.75rem, 4vw), 2.75rem);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  color: variables.$primary-text;
+  text-decoration: underline solid variables.$secondary;
+}
+
+@mixin blog-preview-titles {
+  font-family: 'Pt Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-size: min(max(1.5rem, 4vw), 2.25rem);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
   color: variables.$primary-text;
   text-decoration: underline solid variables.$secondary;
 }
 
 @mixin blog-topic-date {
   font-family: 'Didact Gothic', sans-serif;
-  font-size: 0.875rem;
+  font-size: 1rem;
   letter-spacing: 0.025rem;
   color: variables.$secondary-light;
 }

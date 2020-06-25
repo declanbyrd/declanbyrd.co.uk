@@ -5,7 +5,8 @@ permalink: /tags/
 {% extends 'layouts/page.njk' %} 
 
 {% block content %}
-<h2>Tags</h2>
+<h2 class="page-title">Tags</h2>
+<p> A complete list of tags that are associated with entries in the <a href="/journal">Journal</p>
   <ul class="tag-list">
     {% for tag in collections.tagList %} 
       {% set tagUrl %}/tags/{{tag | slug}}/{% endset %}
