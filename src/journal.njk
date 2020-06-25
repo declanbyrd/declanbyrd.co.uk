@@ -1,0 +1,23 @@
+---
+title: Journal
+description: A collection of things I've done and things that I want to remember.
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+eleventyNavigation:
+  key: Journal
+  order: 2
+---
+
+{% extends 'layouts/page.njk' %} 
+
+{% block content %}
+  <h2 class="page-title">{{ title }}</h2>
+  <p>{{ description }}</p>
+  <div class="post-preview-grid top-margin">
+    {% set postslist = posts %} 
+    {% set postslistCounter = collections.posts | length %} 
+    {% include "postsList.njk" %}
+  </div>
+{% endblock %}

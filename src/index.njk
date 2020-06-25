@@ -1,6 +1,21 @@
-{% extends 'layouts/page.njk' %} 
-{% block content %} 
-{% set postslist =collections.posts | previewCollection(-7) %} 
-{% set postslistCounter = collections.posts | length %} 
-{% include "postsList.njk" %} 
+{% extends 'layouts/page.njk' %}
+{% block content %}
+
+<h1 class="intro small">Hello, I'm Declan.</h1>
+<p class="intro headline">I'm a Software Engineering graduate based near Brighton, England.</p>
+
+<p>
+  
+</p>
+
+<section class="journal-preview">
+  <h2 class="heading">Latest Journal Entries:</h2>
+
+  <div class="post-preview-grid">
+    {% set postslist =collections.posts | previewCollection(-7) %}
+    {% set postslistCounter = collections.posts | length %}
+    {% include "postsList.njk" %}
+  </div>
+</section>
+
 {% endblock %}

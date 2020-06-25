@@ -6,49 +6,41 @@
   box-sizing: border-box;
 }
 
-html {
-  display: grid;
-  grid-template-columns: [leftgutter] $page-gutter [main] auto [rightgutter] $page-gutter;
-}
-
 body {
   background-color: $primary;
   color: $primary-text;
   font-family: 'Didact Gothic';
-  margin: 0;
-  grid-area: 3 / 2 / 4 / 3;
-}
-
-nav {
-  grid-area: 1 / 2 / 2 / 3;
-  ul {
-    display: flex;
-    padding: 0;
-  }
+  margin: 0 $page-gutter;
+  font-size: 1rem;
+  font-size: min(max(1rem, 2vw), 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 // Page Heading
 
 .page-header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  margin: 1rem 0;
   .page-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    justify-content: flex-end;
+    align-items: flex-end;
     .nav-item {
-      list-style: none;
-      margin: 0 0.95rem 0 0;
-      a {
-        @include links;
-      }
+      flex: 0 1 6rem;
+      text-align: center;
+      @include header-nav-links;
+      font-weight: 300;
     }
   }
   .logo {
-    grid-area: 2 / 2 / 3 / 3;
-    margin: 0 0 2rem 0;
-    a {
-      @include logo;
-    }
+    @include header-links;
+    flex: 0 3 4rem;
+    margin: 0;
   }
 }
 
@@ -58,17 +50,27 @@ nav {
   margin: 2rem 0;
   border-top: 0.2rem solid $secondary;
   padding-top: 1rem;
-  a {
-    @include links;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  .footer-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .nav-item {
+      flex: 0 1 6rem;
+      text-align: center;
+      @include footer-nav-links;
+    }
   }
 }
 
 // Page content
 
 main {
-  h2 {
-    @include page-titles;
-  }
   p {
     line-height: 1.5;
   }
@@ -91,8 +93,13 @@ main {
   // Blog Posts
 
   .blog-post {
+    margin: 3rem 0;
     .title {
-      margin: 0.2rem 0 1rem 0;
+      margin: 0 0 1rem 0;
+      @include page-titles;
+    }
+    .post-tags {
+      margin: 0 0 3rem 0;
     }
     .data {
       @include blog-topic-date;
@@ -132,11 +139,10 @@ main {
 .post-preview {
   display: flex;
   flex-direction: column;
-  margin: 3rem 0;
   .post-title {
     margin: 0;
     a {
-      @include page-titles;
+      @include blog-preview-titles;
     }
   }
   .post-data {
@@ -231,10 +237,10 @@ main {
 
 .photo {
   position: relative;
-  max-width: 100%;
-  @media screen and (min-width: $breakpoint-small) {
-    height: 50vh;
-  }
+  width: 100%;
+  height: 100%;
+  max-height: 60vw;
+
   &.large {
     margin-bottom: 1rem;
     display: block;
@@ -244,15 +250,11 @@ main {
 .flex-image {
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: $breakpoint-medium) {
-    flex-direction: row-reverse;
-  }
+
   .squared-photo {
     @include squared-photo;
     margin: 0 auto;
-    @media screen and (min-width: $breakpoint-medium) {
-      margin-left: 3rem;
-    }
+
     flex: 1 0 auto;
     max-height: 15rem;
   }
@@ -260,6 +262,7 @@ main {
 
 .social-links {
   display: flex;
+  justify-content: flex-end;
   list-style: none;
   padding: 0;
   a {
@@ -273,5 +276,72 @@ main {
         opacity: 60%;
       }
     }
+  }
+}
+
+.intro {
+  &.small {
+    font-size: 1.125rem;
+    font-size: min(max(2rem, 3vw), 1.125rem);
+    font-size: clamp(1.125rem, 3vw, 2rem);
+    margin: 4rem 0 0 0;
+    letter-spacing: 0.025rem;
+    line-height: 1.25;
+    font-weight: 300;
+  }
+  &.headline {
+    font-size: 2.25rem;
+    font-size: min(max(4rem, 6vw), 2.25rem);
+    font-size: clamp(2.25rem, 6vw, 4rem);
+    line-height: 1.25;
+    margin: 0;
+    font-weight: 300;
+  }
+}
+
+.journal-preview {
+  margin: 4rem 0 2rem 0;
+
+  .heading {
+    font-weight: 500;
+    margin: 0 0 2rem 0;
+    text-decoration: underline solid $secondary;
+  }
+}
+
+.post-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 3rem;
+  &.top-margin {
+    margin: 3rem 0;
+  }
+}
+
+.page-title {
+  @include page-titles;
+}
+
+.colophon {
+  line-height: 2;
+  h1 {
+    @include page-titles;
+  }
+  blockquote {
+    background-color: $primary-light;
+    border-left: 0.625rem solid $secondary;
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem 1rem 0.625rem;
+    p {
+      display: inline;
+      margin: 0;
+    }
+  }
+  code {
+    background-color: $primary-light;
+    color: $secondary-light;
+    padding: 0 0.2rem;
+    font-weight: 400;
+    border-radius: 0.2rem;
   }
 }

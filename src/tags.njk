@@ -10,10 +10,17 @@ permalink: /tags/{{ tag | slug }}/
 {% set postslist = collections[ tag ] %} 
 
 {% block content %} 
-<h2>Posts tagged with: “{{ tag }}”</h2>
-  <p>There are {{ postslist.length }} posts about {{ tag }}.</p>
+<h2 class="page-title" >Entries about: “{{ tag }}”</h2>
+  {% if postslist.length > 1 %}
+    <p>There are {{ postslist.length }} journal entries about {{ tag }}:</p>
+  {% endif %}
+  {% if postslist.length == 1 %}
+    <p>There is {{ postslist.length }} journal entry about {{ tag }}:</p>
+  {% endif %}
+  <div class="post-preview-grid top-margin">
+  {%include "postsList.njk" %} 
+  </div>
   <p>
     See <a href="{{ '/tags/' | url }}">more tags</a> that I have written about.
   </p>
-  {%include "postsList.njk" %} 
 {% endblock %}

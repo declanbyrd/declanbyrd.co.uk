@@ -34,7 +34,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addCollection('tagList', require('./src/_filters/getTagList'));
 
   eleventyConfig.addCollection('posts', (collection) =>
-    collection.getFilteredByGlob('src/content/blog/*.md').reverse()
+    collection.getFilteredByGlob('src/content/journal/*.md').reverse()
   );
   eleventyConfig.addCollection('photos', (collection) =>
     collection.getFilteredByGlob('src/content/photos/*.md').reverse()
