@@ -49,7 +49,7 @@ module.exports = (eleventyConfig) => {
     dir: {
       input: 'src',
       output: 'dist',
-      data: `data`,
+      data: 'data',
     },
     templateFormats: ['njk', 'md'],
     htmlTemplateEngine: 'njk',
