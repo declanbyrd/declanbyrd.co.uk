@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/assets/fonts/didactgothic-regular-webfont.woff2">
-    <link rel="preload" as="font" type="font/woff" crossorigin="" href="/assets/fonts/didactgothic-regular-webfont.woff">
-    <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/assets/fonts/ptsans-regular-webfont.woff2">
-    <link rel="preload" as="font" type="font/woff" crossorigin="" href="/assets/fonts/ptsans-regular-webfont.woff">
-    <title>{{renderData.title or title or metadata.title}}</title>
-    <meta
-      name="Description"
-      content="{{renderData.description or description or metadata.description}}"
-    />
-    <style>
-      {% include "css/styles.css" %}
-    </style>
-  </head>
-  <body>
-    <header class="page-header">
-      <h1 class="logo">
-        <a href="{{ '/' | url }}">{{ metadata.title }}</a>
-      </h1>
-        {% include '_navigation.njk' %} 
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/assets/fonts/didactgothic-regular-webfont.woff2">
+  <link rel="preload" as="font" type="font/woff" crossorigin="" href="/assets/fonts/didactgothic-regular-webfont.woff">
+  <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/assets/fonts/ptsans-regular-webfont.woff2">
+  <link rel="preload" as="font" type="font/woff" crossorigin="" href="/assets/fonts/ptsans-regular-webfont.woff">
+  <link rel="shortcut icon" href="/img/192.svg" type="image/x-icon">
+  <title>{{renderData.title or title or metadata.title}}</title>
+  <meta name="Description" content="{{renderData.description or description or metadata.description}}" />
+  <style>
+    {% include "css/styles.css" %}
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="logo">
+      <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+    </h1>
+    {% include '_navigation.njk' %}
+  </header>
 
-      {% block page %}
-        {{content | safe}}
-      {% endblock %}
-    
-    <footer class="page-footer">
-      {% include '_footer-navigation.njk' %}
-      {% include '_social-links.njk' %}
-      <script type="text/javascript" src="/assets/scripts/animation.js" defer></script>
-    </footer>
-  </body>
+  {% block page %}
+    {{content | safe}}
+  {% endblock %}
+
+  <footer class="page-footer">
+    {% include '_footer-navigation.njk' %}
+    {% include '_social-links.njk' %}
+    <script type="text/javascript" src="/assets/scripts/main.js" defer></script>
+  </footer>
+</body>
 </html>
