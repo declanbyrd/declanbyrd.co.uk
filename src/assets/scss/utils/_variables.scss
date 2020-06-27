@@ -16,7 +16,8 @@ $page-gutter: 7.5vw;
 // Typography
 @font-face {
   font-family: 'Didact Gothic';
-  src: url('/assets/fonts/didactgothic-regular-webfont.woff2') format('woff2'),
+  src: local('Didact Gothic'),
+    url('/assets/fonts/didactgothic-regular-webfont.woff2') format('woff2'),
     url('/assets/fonts/didactgothic-regular-webfont.woff') format('woff');
   font-weight: 300;
   font-style: normal;
@@ -25,7 +26,8 @@ $page-gutter: 7.5vw;
 
 @font-face {
   font-family: 'PT Sans';
-  src: url('/assets/fonts/ptsans-regular-webfont.woff2') format('woff2'),
+  src: local('PT Sans'),
+    url('/assets/fonts/ptsans-regular-webfont.woff2') format('woff2'),
     url('/assets/fonts/ptsans-regular-webfont.woff') format('woff');
   font-weight: 300;
   font-style: normal;
