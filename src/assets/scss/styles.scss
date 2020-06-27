@@ -192,7 +192,7 @@ main {
     opacity: 0;
     transition: opacity 0.75s ease-in;
     &.loaded {
-      opacity: 100%;
+      opacity: 1;
     }
   }
 }
