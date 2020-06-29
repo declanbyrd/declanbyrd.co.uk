@@ -344,3 +344,12 @@ main {
     border-radius: 0.2rem;
   }
 }
+
+.not-found-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-width: 50vh;
+  border-radius: 1rem;
+  margin: 3rem auto;
+}
