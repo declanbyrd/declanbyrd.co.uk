@@ -11,6 +11,9 @@
   a {
     color: variables.$primary-text;
     text-decoration: underline solid variables.$secondary;
+    &:hover {
+      opacity: 60%;
+    }
   }
 }
 
@@ -25,6 +28,9 @@
   a {
     color: variables.$primary-text;
     text-decoration: underline solid variables.$secondary;
+    &:hover {
+      opacity: 60%;
+    }
   }
 }
 
@@ -38,6 +44,9 @@
   a {
     color: variables.$primary-text;
     text-decoration: underline solid variables.$secondary;
+    &:hover {
+      opacity: 60%;
+    }
   }
 }
 

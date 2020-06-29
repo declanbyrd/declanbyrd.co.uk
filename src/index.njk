@@ -16,7 +16,7 @@
   <h2 class="heading">Latest Journal Entries:</h2>
 
   <div class="post-preview-grid">
-    {% set postslist =collections.posts | previewCollection(-2) %}
+    {% set postslist =collections.posts | previewCollection(3) %}
     {% set postslistCounter = collections.posts | length %}
     {% include "postsList.njk" %}
   </div>
