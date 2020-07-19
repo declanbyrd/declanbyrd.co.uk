@@ -6,29 +6,26 @@ eleventyNavigation:
   order: 3
 ---
 
-{% extends 'layouts/page.njk' %} 
+{% extends 'layouts/base.njk' %}
 
 {% block content %}
-  <h2 class="page-title">{{ title }}</h2>
-  <ul class="photo-gallery">
-    {% for item in collections.photos %}
-     <li>
-       <a href="{{item.url}}">
-        <img
-          loading="lazy"
-          class="photo-item"
-          src="{{ item.data.photo[0].url }}?nf_resize=fit&amp;h=500"
-          alt="{{ item.data.photo[0].alt }}"
-        />
-        {% if item.data.photo.length > 1 %}
-          <svg width="30" height="30" role="img" aria-labelledby="{{item.url}}Title" focusable="false" class="icon gallery">
-            <title id="{{item.url}}Title">Gallery</title>
-            <use href="/assets/icons/icons.svg#gallery"></use>
-          </svg>
-        {% endif %}
-        <span class="hidden">View the photo of {{item.data.photo[0].alt}}</span>
-      </a>
-     </li>
-    {% endfor %}
-  </ul>
+<h2 class="page-title">{{ title }}</h2>
+<ul class="[ autofit-grid ] [ photos ]">
+  {% for item in collections.photos %}
+  <li>
+    <a href="{{item.url}}">
+      <img loading="lazy" class="[ photo-item ]" src="{{ item.data.photo[0].url }}?nf_resize=fit&amp;h=500"
+        alt="{{ item.data.photo[0].alt }}" />
+      {% if item.data.photo.length > 1 %}
+      <svg width="30" height="30" role="img" aria-labelledby="{{item.url}}Title" focusable="false"
+        class="[ gallery-icon ]">
+        <title id="{{item.url}}Title">Gallery</title>
+        <use href="/assets/icons/icons.svg#gallery"></use>
+      </svg>
+      {% endif %}
+      <span class="[ visual-hidden ]">View the photo of {{item.data.photo[0].alt}}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
 {% endblock %}

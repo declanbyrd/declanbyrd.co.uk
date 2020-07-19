@@ -4,13 +4,8 @@
   "description": "My homepage",
   "scripts": {
     "debug": "set DEBUG=Eleventy* & eleventy",
-    "prebuild": "npm run sass",
-    "build": "npm run sass & npx eleventy",
-    "build:eleventy": "npx eleventy",
-    "sass": "sass --style=compressed --no-source-map src/assets/scss/styles.scss src/_includes/css/styles.css",
-    "watch:eleventy": "eleventy --serve",
-    "watch:sass": "npm run sass -- --watch",
-    "start": "npm-run-all sass --parallel watch:*"
+    "build": "npx eleventy",
+    "start": "eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -28,17 +23,13 @@
   "homepage": "https://github.com/declanbyrd/declanbyrd.co.uk#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "@11ty/eleventy-navigation": "^0.1.5",
+    "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "node-fetch": "^2.6.0",
-    "npm-run-all": "^4.1.5"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
   },
   "dependencies": {
-    "axios": "^0.19.2",
     "dotenv": "^8.2.0",
-    "luxon": "^1.24.1",
-    "sass": "^1.26.5"
+    "luxon": "^1.24.1"
   }
 }
