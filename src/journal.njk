@@ -10,14 +10,14 @@ eleventyNavigation:
   order: 2
 ---
 
-{% extends 'layouts/page.njk' %} 
+{% extends 'layouts/base.njk' %}
 
 {% block content %}
-  <h2 class="page-title">{{ title }}</h2>
-  <p>{{ description }}</p>
-  <div class="post-preview-grid top-margin">
-    {% set postslist = posts %} 
-    {% set postslistCounter = collections.posts | length %} 
-    {% include "postsList.njk" %}
-  </div>
+<h2 class="[ page-title ]">{{ title }}</h2>
+<p>{{ description }}</p>
+<div class="[ autofit-grid ]">
+  {% set postslist = posts %}
+  {% set postslistCounter = collections.posts | length %}
+  {% include "postsList.njk" %}
+</div>
 {% endblock %}

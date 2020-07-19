@@ -1,20 +1,20 @@
-{% extends 'layouts/page.njk' %}
+{% extends 'layouts/base.njk' %}
 
 {% block content %}
 
-  <article>
-    <div class="flex-item photo-page">
-      <h1>
-        <a href="/photos">
-          Photos
-        </a>
-      </h1>
-      <time class="date" datetime="{{ page.date | htmlDateTime }}">{{page.date | dateDisplay}}</time>
-    </div>
-    {{ content | safe }}
-    {% for item in photo %}
-      <img src="{{item.url}}?nf_resize=fit&amp;h=600" alt="{{item.alt}}" class="photo large">
-    {% endfor %}
-  </article>
+<article>
+  <div class="[ flex-row ]">
+    <h1>
+      <a href="/photos">
+        Photos
+      </a>
+    </h1>
+    <time class="[ invert ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | dateDisplay}}</time>
+  </div>
+  {{ content | safe }}
+  {% for item in photo %}
+  <img src="{{item.url}}?nf_resize=fit&amp;h=600" alt="{{item.alt}}" class="[ large-photo ]">
+  {% endfor %}
+</article>
 
 {% endblock %}

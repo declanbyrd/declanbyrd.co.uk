@@ -1,17 +1,15 @@
-/**
- * atom-dark theme for `prism.js`
- * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
- * @author Joe Gibson (@gibsjose)
- */
+/** 
 
-@use 'variables';
+Code Theme for blog posts
+
+**/
 
 code[class*='language-'],
 pre[class*='language-'] {
   color: #c5c8c6;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
-  font-size: 0.9rem;
+  font-size: min(calc(0.75rem + 1vw), 1.125rem);
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -41,15 +39,14 @@ pre[class*='language-'] {
   max-width: 80vw;
 }
 
-:not(pre) > code[class*='language-'],
+*:not(pre) > code,
 pre[class*='language-'] {
-  background: #1d1f21;
+  background: hsl(var(--background-hue), 10%, 20%);
 }
 
-/* Inline code */
-:not(pre) > code[class*='language-'] {
-  padding: 0.1em;
-  border-radius: 0.3em;
+p > code {
+  background: none;
+  padding: 0 0.125rem;
 }
 
 .token.comment,
