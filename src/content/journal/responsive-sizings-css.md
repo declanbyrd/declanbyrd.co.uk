@@ -65,8 +65,11 @@ As there are still some browsers that do not support the `min()` and `calc()` fu
   font-size: min(calc(16px + 1vw), 48px);
   font-size: clamp(16px, 2vw, 48px);
 }
+```
 
-/* rem and em units can also be used */
+The unit values can also be changed to use rem and em, as shown below.
+
+```css
 .heading {
   font-size: 1rem;
   font-size: min(calc(1rem + 1vw), 3rem);
