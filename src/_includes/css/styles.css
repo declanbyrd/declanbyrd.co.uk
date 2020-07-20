@@ -252,7 +252,7 @@ section {
   }
 }
 
-.photo-item + .gallery-icon {
+.photo-container + .gallery-icon {
   position: absolute;
   bottom: 0.75rem;
   right: 0.5rem;

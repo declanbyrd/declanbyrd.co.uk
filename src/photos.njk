@@ -2,8 +2,8 @@
 title: Photos
 description: Photos I've taken!
 eleventyNavigation:
-  key: Photos
-  order: 3
+key: Photos
+order: 3
 ---
 
 {% extends 'layouts/base.njk' %}
@@ -14,8 +14,14 @@ eleventyNavigation:
   {% for item in collections.photos %}
   <li>
     <a href="{{item.url}}">
-      <img loading="lazy" class="[ photo-item ]" src="{{ item.data.photo[0].url }}?nf_resize=fit&amp;h=500"
-        alt="{{ item.data.photo[0].alt }}" />
+
+      <picture class="[ photo-container ]">
+        <source media="(max-width: 480px)" srcset="{{ item.data.photo[0].url }}?nf_resize=fit&amp;w=500">
+        <source media="(max-width: 750px)" srcset="{{ item.data.photo[0].url }}?nf_resize=fit&amp;h=300">
+        <source media="(min-width: 751px)" srcset="{{ item.data.photo[0].url }}?nf_resize=fit&amp;h=500">
+        <img loading="lazy" src="{{ item.data.photo[0].url }}?nf_resize=fit&amp;h=500"
+          alt="{{ item.data.photo[0].alt }}" class="[ photo-item ]" />
+      </picture>
       {% if item.data.photo.length > 1 %}
       <svg width="30" height="30" role="img" aria-labelledby="{{item.url}}Title" focusable="false"
         class="[ gallery-icon ]">
