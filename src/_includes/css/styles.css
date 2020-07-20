@@ -215,7 +215,7 @@ section {
 
 .autofit-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1rem;
   margin: 2rem 0;
   margin: min(calc(2rem + 1vw), 2.5rem) 0;
@@ -223,6 +223,7 @@ section {
 
 .autofit-grid.photos {
   list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-auto-rows: 15rem;
   padding: 0;
 }
