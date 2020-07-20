@@ -5,21 +5,22 @@ permalink: /tags/
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-<h2 class="[ page-title ]">Tags</h2>
-<p> A complete list of tags that are associated with entries in the <a href="/journal">Journal</a></p>
-<ul class="[ vertical-list ]">
-  {% for tag in collections.tagList %}
-  {% set tagUrl %}/tags/{{tag | slug}}/{% endset %}
-  <li class="[ tag ]">
-    <svg width="20" height="20" role="img" aria-labelledby="{{tag}}labelTitle" focusable="false" class="icon label">
-      <title id="{{tag}}labelTitle">Label</title>
-      <use href="/assets/icons/icons.svg#label"></use>
-    </svg>
-    <a href="{{ tagUrl | url }}" class="[ hover-link ] [ invert ]">
-      {{ tag }}
-    </a>
+  <h2 class="[ page-title ]">Tags</h2>
+  <p> A complete list of tags that are associated with entries in the <a href="/journal">Journal</a>
+  </p>
+  <ul class="[ vertical-list ]">
+    {% for tag in collections.tagList %}
+      {% set tagUrl %}/tags/{{tag | slug}}/{% endset %}
+      <li class="[ tag ]">
+        <svg width="20" height="20" role="img" aria-labelledby="{{tag}}labelTitle" focusable="false" class="icon label">
+          <title id="{{tag}}labelTitle">Label</title>
+          <use href="/assets/icons/icons.svg#label"></use>
+        </svg>
+        <a href="{{ tagUrl | url }}" class="[ hover-link ]">
+          {{ tag }}
+        </a>
     ( {{collections[tag].length}} )
   </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
 {% endblock %}

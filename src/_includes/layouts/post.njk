@@ -7,7 +7,7 @@
   <article class="[ markdown-container ]">
     <span class="data">
       {{ blogTopic }}
-      <time class="[ invert ] [ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | dateDisplay}}</time>
+      <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | dateDisplay}}</time>
     </span>
     <h2 class="[ post-title ]">{{ title }}</h2>
     <ul class="[ horizontal-list ]">
@@ -19,7 +19,7 @@
               <title id="{{tag}}labelTitle">Label</title>
               <use href="/assets/icons/icons.svg#label"></use>
             </svg>
-            <a href="{{ tagUrl | url }}" class="[ hover-link ] [ invert ]">{{ tag }}</a>
+            <a href="{{ tagUrl | url }}" class="[ hover-link ]">{{ tag }}</a>
           </li>
         {%- endif -%}
       {% endfor %}

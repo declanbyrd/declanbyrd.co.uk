@@ -8,9 +8,15 @@
   --background-dark: hsl(var(--background-hue), 5%, 15%);
   --text: hsl(var(--base-hue), 100%, 90%);
 
-  --body-font-size: min(calc(0.75rem + 1vw), 1.25rem);
-  --nav-font-size: min(calc(0.75rem + 1vw), 1.25rem);
-  --heading-font-size: min(calc(1.5rem + 1vw), 4rem);
+  --base-font-size: 1rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.5rem;
+
+  --resp-base-font-size: min(calc(var(--base-font-size) + 1vw), 1.25rem);
+  --resp-h1-font-size: min(calc(var(--h1-font-size) + 1vw), 4rem);
+  --resp-h2-font-size: min(calc(var(--h2-font-size) + 1vw), 3rem);
+  --resp-h3-font-size: min(calc(var(--h3-font-size) + 1vw), 2rem);
 }
 
 @font-face {
@@ -53,6 +59,11 @@ p {
 
 a {
   color: var(--secondary-colour);
+}
+
+section {
+  margin-bottom: 3rem;
+  margin-bottom: min(calc(3rem + 1vw), 6rem);
 }
 
 .skip-link {
@@ -102,7 +113,8 @@ a {
 
 .marquee-section > h1 {
   flex-basis: calc(12ch + 2rem);
-  font-size: var(--heading-font-size);
+  font-size: var(--h1-font-size);
+  font-size: var(--resp-h1-font-size);
 }
 
 .marquee-section .hover-link {
@@ -110,7 +122,8 @@ a {
 }
 
 .marquee-section > nav {
-  font-size: var(--nav-font-size);
+  font-size: var(--base-font-size);
+  font-size: min(calc(1rem + 1vw), 1.25rem);
 }
 
 .hover-link {
@@ -119,32 +132,13 @@ a {
   text-decoration: none;
 }
 
-.hover-link.invert {
-  position: relative;
-  color: var(--text);
-  text-decoration: none;
-}
-
 .hover-link::before {
   content: '';
   position: absolute;
-  width: 100%;
+  width: calc(100% - 1rem);
   height: 0.125rem;
-  bottom: -0.125rem;
-  left: 0;
-  background: var(--secondary-colour);
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: transform 300ms ease-in-out, visibility 300ms ease-in-out;
-}
-
-.hover-link.invert::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 0.125rem;
-  bottom: -0.125rem;
-  left: 0;
+  bottom: 0.125rem;
+  left: 0.5rem;
   background: var(--secondary-colour);
   visibility: hidden;
   transform: scaleX(0);
@@ -164,10 +158,10 @@ a {
 .hover-link.active::before {
   content: '';
   position: absolute;
-  width: 100%;
+  width: calc(100% - 1rem);
   height: 0.125rem;
-  bottom: -0.125rem;
-  left: 0;
+  bottom: 0.125rem;
+  left: 0.5rem;
   visibility: visible;
   transform: scaleX(1);
   background: var(--secondary-colour);
@@ -201,10 +195,12 @@ a {
 }
 
 .content-body {
+  padding: 1rem;
   padding: min(calc(1rem + 1vw), 2.5rem) 5vw;
   color: var(--text);
   background: var(--background-dark);
-  font-size: var(--body-font-size);
+  font-size: var(--base-font-size);
+  font-size: min(calc(1rem + 1vw), 1.25rem);
   line-height: 1.25;
 }
 
@@ -221,6 +217,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1rem;
+  margin: 2rem 0;
   margin: min(calc(2rem + 1vw), 2.5rem) 0;
 }
 
@@ -266,7 +263,9 @@ a {
   text-decoration: underline;
   text-decoration-color: var(--secondary-colour);
   text-decoration-thickness: 0.125rem;
-  font-size: var(--heading-font-size);
+  font-size: var(--h2-font-size);
+  font-size: min(calc(1.25rem + 1vw), 3rem);
+  margin: 1rem 0;
   margin: min(calc(1rem + 1vw), 1.5rem) 0;
 }
 
@@ -274,19 +273,23 @@ a {
   text-decoration: underline;
   text-decoration-color: var(--secondary-colour);
   text-decoration-thickness: 0.125rem;
-  font-size: var(--heading-font-size);
+  font-size: var(--h2-font-size);
+  font-size: min(calc(1.25rem + 1vw), 3rem);
+  margin: 0.75rem 0 1rem 0;
   margin: 0.75rem 0 min(calc(1rem + 1vw), 1.5rem) 0;
   line-height: 1.5;
 }
 
 .journal-preview {
   background: var(--background-light);
+  padding: 1.5rem 1rem;
   padding: min(calc(1.5rem + 1vw), 2.5rem) min(calc(1rem + 1vw), 2rem);
   border-radius: 0.25rem;
 }
 
 .journal-preview .post-title {
-  font-size: calc(var(--heading-font-size) - 30%);
+  font-size: var(--h3-font-size);
+  font-size: min(calc(1.5rem + 1vw), 2rem);
 }
 
 .page-title a {
@@ -337,10 +340,6 @@ a {
   margin-right: 1rem;
 }
 
-.invert {
-  color: var(--secondary-colour);
-}
-
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -368,13 +367,14 @@ a {
   max-width: 40rem;
   height: 100%;
   width: 100%;
-  margin: 1rem;
+  margin: 0 1rem 0 0;
 }
 
 .callout {
   background: var(--background-light);
   color: var(--text);
   border-left: 0.625rem solid var(--secondary-colour);
+  margin: 1.25rem 0;
   margin: min(calc(1.25rem + 1vw), 2.5rem) 0;
   padding: 1rem 1.25rem 1rem 0.625rem;
 }
@@ -411,5 +411,22 @@ a {
 }
 
 .list li {
+  margin-bottom: 0.75rem;
   margin-bottom: min(calc(0.75rem + 1vw), 1.25rem);
+}
+
+.return-button {
+  display: block;
+  padding: 0.5rem 0.5rem;
+  background: var(--background-light);
+  border: 1px solid var(--secondary-colour);
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.return-button a {
+  font-size: var(--base-font-size);
+  font-size: min(calc(1rem + 1vw), 1.25rem);
+  color: var(--text);
+  text-decoration: none;
 }

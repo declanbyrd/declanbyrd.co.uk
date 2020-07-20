@@ -4,17 +4,21 @@
 
 <article>
   <div class="[ flex-row ]">
-    <h1>
-      <a href="/photos">
-        Photos
-      </a>
+    <h1 class="[ page-title ]">
+      Photos
     </h1>
-    <time class="[ invert ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | dateDisplay}}</time>
+    <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | dateDisplay}}</time>
   </div>
   {{ content | safe }}
+  <button class='[ return-button ]'>
+    <a href="/photos">&larr; Return to the photos page</a>
+  </button>
   {% for item in photo %}
   <img src="{{item.url}}?nf_resize=fit&amp;h=600" alt="{{item.alt}}" class="[ large-photo ]">
   {% endfor %}
+  <button class='[ return-button ]'>
+    <a href="/photos">&larr; Return to the photos page</a>
+  </button>
 </article>
 
 {% endblock %}
