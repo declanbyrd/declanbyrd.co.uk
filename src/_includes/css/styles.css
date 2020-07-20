@@ -394,6 +394,10 @@ section {
   display: block;
 }
 
+.markdown-container li {
+  margin: 1rem 0;
+}
+
 .markdown-container blockquote {
   background: var(--background-light);
   color: var(--text);
@@ -430,4 +434,12 @@ section {
   font-size: min(calc(1rem + 1vw), 1.25rem);
   color: var(--text);
   text-decoration: none;
+}
+
+.journal-headings {
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-colour);
+  text-decoration-thickness: 0.125rem;
+  margin: 3rem 0;
+  margin: min(calc(3rem + 1vw), 5rem) 0;
 }
