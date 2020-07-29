@@ -268,6 +268,7 @@ section {
   font-size: min(calc(1.25rem + 1vw), 3rem);
   margin: 1rem 0;
   margin: min(calc(1rem + 1vw), 1.5rem) 0;
+  text-transform: capitalize;
 }
 
 .post-title {
@@ -368,7 +369,7 @@ section {
   max-width: 40rem;
   height: 100%;
   width: 100%;
-  margin: 0 1rem 0 0;
+  margin: 0 1rem 1rem 0;
 }
 
 .callout {
@@ -436,10 +437,49 @@ section {
   text-decoration: none;
 }
 
+.content-body .read-more-button {
+  padding: 1rem 1rem;
+  background: var(--background-light);
+  border: 1px solid var(--background-light);
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  font-size: var(--base-font-size);
+  font-size: min(calc(1rem + 1vw), 1.25rem);
+  color: var(--secondary-colour);
+  text-decoration: none;
+}
+
+.content-body .read-more-button:hover {
+  background: var(--secondary-colour);
+  border: 1px solid var(--secondary-colour);
+  color: var(--background-dark);
+}
+
+.content-body .read-more-button:focus {
+  background: var(--secondary-colour);
+  border: 1px solid var(--secondary-colour);
+  color: var(--background-dark);
+}
+
 .journal-headings {
   text-decoration: underline;
   text-decoration-color: var(--secondary-colour);
   text-decoration-thickness: 0.125rem;
   margin: 3rem 0;
   margin: min(calc(3rem + 1vw), 5rem) 0;
+}
+
+.banner-container {
+  background: var(--secondary-colour);
+  text-align: center;
+  color: var(--background-dark);
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+footer.marquee-section a {
+  display: block;
 }
