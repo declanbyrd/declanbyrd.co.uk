@@ -1,31 +1,42 @@
 {% extends 'layouts/base.njk' %}
 {% block content %}
 
-<section>
-  <h2 class="[ page-title ]">Hello, I'm Declan.</h2>
-  <p>I'm a Software Engineering graduate based near Brighton, England.</p>
+  <section>
+    <h2 class="[ page-title ]">Hello, I'm Declan.</h2>
+    <p>I'm a Software Engineering graduate based near Brighton, England.</p>
 
-  <p>
+    <p>
     I like to make things for the web and apply particular focus on how things are made. I'm also a firm believer that
     semantic HTML and CSS should form the foundation of any website and that JavaScript first solutions are not always
     the answer.
   </p>
 
-  <p>
+    <p>
     This is my personal site where you can find my <a href="/journal">Journal</a> which is where I log what I've been up
     to and the <a href="/photos">Photo Gallery</a> for a more visual representation of what I've been up to.
   </p>
-</section>
+  </section>
 
-<section>
-  <h2 class="[ page-title ]">Latest journal entries:</h2>
+  <section>
+    <h2 class="[ page-title ]">
+      <a class="[ page-title ]" href=" /journal/">Latest journal entries</a>
+    </h2>
 
-  <div class="[ autofit-grid ]">
-    {% set postslist = collections.posts | previewCollection(3) %}
-    {% set postslistCounter = collections.posts | length %}
-    {% include "postsList.njk" %}
-  </div>
-  <a class="[ read-more-button ]"" href=" /journal/">Read all entries</a>
-</section>
+    <div class="[ autofit-grid ]">
+      {% set postslist = collections.posts | previewCollection(3) %}
+      {% set postslistCounter = collections.posts | length %}
+      {% include "postsList.njk" %}
+    </div>
+  </section>
+
+  <section>
+    <h2 class="[ page-title ]">
+      <a class="[ page-title ]" href=" /journal/">Latest photos</a>
+    </h2>
+
+    {% set photoslist = collections.photos | previewCollection(4) %}
+    {% set photosCounter = collections.photos | length %}
+    {% include "photoPreview.njk" %}
+  </section>
 
 {% endblock %}

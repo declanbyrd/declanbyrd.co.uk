@@ -264,6 +264,13 @@ section {
   fill: var(--secondary-colour);
 }
 
+.photo-item + .gallery-icon {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  fill: var(--secondary-colour);
+}
+
 .page-title {
   text-decoration: underline;
   text-decoration-color: var(--secondary-colour);
@@ -473,17 +480,14 @@ section {
   margin: min(calc(3rem + 1vw), 5rem) 0;
 }
 
-.banner-container {
-  background: var(--secondary-colour);
-  text-align: center;
-  color: var(--background-dark);
+.preview-grid.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  grid-template-rows: 300px;
+  gap: 1rem;
+  padding: 0;
 }
 
-.page-header {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-footer.marquee-section a {
-  display: block;
+.preview-grid > li {
+  list-style: none;
 }

@@ -1,0 +1,18 @@
+<ul class="[ preview-grid ] [ photos ]">
+  {% for item in photoslist %}
+    <li>
+      <a href="{{item.url}}">
+        <img loading="lazy" src="{{ item.data.photo[0].url }}?nf_resize=fit&amp;w=240"
+          alt="{{ item.data.photo[0].alt }}" class="[ photo-item ]"/>
+        {% if item.data.photo.length > 1 %}
+          <svg width="30" height="30" role="img" aria-labelledby="{{item.url}}Title" focusable="false"
+        class="[ gallery-icon ]">
+            <title id="{{item.url}}Title">Gallery</title>
+            <use href="/assets/icons/icons.svg#gallery"></use>
+          </svg>
+        {% endif %}
+        <span class="[ visual-hidden ]">View the photo of {{item.data.photo[0].alt}}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

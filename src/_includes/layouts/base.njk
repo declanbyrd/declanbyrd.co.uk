@@ -15,13 +15,11 @@
   </head>
   <body>
     <a class="[ skip-link ]" href="#mainContent">Skip to content</a>
-    <header class="[ page-header ]">
-      <div class="[ marquee-section ]">
-        <h1>
-          <a href="{{ '/' | url }}" class="[ hover-link ]{% if entry.url == '/' %} [ active ]{% endif %}">{{ metadata.title }}</a>
-        </h1>
-        {% include '_navigation.njk' %}
-      </div>
+    <header class="[ marquee-section ]">
+      <h1>
+        <a href="{{ '/' | url }}" class="[ hover-link ]{% if entry.url == '/' %} [ active ]{% endif %}">{{ metadata.title }}</a>
+      </h1>
+      {% include '_navigation.njk' %}
     </header>
 
     <main id="mainContent" class="[ content-body ]">
