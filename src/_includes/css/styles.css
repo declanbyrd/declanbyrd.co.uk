@@ -482,8 +482,8 @@ section {
 
 .preview-grid.photos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-  grid-template-rows: 300px;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 18.75rem));
+  grid-template-rows: 12.5rem;
   gap: 1rem;
   padding: 0;
 }
