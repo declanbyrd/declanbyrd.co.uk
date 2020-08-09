@@ -9,6 +9,17 @@
     <link rel="alternate icon" href="/assets/icons/favicon.jpg">
     <title>{{renderData.title or title or metadata.title}}</title>
     <meta name="Description" content="{{renderData.description or description or metadata.description}}"/>
+    <meta property="og:site_name" content="declanbyrd.co.uk">
+    <meta name="og:description" content="{{renderData.description or description or metadata.description}}">
+    <meta property="og:title" content="Declan Byrd's Website">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://declanbyrd.co.uk">
+    <meta property="og:image" content="https://www.declanbyrd.co.uk/images/meta.jpg">
+    <meta property="og:image:alt" content="Photo of Declan Byrd">
+    <meta name="twitter:creator" content="@declan_byrd">
+    <meta name="twitter:description" content="{{renderData.description or description or metadata.description}}">
+    <meta name="twitter:image" content="https://www.declanbyrd.co.uk/images/meta.jpg">
+    <meta name="twitter:image:alt" content="Photo of Declan Byrd">
     <style>
       {% include "css/styles.css" %}
     </style>
