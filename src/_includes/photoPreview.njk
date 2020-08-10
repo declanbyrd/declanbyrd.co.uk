@@ -2,7 +2,7 @@
   {% for item in photoslist %}
     <li>
       <a href="{{item.url}}">
-        <img loading="lazy" src="{{ item.data.photo[0].url }}?nf_resize=fit&amp;w=240"
+        <img loading="lazy" src="{{ item.data.photo[0].url }}?nf_resize=fit&amp;w=450"
           alt="{{ item.data.photo[0].alt }}" class="[ photo-item ]"/>
         {% if item.data.photo.length > 1 %}
           <svg width="30" height="30" role="img" aria-labelledby="{{item.url}}Title" focusable="false"
