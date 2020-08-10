@@ -17,9 +17,8 @@ eleventyNavigation:
 
       <picture class="[ photo-container ]">
         <source media="(max-width: 480px)" srcset="{{ item.data.photo[0].url }}?nf_resize=fit&amp;w=500">
-        <source media="(max-width: 750px)" srcset="{{ item.data.photo[0].url }}?nf_resize=fit&amp;w=300">
-        <source media="(min-width: 751px)" srcset="{{ item.data.photo[0].url }}?nf_resize=fit&amp;w=240">
-        <img loading="lazy" src="{{ item.data.photo[0].url }}?nf_resize=fit&amp;w=240"
+        <source media="(max-width: 750px)" srcset="{{ item.data.photo[0].url }}?nf_resize=fit&amp;w=600">
+        <img loading="lazy" src="{{ item.data.photo[0].url }}?nf_resize=fit&amp;w=450"
           alt="{{ item.data.photo[0].alt }}" class="[ photo-item ]" />
       </picture>
       {% if item.data.photo.length > 1 %}
