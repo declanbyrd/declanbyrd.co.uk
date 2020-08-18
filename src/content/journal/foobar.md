@@ -13,7 +13,7 @@ It's Thursday 9th April 2020, the UK is in its third week of lock down and I've 
 
 I'd been doing Google searches for various terms related to my dissertation to make sure that I was describing technologies I was using correctly. As you would normally expect with a search, type what you want in the address bar in the browser and then it shows the search engine results below. My search engine of choice happened to be Google. One search decided to trigger something. I searched for dependency injection. It's how a dependency to a bit of code in one file can be injected into another file that doesn't have the dependency located within its scope. That's beside the point though, because this Google search decided to show what I thought was one of those cool Easter eggs like "do a barrel roll" or playing Atari breakout in google images.
 
-![Google search page showing link to Google foo.bar](/fooBar/page-reveal.jpeg 'Google search page showing link to Google foo.bar')
+![Google search page showing link to Google foo.bar](/img/fooBar/page-reveal.jpeg 'Google search page showing link to Google foo.bar')
 
 The top of the search results start to fall forward revealing a banner saying _"You're speaking our language. Up for a challenge?"_ and options to select either _"I want to play"_, _"No thanks"_ or _"Don't show this again"_. Wanting to make sure this wasn't that one search that had triggered this, I opened a new browser tab and did the same search again. Same result. The only difference was the message next to the options where it now read _"Curious developers are known to seek interesting problems. Solve one from Google?"_. Somewhat disappointed this wasn't a game but also wanting a break from my dissertation, I closed the second tab and on the original one clicked _"I want to play"_.
 
@@ -49,10 +49,10 @@ The instructions added more background to the work I would do to help sabotage C
 
 I eventually put together a Python solution using my first year notes that I'd backed up online as reference. There's a built in editor next to the terminal to put the code in but there's no error messages, syntax highlighting or indication that things are going right so I wrote mine in VS code. To see if the code works there's a `verify` command in the terminal that runs some unit tests. When they all pass, the code can be submitted and the timer stops.
 
-![Submission successful. Completed in 1 hour, 58 mins, 1 second](/fooBar/challenge1-complete.jpg 'Submission successful. Completed in 1 hour, 58 mins, 1 second')
+![Submission successful. Completed in 1 hour, 58 mins, 1 second](/img/fooBar/challenge1-complete.jpg 'Submission successful. Completed in 1 hour, 58 mins, 1 second')
 
 I finished the first challenge in 1 hour 58 minutes and 1 second although I did eat dinner while the clock was still running.
 
 There's a progress indicator that appears showing your progress across 5 levels and a piece of animated ascii art above it. Each level is made up for more challenges with two challenges needed to complete level 2. Fortunately I can now finish the rest of the challenges at a much later date, like when I don't have university deadlines.
 
-![Table showing 100% for level 1](/fooBar/status-end-of-challenge1.jpg 'Table showing 100% for level 1')
+![Table showing 100% for level 1](/img/fooBar/status-end-of-challenge1.jpg 'Table showing 100% for level 1')

@@ -6,14 +6,15 @@ const pluginLocalRespimg = require('eleventy-plugin-local-respimg');
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.setWatchJavaScriptDependencies(false);
 
   eleventyConfig.addPlugin(syntaxHighlighting, { templateFormats: 'md' });
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPlugin(inclusiveLangPlugin);
+  // eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginLocalRespimg, {
     folders: {
-      source: './dist/img/', // Folder images are stored in
+      source: './dist/', // Folder images are stored in
       output: './dist', // Folder images should be output to
     },
     images: {
