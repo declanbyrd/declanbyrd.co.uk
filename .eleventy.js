@@ -32,7 +32,8 @@ module.exports = (eleventyConfig) => {
         'img/**/*.svg',
       ],
       gifToVideo: false,
-      sizes: '100vw',
+      sizes:
+        '(max-width: 550px) 100vw, (max-width: 835px) 40vw (max-width: 1120px) 30vw, 20rem',
       pngquant: {
         speed: 10,
         quality: [0.5, 0.75],
