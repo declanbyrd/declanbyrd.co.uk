@@ -2,28 +2,23 @@
 
 {% block content %}
 
-<article>
-  <div class="[ flex-row ]">
-    <h1 class="[ page-title ]">
+  <article>
+    <div class="[ flex-row ]">
+      <h1 class="[ page-title ]">
       Photos
     </h1>
-    <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | dateDisplay}}</time>
-  </div>
-  {{ content | safe }}
-  <button class='[ return-button ]'>
-    <a href="/photos">&larr; Return to the photos page</a>
-  </button>
-  {% for item in photo %}
-  <picture>
-    <source media="(max-width: 480px)" srcset="{{item.url}}?nf_resize=fit&amp;w=350">
-    <source media="(max-width: 750px)" srcset="{{item.url}}?nf_resize=fit&amp;w=600">
-    <source media="(min-width: 751px)" srcset="{{item.url}}?nf_resize=fit&amp;h=600">
-    <img class="[ large-photo ]" src="{{item.url}}?nf_resize=fit&amp;h=600" alt="{{item.alt}}">
-  </picture>
-  {% endfor %}
-  <button class='[ return-button ]'>
-    <a href=" /photos">&larr; Return to the photos page</a>
-  </button>
-</article>
+      <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | dateDisplay}}</time>
+    </div>
+    {{ content | safe }}
+    <button class='[ return-button ]'>
+      <a href="/photos">&larr; Return to the photos page</a>
+    </button>
+    {% for item in photo %}
+      <img class="[ large-photo ]" src="{{item.url}}" alt="{{item.alt}}">
+    {% endfor %}
+    <button class='[ return-button ]'>
+      <a href=" /photos">&larr; Return to the photos page</a>
+    </button>
+  </article>
 
 {% endblock %}
