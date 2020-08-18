@@ -14,9 +14,7 @@
       <a href="/photos">&larr; Return to the photos page</a>
     </button>
     {% for item in photo %}
-      <picture>
-        <img class="[ large-photo ]" src="{{item.url}}" alt="{{item.alt}}">
-      </picture>
+      <img class="[ large-photo ]" src="{{item.url}}" alt="{{item.alt}}">
     {% endfor %}
     <button class='[ return-button ]'>
       <a href=" /photos">&larr; Return to the photos page</a>

@@ -264,7 +264,7 @@ section {
   fill: var(--secondary-colour);
 }
 
-.photo-item + .gallery-icon {
+.photos picture + .gallery-icon {
   position: absolute;
   bottom: 1rem;
   right: 1.5rem;

@@ -2,14 +2,49 @@ const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const syntaxHighlighting = require('@11ty/eleventy-plugin-syntaxhighlight');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const pluginLocalRespimg = require('eleventy-plugin-local-respimg');
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.setWatchJavaScriptDependencies(false);
 
   eleventyConfig.addPlugin(syntaxHighlighting, { templateFormats: 'md' });
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPlugin(inclusiveLangPlugin);
+  // eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(pluginLocalRespimg, {
+    folders: {
+      source: './dist/', // Folder images are stored in
+      output: './dist', // Folder images should be output to
+    },
+    images: {
+      resize: {
+        min: 300, // Minimum width to resize an image to
+        max: 1500, // Maximum width to resize an image to
+        step: 300, // Width difference between each resized image
+      },
+      watch: {
+        src: 'img/**/*', // Glob of images that Eleventy should watch for changes to
+      },
+      lazy: true,
+      additional: [
+        // Globs of additional images to optimize (won't be resized)
+        'img/**/*.svg',
+      ],
+      gifToVideo: false,
+      sizes: '100vw',
+      pngquant: {
+        speed: 10,
+        quality: [0.5, 0.75],
+      },
+      mozjpeg: {
+        quality: 75,
+      },
+      webp: {
+        quality: 75,
+      },
+    },
+  });
 
   eleventyConfig.setDataDeepMerge(true);
 
