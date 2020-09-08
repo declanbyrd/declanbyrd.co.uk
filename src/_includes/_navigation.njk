@@ -6,5 +6,14 @@
         class="[ hover-link ] {% if entry.url == page.url %} [ active ]{% endif %}">{{ entry.title }}</a>
     </li>
     {%- endfor %}
+    <li>
+      <button class="[ theme-toggle ]" id="themeToggle">
+        <svg width="30" height="30" role="img" aria-hidden aria-labelledby="toggleTitle" focusable="false" class="[ toggle-icon ]">
+        <title id="toggleTitle">Toggle color scheme</title>
+        <use href="/assets/icons/icons.svg#lightbulb"></use>
+      </svg>
+      <span class='[ visual-hidden ]'>Toggle the theme of the website</span>
+      </button>
+    </li>
   </ul>
 </nav>

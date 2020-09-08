@@ -41,7 +41,7 @@ pre[class*='language-'] {
 
 *:not(pre) > code,
 pre[class*='language-'] {
-  background: hsl(var(--background-hue), 10%, 20%);
+  background: #242828;
 }
 
 p > code {

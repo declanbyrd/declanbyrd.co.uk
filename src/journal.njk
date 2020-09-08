@@ -15,7 +15,7 @@ eleventyNavigation:
 {% block content %}
 <h2 class="[ page-title ]">{{ title }}</h2>
 <p>{{ description }}</p>
-<div class="[ autofit-grid ]">
+<div class="[ autofit-grid ] [ journal ]">
   {% set postslist = posts %}
   {% set postslistCounter = collections.posts | length %}
   {% include "postsList.njk" %}

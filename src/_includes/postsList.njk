@@ -6,14 +6,9 @@
           {{ post.data.title }}
         </a>
       </h3>
-      <div>
-        <span>
-          {{ post.data.blogTopic }}
-        </span>
         <time datetime="{{ post.date | htmlDateTime }}" class="[ date ]">
           {{ post.date | dateDisplay }}
         </time>
-      </div>
     </header>
     <p>
       {{ post.data.description }}
