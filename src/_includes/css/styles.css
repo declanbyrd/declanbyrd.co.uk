@@ -5,6 +5,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: local('Comfortaa'),
+    url('/assets/fonts/OpenDyslexic-Regular.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   --light: #eceff1;
   --light-accent: #cfd8dc;
@@ -17,11 +25,13 @@ html {
   --text-color: var(--dark);
   --text-color-invert: var(--light-accent);
 
+  --default-font: 'Comfortaa', sans-serif;
+  --dyslexic-font: 'OpenDyslexic', sans-serif;
+
   background: var(--background);
   color: var(--text-color);
-  font-family: 'Comfortaa', sans-serif;
+  font-family: var(--default-font);
   transition: background 300ms ease-in-out, color 300ms ease-in-out;
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,6 +54,13 @@ html {
   --text-color-invert: var(--dark-accent);
 }
 
+[data-user-font='dyslexic'] {
+  font-family: var(--dyslexic-font);
+}
+
+[data-user-font='dyslexic'] .toggle.font {
+  font-family: var(--default-font);
+}
 
 * {
   text-rendering: optimizeSpeed;
@@ -54,7 +71,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 h1,
 h2,
@@ -430,7 +446,8 @@ section {
   padding: 1rem 1.25rem 1rem 0.625rem;
 }
 
-.markdown-container p > code, .markdown-container li code  {
+.markdown-container p > code,
+.markdown-container li code {
   color: var(--primary);
 }
 
@@ -505,11 +522,17 @@ section {
   list-style: none;
 }
 
-.theme-toggle {
+.toggle {
   background: none;
   border: none;
   padding: 0 0 0 0.125rem;
   cursor: pointer;
+  color: var(--text-color);
+  font-size: 1.25rem;
+}
+
+.toggle.font {
+  font-family: var(--dyslexic-font);
 }
 
 .toggle-icon {
@@ -517,7 +540,8 @@ section {
   transition: fill 200ms ease-out;
 }
 
-.toggle-icon:hover, .toggle-icon:focus {
+.toggle-icon:hover,
+.toggle-icon:focus {
   fill: var(--primary);
 }
 .toggle-icon + .visual-hidden {
