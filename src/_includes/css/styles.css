@@ -120,6 +120,7 @@ main{
 }
 
 main a {
+  display: inline-block;
   padding: 0.25rem;
   color: var(--text-color);
   text-decoration-color: var(--accent);
@@ -128,6 +129,19 @@ main a {
 main a:focus {
   background: var(--accent);
   color: var(--background-alternate);
+}
+
+main .horizontal-links a:focus {
+  background: var(--background);
+  outline: 3px dashed var(--accent);
+}
+
+main .horizontal-links a:focus .social-icon {
+  fill: var(--accent);
+}
+
+main .social-icon {
+  fill: var(--text-color);
 }
 
 section {
@@ -202,6 +216,15 @@ main .visually-hidden {
   padding: 0.25rem 0.5rem;
 }
 
+
+.marquee-section .horizontal-links a:focus {
+  outline: 3px dashed var(--accent);
+}
+
+.marquee-section .horizontal-links a:focus .social-icon {
+  fill: var(--accent);
+}
+
 .hover-link {
   position: relative;
   color: var(--text-color);
@@ -268,10 +291,6 @@ main .visually-hidden {
 }
 
 .social-icon:hover {
-  fill: var(--accent);
-}
-
-.social-icon:focus {
   fill: var(--accent);
 }
 
@@ -457,6 +476,10 @@ html.no-js .toggle {
   padding: 0 0 0 0.125rem;
   cursor: pointer;
   color: var(--text-color);
+}
+
+.toggle:focus {
+  outline: 3px dashed var(--accent);
 }
 
 .toggle.font {
