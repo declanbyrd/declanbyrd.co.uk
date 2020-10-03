@@ -2,11 +2,10 @@
 
 {% block content %}
 
+<section>
   <article>
     <div class="[ flex-row ]">
-      <h1 class="[ page-title ]">
-      Photos
-    </h1>
+      <h2>Photos</h2>
       <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | dateDisplay}}</time>
     </div>
     {{ content | safe }}
@@ -20,5 +19,6 @@
       <a href=" /photos">&larr; Return to the photos page</a>
     </button>
   </article>
+</section>
 
 {% endblock %}

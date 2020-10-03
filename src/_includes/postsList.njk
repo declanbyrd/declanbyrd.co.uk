@@ -1,7 +1,7 @@
 {% for post in postslist %}
   <article class="[ journal-preview ]">
-    <header class="[ flex-column ] [ reverse ]">
-      <h3 class="[ post-title ]">
+    <header class="[ flex-row ]">
+      <h3>
         <a href="{{ post.url | url }}">
           {{ post.data.title }}
         </a>

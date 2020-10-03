@@ -2,21 +2,31 @@
 {% block content %}
 
   <section>
-    <h2 class="[ page-title ]">Hi, I'm Declan.</h2>
-    <p>I'm a software engineer currently working for Honeywell.</p>
+    <h2 >Hi, I'm Declan.</h2>
+    <p>I'm a software engineer specialising in front-end web development. I recently graduated from the University of Portsmouth with a degree in Software Engineering which included a year in industry working at Honeywell. I have since returned to Honeywell.</p>
 
   </section>
 
    <section>
-    <h2 class="[ page-title ]">
-      <a class="[ page-title ]" href=" /journal/">Latest journal entries</a>
+    <h2>
+      <a  href=" /journal/">Latest journal entries</a>
     </h2>
 
-    <div class="[ autofit-grid ] [ journal ]">
+    <div class="[ autofit-grid ] [ journal ] [ invert ]">
       {% set postslist = collections.posts | previewCollection(3) %}
-      {% set postslistCounter = collections.posts | length %}
+      {# {% set postslistCounter = collections.posts | length %} #}
       {% include "postsList.njk" %}
     </div>
+  </section>
+
+  <section>
+    <h2>
+      <a href="/photos/">Latest photos</a>
+    </h2>
+
+    {% set photoslist = collections.photos | previewCollection(4) %}
+    {% set photosCounter = collections.photos | length %}
+    {% include "photoPreview.njk" %}
   </section>
 
 {% endblock %}

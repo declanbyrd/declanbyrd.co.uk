@@ -79,7 +79,7 @@ The unit values can also be changed to use rem and em, as shown below.
 
 While the snippets on this page have focused on making the font size respond to the width of the screen, other properties such as padding and margin can also be set using the same methods. This creates scalable web pages without using hard-coded breakpoints that are tailored to specific device widths.
 
-<h3 class='[ journal-headings ]'>Useful Resources</h3>
+### Useful Resources
 
 - [Using Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) from the Mozilla Developer Network (MDN) documentation.
 - [clamp()](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp) from the Mozilla Developer Network (MDN) documentation.

@@ -1,14 +1,15 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
+<section>
   <style>
     {% include "css/syntax.css" %}
   </style>
   <article class="[ markdown-container ]">
-    <span class="data">
+    <div class="[ flex-row ]">
+    <h2>{{ title }}</h2>
       <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | dateDisplay}}</time>
-    </span>
-    <h2 class="[ post-title ]">{{ title }}</h2>
+    </div>
     <ul class="[ horizontal-list ]">
       {% for tag in tags %}
         {%- if collections.tagList.indexOf(tag) != -1 -%}
@@ -25,5 +26,5 @@
 
     {{ content | safe }}
   </article>
-
+</section>
 {% endblock %}

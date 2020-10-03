@@ -13,11 +13,13 @@ eleventyNavigation:
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-<h2 class="[ page-title ]">{{ title }}</h2>
-<p>{{ description }}</p>
-<div class="[ autofit-grid ] [ journal ]">
-  {% set postslist = posts %}
-  {% set postslistCounter = collections.posts | length %}
-  {% include "postsList.njk" %}
-</div>
+<section>
+  <h2 >{{ title }}</h2>
+  <p>{{ description }}</p>
+  <div class="[ autofit-grid ] [ journal ]">
+    {% set postslist = posts %}
+    {% set postslistCounter = collections.posts | length %}
+    {% include "postsList.njk" %}
+  </div>
+</section>
 {% endblock %}
