@@ -58,10 +58,6 @@ html {
   font-family: var(--dyslexic-font);
 }
 
-[data-user-font='dyslexic'] .toggle.font {
-  font-family: var(--default-font);
-}
-
 * {
   text-rendering: optimizeSpeed;
 }
@@ -250,7 +246,7 @@ section {
 }
 
 .autofit-grid.journal {
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
 .autofit-grid.photos {
@@ -522,6 +518,10 @@ section {
   list-style: none;
 }
 
+html.no-js .toggle {
+  display: none;
+}
+
 .toggle {
   background: none;
   border: none;
@@ -533,6 +533,19 @@ section {
 
 .toggle.font {
   font-family: var(--dyslexic-font);
+  background: var(--background);
+  border: 0.25rem solid var(--background);
+  border-radius: 0.25rem;
+  padding: 0.5ch 1ch;
+  transition: border 200ms ease-out;
+}
+
+.toggle.font:hover, .toggle.font:focus {
+  border: 0.25rem solid var(--primary);
+}
+
+[data-user-font='dyslexic'] .toggle.font {
+  font-family: var(--default-font);
 }
 
 .toggle-icon {
