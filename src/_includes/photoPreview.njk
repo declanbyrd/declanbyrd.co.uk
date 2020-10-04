@@ -1,4 +1,4 @@
-<ul class="[ preview-grid ] [ photos ]">
+<ul class="[ autofit-grid ] [ photos ] [ preview ]">
   {% for item in photoslist %}
     <li>
       <a href="{{item.url}}">
@@ -11,7 +11,7 @@
             <use href="/assets/icons/icons.svg#gallery"></use>
           </svg>
         {% endif %}
-        <span class="[ visual-hidden ]">View the photo of {{item.data.photo[0].alt}}</span>
+        <span class="[ visually-hidden ]">View the photo of {{item.data.photo[0].alt}}</span>
       </a>
     </li>
   {% endfor %}

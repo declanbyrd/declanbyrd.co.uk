@@ -2,40 +2,29 @@
 {% block content %}
 
   <section>
-    <h2 class="[ page-title ]">Hello, I'm Declan.</h2>
-    <p>I'm a Software Engineering graduate based near Brighton, England.</p>
+    <h2 >Hi, I'm Declan.</h2>
+    <p>I'm a software engineer specialising in front-end web development. Having recently graduated from the University of Portsmouth with a Bsc in Software Engineering, I'm now working at Honeywell where I previously interned for a year as part of my degree.</p>
 
-    <p>
-    I like to make things for the web and apply particular focus on how things are made. I'm also a firm believer that
-    semantic HTML and CSS should form the foundation of any website and that JavaScript first solutions are not always
-    the answer.
-  </p>
-
-    <p>
-    This is my personal site where you can find my <a href="/journal">Journal</a> which is where I log what I've been up
-    to and the <a href="/photos">Photo Gallery</a> for a more visual representation of what I've been up to.
-  </p>
+    <p>When making this site, I've tried to make it WCAG AA compliant using the <a href="https://www.a11yproject.com/checklist/">checklist</a> from the <a href="https://www.a11yproject.com">A11y Project</a> as reference. While every effort has been made to make this site WCAG AA compliant, if you find any aspect that does not meet those standards then please reach out and I will resolve the issue.</p>
   </section>
 
-  <section>
-    <h2 class="[ page-title ]">
-      <a class="[ page-title ]" href=" /journal/">Latest journal entries</a>
+   <section>
+    <h2>
+      <a  href=" /journal/">Latest journal entries</a>
     </h2>
 
-    <div class="[ autofit-grid ]">
+    <div class="[ autofit-grid ] [ journal ] [ invert ]">
       {% set postslist = collections.posts | previewCollection(3) %}
-      {% set postslistCounter = collections.posts | length %}
       {% include "postsList.njk" %}
     </div>
   </section>
 
   <section>
-    <h2 class="[ page-title ]">
-      <a class="[ page-title ]" href=" /photos/">Latest photos</a>
+    <h2>
+      <a href="/photos/">Latest photos</a>
     </h2>
 
     {% set photoslist = collections.photos | previewCollection(4) %}
-    {% set photosCounter = collections.photos | length %}
     {% include "photoPreview.njk" %}
   </section>
 

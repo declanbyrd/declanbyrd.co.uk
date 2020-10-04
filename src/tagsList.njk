@@ -5,8 +5,9 @@ permalink: /tags/
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-  <h2 class="[ page-title ]">Tags</h2>
-  <p> A complete list of tags that are associated with entries in the <a href="/journal">Journal</a>
+<section>
+  <h2 >Tags</h2>
+  <p> A complete list of tags that are associated with entries in the <a href="/journal">Journal</a>.
   </p>
   <ul class="[ vertical-list ]">
     {% for tag in collections.tagList %}
@@ -22,4 +23,6 @@ permalink: /tags/
   </li>
     {% endfor %}
   </ul>
+</section>
 {% endblock %}
+

@@ -1,19 +1,14 @@
 {% for post in postslist %}
   <article class="[ journal-preview ]">
-    <header class="[ flex-column ] [ reverse ]">
-      <h3 class="[ post-title ]">
+    <header class="[ flex-row ]">
+      <h3>
         <a href="{{ post.url | url }}">
           {{ post.data.title }}
         </a>
       </h3>
-      <div>
-        <span>
-          {{ post.data.blogTopic }}
-        </span>
         <time datetime="{{ post.date | htmlDateTime }}" class="[ date ]">
           {{ post.date | dateDisplay }}
         </time>
-      </div>
     </header>
     <p>
       {{ post.data.description }}
