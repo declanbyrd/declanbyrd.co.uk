@@ -67,7 +67,6 @@ html {
 * {
   text-rendering: optimizeSpeed;
   box-sizing: border-box;
-  transition: background 500ms ease-in-out, color 500ms ease-in-out;
 }
 
 html,
