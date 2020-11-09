@@ -1,7 +1,5 @@
 ---
 title: Responsive sizing with CSS
-description: How using the min(), calc() and clamp() functions in CSS can create fluid spacing and typography without hard-coding device widths for breakpoints.
-blogTopic: Code Snippet
 tags: ['CSS', 'Responsive Design']
 date: 2020-07-20
 ---

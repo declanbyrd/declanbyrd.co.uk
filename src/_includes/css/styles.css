@@ -300,11 +300,6 @@ main .visually-hidden {
   margin: 3rem 0;
 }
 
-.autofit-grid.journal {
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 5rem;
-}
-
 .autofit-grid.photos {
   list-style: none;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -442,7 +437,7 @@ main .visually-hidden {
   padding-left: 0.25rem;
 }
 
-.journal.invert .date {
+.invert .journal .date {
   color: var(--text-color-invert);
 }
 
@@ -556,4 +551,40 @@ html.no-js .toggle {
 .logo-container {
   display: flex;
   align-items: center;
+}
+
+ul.journal {
+  padding-left: 0;
+  margin: 3rem auto;
+}
+
+.journal-preview {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.journal-preview h3 {
+  margin-top: 0;
+  flex-wrap: wrap;
+}
+
+.journal-preview div {
+  flex-wrap: wrap;
+}
+
+.journal-preview .date {
+  flex-basis: 25ch;
+}
+
+@media screen and (max-width: 960px) {
+  .journal-preview {
+    flex-direction: column;
+  }
+
+  .journal-preview .date {
+    flex-basis: auto;
+  }
 }

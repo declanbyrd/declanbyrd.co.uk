@@ -1,6 +1,5 @@
 ---
 title: Journal
-description: A collection of things I've done and things that I want to remember.
 pagination:
   data: collections.posts
   size: 10
@@ -15,11 +14,8 @@ eleventyNavigation:
 {% block content %}
 <section>
   <h2 >{{ title }}</h2>
-  <p>{{ description }}</p>
-  <div class="[ autofit-grid ] [ journal ]">
     {% set postslist = posts %}
     {% set postslistCounter = collections.posts | length %}
     {% include "postsList.njk" %}
-  </div>
 </section>
 {% endblock %}
