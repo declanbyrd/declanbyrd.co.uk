@@ -543,3 +543,17 @@ html.no-js .toggle {
     flex-direction: column;
   }
 }
+
+.site-logo {
+  width: 3.815rem;
+  width: min(calc(2.441rem + 1vw), 3.815rem);
+  height: 3.815rem;
+  height: min(calc(2.441rem + 1vw), 3.815rem);
+  fill: var(--accent);
+  margin-right: 0.5rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}

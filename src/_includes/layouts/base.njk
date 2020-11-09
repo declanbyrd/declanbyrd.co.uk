@@ -26,9 +26,7 @@
   <body>
     <a class="[ skip-link ]" href="#mainContent">Skip to content</a>
     <header class="[ marquee-section ]">
-      <h1>
-        <a href="{{ '/' | url }}" class="[ hover-link ]{% if entry.url == '/' %} [ active ]{% endif %}">{{ metadata.title }}</a>
-      </h1>
+      {% include '_site-logo.njk' %}
       {% include '_navigation.njk' %}
     </header>
 
