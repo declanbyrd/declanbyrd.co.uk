@@ -577,6 +577,7 @@ ul.journal {
 
 .journal-preview .date {
   flex-basis: 25ch;
+  line-height: 2;
 }
 
 @media screen and (max-width: 960px) {
