@@ -519,6 +519,7 @@ html.no-js .toggle {
   .marquee-section h1 {
     flex-basis: auto;
     margin: 1rem 0 0 0;
+    font-size: min(calc(1.75rem + 1vw), 3.815rem);
   }
 
   [data-user-font='dyslexic'] .marquee-section h1{
