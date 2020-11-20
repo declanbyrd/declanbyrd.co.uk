@@ -104,4 +104,6 @@ const autofitGrid = document.querySelector('.autofit-grid');
 
 const thumbnails = autofitGrid.querySelectorAll('source');
 
-thumbnails.forEach((thumb) => thumb.setAttribute('sizes', '455px'));
+thumbnails.forEach((thumb) =>
+  thumb.setAttribute('sizes', '(max-width: 1120px) 50vw, 450px')
+);
