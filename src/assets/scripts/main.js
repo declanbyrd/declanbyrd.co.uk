@@ -61,49 +61,12 @@ document.getElementById('themeToggle').addEventListener('click', (evt) => {
 
 applySetting();
 
-const FONT_STORAGE_KEY = 'user-font-choice';
-const FONT_MODE_KEY = '--font-choice';
-const fontToggle = document.getElementById('fontToggle');
-
-const applyFontSetting = (passedSetting) => {
-  let currentSetting = passedSetting || localStorage.getItem(FONT_STORAGE_KEY);
-  if (currentSetting) {
-    document.documentElement.setAttribute('data-user-font', currentSetting);
-  }
-};
-
-const toggleFontSetting = () => {
-  let currentSetting = localStorage.getItem(FONT_STORAGE_KEY);
-
-  switch (currentSetting) {
-    case null:
-      currentSetting =
-        getCSSCustomProp(FONT_MODE_KEY) === 'dyslexic' ? 'default' : 'dyslexic';
-      break;
-    case 'default':
-      currentSetting = 'dyslexic';
-      break;
-    case 'dyslexic':
-      currentSetting = 'default';
-      break;
-  }
-
-  localStorage.setItem(FONT_STORAGE_KEY, currentSetting);
-
-  return currentSetting;
-};
-
-document.getElementById('fontToggle').addEventListener('click', (evt) => {
-  evt.preventDefault();
-  applyFontSetting(toggleFontSetting());
-});
-
-applyFontSetting();
-
 const autofitGrid = document.querySelector('.autofit-grid');
 
-const thumbnails = autofitGrid.querySelectorAll('source');
+if (autofitGrid) {
+  const thumbnails = autofitGrid.querySelectorAll('source');
 
-thumbnails.forEach((thumb) =>
-  thumb.setAttribute('sizes', '(max-width: 1120px) 50vw, 450px')
-);
+  thumbnails.forEach((thumb) =>
+    thumb.setAttribute('sizes', '(max-width: 1120px) 50vw, 450px')
+  );
+}
