@@ -99,3 +99,11 @@ document.getElementById('fontToggle').addEventListener('click', (evt) => {
 });
 
 applyFontSetting();
+
+const autofitGrid = document.querySelector('.autofit-grid');
+
+const thumbnails = autofitGrid.querySelectorAll('source');
+
+thumbnails.forEach((thumb) =>
+  thumb.setAttribute('sizes', '(min-width: 550px) 100vw, 15rem')
+);
