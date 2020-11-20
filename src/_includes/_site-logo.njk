@@ -1,10 +1,12 @@
 <div class='[ logo-container ]'>
-  <svg width="30" height="30" aria-hidden="true" focusable="false" class="[ site-logo ]">
-    <title id="logoTitle">Site logo</title>
-    <use href="/assets/icons/icons.svg#logo"></use>
-  </svg>
-  <h1>
-    <a href="{{ '/' | url }}"
-      class="[ hover-link ]{% if entry.url == '/' %} [ active ]{% endif %}">{{ metadata.title }}</a>
-  </h1>
+  <a href="{{ '/' | url }}"
+      class="[ hover-link logo ]{% if entry.url == '/' %} [ active ]{% endif %}">
+    <svg width="30" height="30" aria-hidden="true" focusable="false" class="[ site-logo ]">
+      <title id="logoTitle">Site logo</title>
+      <use href="/assets/icons/icons.svg#logo"></use>
+    </svg>
+    <h1>
+      {{ metadata.title }}
+    </h1>
+  </a>
 </div>

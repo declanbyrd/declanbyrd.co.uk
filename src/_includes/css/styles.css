@@ -578,3 +578,8 @@ ul.journal {
     flex-basis: auto;
   }
 }
+
+.hover-link.logo {
+  display: flex;
+  align-items: center;
+}
