@@ -103,16 +103,16 @@ h3 {
   margin: min(calc(1rem + 1vw), 1.5rem) 0;
 }
 
-
 p {
   line-height: 2;
 }
 
-body, button {
+body,
+button {
   font-size: 1.25rem;
 }
 
-main{
+main {
   color: var(--text-color);
   background: var(--background);
   line-height: 1.25;
@@ -153,7 +153,7 @@ section:nth-child(2n) {
   color: var(--text-color-invert);
 }
 
-section:nth-child(2n) a{
+section:nth-child(2n) a {
   color: var(--text-color-invert);
 }
 
@@ -214,7 +214,6 @@ main .visually-hidden {
   color: var(--text-color-invert);
   padding: 0.25rem 0.5rem;
 }
-
 
 .marquee-section .horizontal-links a:focus {
   outline: 3px dashed var(--accent);
@@ -489,7 +488,8 @@ html.no-js .toggle {
   color: var(--text-color);
 }
 
-.toggle.font:hover, .toggle.font:focus {
+.toggle.font:hover,
+.toggle.font:focus {
   border: 0.25rem solid var(--accent);
 }
 
@@ -518,11 +518,11 @@ html.no-js .toggle {
 
   .marquee-section h1 {
     flex-basis: auto;
-    margin: 1rem 0 0 0;
+    margin: 0;
     font-size: min(calc(1.75rem + 1vw), 3.815rem);
   }
 
-  [data-user-font='dyslexic'] .marquee-section h1{
+  [data-user-font='dyslexic'] .marquee-section h1 {
     margin: 0;
   }
 
@@ -530,7 +530,6 @@ html.no-js .toggle {
     flex-wrap: wrap;
     justify-content: center;
   }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -552,6 +551,10 @@ html.no-js .toggle {
 .logo-container {
   display: flex;
   align-items: center;
+}
+
+.logo-container h1 {
+  margin: 0.5rem 0;
 }
 
 ul.journal {

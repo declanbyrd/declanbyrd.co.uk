@@ -21,7 +21,7 @@ module.exports = (eleventyConfig) => {
       resize: {
         min: 300, // Minimum width to resize an image to
         max: 1500, // Maximum width to resize an image to
-        step: 300, // Width difference between each resized image
+        step: 150, // Width difference between each resized image
       },
       watch: {
         src: 'img/**/*', // Glob of images that Eleventy should watch for changes to
