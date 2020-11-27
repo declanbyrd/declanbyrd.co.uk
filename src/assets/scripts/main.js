@@ -60,13 +60,3 @@ document.getElementById('themeToggle').addEventListener('click', (evt) => {
 });
 
 applySetting();
-
-const autofitGrid = document.querySelector('.autofit-grid');
-
-if (autofitGrid) {
-  const thumbnails = autofitGrid.querySelectorAll('source');
-
-  thumbnails.forEach((thumb) =>
-    thumb.setAttribute('sizes', '(max-width: 1120px) 50vw, 450px')
-  );
-}

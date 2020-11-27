@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "eleventy-plugin-local-respimg": "^0.3.1",
+    "eleventy-plugin-local-respimg": "^0.4.0",
     "luxon": "^1.25.0"
   }
 }

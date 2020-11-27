@@ -10,7 +10,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addPlugin(syntaxHighlighting, { templateFormats: 'md' });
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  // eleventyConfig.addPlugin(inclusiveLangPlugin);
+  eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginLocalRespimg, {
     folders: {
@@ -19,9 +19,9 @@ module.exports = (eleventyConfig) => {
     },
     images: {
       resize: {
-        min: 300, // Minimum width to resize an image to
-        max: 1200, // Maximum width to resize an image to
-        step: 150, // Width difference between each resized image
+        min: 320, // Minimum width to resize an image to
+        max: 1020, // Maximum width to resize an image to
+        step: 320, // Width difference between each resized image
       },
       watch: {
         src: 'img/**/*', // Glob of images that Eleventy should watch for changes to
@@ -32,7 +32,7 @@ module.exports = (eleventyConfig) => {
         'img/**/*.svg',
       ],
       gifToVideo: false,
-      sizes: '100vw',
+      sizes: '(min-width: 450px) 33.3vw, 100vw',
       pngquant: {
         speed: 10,
         quality: [0.5, 0.75],
