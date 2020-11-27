@@ -29,6 +29,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4"
   },
   "dependencies": {
+    "clean-css": "^4.2.3",
     "dotenv": "^8.2.0",
     "eleventy-plugin-local-respimg": "^0.4.0",
     "luxon": "^1.25.0"

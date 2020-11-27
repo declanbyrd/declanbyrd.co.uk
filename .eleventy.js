@@ -3,10 +3,15 @@ const syntaxHighlighting = require('@11ty/eleventy-plugin-syntaxhighlight');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginLocalRespimg = require('eleventy-plugin-local-respimg');
+const cleanCSS = require('clean-css');
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setWatchJavaScriptDependencies(false);
+
+  eleventyConfig.addFilter('cssmin', function (code) {
+    return new cleanCSS({}).minify(code).styles;
+  });
 
   eleventyConfig.addPlugin(syntaxHighlighting, { templateFormats: 'md' });
   eleventyConfig.addPlugin(eleventyNavigationPlugin);

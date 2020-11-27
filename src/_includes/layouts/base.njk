@@ -18,8 +18,11 @@
     <meta name="twitter:description" content="{{renderData.description or description or metadata.description}}">
     <meta name="twitter:image" content="https://www.declanbyrd.co.uk/img/meta.jpg">
     <meta name="twitter:image:alt" content="Photo of Declan Byrd">
+    {% set css %}
+    {% include "css/styles.css" %}
+    {% endset %}
     <style>
-      {% include "css/styles.css" %}
+      {{css | cssmin | safe}}
     </style>
   </head>
   <body>
