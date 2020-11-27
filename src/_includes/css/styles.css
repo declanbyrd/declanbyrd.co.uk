@@ -460,28 +460,6 @@ html.no-js .toggle {
   outline: 3px dashed var(--accent);
 }
 
-.toggle.font {
-  font-family: var(--dyslexic-font);
-  background: var(--background);
-  border: 0.25rem solid var(--background);
-  border-radius: 0.25rem;
-  padding: 0.5ch 1ch;
-  transition: border 200ms ease-out;
-}
-
-.toggle.font .visually-hidden {
-  color: var(--text-color);
-}
-
-.toggle.font:hover,
-.toggle.font:focus {
-  border: 0.25rem solid var(--accent);
-}
-
-[data-user-font='dyslexic'] .toggle.font {
-  font-family: var(--default-font);
-}
-
 .toggle-icon {
   fill: var(--text-color-invert);
   transition: fill 200ms ease-out;
