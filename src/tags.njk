@@ -6,25 +6,21 @@ pagination:
 permalink: /tags/{{ tag | slug }}/
 ---
 
-
-
 {% extends 'layouts/base.njk' %}
 {% set postslist = collections[tag] %}
 
 {% block content %}
-<section>
-  <h2 >Entries about: “{{ tag }}”</h2>
-  {% if postslist.length > 1 %}
-    <p>There are {{ postslist.length }} journal entries about {{ tag }}:</p>
-  {% endif %}
-  {% if postslist.length == 1 %}
-    <p>There is {{ postslist.length }} journal entry about {{ tag }}:</p>
-  {% endif %}
-  <div class="[ autofit-grid ]">
+  <section>
+    <h2 >Entries about: “{{ tag }}”</h2>
+    {% if postslist.length > 1 %}
+      <p>There are {{ postslist.length }} journal entries about {{ tag }}:</p>
+    {% endif %}
+    {% if postslist.length == 1 %}
+      <p>There is {{ postslist.length }} journal entry about {{ tag }}:</p>
+    {% endif %}
     {%include "postsList.njk" %}
-  </div>
-  <p>
+    <p>
     See <a href="{{ '/tags/' | url }}">more tags</a> that I have written about.
   </p>
-</section>
+  </section>
 {% endblock %}
