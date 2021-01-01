@@ -563,3 +563,7 @@ ul.journal {
   display: flex;
   align-items: center;
 }
+
+.hover-link.logo:focus .site-logo {
+  fill: var(--background-alternate);
+}
