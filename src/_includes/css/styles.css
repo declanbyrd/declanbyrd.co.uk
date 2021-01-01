@@ -292,8 +292,8 @@ main .visually-hidden {
 }
 
 .autofit-grid.photos.preview {
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-auto-rows: 15rem;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  grid-auto-rows: 20rem;
 }
 
 .photos a {
