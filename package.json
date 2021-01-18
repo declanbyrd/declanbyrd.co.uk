@@ -4,7 +4,7 @@
   "description": "My homepage",
   "scripts": {
     "debug": "set DEBUG=Eleventy* & eleventy",
-    "build": "npx eleventy",
+    "build": "set NODE_ENV=production && npx eleventy",
     "start": "eleventy --serve"
   },
   "repository": {
@@ -32,6 +32,8 @@
     "clean-css": "^4.2.3",
     "dotenv": "^8.2.0",
     "eleventy-plugin-local-respimg": "^0.4.0",
-    "luxon": "^1.25.0"
+    "lodash": "^4.17.20",
+    "luxon": "^1.25.0",
+    "node-fetch": "^2.6.1"
   }
 }

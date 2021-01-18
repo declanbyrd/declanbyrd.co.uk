@@ -5,6 +5,8 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginLocalRespimg = require('eleventy-plugin-local-respimg');
 const cleanCSS = require('clean-css');
 
+const webmentionFilters = require('./src/_filters/webmentions');
+
 module.exports = (eleventyConfig) => {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setWatchJavaScriptDependencies(false);
@@ -13,43 +15,47 @@ module.exports = (eleventyConfig) => {
     return new cleanCSS({}).minify(code).styles;
   });
 
+  Object.keys(webmentionFilters).forEach((filterName) => {
+    eleventyConfig.addFilter(filterName, webmentionFilters[filterName]);
+  });
+
   eleventyConfig.addPlugin(syntaxHighlighting, { templateFormats: 'md' });
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginLocalRespimg, {
-    folders: {
-      source: './dist/', // Folder images are stored in
-      output: './dist', // Folder images should be output to
-    },
-    images: {
-      resize: {
-        min: 320, // Minimum width to resize an image to
-        max: 1020, // Maximum width to resize an image to
-        step: 320, // Width difference between each resized image
-      },
-      watch: {
-        src: 'img/**/*', // Glob of images that Eleventy should watch for changes to
-      },
-      lazy: true,
-      additional: [
-        // Globs of additional images to optimize (won't be resized)
-        'img/**/*.svg',
-      ],
-      gifToVideo: false,
-      sizes: '(min-width: 450px) 33.3vw, 100vw',
-      pngquant: {
-        speed: 10,
-        quality: [0.5, 0.75],
-      },
-      mozjpeg: {
-        quality: 75,
-      },
-      webp: {
-        quality: 75,
-      },
-    },
-  });
+  // eleventyConfig.addPlugin(pluginLocalRespimg, {
+  //   folders: {
+  //     source: './dist/', // Folder images are stored in
+  //     output: './dist', // Folder images should be output to
+  //   },
+  //   images: {
+  //     resize: {
+  //       min: 320, // Minimum width to resize an image to
+  //       max: 1020, // Maximum width to resize an image to
+  //       step: 320, // Width difference between each resized image
+  //     },
+  //     watch: {
+  //       src: 'img/**/*', // Glob of images that Eleventy should watch for changes to
+  //     },
+  //     lazy: true,
+  //     additional: [
+  //       // Globs of additional images to optimize (won't be resized)
+  //       'img/**/*.svg',
+  //     ],
+  //     gifToVideo: false,
+  //     sizes: '(min-width: 450px) 33.3vw, 100vw',
+  //     pngquant: {
+  //       speed: 10,
+  //       quality: [0.5, 0.75],
+  //     },
+  //     mozjpeg: {
+  //       quality: 75,
+  //     },
+  //     webp: {
+  //       quality: 75,
+  //     },
+  //   },
+  // });
 
   eleventyConfig.setDataDeepMerge(true);
 

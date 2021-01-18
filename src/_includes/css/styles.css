@@ -133,7 +133,7 @@ section {
   padding: var(--section-padding) 5vw var(--section-padding) 5vw;
 }
 
-section:nth-child(2n) {
+section:nth-child(2n):not(.webmentions-container) {
   background: var(--background-alternate);
   color: var(--text-color-invert);
 }
