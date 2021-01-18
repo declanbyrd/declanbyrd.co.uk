@@ -12,7 +12,7 @@
   {% endif %}
 
   {% if likesSize > 0 %}
-    <div class="webmentions__facepile">
+    <div>
       <h3{% if repostsSize > 11 or likesSize > 11 %} class="webmentions__facepile__squish" {% endif %}>{{ likesSize }}
     Like{% if likesSize != 1 %}s{% endif %}
       </h3>
@@ -20,7 +20,7 @@
       {% for webmention in likes %}
 
         {% if webmention.url != "" %}
-          <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+          <a href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
           {% endif %}
 
           {% if webmention.author.photo %}
@@ -37,13 +37,13 @@
   {% endif %}
 
   {% if repostsSize > 0 %}
-    <div class="webmentions__facepile">
+    <div >
       <h3{% if repostsSize > 11 or likesSize > 11 %} class="webmentions__facepile__squish" {% endif %}>{{ repostsSize }} Retweet{% if repostsSize != 1 %}s{% endif %}
       </h3>
 
       {% for webmention in reposts %}
         {% if webmention.url != "" %}
-          <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+          <a href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
           {% endif %}
 
           {% if webmention.author.photo %}
@@ -59,7 +59,7 @@
   {% endif %}
 
   {% if repliesSize > 0 %}
-    <div class="webmention-replies">
+    <div>
       <h3>{{ repliesSize }}
         {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}
       </h3>
