@@ -130,7 +130,7 @@ main .social-icon {
 
 section {
   padding: 1.5rem 0;
-  padding: var(--section-padding) 0 var(--section-padding) 0;
+  padding: var(--section-padding) 0;
 }
 
 section:nth-child(2n) {
@@ -501,6 +501,13 @@ html.no-js .toggle {
   .autofit-grid.photos {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 81ch) {
+  section {
+    padding: 1.5rem 1rem;
+    padding: var(--section-padding) 1rem;
   }
 }
 
