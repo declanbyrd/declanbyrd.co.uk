@@ -129,8 +129,8 @@ main .social-icon {
 }
 
 section {
-  padding: 1rem 1rem 0 1rem;
-  padding: var(--section-padding) 5vw var(--section-padding) 5vw;
+  padding: 1.5rem 0;
+  padding: var(--section-padding) 0 var(--section-padding) 0;
 }
 
 section:nth-child(2n) {
@@ -292,8 +292,8 @@ main .visually-hidden {
 }
 
 .autofit-grid.photos.preview {
-  grid-template-columns: repeat(auto-fit, 20rem);
-  grid-auto-rows: 20rem;
+  grid-template-columns: repeat(auto-fit, 38ch);
+  grid-auto-rows: 38chrem;
 }
 
 .photos a {
@@ -566,4 +566,14 @@ ul.journal {
 
 .hover-link.logo:focus .site-logo {
   fill: var(--background-alternate);
+}
+
+.max-width-80 {
+  max-width: 80ch;
+  margin: auto;
+}
+
+.indent-left {
+  padding: 1rem 1rem 0 1rem;
+  padding: var(--section-padding) 5vw var(--section-padding) 5vw;
 }

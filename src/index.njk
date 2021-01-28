@@ -2,26 +2,32 @@
 {% block content %}
 
   <section>
-    <h2 >Hi, I'm Declan.</h2>
-    <p>I'm a software engineer with a keen interest in web development. Having graduated from the University of Portsmouth with a Bsc in Software Engineering, I'm now working at Honeywell where I previously interned for a year as part of my degree.</p>
+    <div class="[ max-width-80 ]">
+      <h2 >Hi, I'm Declan.</h2>
+      <p>I'm a software engineer from Shoreham-by-Sea in the UK. Having graduated from the University of Portsmouth with a Bsc in Software Engineering, I'm now working at Honeywell where I previously interned for a year as part of my degree.</p>
+    </div>
   </section>
 
   <section class="invert">
-    <h2>
-      <a  href=" /journal/">Latest journal entries</a>
-    </h2>
+    <div class="[ max-width-80 ]">
+      <h2>
+        <a  href=" /journal/">Latest journal entries</a>
+      </h2>
 
-    {% set postslist = collections.posts | previewCollection(3) %}
-    {% include "postsList.njk" %}
+      {% set postslist = collections.posts | previewCollection(3) %}
+      {% include "postsList.njk" %}
+    </div>
   </section>
 
   <section>
-    <h2>
-      <a href="/photos/">Latest photos</a>
-    </h2>
+    <div class="[ max-width-80 ]">
+      <h2>
+        <a href="/photos/">Latest photos</a>
+      </h2>
 
-    {% set photoslist = collections.photos | previewCollection(4) %}
-    {% include "photoPreview.njk" %}
+      {% set photoslist = collections.photos | previewCollection(4) %}
+      {% include "photoPreview.njk" %}
+    </div>
   </section>
 
 {% endblock %}

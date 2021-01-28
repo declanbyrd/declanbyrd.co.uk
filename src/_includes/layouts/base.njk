@@ -9,9 +9,9 @@
     <meta name="Description" content="{{renderData.description or description or metadata.description}}"/>
     <meta property="og:site_name" content="declanbyrd.co.uk">
     <meta name="og:description" content="{{renderData.description or description or metadata.description}}">
-    <meta property="og:title" content="Declan Byrd's Website">
+    <meta property="og:title" content="{{renderData.title or title or metadata.title}}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.declanbyrd.co.uk">
+    <meta property="og:url" content="{{metadata.url}}{{page.url}}">
     <meta property="og:image" content="https://www.declanbyrd.co.uk/img/meta.jpg">
     <meta property="og:image:alt" content="Photo of Declan Byrd">
     <meta name="twitter:creator" content="@declan_byrd">

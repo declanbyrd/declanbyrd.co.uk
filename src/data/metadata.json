@@ -1,7 +1,8 @@
 {
   "title": "Declan Byrd",
-  "url": "https://www.declanbyrd.co.uk/",
-  "description": "The personal website of Declan Byrd - a software engineer from Brighton, England.",
+  "url": "https://declanbyrd.co.uk",
+  "feedUrl": "https://declanbyrd.co.uk/feed.xml",
+  "description": "The personal website of Declan Byrd - a software engineer from Shoreham-by-Sea, England.",
   "author": {
     "name": "Declan Byrd",
     "email": "declan.byrd@gmail.com"
