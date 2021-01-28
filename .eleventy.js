@@ -3,84 +3,67 @@ const syntaxHighlighting = require('@11ty/eleventy-plugin-syntaxhighlight');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginLocalRespimg = require('eleventy-plugin-local-respimg');
-const cleanCSS = require('clean-css');
+const filters = require('./src/_filters/filters');
+const collections = require('./src/_filters/collections');
+
+const respImgOptions = {
+  folders: {
+    source: './dist/', // Folder images are stored in
+    output: './dist', // Folder images should be output to
+  },
+  images: {
+    resize: {
+      min: 320, // Minimum width to resize an image to
+      max: 1020, // Maximum width to resize an image to
+      step: 320, // Width difference between each resized image
+    },
+    watch: {
+      src: 'img/**/*', // Glob of images that Eleventy should watch for changes to
+    },
+    lazy: true,
+    additional: [
+      // Globs of additional images to optimize (won't be resized)
+      'img/**/*.svg',
+    ],
+    gifToVideo: false,
+    sizes: '(min-width: 450px) 33.3vw, 100vw',
+    pngquant: {
+      speed: 10,
+      quality: [0.5, 0.75],
+    },
+    mozjpeg: {
+      quality: 75,
+    },
+    webp: {
+      quality: 75,
+    },
+  },
+};
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.setWatchJavaScriptDependencies(false);
 
-  eleventyConfig.addFilter('cssmin', function (code) {
-    return new cleanCSS({}).minify(code).styles;
+  // Filters
+
+  Object.keys(filters).forEach((filter) => {
+    eleventyConfig.addFilter(filter, filters[filter]);
   });
+
+  // Plugins
 
   eleventyConfig.addPlugin(syntaxHighlighting, { templateFormats: 'md' });
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginLocalRespimg, {
-    folders: {
-      source: './dist/', // Folder images are stored in
-      output: './dist', // Folder images should be output to
-    },
-    images: {
-      resize: {
-        min: 320, // Minimum width to resize an image to
-        max: 1020, // Maximum width to resize an image to
-        step: 320, // Width difference between each resized image
-      },
-      watch: {
-        src: 'img/**/*', // Glob of images that Eleventy should watch for changes to
-      },
-      lazy: true,
-      additional: [
-        // Globs of additional images to optimize (won't be resized)
-        'img/**/*.svg',
-      ],
-      gifToVideo: false,
-      sizes: '(min-width: 450px) 33.3vw, 100vw',
-      pngquant: {
-        speed: 10,
-        quality: [0.5, 0.75],
-      },
-      mozjpeg: {
-        quality: 75,
-      },
-      webp: {
-        quality: 75,
-      },
-    },
+  eleventyConfig.addPlugin(pluginLocalRespimg, respImgOptions);
+
+  // Collections
+
+  Object.keys(collections).forEach((collection) => {
+    eleventyConfig.addCollection(collection, collections[collection]);
   });
-
-  eleventyConfig.setDataDeepMerge(true);
-
-  eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
-
-  eleventyConfig.addFilter(
-    'dateDisplay',
-    require('./src/_filters/readableDates.js')
-  );
-
-  eleventyConfig.addFilter(
-    'htmlDateTime',
-    require('./src/_filters/htmlDateTime.js')
-  );
-
-  eleventyConfig.addFilter('year', require('./src/_filters/getYear.js'));
-
-  // Get the first `n` elements of a collection.
-  eleventyConfig.addFilter('previewCollection', (array, n) => {
-    const preview = n < 0 ? array.slice(n) : array.slice(0, n);
-    return preview;
-  });
-
-  eleventyConfig.addCollection('tagList', require('./src/_filters/getTagList'));
-
-  eleventyConfig.addCollection('posts', (collection) =>
-    collection.getFilteredByGlob('src/content/journal/*.md').reverse()
-  );
-  eleventyConfig.addCollection('photos', (collection) =>
-    collection.getFilteredByGlob('src/content/photos/*.md').reverse()
-  );
 
   eleventyConfig.addPassthroughCopy('src/img');
   eleventyConfig.addPassthroughCopy('src/assets/fonts');

@@ -1,15 +1,14 @@
-module.exports = function(collection) {
-  let tagSet = new Set();
-  collection.getAllSorted().forEach(function(item) {
+module.exports.tagList = (collection) => {
+  const tagSet = new Set();
+  collection.getAllSorted().forEach(function (item) {
     if ('tags' in item.data) {
       let tags = item.data.tags;
       if (typeof tags === 'string') {
         tags = [tags];
       }
 
-      tags = tags.filter(function(item) {
+      tags = tags.filter((item) => {
         switch (item) {
-          // this list should match the `filter` list in tags.njk
           case 'all':
           case 'nav':
           case 'post':
@@ -27,6 +26,13 @@ module.exports = function(collection) {
     }
   });
 
-  // returning an array in addCollection works in Eleventy 0.5.3
   return [...tagSet].sort();
+};
+
+module.exports.posts = (collection) => {
+  return collection.getFilteredByGlob('src/content/journal/*.md').reverse();
+};
+
+module.exports.photos = (collection) => {
+  return collection.getFilteredByGlob('src/content/photos/*.md').reverse();
 };
