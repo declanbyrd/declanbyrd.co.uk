@@ -504,7 +504,7 @@ html.no-js .toggle {
   }
 }
 
-@media screen and (max-width: 90ch) {
+@media screen and (max-width: 600px) {
   section {
     padding: 1.5rem 1rem;
     padding: var(--section-padding) 1rem;
