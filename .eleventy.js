@@ -26,7 +26,7 @@ const respImgOptions = {
       'img/**/*.svg',
     ],
     gifToVideo: false,
-    sizes: '(min-width: 450px) 33.3vw, 100vw',
+    sizes: '(max-width: 450px) 33.3vw, 100vw',
     pngquant: {
       speed: 10,
       quality: [0.5, 0.75],
