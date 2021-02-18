@@ -15,7 +15,7 @@ const respImgOptions = {
     resize: {
       min: 320, // Minimum width to resize an image to
       max: 1020, // Maximum width to resize an image to
-      step: 320, // Width difference between each resized image
+      step: 100, // Width difference between each resized image
     },
     watch: {
       src: 'img/**/*', // Glob of images that Eleventy should watch for changes to
