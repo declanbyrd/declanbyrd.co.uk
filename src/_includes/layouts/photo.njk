@@ -9,9 +9,6 @@
         <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | readableDates}}</time>
       </div>
       {{ content | safe }}
-      <button class='[ return-button ]'>
-        <a href="/photos">&larr; Return to the photos page</a>
-      </button>
       {% for item in photo %}
         <img class="[ large-photo ]" src="{{item.url}}" alt="{{item.alt}}">
       {% endfor %}
