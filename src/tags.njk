@@ -13,7 +13,7 @@ renderData:
 {% set postslist = collections[tag] %}
 
 {% block content %}
-  <section>
+  <section class="[ indent-left ]">
     <h2 >Entries about: “{{ tag }}”</h2>
     {% if postslist.length > 1 %}
       <p>There are {{ postslist.length }} journal entries about {{ tag }}:</p>
