@@ -32,10 +32,10 @@ const respImgOptions = {
       quality: [0.5, 0.75],
     },
     mozjpeg: {
-      quality: 75,
+      quality: 90,
     },
     webp: {
-      quality: 75,
+      quality: 90,
     },
   },
 };
