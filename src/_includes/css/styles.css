@@ -291,11 +291,6 @@ main .visually-hidden {
   padding: 0;
 }
 
-.autofit-grid.photos.preview {
-  grid-template-columns: repeat(auto-fit, 38ch);
-  grid-auto-rows: 38chrem;
-}
-
 .photos a {
   position: relative;
   display: block;
@@ -583,13 +578,4 @@ ul.journal {
 .indent-left {
   padding: 1rem 1rem 0 1rem;
   padding: var(--section-padding) 5vw var(--section-padding) 5vw;
-}
-
-@supports (grid-template-rows: masonry) {
-  .autofit-grid.photos {
-    list-style: none;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-template-rows: masonry;
-    padding: 0;
-  }
 }
