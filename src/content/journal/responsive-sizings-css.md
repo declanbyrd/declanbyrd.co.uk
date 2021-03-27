@@ -83,4 +83,4 @@ While the snippets on this page have focused on making the font size respond to 
 - [Using Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) from the Mozilla Developer Network (MDN) documentation.
 - [clamp()](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp) from the Mozilla Developer Network (MDN) documentation.
 - [min()](https://developer.mozilla.org/en-US/docs/Web/CSS/min) from the Mozilla Developer Network (MDN) documentation.
-- [This tweet](https://twitter.com/heydonworks/status/1255462784088891392) from Heydon Pickering on an accessible `clamp()` fallback.
+- [This tweet](https://twitter.com/heydonworks/status/1255462784088891392) from Heydon Pickering on an progressively enhanced `clamp()` fallback.
