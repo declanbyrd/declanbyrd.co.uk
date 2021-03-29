@@ -25,7 +25,11 @@ html {
 
 @media (prefers-color-scheme: dark) {
   html {
-    --color-mode: 'dark';
+    --background: var(--dark);
+    --background-alternate: var(--dark-alternate);
+    --text-color: var(--light);
+    --text-color-invert: var(--light);
+    --accent: var(--dark-accent);
   }
 
   html:not([data-user-color-scheme]) {
@@ -531,10 +535,17 @@ ul.journal {
 
 .journal-preview {
   list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 20ch auto;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+  .journal-preview {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
 }
 
 .journal-preview h3 {
