@@ -36,7 +36,6 @@ pre[class*='language-'] {
   overflow-x: auto;
   word-wrap: normal;
   white-space: pre;
-  max-width: 80vw;
 }
 
 *:not(pre) > code,
@@ -44,7 +43,8 @@ pre[class*='language-'] {
   background: #1a1919;
 }
 
-p > code, li > code {
+p > code,
+li > code {
   padding: 0.125rem 0.25rem;
 }
 
@@ -52,7 +52,7 @@ p > code, li > code {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #7c7c7c;
+  color: #aaa2a2;
 }
 
 .token.punctuation {

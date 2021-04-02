@@ -49,8 +49,12 @@ html {
   --accent: var(--dark-accent);
 }
 
-[data-user-font='dyslexic'] {
-  font-family: var(--dyslexic-font);
+[data-user-color-scheme='light'] {
+  --background: var(--light);
+  --background-alternate: var(--light-alternate);
+  --text-color: var(--dark);
+  --text-color-invert: var(--light);
+  --accent: var(--light-accent);
 }
 
 * {
@@ -356,7 +360,7 @@ main .visually-hidden {
   margin: 0 0.25rem;
 }
 
-.tag {
+li.tag {
   display: flex;
   align-items: center;
   fill: var(--accent);
