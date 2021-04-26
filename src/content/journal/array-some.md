@@ -34,7 +34,7 @@ While the pseudo code could have been translated into JavaScript, writing the lo
 
 The [Mozilla documentation for Array.some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some) states that:
 
-> "The **`some()`** method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array."
+> "The `some()` method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array."
 
 This was ideal an idea solution to my problem. By using `some()` I could then pass a function that would check if the user input string contained any of the strings from the array.
 
