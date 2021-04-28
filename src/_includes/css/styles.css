@@ -1,9 +1,9 @@
 html {
-  --light: #d2d6da;
-  --light-alternate: #255d75;
+  --light: #ffffff;
+  --light-alternate: #0a795b;
   --dark: #2e3838;
   --dark-alternate: #242828;
-  --light-accent: #e2ac19;
+  --light-accent: #ffffff;
   --dark-accent: #0c9c76;
 
   --background: var(--light);
@@ -96,6 +96,12 @@ h3 {
   margin: min(calc(1rem + 1vw), 1.5rem) 0;
 }
 
+[data-user-color-scheme='light'] h2,
+[data-user-color-scheme='light'] h3,
+[data-user-color-scheme='light'] main section:not(.invert) a {
+  text-decoration-color: var(--light-alternate);
+}
+
 p {
   line-height: 2;
 }
@@ -120,7 +126,7 @@ main a {
 
 main a:focus {
   background: var(--accent);
-  color: var(--background-alternate);
+  color: var(--background-alternate) !important;
 }
 
 main .horizontal-links a:focus {
@@ -237,6 +243,10 @@ main .visually-hidden {
   visibility: hidden;
   transform: scaleX(0);
   transition: transform 300ms ease-in-out, visibility 300ms ease-in-out;
+}
+
+[data-user-color-scheme='light'] section:not(.invert) .hover-link::before {
+  background: var(--light-alternate);
 }
 
 .hover-link:hover:before {
@@ -367,6 +377,11 @@ li.tag {
   margin-right: 1rem;
 }
 
+[data-user-color-scheme='light'] article li.tag,
+[data-user-color-scheme='light'] section:not(.invert) li.tag {
+  fill: var(--light-alternate);
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -393,6 +408,12 @@ li.tag {
   margin: 1.25rem 0;
   margin: min(calc(1.25rem + 1vw), 2.5rem) 0;
   padding: 1rem 1.25rem 1rem 0.625rem;
+}
+
+[data-user-color-scheme='light'] .callout {
+  background: #e0e0e0;
+  color: var(--text-color);
+  border-left: 0.625rem solid var(--background-alternate);
 }
 
 .markdown-container img {
