@@ -436,6 +436,12 @@ li.tag {
   padding: 1rem 1.25rem 1rem 0.625rem;
 }
 
+[data-user-color-scheme='light'] .markdown-container blockquote {
+  background: #e0e0e0;
+  color: var(--text-color);
+  border-left: 0.625rem solid var(--background-alternate);
+}
+
 .markdown-container p > code,
 .markdown-container li code {
   color: var(--accent);
