@@ -26,11 +26,21 @@
     <style>
       {{css | cssmin | safe}}
     </style>
+    <script>
+      const theme = localStorage.getItem("user-color-scheme");
+      if (theme) {
+        document
+          .documentElement
+          .setAttribute('data-user-color-scheme', theme);
+      }
+    </script>
   </head>
   <body>
     <a class="[ skip-link ]" href="#mainContent">Skip to content</a>
-    <header class="[ marquee-section ]">
-      {% include '_site-logo.njk' %}
+    <header>
+      {% if '/' !== page.url %}
+        {% include '_site-logo.njk' %}
+      {% endif %}
       {% include '_navigation.njk' %}
     </header>
 
@@ -40,7 +50,7 @@
       {% endblock %}
     </main>
 
-    <footer class="[ marquee-section ]">
+    <footer>
       {% include '_footer-navigation.njk' %}
       {% include '_social-links.njk' %}
       <script type="text/javascript" src="/assets/scripts/main.js" defer></script>

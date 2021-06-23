@@ -1,9 +1,9 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
 <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)">
  <style>
-    path { fill: #e2ac19}
+    path { fill: #22313f}
     @media ( prefers-color-scheme: dark ) {
-        path { fill: #0c9c76}
+        path { fill: #e4f1fe}
     }
  </style>
 <path d="M2255 4994 c-408 -59 -615 -121 -910 -273 -232 -120 -421 -257 -606

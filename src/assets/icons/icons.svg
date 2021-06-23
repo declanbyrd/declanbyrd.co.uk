@@ -1,34 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg"> 
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="github">
     <rect  width="512" height="512" rx="15%"/>
-    <path fill="var(--background-alternate)" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/>
+    <path fill="var(--background)" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="label">
     <path d="M0 0h24v24H0V0z" fill="none"/><path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84l3.96-5.58c.25-.35.25-.81 0-1.16l-3.96-5.58z"/>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="linkedin">
     <rect width="512" height="512" rx="15%"/>
-    <circle fill="var(--background-alternate)" cx="142" cy="138" r="37"/>
-    <path stroke="var(--background-alternate)" stroke-width="66" d="M244 194v198M142 194v198"/>
-    <path fill="var(--background-alternate)" d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/>
+    <circle fill="var(--background)" cx="142" cy="138" r="37"/>
+    <path stroke="var(--background)" stroke-width="66" d="M244 194v198M142 194v198"/>
+    <path fill="var(--background)" d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="twitter">
     <rect width="512" height="512" rx="15%"/>
-    <path fill="var(--background-alternate)" d="M437 152a72 72 0 01-40 12a72 72 0 0032-40a72 72 0 01-45 17a72 72 0 00-122 65a200 200 0 01-145-74a72 72 0 0022 94a72 72 0 01-32-7a72 72 0 0056 69a72 72 0 01-32 1a72 72 0 0067 50a200 200 0 01-105 29a200 200 0 00309-179a200 200 0 0035-37"/>
+    <path fill="var(--background)" d="M437 152a72 72 0 01-40 12a72 72 0 0032-40a72 72 0 01-45 17a72 72 0 00-122 65a200 200 0 01-145-74a72 72 0 0022 94a72 72 0 01-32-7a72 72 0 0056 69a72 72 0 01-32 1a72 72 0 0067 50a200 200 0 01-105 29a200 200 0 00309-179a200 200 0 0035-37"/>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="flickr">
     <rect width="512" height="512" rx="15%"/>
-    <circle fill="var(--background-alternate)" cx="157" cy="256" r="79"/>
-    <circle fill="var(--background-alternate)" cx="355" cy="256" r="79"/>
+    <circle fill="var(--background)" cx="157" cy="256" r="79"/>
+    <circle fill="var(--background)" cx="355" cy="256" r="79"/>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="rss">
     <rect width="512" height="512" rx="15%"/>
-    <circle cx="145" cy="367" r="35" fill="var(--background-alternate)"/>
-    <path fill="none" stroke="var(--background-alternate)" stroke-width="60" d="M109 241c89 0 162 73 162 162m114 0c0-152-124-276-276-276"/>
+    <circle cx="145" cy="367" r="35" fill="var(--background)"/>
+    <path fill="none" stroke="var(--background)" stroke-width="60" d="M109 241c89 0 162 73 162 162m114 0c0-152-124-276-276-276"/>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="instagram">
     <rect width="512" height="512" rx="15%"/>
-    <g fill="none" stroke="var(--background-alternate)" stroke-width="30">
+    <g fill="none" stroke="var(--background)" stroke-width="30">
       <rect width="308" height="308" x="102" y="102" rx="81"/>
       <circle cx="256" cy="256" r="72"/>
       <circle cx="347" cy="165" r="6"/>
@@ -42,7 +42,7 @@
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="devCommunity">
     <rect width="512" height="512" rx="15%"/>
-    <path fill="var(--background-alternate)" d="M140.47 203.94h-17.44v104.47h17.45c10.155-.545 17.358-8.669 17.47-17.41v-69.65c-.696-10.364-7.796-17.272-17.48-17.41zm45.73 87.25c0 18.81-11.61 47.31-48.36 47.25h-46.4V172.98h47.38c35.44 0 47.36 28.46 47.37 47.28zm100.68-88.66H233.6v38.42h32.57v29.57H233.6v38.41h53.29v29.57h-62.18c-11.16.29-20.44-8.53-20.72-19.69V193.7c-.27-11.15 8.56-20.41 19.71-20.69h63.19zm103.64 115.29c-13.2 30.75-36.85 24.63-47.44 0l-38.53-144.8h32.57l29.71 113.72 29.57-113.72h32.58z"/>
+    <path fill="var(--background)" d="M140.47 203.94h-17.44v104.47h17.45c10.155-.545 17.358-8.669 17.47-17.41v-69.65c-.696-10.364-7.796-17.272-17.48-17.41zm45.73 87.25c0 18.81-11.61 47.31-48.36 47.25h-46.4V172.98h47.38c35.44 0 47.36 28.46 47.37 47.28zm100.68-88.66H233.6v38.42h32.57v29.57H233.6v38.41h53.29v29.57h-62.18c-11.16.29-20.44-8.53-20.72-19.69V193.7c-.27-11.15 8.56-20.41 19.71-20.69h63.19zm103.64 115.29c-13.2 30.75-36.85 24.63-47.44 0l-38.53-144.8h32.57l29.71 113.72 29.57-113.72h32.58z"/>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" id="logo">
     <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)">

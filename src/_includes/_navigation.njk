@@ -3,7 +3,10 @@
     {%- for entry in collections.all | eleventyNavigation %}
       <li>
         <a href="{{ entry.url | url }}"
-        class="[ hover-link ] {% if entry.url == page.url %} [ active ]{% endif %}">{{ entry.title }}</a>
+        {% if entry.url == page.url %}
+          aria-current="page"
+        {% endif %}
+        class="[ hover-link ]">{{ entry.title }}</a>
       </li>
     {%- endfor %}
     <li>

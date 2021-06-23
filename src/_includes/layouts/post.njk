@@ -6,10 +6,8 @@
       {% include "css/syntax.css" %}
     </style>
     <article class="[ markdown-container max-width-80 ]">
-      <div class="[ flex-row ]">
-        <h2>{{ title }}</h2>
-        <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | readableDates}}</time>
-      </div>
+      <h2>{{ title }}</h2>
+      <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | readableDates}}</time>
       <ul class="[ horizontal-list ]">
         {% for tag in tags %}
           {%- if collections.tagList.indexOf(tag) != -1 -%}
@@ -23,6 +21,8 @@
           {%- endif -%}
         {% endfor %}
       </ul>
+
+      <hr>
 
       {{ content | safe }}
     </article>

@@ -1,33 +1,35 @@
 {% extends 'layouts/base.njk' %}
 {% block content %}
 
-  <section>
-    <div class="[ max-width-80 ]">
-      <h2 >Hi, I'm Declan.</h2>
-      <p>I'm a software engineer from Shoreham-by-Sea in the UK. Having graduated from the University of Portsmouth with a Bsc in Software Engineering, I'm now working at Honeywell where I previously interned for a year as part of my degree.</p>
-    </div>
-  </section>
-
-  <section class="invert">
-    <div class="[ max-width-80 ]">
-      <h2>
-        <a  href=" /journal/">Latest journal entries</a>
-      </h2>
-
-      {% set postslist = collections.posts | previewCollection(3) %}
-      {% include "postsList.njk" %}
-    </div>
+  <section class="[ intro ]">
+    <svg width="30" height="30" aria-hidden="true" focusable="false" class="[ logo ]">
+      <title id="logoTitle">Site logo</title>
+      <use href="/assets/icons/icons.svg#logo"></use>
+    </svg>
+    <article>
+      <h1>Hi, I'm Declan.</h1>
+      <p>I build accessible, performant and enjoyable web experiences using HTML, CSS and JavaScript.
+      </p>
+      <p>I currently work at <a href="https://buildings.honeywell.com/us/en/home">Honeywell</a> as a software engineer, where I contribute to the development of building management systems.</p>
+    </article>
   </section>
 
   <section>
-    <div class="[ max-width-80 ]">
-      <h2>
-        <a href="/photos/">Latest photos</a>
-      </h2>
+    <h2>
+      Recent journal entries
+    </h2>
 
-      {% set photoslist = collections.photos | previewCollection(4) %}
-      {% include "photoPreview.njk" %}
-    </div>
+    {% set postslist = collections.posts | previewCollection(3) %}
+    {% include "postsList.njk" %}
+  </section>
+
+  <section>
+    <h2>
+      <a href="/photos/">Recent photos</a>
+    </h2>
+
+    {% set photoslist = collections.photos | previewCollection(4) %}
+    {% include "photoPreview.njk" %}
   </section>
 
 {% endblock %}
