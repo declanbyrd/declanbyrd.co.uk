@@ -44,7 +44,7 @@
       {% include '_navigation.njk' %}
     </header>
 
-    <main id="mainContent">
+    <main tabindex="-1" id="mainContent">
       {% block content %}
         {{ content | safe }}
       {% endblock %}

@@ -36,7 +36,7 @@ One way that styles like font size can be more responsive is to use the `clamp()
 
 For the font size to scale based on the size of the device's screen, viewport widths are used in the code above. Viewport widths (vw) are a unit that is used to measure fractions of the browser window, so 2vw is equivalent to 2% of the width of the browser window. So to summarise the CSS snippet, the font size will be 2% of the width of the browser window unless it is smaller than 16 pixels or greater than 48 pixels.
 
-The good news is that `clamp()` is largely supported by most major browsers as shown in the image below. However, recent versions of Safari and iOS Safari did not provide support for `clamp()` so a fallback option is required.
+The good news is that `clamp()` is largely supported by most major browsers as shown in the image below. Recent versions of Safari and iOS Safari did not provide support for `clamp()` so a fallback option is required.
 
 <!-- markdownlint-disable MD033 -->
 <picture>
