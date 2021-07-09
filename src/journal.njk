@@ -17,6 +17,6 @@ eleventyNavigation:
     <h2 >{{ title }}</h2>
     {% set postslist = posts %}
     {% set postslistCounter = collections.posts | length %}
-    {% include "postsList.njk" %}
+    {% include "partials/postsList.njk" %}
   </section>
 {% endblock %}

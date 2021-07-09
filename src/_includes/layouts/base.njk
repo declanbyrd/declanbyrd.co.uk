@@ -39,9 +39,9 @@
     <a class="[ skip-link ]" href="#mainContent">Skip to content</a>
     <header>
       {% if '/' !== page.url %}
-        {% include '_site-logo.njk' %}
+        {% include 'partials/siteLogo.njk' %}
       {% endif %}
-      {% include '_navigation.njk' %}
+      {% include 'partials/navigation.njk' %}
     </header>
 
     <main tabindex="-1" id="mainContent">
@@ -51,8 +51,8 @@
     </main>
 
     <footer>
-      {% include '_footer-navigation.njk' %}
-      {% include '_social-links.njk' %}
+      {% include 'partials/footerNavigation.njk' %}
+      {% include 'partials/socialLinks.njk' %}
       <script type="text/javascript" src="/assets/scripts/main.js" defer></script>
     </footer>
   </body>

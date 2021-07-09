@@ -21,7 +21,7 @@ renderData:
     {% if postslist.length == 1 %}
       <p>There is {{ postslist.length }} journal entry about {{ tag }}:</p>
     {% endif %}
-    {%include "postsList.njk" %}
+    {%include "partials/postsList.njk" %}
     <p>
     See <a href="{{ '/tags/' | url }}">more tags</a> that I have written about.
   </p>

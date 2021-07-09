@@ -20,7 +20,7 @@
     </h2>
 
     {% set postslist = collections.posts | previewCollection(3) %}
-    {% include "postsList.njk" %}
+    {% include "partials/postsList.njk" %}
   </section>
 
   <section>
@@ -29,7 +29,7 @@
     </h2>
 
     {% set photoslist = collections.photos | previewCollection(4) %}
-    {% include "photoPreview.njk" %}
+    {% include "partials/photoPreview.njk" %}
   </section>
 
 {% endblock %}
