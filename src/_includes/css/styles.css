@@ -356,6 +356,12 @@ li.tag {
   display: block;
 }
 
+.markdown-container img.portrait {
+  max-width: 25rem;
+  height: 100%;
+  width: 100%;
+}
+
 .markdown-container li {
   margin: 1rem 0;
 }
