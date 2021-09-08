@@ -5,3 +5,9 @@
 [dev]
   publish = "dist"
   command = "npm start"
+
+[[redirects]]
+  from = "/js/nalced.js"
+  to = "https://plausible.io/js/plausible.js"
+  status = 200
+  force = true
