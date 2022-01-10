@@ -30,7 +30,7 @@ module.exports.tagList = (collection) => {
 };
 
 module.exports.posts = (collection) => {
-  return collection.getFilteredByGlob('src/content/journal/*.md').reverse();
+  return collection.getFilteredByGlob('src/content/journal/**/*.md').reverse();
 };
 
 module.exports.photos = (collection) => {
