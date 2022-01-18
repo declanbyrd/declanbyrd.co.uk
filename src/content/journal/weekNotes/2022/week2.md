@@ -1,7 +1,7 @@
 ---
 title: 2022 Week Notes - Week 2
 tags: ['Week Notes']
-date: 2022-01-16
+date: 2022-01-17
 ---
 
 According to the my site analytics a grand total of 3 people read my [week notes from last week](https://declanbyrd.co.uk/journal/2022/week1/). This is particularly impressive because I forgot to tweet that I'd started writing weekly notes.
