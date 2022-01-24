@@ -366,6 +366,10 @@ li.tag {
   margin: 1rem 0;
 }
 
+.markdown-container :is(p, li) a {
+  display: inline;
+}
+
 .markdown-container blockquote {
   background: var(--text-color);
   color: var(--background);
