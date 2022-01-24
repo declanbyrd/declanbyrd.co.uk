@@ -12,9 +12,23 @@
       {% for item in photo %}
         <img class="[ large-photo ]" src="{{item.url}}" alt="{{item.alt}}">
       {% endfor %}
-      <button class='[ return-button ]'>
-        <a href=" /photos">&larr; Return to the photos page</a>
-      </button>
+
+      {% set previousPost = collections.photos | reverse | getPreviousCollectionItem(page) %}
+      {% set nextPost = collections.photos | reverse | getNextCollectionItem(page) %}
+      <section class="more-reading">
+        {% if previousPost %}
+          <div class="previous">
+            <p>Previous Entry:</p>
+            <a href="{{ previousPost.url }}">{{ previousPost.data.date | readableDates }}</a>
+          </div>
+        {% endif %}
+        {% if nextPost %}
+          <div class="next">
+            <p>Next Entry:</p>
+            <a href="{{ nextPost.url }}">{{ nextPost.data.date | readableDates }}</a>
+          </div>
+        {% endif %}
+      </section>
     </article>
   </section>
 
