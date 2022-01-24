@@ -101,6 +101,11 @@ header {
   header > a.logo {
     margin-right: 0;
   }
+
+.more-reading {
+  flex-direction: column;
+  gap: 1.5rem;
+}
 }
 
 header > .logo {
@@ -513,4 +518,20 @@ figure {
 figure > figcaption {
   font-style: italic;
   text-align: center;
+}
+
+.more-reading {
+  border-top: 0.125rem solid var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.more-reading p {
+  margin: 0.25rem 0;
+}
+
+
+.markdown-container {
+  margin-bottom: 3rem;
 }
