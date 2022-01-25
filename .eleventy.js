@@ -31,9 +31,6 @@ const respImgOptions = {
       speed: 10,
       quality: [0.5, 0.75],
     },
-    mozjpeg: {
-      quality: 90,
-    },
     webp: {
       quality: 90,
     },
@@ -57,7 +54,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginLocalRespimg, respImgOptions);
+  // eleventyConfig.addPlugin(pluginLocalRespimg, respImgOptions);
 
   // Collections
 
