@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/declanbyrd/declanbyrd.co.uk#readme",
   "devDependencies": {
+    "@11ty/eleventy-img": "^1.0.0",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
@@ -31,7 +32,6 @@
     "@11ty/eleventy": "^1.0.0",
     "clean-css": "^4.2.3",
     "dotenv": "^8.2.0",
-    "eleventy-plugin-local-respimg": "^0.4.0",
     "luxon": "^1.28.0"
   }
 }
