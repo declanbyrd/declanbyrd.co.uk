@@ -10,7 +10,7 @@
       </div>
       {{ content | safe }}
       {% for item in photo %}
-        <img class="[ large-photo ]" src="{{item.url}}" alt="{{item.alt}}">
+        {% image item.url, item.alt, "[ large-photo ]" %}
       {% endfor %}
 
       {% set previousPost = collections.photos | reverse | getPreviousCollectionItem(page) %}

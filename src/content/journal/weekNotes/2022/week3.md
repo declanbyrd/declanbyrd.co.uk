@@ -17,6 +17,6 @@ This week I:
 - Watched [Brighton come from behind to draw against Leicester at the King Power stadium](https://www.brightonandhovealbion.com/news/2460221/welbeck-heads-in-again-as-albion-take-deserved-point). On track to break the record for most draws in a season but still only lost 4 times in the league. This team is fun to watch.
 
 <figure>
-  <img src="/img/journal/weeknotes/week3.jpg" alt="Brighton players celebrating by the corner flag in front of the away fans after scoring in a 1-1 draw against Leicester at the King Power Stadium">
+  {% image "/img/journal/weeknotes/week3.jpg", "Brighton players celebrating by the corner flag in front of the away fans after scoring in a 1-1 draw against Leicester at the King Power Stadium" %}
   <figcaption>Yet another late equaliser.</figcaption>
 </figure>
