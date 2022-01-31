@@ -2,6 +2,7 @@
 title: 2022 Week Notes - Week 2
 tags: ['Week Notes']
 date: 2022-01-17
+description: My weeknotes notes for the second week of 2022. These notes cover the week starting 10th January.
 ---
 
 According to the my site analytics a grand total of 3 people read my [week notes from last week](https://declanbyrd.co.uk/journal/2022/week1/). This is particularly impressive because I forgot to tweet that I'd started writing weekly notes.

@@ -2,6 +2,7 @@
 title: 2022 Week Notes - Week 1
 tags: ['Week Notes']
 date: 2022-01-10
+description: I've started writing weeknotes and here are my notes for the first week of 2022. These notes cover the week starting 3rd January.
 ---
 
 I'd seen the concept of publishing a weekly summary of events and notes online, but like most of my side projects while I entertain the idea but lacked the motivation and time to see them through. The deciding factor in committing to publishing 52 sets of notes is a simple one. I'm rubbish at blogging.
