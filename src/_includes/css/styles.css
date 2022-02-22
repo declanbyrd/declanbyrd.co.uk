@@ -375,7 +375,7 @@ li.tag {
   display: inline;
 }
 
-.markdown-container blockquote {
+.markdown-container blockquote, .callout {
   background: var(--text-color);
   color: var(--background);
   border-left: 0.625rem solid var(--external-link);
