@@ -36,3 +36,7 @@ module.exports.posts = (collection) => {
 module.exports.photos = (collection) => {
   return collection.getFilteredByGlob('src/content/photos/*.md').reverse();
 };
+
+module.exports.books = (collection) => {
+  return collection.getFilteredByGlob('src/content/bookshelf/*.md').reverse();
+};

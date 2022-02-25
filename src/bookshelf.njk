@@ -1,0 +1,25 @@
+---
+title: Reading
+description: Books that Declan Byrd has read and the notes he's written about each book.
+permalink: 'reading.html'
+pagination:
+  data: collections.books
+  size: 10
+  alias: books
+---
+
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+<section class="full-width">
+  <h2>{{ title }}</h2>
+  <h3>2022</h3>
+  <ul class="[ autofit-grid bookshelf ]">
+    {% for book in books %}
+    <li>
+          {% book book.data.isbn, true %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}
