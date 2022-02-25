@@ -1,10 +1,6 @@
 ---
 title: Journal
 description: Declan Byrd's journal - a collection of things he's written about.
-pagination:
-  data: collections.posts
-  size: 10
-  alias: posts
 eleventyNavigation:
   key: Journal
   order: 2
@@ -15,7 +11,7 @@ eleventyNavigation:
 {% block content %}
   <section>
     <h2 >{{ title }}</h2>
-    {% set postslist = posts %}
+    {% set postslist = collections.posts %}
     {% set postslistCounter = collections.posts | length %}
     {% include "partials/postsList.njk" %}
   </section>
