@@ -25,7 +25,7 @@ This week I:
 
   <figure>
     {% image "/img/photos/20220227-1.jpg", "In the foreground are waves breaking onto the rocks that line Shoreham Beach. People are walking between gaps in the rocks on the beach with sea spray creating a mist so the people look like silhouettes. A wind surfer is packing away their equipment in the distance to the right of the photo and their colorful kite can be seen next to the setting sun. The town of Worthing and Worthing pier are in the background." %}
-    <figcaption>Suday sunset.</figcaption>
+    <figcaption>Sunday sunset.</figcaption>
   </figure>
 
 - Finished reading [Ender's Game](/reading/9780356500843/). 
