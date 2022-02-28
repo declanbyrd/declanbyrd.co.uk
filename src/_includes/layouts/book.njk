@@ -10,7 +10,7 @@
 
       {% set previousPost = collections.books | reverse | getPreviousCollectionItem(page) %}
       {% set nextPost = collections.books | reverse | getNextCollectionItem(page) %}
-      <nav aria-label="Photo Navigation">
+      <nav aria-label="Book Navigation">
         <ul class="[ horizontal-links more-reading ]">
           {% if previousPost %}
             <li class="previous">
