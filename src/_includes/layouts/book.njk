@@ -10,20 +10,22 @@
 
       {% set previousPost = collections.books | reverse | getPreviousCollectionItem(page) %}
       {% set nextPost = collections.books | reverse | getNextCollectionItem(page) %}
-      <section class="more-reading full-width">
-        {% if previousPost %}
-          <div class="previous">
-            <p>Previous Entry:</p>
-            <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
-          </div>
-        {% endif %}
-        {% if nextPost %}
-          <div class="next">
-            <p>Next Entry:</p>
-            <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-          </div>
-        {% endif %}
-      </section>
+      <nav aria-label="Photo Navigation">
+        <ul class="[ horizontal-links more-reading ]">
+          {% if previousPost %}
+            <li class="previous">
+              <p>Previous Entry:</p>
+              <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+            </li>
+          {% endif %}
+          {% if nextPost %}
+            <li class="next">
+              <p>Next Entry:</p>
+              <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+            </li>
+          {% endif %}
+        </ul>
+      </nav>
     </article>
   </section>
 
