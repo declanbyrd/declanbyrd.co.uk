@@ -29,19 +29,21 @@
 
     {% set previousPost = collections.posts | reverse | getPreviousCollectionItem(page) %}
     {% set nextPost = collections.posts | reverse | getNextCollectionItem(page) %}
-    <section class="more-reading">
-      {% if previousPost %}
-        <div class="previous">
-          <p>Previous Entry:</p>
-          <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
-        </div>
-      {% endif %}
-      {% if nextPost %}
-        <div class="next">
-          <p>Next Entry:</p>
-          <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-        </div>
-      {% endif %}
-    </section>
+    <nav aria-label="Post Navigation">
+      <ul class="[ horizontal-links more-reading ]">
+        {% if previousPost %}
+          <li class="previous">
+            <p>Previous Entry:</p>
+            <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+          </li>
+        {% endif %}
+        {% if nextPost %}
+          <li class="next">
+            <p>Next Entry:</p>
+            <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
   </section>
 {% endblock %}

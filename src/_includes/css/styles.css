@@ -527,6 +527,7 @@ figure > figcaption {
   gap: 3rem;
   padding-left: 0;
   padding-right: 0;
+  width: 100%;
 }
 
 .more-reading p {
