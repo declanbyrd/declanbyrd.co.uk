@@ -17,3 +17,13 @@
   to = "https://plausible.io/api/event"
   status = 202
   force = true
+
+[[plugins]]
+package = "netlify-plugin-cache"
+
+  [plugins.inputs]
+  paths = [
+    "dist/img", # Eleventy Image Disk Cache
+    ".cache", # Remote Asset Cache
+    "dist"
+  ]
