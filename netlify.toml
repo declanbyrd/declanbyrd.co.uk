@@ -33,7 +33,7 @@ package = "netlify-plugin-cache"
 
   [plugins.inputs]
   paths = [
-    "dist/img/", # Eleventy Image Disk Cache
+    "img/", # Eleventy Image Disk Cache
     ".cache", # Remote Asset Cache
     "dist"
   ]
