@@ -643,3 +643,24 @@ figure > figcaption {
   max-width: 100%;
   margin: 0;
 }
+
+.listening {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.listening + .metadata {
+  font-size: 1rem;
+}
+
+.listening .track-info p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.listening .track-info a:first-child {
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-left: -0.25rem;
+}

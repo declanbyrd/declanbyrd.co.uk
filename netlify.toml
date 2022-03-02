@@ -18,12 +18,22 @@
   status = 202
   force = true
 
+[[redirects]]
+  from = "/api/latestTracks"
+  to = "/.netlify/functions/GetLatestTracks"
+  status = 200
+  force = true
+
+[functions]
+  directory = ".netlify/functions"
+
+
 [[plugins]]
 package = "netlify-plugin-cache"
 
   [plugins.inputs]
   paths = [
-    "dist/img", # Eleventy Image Disk Cache
+    "dist/img/", # Eleventy Image Disk Cache
     ".cache", # Remote Asset Cache
     "dist"
   ]

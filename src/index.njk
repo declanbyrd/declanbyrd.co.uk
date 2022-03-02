@@ -32,4 +32,23 @@
     {% include "partials/photoPreview.njk" %}
   </section>
 
+  <section id="nowPlayingContainer"></section>
+
+  <template id="nowPlaying">
+    <h2>Now Playing</h2>
+    <div class="listening">
+      <svg width="75" height="75" role="img" aria-labelledby="spotifyTitle" focusable="false">
+        <title id="spotifyTitle">Spotify</title>
+        <use href="/assets/icons/icons.svg#spotify"></use>
+      </svg>
+      <div class="track-info">
+        <a id="trackName"></a>
+        <p id="artists"></p>
+      </div>
+    </div>
+    <p class="metadata">Last updated: <span id="timestamp"></span></p>
+  </template>
+
+  <script type="text/javascript" src="/assets/scripts/spotify.js" defer></script>
+
 {% endblock %}
