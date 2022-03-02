@@ -18,6 +18,16 @@
   status = 202
   force = true
 
+[[redirects]]
+  from = "/api/latestTracks"
+  to = "/.netlify/functions/GetLatestTracks"
+  status = 200
+  force = true
+
+[functions]
+  directory = ".netlify/functions"
+
+
 [[plugins]]
 package = "netlify-plugin-cache"
 
