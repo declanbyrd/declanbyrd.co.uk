@@ -1,7 +1,6 @@
 const getTracks = async () => {
   const res = await fetch('/api/latestTracks');
   const data = await res.json();
-  console.log('🚀 ~ file: spotify.js ~ line 4 ~ getTracks ~ data', data);
   const recentlyPlayed =
     data.GetLatestTracksData.me.spotify.recentlyPlayed.nodes[0];
   const artistName = recentlyPlayed.track.artists;
@@ -11,7 +10,6 @@ const getTracks = async () => {
   const time = new Date(recentlyPlayed.playedAt).toLocaleTimeString();
   const timestamp = `${date} at ${time}`;
   const link = recentlyPlayed.track.externalUrls.spotify;
-  console.log(`I listened to ${trackName} by ${artists} on ${timestamp}`);
   return { trackName, artists, timestamp, link };
 };
 
