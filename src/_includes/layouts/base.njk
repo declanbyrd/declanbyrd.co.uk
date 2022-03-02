@@ -54,6 +54,9 @@
       {% include 'partials/footerNavigation.njk' %}
       {% include 'partials/socialLinks.njk' %}
       <script type="text/javascript" src="/assets/scripts/main.js" defer></script>
+      {% block scripts %}
+        {{ content | safe }}
+      {% endblock %}
     </footer>
   </body>
 </html>
