@@ -9,6 +9,8 @@
       <time datetime="{{ post.date | htmlDateTime }}" class="[ date ]">
         {{ post.date | readableDates }}
       </time>
+
+      <p>{{post.data.description}}</p>
     </li>
   {% endfor %}
 </ul>
