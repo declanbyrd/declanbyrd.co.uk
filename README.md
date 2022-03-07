@@ -18,3 +18,4 @@ What you can use do with this code:
 What you shouldn't do with this code:
 
 - Copy the whole codebase. There are plenty of [11ty starter projects](https://www.11ty.dev/docs/starter/) which are available - use those instead.
+- Fork the repository. You don't need your own copy of **my** site. That's creepy. If you want an 11ty site, use a [starter project](https://www.11ty.dev/docs/starter/) and build your own.
