@@ -10,10 +10,11 @@ The [colophon](https://www.merriam-webster.com/dictionary/colophon) for this sit
 
 ## License
 
-What you can use this site for:
+What you can use do with this code:
 
-- To see how I've built certain features.
+- Learn from it. Want to know how I did something, feel free to dig through the code.
+- Copying **parts** of this codebase, with attribution.
 
-What you shouldn't use this site for:
+What you shouldn't do with this code:
 
-- To create your own site by forking the code and changing the words. There are plenty of starter projects for 11ty which would be better suited and were made for this exact purpose.
+- Copy the whole codebase. There are plenty of [11ty starter projects](https://www.11ty.dev/docs/starter/) which are available - use those instead.
