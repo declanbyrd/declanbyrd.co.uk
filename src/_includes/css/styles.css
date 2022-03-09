@@ -394,6 +394,10 @@ li.tag {
   color: var(--external-link);
 }
 
+blockquote > p {
+  margin-top: 0;
+}
+
 .date {
   color: var(--text-color);
   filter: contrast(80%);
