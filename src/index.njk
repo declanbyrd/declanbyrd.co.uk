@@ -1,22 +1,31 @@
 {% extends 'layouts/base.njk' %}
 {% block content %}
 
-  <section class="[ intro ]">
-    <svg width="30" height="30" aria-hidden="true" focusable="false" class="[ logo ]">
-      <title id="logoTitle">Site logo</title>
-      <use href="/assets/icons/icons.svg#logo"></use>
-    </svg>
+  <section>
+    <div class="intro">
+      <svg width="30" height="30" aria-hidden="true" focusable="false" class="[ logo ]">
+        <title id="logoTitle">Site logo</title>
+        <use href="/assets/icons/icons.svg#logo"></use>
+      </svg>
+      <h1>Welcome to the personal site of <span class="accent">Declan Byrd</span></h1>
+    </div>
     <article>
-      <h1>Hi, I'm Declan.</h1>
-      <p>I build accessible, enjoyable and performant web experiences using HTML, CSS and JavaScript.
-      </p>
       <p>I currently work at <a href="https://buildings.honeywell.com/us/en/home">Honeywell</a> as a software engineer, where I contribute to the development of building management systems.</p>
     </article>
   </section>
 
   <section>
     <h2>
-      Recent journal entries
+      I write <a href="/journal/week-notes/" class="accent">Week Notes</a>
+    </h2>
+
+    {% set postslist = collections.weeknotes | previewCollection(1) %}
+    {% include "partials/postsList.njk" %}
+  </section>
+
+  <section>
+    <h2>
+      I Keep a <a href="/journal" class="accent">Journal</a>
     </h2>
 
     {% set postslist = collections.posts | previewCollection(3) %}
@@ -25,7 +34,8 @@
 
   <section>
     <h2>
-      <a href="/photos/">Recent photos</a>
+      I Take
+      <a href="/photos/" class="accent">photos</a>
     </h2>
 
     {% set photoslist = collections.photos | previewCollection(4) %}

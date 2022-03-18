@@ -1,8 +1,7 @@
 ---
-title: 2022 Week Notes - Week 6
-tags: ['Week Notes']
+title: Week 6
 date: 2022-02-14
-description: My weeknotes notes for the sixth week of 2022. These notes cover the week starting 7th February.
+description: Started a book, RAW photos and gaming.
 ---
 
 This week I:

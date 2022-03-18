@@ -1,0 +1,20 @@
+---
+permalink: '/week-notes/'
+title: Week Notes
+description: Declan Byrd's journal - a collection of things he's written about.
+---
+
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+  <section>
+    <h2 >
+      <span class="accent">{{ title }}</span></h2>
+    {% for year, notesInYear in collections.weeknotesByYear %}
+      <h3>{{year}}</h3>
+      {% set postslist = notesInYear %}
+      {% include "partials/notesList.njk" %}
+    {% endfor %}
+
+  </section>
+{% endblock %}

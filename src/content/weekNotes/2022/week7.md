@@ -1,15 +1,14 @@
 ---
-title: 2022 Week Notes - Week 7
-tags: ['Week Notes']
+title: Week 7
 date: 2022-02-21
-description: My weeknotes notes for the seventh week of 2022. These notes cover the week starting 14th February.
+description: A work in progress, Bruno's birthday and a football game I'd rather forget about.
 ---
 
 This week:
 
 - I've been creating a reading page for this site to log the books that I've been reading. Once I've written the notes on the books I've read so far this year and written a piece on how the page works it will appear on this site.
 
-- It was Bruno's 9th birthday. He celebrated with grated cheese and lots of treats. 
+- It was Bruno's 9th birthday. He celebrated with grated cheese and lots of treats.
 
   <figure>
     {% image "/img/journal/weeknotes/week7.jpg", "Bruno the Sussex Spaniel laying on a red rug with his chin resting on top of his left paw, looking away to the left of the photo." %}

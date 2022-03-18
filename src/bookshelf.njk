@@ -12,14 +12,16 @@ pagination:
 
 {% block content %}
 <section class="full-width">
-  <h2>{{ title }}</h2>
-  <h3>2022</h3>
-  <ul class="[ autofit-grid bookshelf ]">
-    {% for book in books %}
-    <li>
-          {% book book.data.isbn, true %}
-    </li>
+  <h2>What I've been <span class="accent">{{ title }}</span></h2>
+    {% for year, booksInYear in books %}
+    <h3>{{year}}</h3>
+    <ul class="[ bookshelf ]">
+      {% for book in booksInYear %}
+        <li>
+              {% book book.data.isbn, true %}
+        </li>
+      {% endfor %}
+    </ul>
     {% endfor %}
-  </ul>
 </section>
 {% endblock %}

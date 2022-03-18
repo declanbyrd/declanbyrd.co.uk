@@ -10,7 +10,7 @@ renderData:
 ---
 
 {% extends 'layouts/base.njk' %}
-{% set postslist = collections[tag] %}
+{% set postslist = collections[tag].reverse() %}
 
 {% block content %}
   <section>

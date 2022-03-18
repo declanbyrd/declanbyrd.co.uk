@@ -5,17 +5,11 @@ const bookShortcode = async (bookIsbn, preview = false) => {
   const book = await isbn.provider(['google']).resolve(bookIsbn);
 
   if (preview) {
-    return `<a href="/reading/${bookIsbn}/" >
-    <div class="book-container preview">
+    return `<a href="/reading/${bookIsbn}/" class="book-container preview" >
       ${await image(
         book.imageLinks.smallThumbnail,
         `book cover for ${book.title}`
       )}
-      <div>
-        <p>${book.title}</p>
-        <p>by ${book.authors.join(', ')}</p>
-      </div>
-    </div>
   </a>`;
   }
   const words = book.description.split(' ');

@@ -1,0 +1,16 @@
+<ul class="journal">
+  {% for post in postslist %}
+    <li>
+      <h4>
+        <a href="{{ post.url | url }}">
+          {{ post.data.title }}
+        </a>
+      </h4>
+      <time datetime="{{ post.date | htmlDateTime }}" class="[ date ]">
+        {{ post.date | readableDates }}
+      </time>
+
+      <p>{{post.data.description}}</p>
+    </li>
+  {% endfor %}
+</ul>

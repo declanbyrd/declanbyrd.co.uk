@@ -1,8 +1,7 @@
 ---
-title: 2022 Week Notes - Week 4
-tags: ['Week Notes']
+title: Week 4
 date: 2022-01-31
-description: My weeknotes notes for the fourth week of 2022. These notes cover the week starting 24th January.
+description: Eleventy 1.0, Humankind and a basketball game.
 ---
 
 This week I:
