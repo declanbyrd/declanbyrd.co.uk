@@ -10,6 +10,9 @@ const bookShortcode = async (bookIsbn, preview = false) => {
         book.imageLinks.smallThumbnail,
         `book cover for ${book.title}`
       )}
+      <span class="[ visually-hidden ]">Read Declan's notes for ${
+        book.title
+      } by ${book.authors.join(', ')}</span>
   </a>`;
   }
   const words = book.description.split(' ');
