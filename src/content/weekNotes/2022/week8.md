@@ -1,9 +1,7 @@
 ---
-title: 2022 Week Notes - Week 8
-tags: ['Week Notes']
+title: Week 8
 date: 2022-02-28
-description: My weeknotes notes for the eighth week of 2022. These notes cover the week starting 21st February.
-
+description: Sunset photos, tracking my reading and even more sunset photos.
 ---
 
 This week I:
@@ -19,7 +17,7 @@ This week I:
     <figcaption>Sun sets behind Worthing pier.</figcaption>
   </figure>
 
-- Watched [Brighton lose 2-0 at home to Aston Villa](https://www.brightonandhovealbion.com/news/2506828/match-report-albion-beaten-by-villa). 
+- Watched [Brighton lose 2-0 at home to Aston Villa](https://www.brightonandhovealbion.com/news/2506828/match-report-albion-beaten-by-villa).
 
 - Took my camera out again on Sunday to capture another sunset.
 
@@ -28,4 +26,4 @@ This week I:
     <figcaption>Sunday sunset.</figcaption>
   </figure>
 
-- Finished reading [Ender's Game](/reading/9780356500843/). 
+- Finished reading [Ender's Game](/reading/9780356500843/).

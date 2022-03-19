@@ -1,8 +1,7 @@
 ---
-title: 2022 Week Notes - Week 9
-tags: ['Week Notes']
+title: Week 9
 date: 2022-03-07
-description: My weeknotes notes for the ninth week of 2022. These notes cover the week starting 28th February.
+description: Faster builds, I built a thing and an away win for Worthing D&D.
 ---
 
 This week I:

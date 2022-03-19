@@ -1,8 +1,7 @@
 ---
-title: 2022 Week Notes - Week 3
-tags: ['Week Notes']
+title: Week 3
 date: 2022-01-24
-description: My weeknotes notes for the third week of 2022. These notes cover the week starting 17th January.
+description: Cloud gaming, an away day and a trip to the office.
 ---
 
 This week I:

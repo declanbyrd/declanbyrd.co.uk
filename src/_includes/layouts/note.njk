@@ -3,7 +3,6 @@
 {% block stylesheets %}
 
   {% set css %}
-  {% include "css/syntax.css" %}
   {% include "css/markdown.css" %}
   {% endset %}
   <style>
@@ -16,27 +15,13 @@
     <article class="[ markdown-container max-width-80 ]">
       <h2>{{ title }}</h2>
       <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | readableDates}}</time>
-      <ul class="[ horizontal-list ]">
-        {% for tag in tags %}
-          {%- if collections.tagList.indexOf(tag) != -1 -%}
-            {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-            <li class="[ tag ]">
-              <svg width="20" height="20" role="img" aria-hidden="true" focusable="false" class="icon label">
-                <use href="/assets/icons/icons.svg#label"></use>
-              </svg>
-              <a href="{{ tagUrl | url }}" class="[ hover-link ]">{{ tag }}</a>
-            </li>
-          {%- endif -%}
-        {% endfor %}
-      </ul>
-
       <hr>
 
       {{ content | safe }}
     </article>
 
-    {% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-    {% set nextPost = collections.posts | getNextCollectionItem(page) %}
+    {% set previousPost = collections.weeknotes | getPreviousCollectionItem(page) %}
+    {% set nextPost = collections.weeknotes | getNextCollectionItem(page) %}
     <nav aria-label="Post Navigation">
       <ul class="[ horizontal-links more-reading ]">
         {% if previousPost %}

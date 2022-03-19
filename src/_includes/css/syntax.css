@@ -40,7 +40,7 @@ pre[class*='language-'] {
 
 *:not(pre) > code,
 pre[class*='language-'] {
-  background: #1a1919;
+  background: var(--code-background);
 }
 
 p > code,

@@ -1,11 +1,11 @@
 <ul class="content-list">
   {% for post in postslist %}
     <li>
-      <h3>
+      <h4>
         <a href="{{ post.url | url }}">
           {{ post.data.title }}
         </a>
-      </h3>
+      </h4>
       <time datetime="{{ post.date | htmlDateTime }}" class="[ date ]">
         {{ post.date | readableDates }}
       </time>

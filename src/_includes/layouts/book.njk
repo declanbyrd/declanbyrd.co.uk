@@ -1,5 +1,15 @@
 {% extends 'layouts/base.njk' %}
 
+{% block stylesheets %}
+
+  {% set css %}
+  {% include "css/books.css" %}
+  {% endset %}
+  <style>
+    {{css | cssmin | safe}}
+  </style>
+{% endblock %}
+
 {% block content %}
 
   {% set currentBook = collections.books | getCollectionItem(page) %}

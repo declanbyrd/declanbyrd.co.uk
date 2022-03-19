@@ -18,6 +18,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addNunjucksAsyncShortcode('book', bookShortcode);
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
+  eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
   // Filters
 
