@@ -7,6 +7,16 @@ date: Last Modified
 
 {% extends 'layouts/base.njk' %}
 
+{% block stylesheets %}
+
+  {% set css %}
+  {% include "css/markdown.css" %}
+  {% endset %}
+  <style>
+    {{css | cssmin | safe}}
+  </style>
+{% endblock %}
+
 {% block content %}
   <section class="[ max-width-80 ]">
 

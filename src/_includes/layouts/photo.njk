@@ -1,5 +1,15 @@
 {% extends 'layouts/base.njk' %}
 
+{% block stylesheets %}
+
+  {% set css %}
+  {% include "css/photos.css" %}
+  {% endset %}
+  <style>
+    {{css | cssmin | safe}}
+  </style>
+{% endblock %}
+
 {% block content %}
 
   <section>

@@ -9,7 +9,7 @@ description: Declan Byrd's journal - a collection of things he's written about.
 {% block content %}
   <section>
     <h2 >
-      <span class="accent">{{ title }}</span></h2>
+      My <span class="accent">{{ title }}</span></h2>
     {% for year, notesInYear in collections.weeknotesByYear %}
       <h3>{{year}}</h3>
       {% set postslist = notesInYear %}

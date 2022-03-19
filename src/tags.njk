@@ -14,7 +14,7 @@ renderData:
 
 {% block content %}
   <section>
-    <h2 >Entries about: “{{ tag }}”</h2>
+    <h2 >Results for: <span class="accent">{{ tag }}</span></h2>
     {% if postslist.length > 1 %}
       <p>There are {{ postslist.length }} journal entries about {{ tag }}:</p>
     {% endif %}

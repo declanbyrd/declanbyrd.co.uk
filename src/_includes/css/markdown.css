@@ -1,0 +1,83 @@
+.more-reading {
+  border-top: 0.125rem solid var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
+.more-reading p {
+  margin: 0.25rem 0;
+}
+
+.more-reading a {
+  margin: 0 -0.25rem;
+}
+
+.next, .previous {
+  flex: 0 1 45%;
+}
+
+.markdown-container {
+  margin-bottom: 3rem;
+}
+
+
+figure {
+  margin: 3rem 0;
+}
+
+figure > figcaption {
+  font-style: italic;
+  text-align: center;
+}
+
+
+
+
+.markdown-container img {
+  max-width: 50rem;
+  height: 100%;
+  width: 100%;
+  margin: 1rem auto;
+  display: block;
+}
+
+.markdown-container img.portrait {
+  max-width: 25rem;
+  height: 100%;
+  width: 100%;
+}
+
+.markdown-container li {
+  margin: 1rem 0;
+}
+
+.markdown-container :is(p, li) a {
+  display: inline;
+}
+
+.markdown-container blockquote, .callout {
+  background: var(--text-color);
+  color: var(--background);
+  border-left: 0.625rem solid var(--external-link);
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem 1rem 0.625rem;
+}
+
+.markdown-container p > code,
+.markdown-container li code {
+  background: none;
+  color: var(--external-link);
+}
+
+.markdown-container blockquote > p > code {
+  background: var(--background);
+  color: var(--external-link);
+}
+
+blockquote > p {
+  margin-top: 0;
+}

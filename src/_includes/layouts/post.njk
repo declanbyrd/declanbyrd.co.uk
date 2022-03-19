@@ -1,10 +1,18 @@
 {% extends 'layouts/base.njk' %}
 
+{% block stylesheets %}
+
+  {% set css %}
+  {% include "css/syntax.css" %}
+  {% include "css/markdown.css" %}
+  {% endset %}
+  <style>
+    {{css | cssmin | safe}}
+  </style>
+{% endblock %}
+
 {% block content %}
   <section>
-    <style>
-      {% include "css/syntax.css" %}
-    </style>
     <article class="[ markdown-container max-width-80 ]">
       <h2>{{ title }}</h2>
       <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | readableDates}}</time>

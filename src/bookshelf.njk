@@ -10,6 +10,16 @@ pagination:
 
 {% extends 'layouts/base.njk' %}
 
+{% block stylesheets %}
+
+  {% set css %}
+  {% include "css/books.css" %}
+  {% endset %}
+  <style>
+    {{css | cssmin | safe}}
+  </style>
+{% endblock %}
+
 {% block content %}
 <section class="full-width">
   <h2>What I've been <span class="accent">{{ title }}</span></h2>

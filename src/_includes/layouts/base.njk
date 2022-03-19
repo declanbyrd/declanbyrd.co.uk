@@ -29,6 +29,9 @@
     <style>
       {{css | cssmin | safe}}
     </style>
+    {% block stylesheets %}
+      {{ content | safe }}
+    {% endblock %}
     <script>
       const theme = localStorage.getItem("user-color-scheme");
       if (theme) {
