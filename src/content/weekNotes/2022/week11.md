@@ -4,7 +4,7 @@ date: 2022-03-21
 description: Development day, version 2 of this site and assessing interviews.
 ---
 
-This week I:
+For the week starting 14th March, I:
 
 - Made a trip into the office to help with some interviews for an intern position. 
 - Participated in the first "development day" through work. The idea is to use the day for personal development so all meetings were rescheduled or cancelled. Having struggled a bit assessing the interviews earlier in the week, I started Jem Young's Frontend Masters course on [interviewing for front-end engineers](https://frontendmasters.com/courses/interviewing-frontend/). The course goes into detail on how to give better interviews as the interviewer, which I found really insightful.

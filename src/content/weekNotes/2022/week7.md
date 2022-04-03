@@ -4,7 +4,7 @@ date: 2022-02-21
 description: A work in progress, Bruno's birthday and a football game I'd rather forget about.
 ---
 
-This week:
+For the week starting 14th February:
 
 - I've been creating a reading page for this site to log the books that I've been reading. Once I've written the notes on the books I've read so far this year and written a piece on how the page works it will appear on this site.
 

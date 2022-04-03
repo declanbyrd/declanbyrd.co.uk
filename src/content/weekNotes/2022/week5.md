@@ -4,7 +4,7 @@ date: 2022-02-07
 description: Fast websites, React native and FA cup football.
 ---
 
-This week I:
+For the week starting 31st January, I:
 
 - Played in [Worthing D&D's 84-67 win over Shoreham Spartans](https://www.basketballsussex.co.uk/match/31584725.html) in the cup.
 - Ranked #3 in [11ty leaderboards №17](https://twitter.com/eleven_ty/status/1488195108658946055). The leaderboards are created using [Speedlify](https://www.zachleat.com/web/speedlify/) which measures your site's performance over time. I'm rather pleased that I've managed to climb to third but would also be thrilled if I am moved down in the standings. The more sites above mine in the standings, the more people are building fast and accessible websites.

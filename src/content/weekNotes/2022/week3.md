@@ -4,7 +4,7 @@ date: 2022-01-24
 description: Cloud gaming, an away day and a trip to the office.
 ---
 
-This week I:
+For the week starting 17th January, I:
 
 - Watched [Brighton earn a deserved point in their game against Chelsea at The Amex](https://www.brightonandhovealbion.com/news/2453292/websters-header-bags-albion-another-point-against-chelsea). Some of the best football played this season and showing the strength in depth within the squad while key players were missing.
 

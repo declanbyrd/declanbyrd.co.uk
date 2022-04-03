@@ -6,7 +6,7 @@ description: The Eternals, Lancing Ring and a finished book.
 
 According to the my site analytics a grand total of 3 people read my [week notes from last week](https://declanbyrd.co.uk/journal/2022/week1/). This is particularly impressive because I forgot to tweet that I'd started writing weekly notes.
 
-This week I:
+For the week starting 10th January, I:
 
 - Spent most of my working week developing a new feature and attending work meetings that won't make the national news.
 - Played my first basketball game of the new year in a [114-46 win for Worthing D&D against Chichester Knights](https://www.basketballsussex.co.uk/match/31514870.html).

@@ -4,7 +4,7 @@ date: 2022-03-28
 description: A quarter-final game in the Basketball Sussex cup and Royal Blood.
 ---
 
-This week I:
+For the week starting 21st March, I:
 
 - Played (and scored 3 three pointers) in [Worthing D&D's 115-52 win against Angmering GSD](https://www.basketballsussex.co.uk/match/31862365.html) in the quarter-finals of the Basketball Sussex Men's Cup. A semi-final fixture against Brighton Cougars is scheduled for next month.
 

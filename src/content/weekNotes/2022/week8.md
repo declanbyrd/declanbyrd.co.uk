@@ -4,7 +4,7 @@ date: 2022-02-28
 description: Sunset photos, tracking my reading and even more sunset photos.
 ---
 
-This week I:
+For the week starting 21st February, I:
 
 - Played in [Worthing D&D's 96-46 win over Shoreham Spartans](https://www.basketballsussex.co.uk/match/31514887.html). Still top of the league having won 6/6.
 

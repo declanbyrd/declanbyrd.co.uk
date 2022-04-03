@@ -4,7 +4,7 @@ date: 2022-01-31
 description: Eleventy 1.0, Humankind and a basketball game.
 ---
 
-This week I:
+For the week starting 24th January, I:
 
 - Played in [Worthing D&D's 90-70 win over SE Tigers](https://www.basketballsussex.co.uk/match/31514877.html).
 - Upgraded my website to use the recently released [version 1.0 of 11ty](https://www.11ty.dev/blog/eleventy-one-point-oh/).

@@ -4,7 +4,7 @@ date: 2022-03-14
 description: Two basketball games, how I built the now playing section on the home page and another home defeat for Brighton.
 ---
 
-This week I:
+For the week starting 7th March, I:
 
 - Played in [Worthing D&D's home win against Brighton Cougars](https://www.basketballsussex.co.uk/match/31514899.html) and then [won against the other Worthing D&D team](https://www.basketballsussex.co.uk/match/31514912.html). Two more league games to go and still top of the league.
 - Added an entry to the journal on [building the now playing section](/journal/2022/netlify-graph-spotify-now-playing/) for the home page.

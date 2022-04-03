@@ -4,7 +4,7 @@ date: 2022-02-14
 description: Started a book, RAW photos and gaming.
 ---
 
-This week I:
+For the week starting 7th February, I:
 
 - Had no basketball fixtures.
 
