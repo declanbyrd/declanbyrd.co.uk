@@ -4,7 +4,7 @@
   "description": "My homepage",
   "scripts": {
     "debug": "set DEBUG=Eleventy* & eleventy",
-    "build": "set NODE_ENV=production & npx eleventy",
+    "build": "npx eleventy",
     "start": "eleventy --serve",
     "dev": "npx netlify dev --graph"
   },
