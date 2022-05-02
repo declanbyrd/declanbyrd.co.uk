@@ -18,7 +18,7 @@ const fetchWebmentions = async (since) => {
     return false;
   }
 
-  let url = `${API}/mentions.jf2?domain=${domain}&token=${TOKEN}`;
+  let url = `${API}?domain=${domain}&token=${TOKEN}`;
   if (since) url += `&since=${since}`; // only fetch new mentions
 
   const response = await fetch(url);
@@ -29,7 +29,7 @@ const fetchWebmentions = async (since) => {
     );
     return feed;
   }
-
+  console.warn('>>> unable to fetch webmentions', response.statusText);
   return null;
 };
 
