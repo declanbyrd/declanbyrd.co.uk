@@ -1,0 +1,24 @@
+<article class="webmention like" id="webmention-{{ webmention['wm-id'] }}">
+  {% if webmention.author %}
+    <a class="webmention-like h-card u-url" href="{{webmention.url}}" target="_blank" rel="noopener noreferrer">
+      {% if webmention.author.photo %}
+        <img src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" class="webmention-avatar" width="48" height="48" loading="lazy">
+      {% else %}
+        <div>
+          <svg width="48" height="48" role="img" aria-labelledby="anonTitle" focusable="false" class="[ social-icon ]">
+            <title id="anonTitle">Anonymous user</title>
+            <use href="/assets/icons/icons.svg#anon-webmention"></use>
+          </svg>
+          <span class='[ visually-hidden ]'>Anonymous User</span>
+        </div>
+      {% endif %}
+      <span class="visually-hidden">
+        <p class="p-name">{{ webmention.author.name }}</p>
+      </span>
+    </a>
+  {% else %}
+    <span class="visually-hidden">
+      <strong>Anonymous</strong>
+    </span>
+  {% endif %}
+</article>

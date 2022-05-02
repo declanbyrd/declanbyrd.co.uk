@@ -21,3 +21,26 @@ module.exports.previewCollection = (array, n) => {
 module.exports.cssmin = (code) => {
   return new cleanCSS({}).minify(code).styles;
 };
+
+module.exports.getWebmentionsForUrl = (webmentions, url) => {
+  return webmentions.children.filter((entry) => entry['wm-target'] === url);
+};
+
+module.exports.webmentionsLastFetched = (webmentions) => {
+  return webmentions.lastFetched;
+};
+
+module.exports.webmentionsSize = (mentions) => {
+  return !mentions ? 0 : mentions.length;
+};
+
+module.exports.webmentionsByType = (mentions, mentionType) => {
+  return mentions.filter((entry) => !!entry[mentionType]);
+};
+
+module.exports.readableDateFromISO = (
+  dateStr,
+  formatStr = "dd LLL yyyy 'at' hh:mma"
+) => {
+  return DateTime.fromISO(dateStr).toFormat(formatStr);
+};

@@ -180,7 +180,7 @@ a:not(.icon-container):is([href^="http://"], [href^="https://"]):not([href*="dec
   color: var(--external-link);
 }
 
-a:not(.icon-container):is([href^="http://"], [href^="https://"]):not([href*="declanbyrd.co.uk"]):after
+a:not(.icon-container, .webmention-like):is([href^="http://"], [href^="https://"]):not([href*="declanbyrd.co.uk"]):after
 {
   content: ' ↗';
 }
@@ -483,4 +483,43 @@ html.no-js .toggle {
 
 .rss-container .icon {
   display: flex;
+}
+
+
+.webmentions-container h2 {
+  font-size: var(--step-2);
+  color: var(--external-link);
+}
+
+.webmentions-container h3 {
+  font-size: var(--step-1);
+}
+
+.webmention-likes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.webmention-replies .meta {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.webmention-replies blockquote {
+  margin-left: 3.25rem;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.webmention-replies blockquote::before {
+  content: open-quote;
+}
+
+.webmention-replies blockquote::after {
+  content: close-quote;
+}
+
+.webmention-avatar {
+  border-radius: 50%;
 }

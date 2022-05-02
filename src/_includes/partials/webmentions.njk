@@ -1,0 +1,47 @@
+{% set mentions = webmentions | getWebmentionsForUrl(metadata.url + webmentionUrl) %}
+{% set mentionsSize = webmentions | getWebmentionsForUrl(metadata.url + webmentionUrl) | webmentionsSize %}
+{% set reposts = mentions | webmentionsByType('repost-of') %}
+{% set repostsSize = reposts | webmentionsSize %}
+{% set likes = mentions | webmentionsByType('like-of') %}
+{% set likesSize = likes | webmentionsSize %}
+{% set replies = mentions | webmentionsByType('in-reply-to')  %}
+{% set repliesSize = replies | webmentionsSize %}
+
+{% if mentionsSize > 0 %}
+  <section class="webmentions-container" id="webmentions" data-last-fetched="{{webmentions.lastFetched}}">
+    <h2>Webmentions</h2>
+  {% endif %}
+
+  {% if repostsSize > 0 %}
+    <h3>
+      Shared By
+    </h3>
+    <div class="webmention-likes">
+      {% for webmention in repostsSize %}
+        {% include 'partials/webmentions/repost.njk' %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if likesSize > 0 %}
+    <h3>
+      Liked By
+    </h3>
+    <div class="webmention-likes">
+      {% for webmention in likes %}
+        {% include 'partials/webmentions/likes.njk' %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if repliesSize > 0 %}
+    <h3>{{ repliesSize }}
+      {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}
+    </h3>
+    <div class="webmention-replies">
+      {% for webmention in replies %}
+        {% include 'partials/webmentions/mention.njk' %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

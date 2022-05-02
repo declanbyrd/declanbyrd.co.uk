@@ -12,14 +12,21 @@
 
 {% block content %}
   <section>
-    <article class="[ markdown-container max-width-80 ]">
-      <h2>{{ title }}</h2>
-      <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | readableDates}}</time>
+    <article class="h-entry [ markdown-container max-width-80 ]">
+      <h2 class="p-name">{{ title }}</h2>
+      <time class="dt-published [ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | readableDates}}</time>
       <hr>
 
-      {{ content | safe }}
+      <div class="e-content">
+        {{ content | safe }}
+      </div>
     </article>
+  </section>
 
+  {% set webmentionUrl %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
+  {% include 'partials/webmentions.njk' %}
+
+  <section>
     {% set previousPost = collections.weeknotes | getPreviousCollectionItem(page) %}
     {% set nextPost = collections.weeknotes | getNextCollectionItem(page) %}
     <nav aria-label="Post Navigation">

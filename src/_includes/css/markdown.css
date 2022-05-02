@@ -1,5 +1,4 @@
 .more-reading {
-  border-top: 0.125rem solid var(--text-color);
   display: flex;
   justify-content: space-between;
   gap: 3rem;
