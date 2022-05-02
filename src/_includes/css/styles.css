@@ -523,3 +523,7 @@ html.no-js .toggle {
 .webmention-avatar {
   border-radius: 50%;
 }
+
+footer .h-card {
+  display: none;
+}
