@@ -16,8 +16,8 @@
     <h3>
       Shared By
     </h3>
-    <div class="webmention-likes">
-      {% for webmention in repostsSize %}
+    <div class="webmention-reposts">
+      {% for webmention in reposts %}
         {% include 'partials/webmentions/repost.njk' %}
       {% endfor %}
     </div>

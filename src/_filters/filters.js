@@ -9,9 +9,13 @@ module.exports.htmlDateTime = (date) => {
   return DateTime.fromJSDate(date, { zone: 'utc' }).toFormat('yyyy-LL-dd');
 };
 
+module.exports.metadataDate = (date) => {
+  return DateTime.fromJSDate(date, { zone: 'utc' }).toISO();
+};
+
 module.exports.readableDates = (date) => {
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  return new Date(date).toLocaleDateString(undefined, options);
+  return new Date(date).toLocaleDateString('en-GB', options);
 };
 
 module.exports.previewCollection = (array, n) => {
@@ -43,4 +47,9 @@ module.exports.readableDateFromISO = (
   formatStr = "dd LLL yyyy 'at' hh:mma"
 ) => {
   return DateTime.fromISO(dateStr).toFormat(formatStr);
+};
+
+module.exports.getWebmentionSource = (url) => {
+  const { hostname } = new URL(url);
+  return hostname;
 };

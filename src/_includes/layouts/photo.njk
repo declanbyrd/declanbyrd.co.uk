@@ -13,44 +13,41 @@
 
 {% block content %}
 
-  <section>
-    <article>
-      <div class="[ flex-row ]">
-        <h2>Photos</h2>
-        <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | readableDates}}</time>
-      </div>
-      {{ content | safe }}
-      {% for item in photo %}
-        {% image item.url, item.alt, "[ large-photo ]" %}
-      {% endfor %}
+  <article class="photo-entry">
+    <div class="[ flex-row ]">
+      <h2>Photos</h2>
+      <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | readableDates}}</time>
+    </div>
+    {{ content | safe }}
+    {% for item in photo %}
+      {% image item.url, item.alt, "[ large-photo ]" %}
+    {% endfor %}
 
-    </article>
+    {% set webmentionUrl %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
+    {% include 'partials/webmentions.njk' %}
 
-  </section>
-  {% set webmentionUrl %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
-  {% include 'partials/webmentions.njk' %}
+    <section>
+      {% set previousPost = collections.photos | reverse | getPreviousCollectionItem(page) %}
+      {% set nextPost = collections.photos | reverse | getNextCollectionItem(page) %}
+      <nav aria-label="Photo Navigation">
+        <ul class="[ horizontal-links more-reading ]">
+          {% if previousPost %}
+            <li class="previous">
+              <p>Previous Entry:</p>
+              <a href="{{ previousPost.url }}">{{ previousPost.data.date | readableDates }}</a>
+            </li>
+          {% endif %}
+          {% if nextPost %}
+            <li class="next">
+              <p>Next Entry:</p>
+              <a href="{{ nextPost.url }}">{{ nextPost.data.date | readableDates }}</a>
+            </li>
+          {% endif %}
+        </ul>
+      </nav>
+    </section>
 
-  <section>
-    {% set previousPost = collections.photos | reverse | getPreviousCollectionItem(page) %}
-    {% set nextPost = collections.photos | reverse | getNextCollectionItem(page) %}
-    <nav aria-label="Photo Navigation">
-      <ul class="[ horizontal-links more-reading ]">
-        {% if previousPost %}
-          <li class="previous">
-            <p>Previous Entry:</p>
-            <a href="{{ previousPost.url }}">{{ previousPost.data.date | readableDates }}</a>
-          </li>
-        {% endif %}
-        {% if nextPost %}
-          <li class="next">
-            <p>Next Entry:</p>
-            <a href="{{ nextPost.url }}">{{ nextPost.data.date | readableDates }}</a>
-          </li>
-        {% endif %}
-      </ul>
-    </nav>
-  </section>
-
+  </article>
 {% endblock %}
 
 {% block scripts %}{% endblock %}

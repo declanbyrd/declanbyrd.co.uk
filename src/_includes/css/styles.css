@@ -495,15 +495,36 @@ html.no-js .toggle {
   font-size: var(--step-1);
 }
 
+.webmentions-container h4 {
+  font-size: var(--step--1);
+  display: inline;
+}
+
 .webmention-likes {
   display: flex;
   flex-wrap: wrap;
 }
 
-.webmention-replies .meta {
+.webmention-replies .meta, .webmention-reposts .meta {
   display: flex;
-  align-items: center;
-  gap: 0.25rem;
+  align-items: start;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.webmention-reposts .meta > div, .webmention-replies .meta > div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.webmention-replies .meta > div {
+  margin-bottom: 1rem;
+}
+
+.webmention-reposts .webmention-avatar, .webmention-replies .webmention-avatar {
+  margin-top: 0.5rem;
 }
 
 .webmention-replies blockquote {
@@ -526,4 +547,23 @@ html.no-js .toggle {
 
 footer .h-card {
   display: none;
+}
+
+.hidden-metadata {
+  display: none;
+}
+
+article.h-entry, article.photo-entry {
+  max-width: 90ch;
+  margin: auto;
+  padding: 1.5rem 1rem;
+}
+
+.h-card .webmention-avatar {
+  width: 3rem;
+  height: 3rem;
+}
+
+.webmentions-container {
+  padding: 1.5rem 0;
 }
