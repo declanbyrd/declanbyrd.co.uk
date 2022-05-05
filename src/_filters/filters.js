@@ -44,7 +44,7 @@ module.exports.webmentionsByType = (mentions, mentionType) => {
 
 module.exports.readableDateFromISO = (
   dateStr,
-  formatStr = "dd LLL yyyy 'at' hh:mma"
+  formatStr = "dd LLL yyyy 'at' HH:mm"
 ) => {
   return DateTime.fromISO(dateStr).toFormat(formatStr);
 };
