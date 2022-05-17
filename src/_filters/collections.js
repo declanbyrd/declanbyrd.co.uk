@@ -1,30 +1,32 @@
 module.exports.tagList = (collection) => {
   const tagSet = new Set();
-  collection.getAllSorted().forEach(function (item) {
-    if ('tags' in item.data) {
-      let tags = item.data.tags;
-      if (typeof tags === 'string') {
-        tags = [tags];
-      }
-
-      tags = tags.filter((item) => {
-        switch (item) {
-          case 'all':
-          case 'nav':
-          case 'post':
-          case 'posts':
-          case 'tagList':
-            return false;
+  collection
+    .getFilteredByGlob('src/content/journal/*.md')
+    .forEach(function (item) {
+      if ('tags' in item.data) {
+        let tags = item.data.tags;
+        if (typeof tags === 'string') {
+          tags = [tags];
         }
 
-        return true;
-      });
+        tags = tags.filter((item) => {
+          switch (item) {
+            case 'all':
+            case 'nav':
+            case 'post':
+            case 'posts':
+            case 'tagList':
+              return false;
+          }
 
-      for (const tag of tags) {
-        tagSet.add(tag);
+          return true;
+        });
+
+        for (const tag of tags) {
+          tagSet.add(tag);
+        }
       }
-    }
-  });
+    });
 
   return [...tagSet].sort();
 };
@@ -52,6 +54,15 @@ module.exports.weeknotesByYear = (collection) => {
 module.exports.weeknotes = (collection) => {
   return collection
     .getFilteredByGlob('src/content/weekNotes/**/*.md')
+    .reverse();
+};
+
+module.exports.allPosts = (collection) => {
+  return collection
+    .getFilteredByGlob(
+      'src/content/weekNotes/**/*.md',
+      'src/content/journal/*.md'
+    )
     .reverse();
 };
 
