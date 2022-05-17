@@ -15,11 +15,9 @@ description: All of the tags that Declan has written about in his journal.
       {% for tag in collections.tagList %}
         {% set tagUrl %}/tags/{{tag | slug}}/{% endset %}
         <li class="[ tag ]">
-          <svg width="20" height="20" role="img" aria-hidden="true" focusable="false" class="[ icon ] [ label ]">
-            <use href="/assets/icons/icons.svg#label"></use>
-          </svg>
           <a href="{{ tagUrl | url }}" class="[ hover-link ]">
-            {{ tag }}
+            <span class="accent">#</span>
+            <span>{{ tag }}</span>
           </a>
     ( {{collections[tag].length}} )
   </li>

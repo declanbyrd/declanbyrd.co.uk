@@ -21,10 +21,8 @@
         {%- if collections.tagList.indexOf(tag) != -1 -%}
           {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
           <li class="[ tag ]">
-            <svg width="20" height="20" role="img" aria-hidden="true" focusable="false" class="icon label">
-              <use href="/assets/icons/icons.svg#label"></use>
-            </svg>
-            <a href="{{ tagUrl | url }}" class="p-category [ hover-link ]">{{ tag }}</a>
+            <a href="{{ tagUrl | url }}" class="p-category [ hover-link ]">
+              <span class="accent">#</span>{{ tag }}</a>
           </li>
         {%- endif -%}
       {% endfor %}
