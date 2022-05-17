@@ -10,12 +10,4 @@ The [colophon](https://www.merriam-webster.com/dictionary/colophon) for this sit
 
 ## License
 
-What you can use do with this code:
-
-- Learn from it. Want to know how I did something, feel free to dig through the code.
-- Copying **parts** of this codebase, with attribution.
-
-What you shouldn't do with this code:
-
-- Copy the whole codebase. There are plenty of [11ty starter projects](https://www.11ty.dev/docs/starter/) which are available - use those instead.
-- Fork the repository. You don't need your own copy of **my** site. That's creepy. If you want an 11ty site, use a [starter project](https://www.11ty.dev/docs/starter/) and build your own.
+[Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) ](https://creativecommons.org/licenses/by-nc-nd/4.0/)
