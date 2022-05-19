@@ -10,38 +10,32 @@
 {% if mentionsSize > 0 %}
   <section class="webmentions-container" id="webmentions" data-last-fetched="{{webmentions.lastFetched}}">
     <h2>Webmentions</h2>
-  {% endif %}
 
-  {% if repostsSize > 0 %}
-    <h3>
-      Shared By
-    </h3>
-    <div class="webmention-reposts">
-      {% for webmention in reposts %}
-        {% include 'partials/webmentions/repost.njk' %}
-      {% endfor %}
-    </div>
-  {% endif %}
-
-  {% if likesSize > 0 %}
-    <h3>
+    {% if likesSize > 0 %}
+      <h3>
       Liked By
     </h3>
-    <div class="webmention-likes">
-      {% for webmention in likes %}
-        {% include 'partials/webmentions/likes.njk' %}
-      {% endfor %}
-    </div>
-  {% endif %}
+      <div class="webmention-likes">
+        {% for webmention in likes %}
+          {% include 'partials/webmentions/likes.njk' %}
+        {% endfor %}
+      </div>
+    {% endif %}
 
-  {% if repliesSize > 0 %}
-    <h3>{{ repliesSize }}
-      {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}
-    </h3>
-    <div class="webmention-replies">
-      {% for webmention in replies %}
-        {% include 'partials/webmentions/mention.njk' %}
-      {% endfor %}
-    </div>
+    {% if repostsSize > 0 %}
+      <div class="webmention-reposts">
+        {% for webmention in reposts %}
+          {% include 'partials/webmentions/repost.njk' %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if repliesSize > 0 %}
+      <div class="webmention-replies">
+        {% for webmention in replies %}
+          {% include 'partials/webmentions/mention.njk' %}
+        {% endfor %}
+      </div>
+    {% endif %}
   </section>
 {% endif %}
