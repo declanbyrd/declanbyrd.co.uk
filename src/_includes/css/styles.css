@@ -124,6 +124,7 @@ header {
 
 @media screen and (max-width: 600px) {
   header {
+    margin-top: var(--step--2);
     justify-content: center;
     flex-direction: column;
   }
@@ -149,6 +150,7 @@ header > .logo h1 {
   color: var(--text-color);
   margin: 0;
   line-height: 1;
+  font-size: var(--step-2);
 }
 
 main {
@@ -429,10 +431,8 @@ html.no-js .toggle {
 }
 
 .site-logo {
-  width: 3.815rem;
-  width: min(calc(2.441rem + 1vw), 3.815rem);
-  height: 3.815rem;
-  height: min(calc(2.441rem + 1vw), 3.815rem);
+  width: var(--step-2);
+  height: var(--step-2);
   fill: var(--text-color);
   margin-right: 0.5rem;
 }
@@ -499,6 +499,10 @@ html.no-js .toggle {
   display: inline;
 }
 
+.webmentions-container div + div {
+  margin-top: 2rem;
+}
+
 .webmention-likes {
   display: flex;
   flex-wrap: wrap;
@@ -558,11 +562,21 @@ article.h-entry, article.photo-entry {
   padding: 1.5rem 1rem;
 }
 
-.h-card .webmention-avatar {
-  width: 3rem;
-  height: 3rem;
+.webmention-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .webmentions-container {
   padding: 1.5rem 0;
+}
+
+.postlist-date {
+  font-size: var(--step--2);
+}
+
+.meta-header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
 }
