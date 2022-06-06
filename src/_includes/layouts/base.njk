@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
     <link rel="alternate icon" href="/assets/icons/favicon.png">
-    <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/assets/fonts/bungee.woff2">
+    <link rel="preload" href="/assets/fonts/bungee.woff2" as="font" type="font/woff2" crossorigin >
     <title>{{renderData.title or title or metadata.title}}</title>
     <meta name="Description" content="{{renderData.description or description or metadata.description}}"/>
     <meta property="og:site_name" content="declanbyrd.co.uk">
@@ -25,18 +25,19 @@
     <link rel="alternate" title="Journal posts" type="application/atom+xml" href="/journal/feed.xml">
     <link rel="alternate" title="Weekly notes" type="application/atom+xml" href="/week-notes/feed.xml">
     <link rel="manifest" href="/assets/site.webmanifest">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9f9fe">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1a1a1a">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="{{tokens.colorLight}}">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="{{tokens.colorDark}}">
 
     {% set css %}
-    {% include "css/styles.css" %}
+    {% include "css/critical.css" %}
     {% endset %}
     <style>
       {{css | cssmin | safe}}
     </style>
-    {% block stylesheets %}
-      {{ content | safe }}
-    {% endblock %}
+
+    <link rel="preload" href="/styles/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/styles/style.css"></noscript>
+
     <script>
       const theme = localStorage.getItem("user-color-scheme");
       if (theme) {

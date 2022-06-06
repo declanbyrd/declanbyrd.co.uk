@@ -44,6 +44,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('src/assets/icons');
   eleventyConfig.addPassthroughCopy('src/assets/scripts');
   eleventyConfig.addPassthroughCopy('src/assets/site.webmanifest');
+  eleventyConfig.addPassthroughCopy('src/styles');
 
   return {
     dir: {
