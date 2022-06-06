@@ -5,8 +5,7 @@
   font-weight: 400;
   src: local(''),
        url('/assets/fonts/bungee.woff2') format('woff2'),
-       url('/assets/fonts/bungee.woff') format('woff'),
-       url('/assets/fonts/bungee.ttf') format('truetype');
+       url('/assets/fonts/bungee.woff') format('woff');
   font-display: swap;
 }
 
