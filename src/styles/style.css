@@ -36,11 +36,9 @@ a:focus > .social-icon {
   fill: var(--external-link);
 }
 
-
 [data-user-color-scheme='dark'] .photo-item {
   filter: brightness(0.75);
 }
-
 
 .horizontal-list {
   padding: 0;
@@ -84,12 +82,10 @@ li.tag {
   gap: 1rem;
 }
 
-
 .list li {
   margin-bottom: 0.75rem;
   margin-bottom: min(calc(0.75rem + 1vw), 1.25rem);
 }
-
 
 .toggle:focus {
   outline: 3px dashed var(--text-color);
@@ -106,7 +102,6 @@ li.tag {
   fill: var(--text-color);
   margin-right: 0.5rem;
 }
-
 
 .logo:is(:focus, :hover) .site-logo {
   fill: var(--external-link);
@@ -127,11 +122,9 @@ li.tag {
   display: flex;
 }
 
-
 .content-list h4 {
   margin: 0 -0.25rem 0.5rem 0;
 }
-
 
 .webmentions-container h2 {
   font-size: var(--step-2);
@@ -156,7 +149,8 @@ li.tag {
   flex-wrap: wrap;
 }
 
-.webmention-replies .meta, .webmention-reposts .meta {
+.webmention-replies .meta,
+.webmention-reposts .meta {
   display: flex;
   align-items: start;
   flex-direction: row-reverse;
@@ -164,7 +158,8 @@ li.tag {
   gap: 0.5rem;
 }
 
-.webmention-reposts .meta > div, .webmention-replies .meta > div {
+.webmention-reposts .meta > div,
+.webmention-replies .meta > div {
   display: flex;
   flex-direction: column;
   line-height: 1.2;
@@ -174,7 +169,8 @@ li.tag {
   margin-bottom: 1rem;
 }
 
-.webmention-reposts .webmention-avatar, .webmention-replies .webmention-avatar {
+.webmention-reposts .webmention-avatar,
+.webmention-replies .webmention-avatar {
   margin-top: 0.5rem;
 }
 
@@ -198,8 +194,8 @@ li.tag {
   height: 2.5rem;
 }
 
-
-article.h-entry, article.photo-entry {
+article.h-entry,
+article.photo-entry {
   max-width: 90ch;
   margin: auto;
   padding: 1.5rem 1rem;
@@ -218,7 +214,6 @@ article.h-entry, article.photo-entry {
   gap: 0.5rem;
   align-items: flex-end;
 }
-
 
 .bookshelf {
   display: flex;
@@ -279,7 +274,7 @@ article.h-entry, article.photo-entry {
 
 @media screen and (max-width: 575px) {
   .book-container details {
-    grid-column: 1 /span 2;
+    grid-column: 1 / span 2;
   }
 
   .book-container picture {
@@ -300,9 +295,9 @@ article.h-entry, article.photo-entry {
   display: inline;
 }
 
-.book-container details:not([open=""]) ::after {
+.book-container details:not([open='']) ::after {
   display: inline;
-  content: "...";
+  content: '...';
 }
 
 .book-container p {
@@ -312,7 +307,7 @@ article.h-entry, article.photo-entry {
 
 .book-container picture {
   grid-column: 1;
-  grid-row: 1 /span 2;
+  grid-row: 1 / span 2;
 }
 
 .book-container.preview picture {
@@ -331,7 +326,6 @@ article.h-entry, article.photo-entry {
   max-width: 8rem;
   height: 100%;
 }
-
 
 .intro {
   display: flex;
@@ -379,14 +373,14 @@ article.h-entry, article.photo-entry {
   margin: 0 -0.25rem;
 }
 
-.next, .previous {
+.next,
+.previous {
   flex: 0 1 45%;
 }
 
 .markdown-container {
   margin-bottom: 3rem;
 }
-
 
 figure {
   margin: 3rem 0;
@@ -396,9 +390,6 @@ figure > figcaption {
   font-style: italic;
   text-align: center;
 }
-
-
-
 
 .markdown-container img {
   max-width: 50rem;
@@ -422,7 +413,8 @@ figure > figcaption {
   display: inline;
 }
 
-.markdown-container blockquote, .callout {
+.markdown-container blockquote,
+.callout {
   background: var(--text-color);
   color: var(--background);
   border-left: 0.625rem solid var(--external-link);
@@ -445,7 +437,6 @@ blockquote > p {
   margin-top: 0;
 }
 
-
 .large-photo {
   height: 100%;
   width: 100%;
@@ -453,7 +444,6 @@ blockquote > p {
   display: block;
   margin: 0 auto 2rem auto;
 }
-
 
 .listening {
   display: flex;
@@ -475,4 +465,33 @@ blockquote > p {
   font-weight: 800;
   font-size: 1.25rem;
   margin-left: -0.25rem;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.intro h1 {
+  margin: 0.25rem 0;
+  flex: 1;
+  line-height: 1.125;
+}
+
+.intro .logo {
+  flex: 1 1 auto;
+  min-width: 7rem;
+  max-width: 10rem;
+  width: clamp(7rem, 7rem + 0.1vw, 20rem);
+  height: 100%;
+  fill: var(--text-color);
+  margin: auto;
+}
+
+.intro article {
+  flex: 1 1 30ch;
+  height: 100%;
+  fill: var(--text-color);
 }
