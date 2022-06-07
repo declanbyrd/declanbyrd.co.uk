@@ -2,6 +2,7 @@
 title: Week 6
 date: 2022-02-14
 description: Started a book, RAW photos and gaming.
+tags: ['Week Notes']
 ---
 
 For the week starting 7th February, I:

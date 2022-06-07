@@ -2,6 +2,7 @@
 title: Week 3
 date: 2022-01-24
 description: Cloud gaming, an away day and a trip to the office.
+tags: ['Week Notes']
 ---
 
 For the week starting 17th January, I:

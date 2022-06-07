@@ -2,6 +2,7 @@
 title: Week 7
 date: 2022-02-21
 description: A work in progress, Bruno's birthday and a football game I'd rather forget about.
+tags: ['Week Notes']
 ---
 
 For the week starting 14th February:

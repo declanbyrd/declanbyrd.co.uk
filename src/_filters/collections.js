@@ -1,7 +1,10 @@
 module.exports.tagList = (collection) => {
   const tagSet = new Set();
   collection
-    .getFilteredByGlob('src/content/journal/*.md')
+    .getFilteredByGlob([
+      'src/content/weekNotes/**/*.md',
+      'src/content/journal/*.md',
+    ])
     .forEach(function (item) {
       if ('tags' in item.data) {
         let tags = item.data.tags;
@@ -59,10 +62,10 @@ module.exports.weeknotes = (collection) => {
 
 module.exports.allPosts = (collection) => {
   return collection
-    .getFilteredByGlob(
+    .getFilteredByGlob([
       'src/content/weekNotes/**/*.md',
-      'src/content/journal/*.md'
-    )
+      'src/content/journal/*.md',
+    ])
     .reverse();
 };
 

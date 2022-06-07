@@ -2,6 +2,7 @@
 title: Week 8
 date: 2022-02-28
 description: Sunset photos, tracking my reading and even more sunset photos.
+tags: ['Week Notes']
 ---
 
 For the week starting 21st February, I:

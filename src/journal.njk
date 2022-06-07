@@ -20,8 +20,8 @@ eleventyNavigation:
         <span class='[ visually-hidden ]'>View the RSS feed for the Journal</span>
       </a>
     </div>
-    {% set postslist = collections.posts %}
-    {% set postslistCounter = collections.posts | length %}
+    {% set postslist = collections.allPosts %}
+    {% set postslistCounter = collections.allPosts | length %}
     {% include "partials/postsList.njk" %}
   </section>
 {% endblock %}

@@ -2,6 +2,7 @@
 title: Week 1
 date: 2022-01-10
 description: I started writing week notes, finished a book and returned to work after the Christmas break.
+tags: ['Week Notes']
 ---
 
 I'd seen the concept of publishing a weekly summary of events and notes online, but like most of my side projects while I entertain the idea but lacked the motivation and time to see them through. The deciding factor in committing to publishing 52 sets of notes is a simple one. I'm rubbish at blogging.

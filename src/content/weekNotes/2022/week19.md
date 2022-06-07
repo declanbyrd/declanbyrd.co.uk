@@ -1,7 +1,8 @@
 ---
 title: Week 19
 date: 2022-05-16
-description: Algae as a power source and ideas about IndieWeb publishing
+description: Algae as a power source and ideas about IndieWeb publishing.
+tags: ['Week Notes']
 ---
 
 For the week starting 9th May:
