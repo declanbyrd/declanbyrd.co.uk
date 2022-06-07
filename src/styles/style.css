@@ -327,35 +327,6 @@ article.photo-entry {
   height: 100%;
 }
 
-.intro {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.intro h1 {
-  margin: 0.25rem 0;
-  flex: 1;
-  line-height: 1.125;
-}
-
-.intro .logo {
-  flex: 1 1 auto;
-  min-width: 7rem;
-  max-width: 10rem;
-  width: clamp(7rem, 7rem + 0.1vw, 20rem);
-  height: 100%;
-  fill: var(--text-color);
-  margin: auto;
-}
-
-.intro article {
-  flex: 1 1 30ch;
-  height: 100%;
-  fill: var(--text-color);
-}
-
 .more-reading {
   display: flex;
   justify-content: space-between;
@@ -465,33 +436,4 @@ blockquote > p {
   font-weight: 800;
   font-size: 1.25rem;
   margin-left: -0.25rem;
-}
-
-.intro {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.intro h1 {
-  margin: 0.25rem 0;
-  flex: 1;
-  line-height: 1.125;
-}
-
-.intro .logo {
-  flex: 1 1 auto;
-  min-width: 7rem;
-  max-width: 10rem;
-  width: clamp(7rem, 7rem + 0.1vw, 20rem);
-  height: 100%;
-  fill: var(--text-color);
-  margin: auto;
-}
-
-.intro article {
-  flex: 1 1 30ch;
-  height: 100%;
-  fill: var(--text-color);
 }

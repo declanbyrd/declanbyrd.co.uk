@@ -46,6 +46,8 @@
 
 :is(h1, h2, h3, h4) {
   font-family: var(--heading-font);
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -54,14 +56,17 @@ h1 {
 
 h2 {
   font-size: var(--step-3);
+  min-height: calc(var(--step-3) + 0.5rem);
 }
 
 h3 {
   font-size: var(--step-1);
+  min-height: calc(var(--step-1) + 0.5rem);
 }
 
 h4 {
   font-size: var(--step-0);
+  min-height: calc(var(--step-0) + 0.5rem);
 }
 
 body {
@@ -120,6 +125,7 @@ header {
   align-items: center;
   padding: 0.25rem 1rem;
   flex-wrap: wrap;
+  min-height: 5rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -321,6 +327,7 @@ html.no-js .toggle {
   padding: 0 0 0 0.125rem;
   cursor: pointer;
   color: var(--text-color);
+  width: 1.875rem;
 }
 
 .toggle-icon {
@@ -365,4 +372,32 @@ footer .h-card {
 
 .hidden-metadata {
   display: none;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  min-height: 13.125rem;
+}
+
+.intro h1 {
+  margin: 0.25rem 0;
+  flex: 1;
+  line-height: 1.125;
+}
+
+.intro h1 span {
+  display: block;
+}
+
+.intro .logo {
+  flex: 1 1 auto;
+  min-width: 7rem;
+  max-width: 10rem;
+  width: clamp(7rem, 7rem + 0.1vw, 20rem);
+  height: 100%;
+  fill: var(--text-color);
+  margin: auto;
 }
