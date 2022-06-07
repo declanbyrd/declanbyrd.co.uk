@@ -1,43 +1,29 @@
 {% extends 'layouts/base.njk' %}
 
-{% block stylesheets %}
-
-  {% set css %}
-  {% include "css/books.css" %}
-  {% endset %}
-  <style>
-    {{css | cssmin | safe}}
-  </style>
-{% endblock %}
-
 {% block content %}
 
-  {% set currentBook = collections.books | getCollectionItem(page) %}
+  <article class="[ markdown-container book-entry ]">
+    {{ content | safe }}
 
-  <section>
-    <article>
-      {{ content | safe }}
-
-      {% set previousPost = collections.books | reverse | getPreviousCollectionItem(page) %}
-      {% set nextPost = collections.books | reverse | getNextCollectionItem(page) %}
-      <nav aria-label="Book Navigation">
-        <ul class="[ horizontal-links more-reading ]">
-          {% if previousPost %}
-            <li class="previous">
-              <p>Previous Entry:</p>
-              <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
-            </li>
-          {% endif %}
-          {% if nextPost %}
-            <li class="next">
-              <p>Next Entry:</p>
-              <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-            </li>
-          {% endif %}
-        </ul>
-      </nav>
-    </article>
-  </section>
+    {% set previousPost = collections.books | reverse | getPreviousCollectionItem(page) %}
+    {% set nextPost = collections.books | reverse | getNextCollectionItem(page) %}
+    <nav aria-label="Book Navigation">
+      <ul class="[ horizontal-links more-reading ]">
+        {% if previousPost %}
+          <li class="previous">
+            <p>Previous Entry:</p>
+            <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+          </li>
+        {% endif %}
+        {% if nextPost %}
+          <li class="next">
+            <p>Next Entry:</p>
+            <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
+  </article>
 
 {% endblock %}
 

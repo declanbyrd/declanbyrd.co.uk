@@ -1,15 +1,5 @@
 {% extends 'layouts/base.njk' %}
 
-{% block stylesheets %}
-
-  {% set css %}
-  {% include "css/markdown.css" %}
-  {% endset %}
-  <style>
-    {{css | cssmin | safe}}
-  </style>
-{% endblock %}
-
 {% block content %}
   <article class="h-entry [ markdown-container max-width-80 ]">
     <h2 class="p-name">{{ title }}</h2>

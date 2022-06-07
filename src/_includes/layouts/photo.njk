@@ -1,16 +1,5 @@
 {% extends 'layouts/base.njk' %}
 
-{% block stylesheets %}
-
-  {% set css %}
-  {% include "css/photos.css" %}
-  {% include "css/markdown.css" %}
-  {% endset %}
-  <style>
-    {{css | cssmin | safe}}
-  </style>
-{% endblock %}
-
 {% block content %}
 
   <article class="photo-entry">

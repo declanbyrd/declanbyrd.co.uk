@@ -188,6 +188,7 @@ li.tag {
   content: close-quote;
 }
 
+.markdown-container img.webmention-avatar,
 .webmention-avatar {
   border-radius: 50%;
   width: 2.5rem;
@@ -195,7 +196,8 @@ li.tag {
 }
 
 article.h-entry,
-article.photo-entry {
+article.photo-entry,
+article.book-entry {
   max-width: 90ch;
   margin: auto;
   padding: 1.5rem 1rem;
