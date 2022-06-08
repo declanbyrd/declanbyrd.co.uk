@@ -16,10 +16,10 @@ renderData:
   <section>
     <h2 >Results for: <span class="accent">{{ tag }}</span></h2>
     {% if postslist.length > 1 %}
-      <p>There are {{ postslist.length }} journal entries about {{ tag }}:</p>
+      <p>There are {{ postslist.length }} journal entries for {{ tag }}:</p>
     {% endif %}
     {% if postslist.length == 1 %}
-      <p>There is {{ postslist.length }} journal entry about {{ tag }}:</p>
+      <p>There is {{ postslist.length }} journal entry for {{ tag }}:</p>
     {% endif %}
     {%include "partials/postsList.njk" %}
     <p>

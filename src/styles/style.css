@@ -120,6 +120,11 @@ li.tag {
   display: flex;
   align-items: center;
   gap: 1ch;
+  margin-bottom: 1rem;
+}
+
+.rss-container h2 {
+  margin: 0;
 }
 
 .rss-container .icon {

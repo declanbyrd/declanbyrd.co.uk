@@ -7,7 +7,6 @@
     <time class="dt-published [ hidden-metadata ]" datetime="{{ page.date | metadataDate }}">{{page.date | metadataDate}}</time>
     <ul class="[ horizontal-list ]">
       {% for tag in tags %}
-        {{tag | log}}
         {%- if collections.tagList.indexOf(tag) != -1 -%}
           {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
           <li class="[ tag ]">

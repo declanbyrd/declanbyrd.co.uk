@@ -28,25 +28,16 @@
 
   <section>
     <h2>
-      I write <a href="/journal/week-notes/" class="accent">Week Notes</a>
+      Recent entries to the <a href="/journal" class="accent">Journal</a>
     </h2>
 
-    {% set postslist = collections.weeknotes | previewCollection(1) %}
+    {% set postslist = collections.allPosts | previewCollection(4) %}
     {% include "partials/postsList.njk" %}
   </section>
 
   <section>
     <h2>
-      I Keep a <a href="/journal" class="accent">Journal</a>
-    </h2>
-
-    {% set postslist = collections.posts | previewCollection(3) %}
-    {% include "partials/postsList.njk" %}
-  </section>
-
-  <section>
-    <h2>
-      I Take
+      Recent
       <a href="/photos/" class="accent">photos</a>
     </h2>
 
@@ -68,7 +59,7 @@
         <p id="artists"></p>
       </div>
     </div>
-    <p class="metadata">Last updated: <span id="timestamp"></span></p>
+    <p class="metadata">Last listened: <span id="timestamp"></span></p>
   </template>
 
 {% endblock %}
