@@ -1,11 +1,9 @@
 ---
 title: Reading
 description: Books that Declan Byrd has read and the notes he's written about each book.
-permalink: '/reading/'
-pagination:
-  data: collections.books
-  size: 10
-  alias: books
+eleventyNavigation:
+  key: Reading
+  order: 3
 ---
 
 {% extends 'layouts/base.njk' %}
@@ -23,7 +21,7 @@ pagination:
 {% block content %}
 <section class="full-width">
   <h2>What I've been <span class="accent">{{ title }}</span></h2>
-    {% for year, booksInYear in books %}
+    {% for year, booksInYear in collections.books %}
     <h3>{{year}}</h3>
     <ul class="[ bookshelf ]">
       {% for book in booksInYear %}
