@@ -43,7 +43,7 @@ const readFromCache = () => {
 };
 
 const writeToCache = (data) => {
-  const dir = '_cache';
+  const dir = '.cache';
   const fileContent = JSON.stringify(data, null, 2);
   // create cache folder if it doesnt exist already
   if (!fs.existsSync(dir)) {
