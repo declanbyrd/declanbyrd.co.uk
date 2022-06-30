@@ -128,7 +128,7 @@ header {
   min-height: 5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   header {
     margin-top: var(--step--2);
     justify-content: center;
@@ -204,6 +204,8 @@ footer {
   align-items: center;
   padding: 0 1rem;
   flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: var(--step-4);
 }
 
 .accent {
@@ -264,6 +266,10 @@ footer {
   padding: 0;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+header .horizontal-links {
+  justify-content: center;
 }
 
 .social-icon {
