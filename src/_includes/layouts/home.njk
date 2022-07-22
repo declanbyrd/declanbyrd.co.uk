@@ -31,7 +31,9 @@
       Recent entries to the <a href="/journal" class="accent">Journal</a>
     </h2>
 
-    {% set postslist = collections.allPosts | previewCollection(4) %}
+    {% set postslist = collections
+      .allPosts
+      .reverse() | previewCollection(4) %}
     {% include "partials/postsList.njk" %}
   </section>
 
@@ -41,7 +43,9 @@
       <a href="/photos/" class="accent">photos</a>
     </h2>
 
-    {% set photoslist = collections.photos | previewCollection(4) %}
+    {% set photoslist = collections
+      .photos
+      .reverse() | previewCollection(4) %}
     {% include "partials/photoPreview.njk" %}
   </section>
 
