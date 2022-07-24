@@ -448,3 +448,32 @@ blockquote > p {
   font-size: 1.25rem;
   margin-left: -0.25rem;
 }
+
+.social-feed {
+  margin-top: var(--step-2);
+  padding: 0;
+}
+
+.social-card {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 1rem;
+}
+
+.social-card p {
+  margin-top: 0;
+}
+
+.social-image {
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.social-post-image {
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 100%;
+}

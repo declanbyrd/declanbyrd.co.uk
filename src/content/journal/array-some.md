@@ -1,7 +1,7 @@
 ---
 title: Checking conditions using Array.some()
 description: Today I leant how to use the some() method on an array to check if user input contained a list of keywords.
-tags: ['JavaScript', 'TIL']
+tags: ['JavaScript', 'TIL', article]
 date: 2021-04-22
 ---
 

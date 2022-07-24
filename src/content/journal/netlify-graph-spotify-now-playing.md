@@ -1,7 +1,7 @@
 ---
 title: Get your last played Spotify track using Netlify Graph
 description: How I used Netlify Graph to generate a serverless function that would fetch my last played track from Spotify while handling authentication.
-tags: ['Netlify Graph', 'API']
+tags: ['Netlify Graph', 'API', 'article']
 date: 2022-03-09
 ---
 

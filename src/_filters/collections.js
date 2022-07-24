@@ -1,3 +1,5 @@
+// @ts-check
+
 module.exports.tagList = (collection) => {
   const tagSet = new Set();
   collection
@@ -19,6 +21,8 @@ module.exports.tagList = (collection) => {
             case 'post':
             case 'posts':
             case 'tagList':
+            case 'article':
+            case 'note':
               return false;
           }
 
@@ -60,12 +64,28 @@ module.exports.weeknotes = (collection) => {
     .reverse();
 };
 
+module.exports.allSocial = (collection) => {
+  const twitter = collection.getAll()[0].data.tweets.children;
+  const mastodon = collection.getAll()[0].data.mastodon.children;
+  const allPosts = [...twitter, ...mastodon];
+  return allPosts
+    .sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
+    .reverse();
+};
+
 module.exports.allPosts = (collection) => {
-  return collection
+  const twitter = collection.getAll()[0].data.tweets.children;
+  const mastodon = collection.getAll()[0].data.mastodon.children;
+  const social = [...twitter, ...mastodon];
+  const localPosts = collection
     .getFilteredByGlob([
       'src/content/weekNotes/**/*.md',
       'src/content/journal/*.md',
     ])
+    .reverse();
+  const allPosts = [...social, ...localPosts];
+  return allPosts
+    .sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
     .reverse();
 };
 
@@ -87,4 +107,17 @@ module.exports.books = (collection) => {
   }, []);
 
   return booksByYear;
+};
+
+module.exports.articles = (collection) => {
+  return collection.getFilteredByTag('article').reverse();
+};
+
+module.exports.localPosts = (collection) => {
+  return collection
+    .getFilteredByGlob([
+      'src/content/weekNotes/**/*.md',
+      'src/content/journal/*.md',
+    ])
+    .reverse();
 };

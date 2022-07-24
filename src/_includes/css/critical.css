@@ -183,12 +183,12 @@ main a {
   color: var(--text-color);
 }
 
-a:not(.icon-container):is([href^="http://"], [href^="https://"]):not([href*="declanbyrd.co.uk"])
+a:not(.icon-container):is([href^="http://"], [href^="https://"]):not([href*="https://declanbyrd.co.uk"])
 {
   color: var(--external-link);
 }
 
-a:not(.icon-container, .webmention-like):is([href^="http://"], [href^="https://"]):not([href*="declanbyrd.co.uk"]):after
+a:not(.icon-container, .webmention-like):is([href^="http://"], [href^="https://"]):not([href*="https://declanbyrd.co.uk"]):after
 {
   content: ' ↗';
 }
@@ -351,7 +351,7 @@ html.no-js .toggle {
 .content-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   padding-left: 0;
 }
 

@@ -49,6 +49,14 @@ module.exports.readableDateFromISO = (
   return DateTime.fromISO(dateStr).toFormat(formatStr);
 };
 
+module.exports.readableDateFromTimestamp = (
+  dateStr,
+  formatStr = "dd LLLL yyyy 'at' HH:mm:ss"
+) => {
+  const date = new Date(dateStr);
+  return DateTime.fromJSDate(date).toFormat(formatStr);
+};
+
 module.exports.getWebmentionSource = (url) => {
   const { hostname } = new URL(url);
   return hostname;

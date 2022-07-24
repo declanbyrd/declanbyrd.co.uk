@@ -1,0 +1,9 @@
+<ol class="content-list">
+  {% for post in postslist %}
+    {% if post.data.title %}
+      {% include "./postPreview.njk" %}
+    {% else %}
+      {% include "./socialPost.njk" %}
+    {% endif %}
+  {% endfor %}
+</ol>

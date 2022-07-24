@@ -6,7 +6,7 @@
     "debug": "set DEBUG=Eleventy* & npx @11ty/eleventy",
     "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve",
-    "dev": "npx netlify dev --graph"
+    "dev": "npx netlify dev"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,8 @@
     "clean-css": "^4.2.3",
     "dotenv": "^8.2.0",
     "luxon": "^1.28.0",
-    "node-isbn": "^1.6.1"
+    "node-isbn": "^1.6.1",
+    "twitter": "^1.7.1"
   },
   "browserslist": [
     "defaults",
