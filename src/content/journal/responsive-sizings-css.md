@@ -1,7 +1,7 @@
 ---
 title: Responsive sizing with CSS
 description: How to use css functions such as min() to create a fallback for clamp()
-tags: ['CSS', 'Responsive Design']
+tags: ['CSS', 'Responsive Design', 'article']
 date: 2020-07-20
 ---
 

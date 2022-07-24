@@ -33,8 +33,8 @@
 
     {% set postslist = collections
       .allPosts
-      .reverse() | previewCollection(4) %}
-    {% include "partials/postsList.njk" %}
+      .reverse() | previewCollection(3) %}
+    {% include "partials/allPosts.njk" %}
   </section>
 
   <section>

@@ -1,0 +1,35 @@
+---
+permalink: '/journal/summaries.xml'
+eleventyExcludeFromCollections: true
+metadata:
+  title: 'Declan Byrd's Personal Site: Summaries'
+  subtitle: All summary posts published to the journal on Declan Byrd's personal site.
+  url: 'https://declanbyrd.co.uk/'
+  feedUrl: 'https://declanbyrd.co.uk/journal/summaries.xml'
+  author:
+    name: 'Declan Byrd'
+    email: 'declan.byrd@gmail.com'
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections.weeknotes | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for post in collections.weeknotes %}
+    {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="{{ absolutePostUrl }}"/>
+      <updated>{{ post.date | dateToRfc3339 }}</updated>
+      <id>{{ absolutePostUrl }}</id>
+      <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    </entry>
+  {%- endfor %}
+</feed>

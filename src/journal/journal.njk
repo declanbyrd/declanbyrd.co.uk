@@ -1,6 +1,6 @@
 ---
 title: Journal
-description: Declan Byrd's journal - a collection of things he's written about.
+description: A collection of writings in the form of articles, notes and summaries.
 eleventyNavigation:
   key: Journal
   order: 2
@@ -20,8 +20,11 @@ eleventyNavigation:
         <span class='[ visually-hidden ]'>View the RSS feed for the Journal</span>
       </a>
     </div>
+    <p>All entries to the Journal.</p>
+    {% include "partials/journalNavigation.njk" %}
+
     {% set postslist = collections.allPosts %}
     {% set postslistCounter = collections.allPosts | length %}
-    {% include "partials/postsList.njk" %}
+    {% include "partials/allPosts.njk" %}
   </section>
 {% endblock %}

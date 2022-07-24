@@ -1,11 +1,11 @@
 ---
-permalink: '/feed.xml'
+permalink: '/journal/feed.xml'
 eleventyExcludeFromCollections: true
 metadata:
   title: Declan Byrd's Personal Site
-  subtitle: All posts made to Declan Byrd's personal site.
+  subtitle: All posts published to the journal on Declan Byrd's personal site.
   url: 'https://declanbyrd.co.uk/'
-  feedUrl: 'https://declanbyrd.co.uk/feed.xml'
+  feedUrl: 'https://declanbyrd.co.uk/journal/feed.xml'
   author:
     name: 'Declan Byrd'
     email: 'declan.byrd@gmail.com'
@@ -16,13 +16,13 @@ metadata:
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
-  <updated>{{ collections.allPosts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <updated>{{ collections.localPosts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
   </author>
-  {%- for post in collections.allPosts %}
+  {%- for post in collections.localPosts %}
     {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
     <entry>
       <title>{{ post.data.title }}</title>
