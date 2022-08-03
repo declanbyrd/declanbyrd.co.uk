@@ -3,9 +3,9 @@
   font-family: 'Bungee';
   font-style: normal;
   font-weight: 400;
-  src: local(''), url('/assets/fonts/bungee.woff2') format('woff2'),
-    url('/assets/fonts/bungee.woff') format('woff');
   font-display: swap;
+  src: local(''), url(/assets/fonts/bungee.woff2) format('woff2'),
+    url(/assets/fonts/bungee.woff) format('woff');
 }
 
 :root {
