@@ -3,7 +3,10 @@ const getTracks = async () => {
   if (res.ok) {
     const data = await res.json();
     const recentlyPlayed =
-      data.GetLatestTracksData.me.spotify.recentlyPlayed.nodes[0];
+      data?.GetLatestTracksData?.me?.spotify?.recentlyPlayed?.nodes[0];
+    if (!recentlyPlayed) {
+      return undefined;
+    }
     const artistName = recentlyPlayed.track.artists;
     const artists = artistName.map((artist) => artist.name).join(', ');
     const trackName = recentlyPlayed.track.name;
