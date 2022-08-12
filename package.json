@@ -6,7 +6,7 @@
     "debug": "set DEBUG=Eleventy* & npx @11ty/eleventy",
     "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve",
-    "dev": "npx netlify dev"
+    "dev": "npx netlify dev --graph"
   },
   "repository": {
     "type": "git",
