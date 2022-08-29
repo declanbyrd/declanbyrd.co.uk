@@ -13,6 +13,7 @@ On Wednesday I travelled to the village of Nailsworth to watch [Brighton play Fo
     {% image "/img/journal/weeknotes/week34.jpg", "View of the pitch from the terrace in the away end at The Bolt New Lawn Stadium. Brighton are playing in blue and white striped shirts with white shorts and Forest Green Rovers are wearing lime green shirts that have black 'tiger' stripes and lime green shorts." %}
     <figcaption>Forest Green Rovers (A).</figcaption>
 </figure>
+
 Just the two games of football this week, as I was also at The Amex to watch [Brighton win 1-0 against Leeds United](https://www.brightonandhovealbion.com/news/2761945/gross-grabs-the-glory-as-albion-climb-to-third/). Some days everything just goes your way and Saturday felt like one of those days. In addition to the result, train journeys to and from the ground were the most relaxed that I can remember, with little queueing. Brighton finished the weekend 4th in the table so very little to complain about there.
 
 ### What has changed on this site:
