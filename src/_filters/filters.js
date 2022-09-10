@@ -9,6 +9,12 @@ module.exports.htmlDateTime = (date) => {
   return DateTime.fromJSDate(date, { zone: 'utc' }).toFormat('yyyy-LL-dd');
 };
 
+module.exports.noteTimestamp = (date) => {
+  return DateTime.fromISO(date, { zone: 'utc' }).toFormat(
+    'yyyy-LL-dd-HH-mm-ss'
+  );
+};
+
 module.exports.metadataDate = (date) => {
   return DateTime.fromJSDate(date, { zone: 'utc' }).toISO();
 };

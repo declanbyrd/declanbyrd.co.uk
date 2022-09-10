@@ -477,3 +477,9 @@ blockquote > p {
   height: auto;
   width: 100%;
 }
+
+.notes-back {
+  margin-top: var(--step-5);
+  display: block;
+  width: 15ch;
+}
