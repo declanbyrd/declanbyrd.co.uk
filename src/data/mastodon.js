@@ -4,8 +4,8 @@ const unionBy = require('lodash/unionBy');
 
 require('dotenv').config();
 
-const MASTODON_HOST = 'https://toots.declanbyrd.co.uk';
-const MASTODON_USER_ID = '108194763529328183';
+const MASTODON_HOST = 'https://mastodon.technology';
+const MASTODON_USER_ID = '108974149915396351';
 const MASTODON_STATUS_API = `${MASTODON_HOST}/api/v1/accounts/${MASTODON_USER_ID}/statuses`;
 
 // @ts-check
