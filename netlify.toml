@@ -32,12 +32,12 @@
 
 [[redirects]]
   from = "/api/latestTracks"
-  to = "/.netlify/functions/GetLatestTracks"
+  to = "/functions/GetLatestTracks"
   status = 200
   force = true
 
 [functions]
-  directory = ".netlify/functions"
+  directory = "functions"
 
 
 [[plugins]]
