@@ -41,7 +41,7 @@ const formatTimeline = (timeline) => {
 
   const formatted = noSyndicates.map((tweet) => {
     return {
-      date: tweet.created_at,
+      date: new Date(tweet.created_at).toISOString(),
       id: tweet.id_str,
       content: removeLinksFromContent(tweet.full_text),
       source_url: `https://twitter.com/declan_byrd/status/${tweet.id_str}`,

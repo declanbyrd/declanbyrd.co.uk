@@ -21,7 +21,7 @@ const formatTimeline = (timeline) => {
   );
   const formatted = noSyndicates.map((post) => {
     return {
-      date: post.created_at,
+      date: new Date(post.created_at).toISOString(),
       id: post.id,
       content: post.content,
       source_url: post.url,
@@ -75,7 +75,9 @@ const writeToCache = (data) => {
   // write data to cache json file
   fs.writeFile(CACHE_FILE_PATH, fileContent, (err) => {
     if (err) throw err;
-    console.log(`>>> mastodon posts cached to ${CACHE_FILE_PATH}`);
+    console.log(
+      `>>> ${data.children.length} mastodon posts cached to ${CACHE_FILE_PATH}`
+    );
   });
 };
 
