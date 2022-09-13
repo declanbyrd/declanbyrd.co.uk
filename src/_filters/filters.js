@@ -10,9 +10,9 @@ module.exports.htmlDateTime = (date) => {
 };
 
 module.exports.noteTimestamp = (date) => {
-  return DateTime.fromISO(date, { zone: 'utc' }).toFormat(
-    'yyyy-LL-dd-HH-mm-ss'
-  );
+  return DateTime.fromISO(date, { zone: 'utc' })
+    .setLocale('en-gb')
+    .toFormat('yyyy-LL-dd-HH-mm-ss');
 };
 
 module.exports.metadataDate = (date) => {
