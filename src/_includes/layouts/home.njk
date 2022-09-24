@@ -66,7 +66,12 @@
     {% include "partials/photoPreview.njk" %}
   </section>
 
-  <section id="nowPlayingContainer"></section>
+  {#
+    Netlify graph unstable and affecting site performance.
+    Uncomment when it reaches stable and latest track can be received without errors being logged.
+   #}
+
+  {# <section id="nowPlayingContainer"></section>
 
   <template id="nowPlaying">
     <h2>Now Playing</h2>
@@ -81,10 +86,10 @@
       </div>
     </div>
     <p class="metadata">Last listened: <span id="timestamp"></span></p>
-  </template>
+  </template> #}
 
 {% endblock %}
 
 {% block scripts %}
-  <script type="text/javascript" src="/assets/scripts/spotify.js" defer></script>
+  {# <script type="text/javascript" src="/assets/scripts/spotify.js" defer></script> #}
 {% endblock %}
