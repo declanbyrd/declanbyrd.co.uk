@@ -101,7 +101,7 @@ module.exports = async function () {
   // Only fetch new posts in production
   if (process.env.ELEVENTY_ENV === 'production') {
     console.log('>>> Checking for new mastodon posts...');
-    const feed = await fetchMastodonPosts(lastFetched);
+    const feed = await fetchMastodonPosts();
     if (feed) {
       const posts = {
         lastFetched: new Date().toISOString(),
