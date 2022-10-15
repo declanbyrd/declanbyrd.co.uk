@@ -142,6 +142,7 @@ li.tag {
 
 .webmentions-container h3 {
   font-size: var(--step-1);
+  margin-bottom: 0;
 }
 
 .webmentions-container h4 {
@@ -172,6 +173,7 @@ li.tag {
   display: flex;
   flex-direction: column;
   line-height: 1.2;
+  gap: 0.25rem;
 }
 
 .webmention-replies .meta > div {
@@ -204,6 +206,15 @@ li.tag {
   height: 2.5rem;
 }
 
+article.webmention.mention {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article.webmention.mention q {
+  margin-inline-start: 3rem;
+}
+
 article.h-entry,
 article.photo-entry,
 article.book-entry {
@@ -221,9 +232,11 @@ article.book-entry {
 }
 
 .meta-header {
-  display: flex;
-  gap: 0.5rem;
-  align-items: flex-end;
+  display: inline;
+}
+
+.meta-header a {
+  display: inline;
 }
 
 .bookshelf {

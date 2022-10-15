@@ -12,7 +12,7 @@
       </h4>
         {% endif %}
         {% if webmention.author.url %}
-          <span>replied via <a href="{{webmention.author.url}}">{{webmention.author.url | getWebmentionSource}}</a>
+          <span>mentioned this via <a href="{{webmention.author.url}}">{{webmention.author.url | getWebmentionSource}}</a>
           </span>
         {% endif %}
       </div>
@@ -28,7 +28,7 @@
       <img src="{{ '/img/avatar.svg' | url }}" alt="" width="48" height="48">
     {% endif %}
   </div>
-  <blockquote cite="{{webmention.url}}">
+  <q cite="{{webmention.url}}">
     {{ webmention.content.text }}
-  </blockquote>
+  </q>
 </article>
