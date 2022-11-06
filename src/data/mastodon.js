@@ -15,11 +15,16 @@ const CACHE_FILE_PATH = '.cache/mastodon.json';
 // We don't need all the data that comes back
 // Using standardised property names will help when sorting later
 const formatTimeline = (timeline) => {
-  const noSyndicates = timeline.filter(
+  const filtered = timeline.filter(
     (post) =>
-      !post.content.includes('declanbyrd.co.uk') && !post.in_reply_to_account_id
+      // remove posts with link to my own site
+      !post.content.includes('declanbyrd.co.uk') &&
+      // remove replies - these don't have the original context
+      !post.in_reply_to_account_id &&
+      // remove reblogs - these aren't mine to archive
+      post.reblog === null
   );
-  const formatted = noSyndicates.map((post) => {
+  const formatted = filtered.map((post) => {
     return {
       date: new Date(post.created_at).toISOString(),
       id: post.id,
