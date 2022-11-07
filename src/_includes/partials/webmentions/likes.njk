@@ -1,4 +1,4 @@
-<article class="webmention like" id="webmention-{{ webmention['wm-id'] }}">
+<li class="like" id="webmention-{{ webmention['wm-id'] }}">
   {% if webmention.author %}
     <a class="webmention-like h-card u-url" href="{{webmention.url}}" target="_blank" rel="noopener noreferrer">
       <h4 class="visually-hidden p-name">
@@ -21,4 +21,4 @@
       Anonymous
     </h4>
   {% endif %}
-</article>
+</li>

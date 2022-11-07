@@ -1,4 +1,9 @@
-<article class="webmention mention" id="webmention-{{ webmention['wm-id'] }}">
+<li class="mention" id="webmention-{{ webmention['wm-id'] }}">
+  {% if webmention.author.photo %}
+    <img src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" class="webmention-avatar" width="48" height="48" loading="lazy">
+  {% else %}
+    <img src="{{ '/img/avatar.svg' | url }}" alt="" width="48" height="48">
+  {% endif %}
   <div class="meta">
     <div>
       <div class="meta-header">
@@ -22,13 +27,8 @@
         </time>
       {% endif %}
     </div>
-    {% if webmention.author.photo %}
-      <img src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" class="webmention-avatar" width="48" height="48" loading="lazy">
-    {% else %}
-      <img src="{{ '/img/avatar.svg' | url }}" alt="" width="48" height="48">
-    {% endif %}
+    <q cite="{{webmention.url}}">
+      {{ webmention.content.text }}
+    </q>
   </div>
-  <q cite="{{webmention.url}}">
-    {{ webmention.content.text }}
-  </q>
-</article>
+</li>

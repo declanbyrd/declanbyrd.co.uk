@@ -154,18 +154,21 @@ li.tag {
   margin-top: 2rem;
 }
 
+.webmention {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.webmention li {
+  display: flex;
+  align-items: start;
+}
+
 .webmention-likes {
   display: flex;
   flex-wrap: wrap;
-}
-
-.webmention-replies .meta,
-.webmention-reposts .meta {
-  display: flex;
-  align-items: start;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 .webmention-reposts .meta > div,
@@ -204,14 +207,23 @@ li.tag {
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
+  margin: 0 0.5rem 0 0;
 }
 
-article.webmention.mention {
+li.webmention.mention {
   display: flex;
   flex-wrap: wrap;
 }
 
-article.webmention.mention q {
+.webmention + .webmention {
+  margin-top: 2.5rem;
+}
+
+li.mention + li.mention {
+  margin-top: 2.5rem;
+}
+
+li.webmention.mention q {
   margin-inline-start: 3rem;
 }
 

@@ -15,27 +15,27 @@
       <h3>
       Liked By
     </h3>
-      <div class="webmention-likes">
+      <ul class="webmention webmention-likes">
         {% for webmention in likes %}
           {% include 'partials/webmentions/likes.njk' %}
         {% endfor %}
-      </div>
+      </ul>
     {% endif %}
 
     {% if repostsSize > 0 %}
-      <div class="webmention-reposts">
+      <ul class="webmention webmention-reposts">
         {% for webmention in reposts %}
           {% include 'partials/webmentions/repost.njk' %}
         {% endfor %}
-      </div>
+      </ul>
     {% endif %}
 
     {% if repliesSize > 0 %}
-      <div class="webmention-replies">
+      <ol class="webmention webmention-replies">
         {% for webmention in replies %}
           {% include 'partials/webmentions/mention.njk' %}
         {% endfor %}
-      </div>
+      </ol>
     {% endif %}
   </section>
 {% endif %}

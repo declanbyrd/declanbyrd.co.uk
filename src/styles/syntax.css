@@ -38,7 +38,7 @@ pre[class*='language-'] {
   white-space: pre;
 }
 
-*:not(pre) > code,
+*:not(pre, a) > code,
 pre[class*='language-'] {
   background: var(--code-background);
 }
