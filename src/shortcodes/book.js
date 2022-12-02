@@ -24,7 +24,7 @@ const bookShortcode = async (bookIsbn, preview = false) => {
       `book cover for ${book.title}`
     )}
     <div>
-      <h2>${book.title}</h2>
+      <h1>${book.title}</h1>
       <p>by ${book.authors.join(', ')}</p>
       <p>${book.pageCount} pages</p>
     </div>

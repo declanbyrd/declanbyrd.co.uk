@@ -123,7 +123,7 @@ li.tag {
   margin-bottom: 1rem;
 }
 
-.rss-container h2 {
+.rss-container h1 {
   margin: 0;
 }
 
@@ -229,7 +229,8 @@ li.webmention.mention q {
 
 article.h-entry,
 article.photo-entry,
-article.book-entry {
+article.book-entry,
+article.max-width-90 {
   max-width: 90ch;
   margin: auto;
   padding: 1.5rem 1rem;
@@ -501,6 +502,11 @@ blockquote > p {
   margin: auto;
   height: auto;
   width: 100%;
+}
+
+.social-post-multi-image {
+  display: flex;
+  gap: 1rem;
 }
 
 .notes-back {

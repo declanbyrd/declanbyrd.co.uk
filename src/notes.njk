@@ -9,33 +9,15 @@ permalink: /journal/notes/{{ post.date | noteTimestamp }}/
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-  <section>
-    <article class="social-card">
+  <article class="max-width-90">
+
+    <h1>{{post.date | noteTitle}}</h1>
+    <div class="social-card note">
       <img class="social-image" src="/img/meta_square.webp" alt="Declan's Twitter avatar" height="60" width="60">
       <div>
-        {% if post.site == 'Twitter' %}
-          <p>{{post.content}}</p>
-        {% else %}
-          {{post.content | safe}}
-        {% endif %}
-        {% if post.links %}
-          {% for link in post.links %}
-            <p>
-          🔗
-          <a href="{{link.expanded_url}}">{{link.display_url}}</a>
-            </p>
-          {% endfor %}
-        {% endif %}
-        {% if post.media.image %}
-          <img class="social-post-image" style="aspect-ratio: {{post.media.aspect}}; max-width={{post.media.width}}px" src="{{post.media.image}}" alt="{{post.media.alt}}" width="{{post.media.width}}" height="{{post.media.height}}">
-        {% endif %}
-        <time datetime="{{ post.date }}" class="[ date ]">
-          {{ post.date | readableDateFromTimestamp }}
-        </time>
-        <span>via <a href={{post.source_url}}>{{post.site}}</a>
-        </span>
+        {% include "partials/socialPost.njk" %}
         <a class="notes-back" href="/journal/notes/">&larr; Back to notes</a>
       </div>
-    </article>
-  </section>
+    </div>
+  </article>
 {% endblock %}

@@ -89,6 +89,6 @@ With the 11ty site now outputting an RSS feed, Dev.to can now monitor the feed. 
 
 Once entered, click the "Save Feed Settings" button and Dev.to will now be able to subscribe to all blog posts made on the 11ty site. To check it works, click the "Fetch Feed Now" button at the top of the section and head to the [Dev.to dashboard page](https://dev.to/dashboard). There should now be all blog posts from the 11ty site saved as drafts ready to be published.
 
-### Wrapping up
+## Wrapping up
 
 With this workflow I can now publish my content to my website and publish to Dev.to while providing canonical URLs that point to my website. You don't need to use 11ty for this workflow, it can be any website as long as an up-to-date RSS feed is generated when a change is made.

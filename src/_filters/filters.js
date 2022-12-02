@@ -63,6 +63,11 @@ module.exports.readableDateFromTimestamp = (
   return DateTime.fromJSDate(date).toFormat(formatStr);
 };
 
+module.exports.noteTitle = (dateStr, formatStr = "DDDD 'at' HH:mm") => {
+  const date = new Date(dateStr);
+  return DateTime.fromJSDate(date).toFormat(formatStr);
+};
+
 module.exports.getWebmentionSource = (url) => {
   const { hostname } = new URL(url);
   return hostname;

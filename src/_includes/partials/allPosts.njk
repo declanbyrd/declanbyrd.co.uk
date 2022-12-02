@@ -3,7 +3,14 @@
     {% if post.data.title %}
       {% include "./postPreview.njk" %}
     {% else %}
-      {% include "./socialPost.njk" %}
+      <li class="social-card">
+        <img class="social-image" src="/img/meta_square.webp" alt="Declan's Twitter avatar" height="60" width="60">
+        <div>
+          {% include "./socialPost.njk" %}
+          <span>| <a href="/journal/notes/{{post.date | noteTimestamp}}/">Permalink</a>
+          </span>
+        </div>
+      </li>
     {% endif %}
   {% endfor %}
 </ol>

@@ -5,19 +5,19 @@ tags: ['Netlify Graph', 'API', 'article']
 date: 2022-03-09
 ---
 
-### Some Background
+## Some Background
 
 One feature I had been trying to add to my personal site for a long time has been to show my last played track from Spotify. The issue with consuming data from the [Spotify Web API](https://developer.spotify.com/documentation/web-api/) for this use case is that it uses OAuth 2.0 and so distributes access tokens which expire and therefore need to be refreshed. It is possible to achieve this using the Spotify Web API as [Henry Desroches has shown](https://henry.codes/writing/spotify-now-playing/) in his tutorial for creating a now playing widget with Netlify functions.
 
 [Netlify Graph](https://www.netlify.com/blog/announcing-netlify-graph-a-faster-way-for-teams-to-develop-web-apps-with-apis) connects your Netlify site to a range of APIs and handles the authentication for you while only needing to grant access once. One of the APIs that it can connect to is the Spotify Web API.
 
-### Creating a Spotify application
+## Creating a Spotify application
 
 As I only wanted to fetch my own data from Spotify and don't want to authenticate each request I created a Spotify application by accessing the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/). In the dashboard, I created an app using the name of my personal site and a description of getting the last played track for my personal site.
 
 On the dashboard there are two important pieces of data to make note of. The client ID and Client secret, which are both needed to connect the Spotify application to Netlify Graph.
 
-### Netlify Graph
+## Netlify Graph
 
 To access serverless functions during development I used the netlify-cli to start a development server and a `netlify.toml` file. In the `netlify.toml` file I added a section that would tell netlify and the netlify cli where my serverless functions are located. I chose to put my serverless functions inside `.netlify/functions`.
 
@@ -39,7 +39,7 @@ To start the development server with Netlify Graph, I navigated to the project's
 npx netlify dev --graph
 ```
 
-### Connecting Spotify to Netlify Graph
+## Connecting Spotify to Netlify Graph
 
 To connect Spotify to Netlify graph, I opened my site page on Netlfiy and then navigated to the graph page. On the graph page I clicked the link to connect an API or service and then selected Spotify from the list of providers.
 
@@ -52,7 +52,7 @@ I chose to add a client so that I could connect the Spotify application I create
 
 Running the netlify-cli dev command with the graph flag has created a connection between the Netlify dashboard and my project so clicking the "Start querying Spotify" button showed one live connection which linked to the Graph Explorer.
 
-### Graph Explorer
+## Graph Explorer
 
 As the Spotify connection requires authentication, I logged in to Spotify by clicking the "log in to Spotify" button in the authentication dropdown menu.
 
@@ -154,7 +154,7 @@ Finally I added a redirect to `netlify.toml` so that the generated function woul
   status = 200
 ```
 
-### Wrapping up
+## Wrapping up
 
 I've used a HTML `<template>` to render the data, but getting data from netlify graph is client-agnostic so you can take your pick of client side framework (or of course no framework too).
 

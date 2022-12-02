@@ -25,19 +25,20 @@ const formatTimeline = (timeline) => {
       post.reblog === null
   );
   const formatted = filtered.map((post) => {
+    const images = post.media_attachments.map((image) => ({
+      image: image?.url,
+      alt: image?.description,
+      width: image?.meta?.small?.width,
+      height: image?.meta?.small?.height,
+      aspect: image?.meta?.small?.aspect,
+    }));
     return {
       date: new Date(post.created_at).toISOString(),
       id: post.id,
       content: post.content,
       source_url: post.url,
       site: 'Mastodon',
-      media: {
-        image: post.media_attachments[0]?.url,
-        alt: post.media_attachments[0]?.description,
-        width: post.media_attachments[0]?.meta?.small?.width,
-        height: post.media_attachments[0]?.meta?.small?.height,
-        aspect: post.media_attachments[0]?.meta?.small?.aspect,
-      },
+      media: images,
     };
   });
   const goodPosts = formatted.filter((post) => {
