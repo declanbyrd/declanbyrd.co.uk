@@ -14,16 +14,15 @@ I made the trip to the London Stadium to watch [Brighton win 2-0 against West Ha
     <figcaption>7 points from a possible 9 is not a bad way to start the season.</figcaption>
 </figure>
 
-### What has changed on this site:
+## What has changed on this site:
 
 - No changes this week.
 
-
-### What I've been reading:
+## What I've been reading:
 
 - Another chapter from [Dark Matter by Blake Crouch](/reading/9781447297581/). I'm nearly at the half way point of this book now.
 
-### What I've been watching:
+## What I've been watching:
 
 - [Episode 9 in Season 2 of Only Murders in the Building](https://www.themoviedb.org/tv/107113-only-murders-in-the-building/season/2/episode/9).
 - [Episodes 7 and 8 of All or Nothing: Arsenal](https://www.themoviedb.org/tv/132376-all-or-nothing-arsenal/season/1).

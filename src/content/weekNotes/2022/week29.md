@@ -18,19 +18,18 @@ On Thursday, I went to Brighton beach to see Fatboy Slim headline the On The Bea
 
 I spent some time working on this site this week too. There were some pain points in getting my development environment set-up but most of those seem to have been fixed now.
 
-### What has changed on this site:
+## What has changed on this site:
 
 - I refactored the template that I use for the home page so that the static text is now in a markdown file.
 - I added my social media content from Twitter and Mastodon into the Journal page by pulling in the data from the Twitter and Mastodon APIs. I can now use a Publish Elsewhere, Syndicate on my Own Site (PESOS) approach to sharing content.
 - I've added sections to the [Journal page](/journal). You can now filter based on if the post is an article, a social media post or a summary post (like week notes).
 - Netlify graph appears to be really unstable in my development environment and is no longer working in production. I'm not sure if this to do with me changing my laptop or if there are changes made on the Netlify end (I do see a lot of new integrations that randomly appear in the GraphQL explorer). Minor annoyance though, just means I can't show my last played track from Spotify.
 
-### What I've been reading:
+## What I've been reading:
 
-- I read a chapter of [Dark Matter by Blake Crouch](/reading/9781447297581/) this week. 
+- I read a chapter of [Dark Matter by Blake Crouch](/reading/9781447297581/) this week.
 
-### What I've been watching:
+## What I've been watching:
 
 - [Episode 5 in Season 2 of Only Murders in the Building](https://www.themoviedb.org/tv/107113-only-murders-in-the-building/season/2/episode/5).
 - [Episode 2 in Season 1 of Avoidance](https://www.themoviedb.org/tv/203817-avoidance/season/1/episode/1).
-

@@ -13,15 +13,15 @@ I've spent a bit of time gaming this week. I used to really enjoy the original S
 
 On Saturday, I went to Wolverhampton to watch [Brighton win 3-2 against Wolves](https://www.brightonandhovealbion.com/news/2891609/gross-grabs-late-glory-as-albion-win-at-wolves) and move into the top 6 in the Premier League table. It was a tense game and it was great to get the win. There's a real buzz amongst fans at the moment and the team is playing some fantastic stuff.
 
-### What has changed on this site:
+## What has changed on this site:
 
 - I made a change to the data file that fetches my Mastodon posts. Re-blogs are included in the API results but are shown as activities rather than posts. I didn't want to display these anyway as they are not my posts to archive, so I have made sure that only my own posts can be included in my notes page.
 
-### What I've been reading:
+## What I've been reading:
 
 - I read four chapters of [The Apollo Murders by Chris Hadfield](/reading/9780735282353/) this week. I may have to find a time to just finish this book soon. I'm less than half way through and while I enjoy it, it also feels like I'm not making progress reading it.
 
-### What I've been watching:
+## What I've been watching:
 
 - [Episode 9](https://www.themoviedb.org/tv/83867-star-wars-andor/season/1/episode/9) of [Star Wars: Andor](https://www.themoviedb.org/tv/83867-star-wars-andor).
 - [Episode 6](https://www.themoviedb.org/tv/63404-taskmaster/season/14/episode/6) in Season 14 of [Taskmaster (UK)](https://www.themoviedb.org/tv/63404-taskmaster).

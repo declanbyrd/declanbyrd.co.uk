@@ -16,15 +16,15 @@ On Wednesday I travelled to the village of Nailsworth to watch [Brighton play Fo
 
 Just the two games of football this week, as I was also at The Amex to watch [Brighton win 1-0 against Leeds United](https://www.brightonandhovealbion.com/news/2761945/gross-grabs-the-glory-as-albion-climb-to-third/). Some days everything just goes your way and Saturday felt like one of those days. In addition to the result, train journeys to and from the ground were the most relaxed that I can remember, with little queueing. Brighton finished the weekend 4th in the table so very little to complain about there.
 
-### What has changed on this site:
+## What has changed on this site:
 
 - No changes this week.
 
-### What I've been reading:
+## What I've been reading:
 
 - I haven't read any more of [Dark Matter by Blake Crouch ](/reading/9781447297581/)this week.
 
-### What I've been watching:
+## What I've been watching:
 
 - [Episode 10 in Season 2 of Only Murders in the Building](https://www.themoviedb.org/tv/107113-only-murders-in-the-building/season/2/episode/10).
 - [Episode 2 of She-Hulk: Attorney at Law (2022)](https://www.themoviedb.org/tv/92783-she-hulk-attorney-at-law/season/1/episode/2).

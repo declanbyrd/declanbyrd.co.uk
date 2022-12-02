@@ -11,15 +11,15 @@ On Tuesday, I watched [Brighton draw 0-0 with Nottingham Forest](https://www.bri
 
 The NBA season started this week and I've decided to pay for a league pass subscription as the UK price has been lowered for this season. While I won't be watching many live games, I'll be able to watch Sunday games that tip-off in the evening in the UK and watch other games the following day.
 
-### What has changed on this site:
+## What has changed on this site:
 
 - No changes to the site this week.
 
-### What I've been reading:
+## What I've been reading:
 
 - No reading this week.
 
-### What I've been watching:
+## What I've been watching:
 
 - [Train to Busan (2016)](https://www.themoviedb.org/movie/396535).
 - [Episode 4](https://www.themoviedb.org/tv/63404-taskmaster/season/14/episode/4) in Season 14 of [Taskmaster (UK)](https://www.themoviedb.org/tv/63404-taskmaster).

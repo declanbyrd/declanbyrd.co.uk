@@ -11,18 +11,18 @@ Work this week was a slightly slower pace than normal and most of my time was sp
 
 I've encountered a bug in [Lego Star Wars: The Skywalker Saga](https://www.nintendo.co.uk/Games/Nintendo-Switch-games/LEGO-Star-Wars-The-Skywalker-Saga-2157160.html) on my switch that stops me from continuing The Empire Strikes Back so I started looking through other games to play. I downloaded the [Portal: Companion Collection](https://www.nintendo.co.uk/Games/Nintendo-Switch-download-software/Portal-Companion-Collection-2168991.html) and gave myself motion sickness by finishing a play-through of Portal in one sitting.
 
-### What has changed on this site:
+## What has changed on this site:
 
 - I moved the links for [what I've been reading](/reading/) and [the colophon](/colophon/) out of the footer and into the header. I'm not particularly good at design but this change feels a bit more organised and puts all the navigation items in one place.
-- I added `<meta name="generator" content="{{eleventy.generator}}">` to the head of my base template. The generator meta tag helps automated tools determine what static site generator was used to build my site. 
+- I added `<meta name="generator" content="{{eleventy.generator}}">` to the head of my base template. The generator meta tag helps automated tools determine what static site generator was used to build my site.
 - I modified my build commands so that I was no longer using the globally installed version of 11ty and instead use the version I specify in `package.json`.
 
-### What I've been reading:
+## What I've been reading:
 
-- I finished reading [The Girl Who Could Move Sh*t With Her Mind by Jackson Ford](/reading/9780356510446/).
-- I started reading [Dark Matter by Blake Crouch](/reading/9781447297581/). 
+- I finished reading [The Girl Who Could Move Sh\*t With Her Mind by Jackson Ford](/reading/9780356510446/).
+- I started reading [Dark Matter by Blake Crouch](/reading/9781447297581/).
 
-### What I've been watching:
+## What I've been watching:
 
 - [Episode 4 of Ms. Marvel](https://www.themoviedb.org/tv/92782-ms-marvel/season/1/episode/4).
 - [Season 1 of Man vs Bee](https://www.themoviedb.org/tv/197588-man-vs-bee/season/1).

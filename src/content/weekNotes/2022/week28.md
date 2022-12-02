@@ -11,15 +11,15 @@ I was also back playing basketball this week in my first session of pre-season. 
 
 I've been gaming a fair bit this week too. Many hours were spent playing [Rise of the Tomb Raider](https://stadia.google.com/game/rise-of-the-tomb-raider-20-year-celebration) and taking advantage of the ability to play on my Surface and Chromecast with Google TV. The prequel [Tomb Raider: Definitive Edition](https://stadia.google.com/game/tomb-raider-definitive-edition), took me 12 and a half hours to finish the story. At the time of writing, Rise of the Tomb Raider has consumed nearly 11 hours and judging by walkthroughs available online I'm roughly half way through the story.
 
-### What has changed on this site:
+## What has changed on this site:
 
 - No changes this week.
 
-### What I've been reading:
+## What I've been reading:
 
-- I didn't read any of [Dark Matter by Blake Crouch](/reading/9781447297581/) this week. 
+- I didn't read any of [Dark Matter by Blake Crouch](/reading/9781447297581/) this week.
 
-### What I've been watching:
+## What I've been watching:
 
 - [Episode 6 of Ms. Marvel](https://www.themoviedb.org/tv/92782-ms-marvel/season/1/episode/6).
 

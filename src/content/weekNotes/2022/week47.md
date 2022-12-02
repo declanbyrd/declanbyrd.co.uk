@@ -13,15 +13,15 @@ I started to think about visual changes that I want to make to my site before 20
 
 Not a lot else has happened this week. I've had the football on in the background most days but I'm rapidly losing any remaining interest I had in watching the world cup.
 
-### What has changed on this site:
+## What has changed on this site:
 
 - No changes to the site this week.
 
-### What I've been reading:
+## What I've been reading:
 
 - I haven't read any of [The Apollo Murders by Chris Hadfield](/reading/9780735282353/) this week.
 
-### What I've been watching:
+## What I've been watching:
 
 - [Episode 12](https://www.themoviedb.org/tv/83867-star-wars-andor/season/1/episode/12) of [Star Wars: Andor](https://www.themoviedb.org/tv/83867-star-wars-andor).
 - [Episode 9](https://www.themoviedb.org/tv/63404-taskmaster/season/14/episode/9) in Season 14 of [Taskmaster (UK)](https://www.themoviedb.org/tv/63404-taskmaster).

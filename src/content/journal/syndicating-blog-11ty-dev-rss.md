@@ -9,7 +9,7 @@ While hosting content on my website allows me to own the content I post, it does
 
 Dev.to includes an option to publish posts by monitoring an [RSS feed](https://aboutfeeds.com/). Each time the feed is updated with new content, Dev.to will then store the new content as a draft post ready to be published with canonical URLs that link to the source of the original content. This ensures that the posts can be checked for formatting issues before being posted on the Dev.to website.
 
-### 11ty RSS
+## 11ty RSS
 
 One of the great things about using [11ty](https://www.11ty.dev/) as a static site generator is that it can be extended using plugins such as the [11ty RSS plugin](https://www.11ty.dev/docs/plugins/rss/). This plugin will allow 11ty to generate an RSS/Atom feed using the Nunjucks templating engine. To use this plugin in a project, it first needs to be installed using a JavaScript package manager such as npm.
 
@@ -78,7 +78,7 @@ metadata:
 
 This template will add each blog post within the post collection to the RSS feed with the most recent post shown first. Each time the 11ty site is built a new feed is generated showing the most up-to-date content from the site.
 
-### RSS on Dev.to
+## RSS on Dev.to
 
 With the 11ty site now outputting an RSS feed, Dev.to can now monitor the feed. To connect the RSS feed to Dev.to visit the [extensions settings](https://dev.to/settings/extensions). Inside the extensions settings, there is a section titled "Publishing to DEV Community from RSS" which contains an input box for the URL of the RSS feed.
 

@@ -11,15 +11,15 @@ Basketball didn't go very well this week. I was planning to attend two sessions 
 
 Google announced that Stadia was shutting down. This was my main gaming platform alongside the Nintendo Switch and I used it to play the games that I wanted to play that were either badly ported to the Switch (FIFA 22) or not available on the Switch. The most disappointing thing about the announcement was that it had been coming for a while now and it was evident for a while that Google was not as committed as their customers to making a success of the product. I could use Stadia on all the devices I already owned, I didn't have to wait for any games to download or update, and the games library for Stadia included games that I wanted to play. The performance of the games on Stadia made me confident about the future of cloud gaming. Anyway, that went well. I'm supposed to be getting a refund for all the games that I bought on the platform which is a nice gesture at least. I managed to buy a PS5 over the weekend which I'm very excited to play on.
 
-### What has changed on this site:
+## What has changed on this site:
 
 - I updated the home page to show that I started a new job.
 
-### What I've been reading:
+## What I've been reading:
 
 - I read three chapters of [The Apollo Murders by Chris Hadfield](/reading/9780735282353/) this week.
 
-### What I've been watching:
+## What I've been watching:
 
 - [Episode 7](https://www.themoviedb.org/tv/92783-she-hulk-attorney-at-law/season/1/episode/7) of [She-Hulk: Attorney at Law (2022)](https://www.themoviedb.org/tv/92783-she-hulk-attorney-at-law/).
 - [Episode 10](https://www.themoviedb.org/tv/126929-welcome-to-wrexham/season/1/episode/10) and [episode 11](https://www.themoviedb.org/tv/126929-welcome-to-wrexham/season/1/episode/11) of [Welcome to Wrexham (2022)](https://www.themoviedb.org/tv/126929-welcome-to-wrexham/season/1).

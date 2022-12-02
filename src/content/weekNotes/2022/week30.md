@@ -11,18 +11,17 @@ I returned to The Amex stadium to watch [Brighton play Espanyol](https://www.bri
 
 I also made a rare appearance in the office this week so I could collect some new equipment. I'd been assigned a new desk since I was last in, so I spent most of my time moving things and organising cables.
 
-### What has changed on this site:
+## What has changed on this site:
 
 - Netlify released a new update for their graph functionality this week, so I reauthenticated in the web UI which has fixed issues with displaying my last played song on Spotify.
 - I converted and resized the image that I use to represent social media posts. The result of this process is that the image size has decreased from 76kb to 1.09kb.
 
-### What I've been reading:
+## What I've been reading:
 
-- No reading this week. 
+- No reading this week.
 
-### What I've been watching:
+## What I've been watching:
 
 - [Episode 6 in Season 2 of Only Murders in the Building](https://www.themoviedb.org/tv/107113-only-murders-in-the-building/season/2/episode/6).
 - [Episodes 3 and 4 in Season 1 of Avoidance](https://www.themoviedb.org/tv/203817-avoidance/season/1/).
 - [The first 4 episodes in Season 1 of X-Men (1992)](https://www.themoviedb.org/tv/4574-x-men/season/1).
-

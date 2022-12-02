@@ -5,7 +5,7 @@ description: Celebrating four goals at the football and what else I've been up t
 tags: ['Week Notes']
 ---
 
-I've been catching up on the NBA this week by watching the full game replays on NBA League Pass. I wish they had an option to watch the full game without the breaks between quarters and the half-time entertainment. There is an all possessions option but that doesn't preserve the flow of the game and will skip the players bringing the ball over half court. 
+I've been catching up on the NBA this week by watching the full game replays on NBA League Pass. I wish they had an option to watch the full game without the breaks between quarters and the half-time entertainment. There is an all possessions option but that doesn't preserve the flow of the game and will skip the players bringing the ball over half court.
 
 I've been playing lots of Spider-man on the PlayStation again this week. I'm still spending more time completing the side-missions than progressing the story but its still very enjoyable. I bought some more games this week which I'm looking forward to playing soon.
 
@@ -13,15 +13,15 @@ I watched [Brighton win 4-1 against Chelsea](https://www.brightonandhovealbion.c
 
 While I still have a Twitter account, this week I've effectively put it in read-only mode. My profile now makes it clear that my account is only to syndicate content from this site and includes a link to my Mastodon profile. In the short term, I need to explore options for automating syndication to Twitter. I have already configured [Pipedream](https://pipedream.com/) to automate the process of sharing my weekly note.
 
-### What has changed on this site:
+## What has changed on this site:
 
 - No changes to the site this week.
 
-### What I've been reading:
+## What I've been reading:
 
 - I read two chapters of [The Apollo Murders by Chris Hadfield](/reading/9780735282353/) this week.
 
-### What I've been watching:
+## What I've been watching:
 
 - [Episode 7](https://www.themoviedb.org/tv/83867-star-wars-andor/season/1/episode/7) and [episode 8](https://www.themoviedb.org/tv/83867-star-wars-andor/season/1/episode/8) of [Star Wars: Andor](https://www.themoviedb.org/tv/83867-star-wars-andor).
 - [Episode 5](https://www.themoviedb.org/tv/63404-taskmaster/season/14/episode/5) in Season 14 of [Taskmaster (UK)](https://www.themoviedb.org/tv/63404-taskmaster).

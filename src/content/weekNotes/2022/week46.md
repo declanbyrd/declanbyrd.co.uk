@@ -11,15 +11,15 @@ On Wednesday this week, I made my first trip to the Twilio office in London. Bei
 
 I played Spider-man on the PS5 this week and I'm still choosing to finish the side missions before advancing the main story. I can easily spend hours playing so I've mostly been playing this over the weekends.
 
-### What has changed on this site:
+## What has changed on this site:
 
 - No changes to the site this week.
 
-### What I've been reading:
+## What I've been reading:
 
 - I read over 100 pages of [The Apollo Murders by Chris Hadfield](/reading/9780735282353/) during my commute to the office this week. Going to try and commit to finishing the book by the end of the month.
 
-### What I've been watching:
+## What I've been watching:
 
 - [Episode 11](https://www.themoviedb.org/tv/83867-star-wars-andor/season/1/episode/11) of [Star Wars: Andor](https://www.themoviedb.org/tv/83867-star-wars-andor).
 - [Episode 8](https://www.themoviedb.org/tv/63404-taskmaster/season/14/episode/8) in Season 14 of [Taskmaster (UK)](https://www.themoviedb.org/tv/63404-taskmaster).

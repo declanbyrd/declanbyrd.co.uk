@@ -13,17 +13,17 @@ I've been experimenting with [Pipedream](https://pipedream.com/) to automate the
 
 I moved my Mastodon account to a [new instance](https://mastodon.technology/@declan_byrd). I was self-hosting my Mastodon account on Azure and was funded through a Microsoft developer account (assigned to me via my work) which gave me $115 a month in Azure credits. It was a fun way to learn not only how to set something up in Azure but to also see how Mastodon worked from an admin's perspective.
 
-### What has changed on this site:
+## What has changed on this site:
 
 - I updated the link to my mastodon profile in the site footer so that it now points to the new server.
 - I've added permalinks to all notes in the journal. This means that I now have an archive of all my Mastodon and Twitter posts on my own site.
 
-### What I've been reading:
+## What I've been reading:
 
 - I finished [Dark Matter by Blake Crouch ](/reading/9781447297581/)this week and updated my notes for the book.
 - I started reading [The Apollo Murders by Chris Hadfield](/reading/9780735282353/).
 
-### What I've been watching:
+## What I've been watching:
 
 - [Episode 4](https://www.themoviedb.org/tv/92783-she-hulk-attorney-at-law/season/1/episode/4) of [She-Hulk: Attorney at Law (2022)](https://www.themoviedb.org/tv/92783-she-hulk-attorney-at-law/).
 - Episodes [5](https://www.themoviedb.org/tv/126929-welcome-to-wrexham/season/1/episode/5) and [6](https://www.themoviedb.org/tv/126929-welcome-to-wrexham/season/1/episode/6) of [Welcome to Wrexham (2022)](https://www.themoviedb.org/tv/126929-welcome-to-wrexham/season/1).

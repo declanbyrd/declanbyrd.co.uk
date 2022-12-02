@@ -11,16 +11,16 @@ I spent a large part of this week writing up how I syndicate my Mastodon posts t
 
 In addition to spending a few hours playing career mode in FIFA 23 on the PS5, I was also able to spend a bit of time playing on the Nintendo Switch this week too. Most of the games on my switch are either Nintendo exclusives or ports of games that I hadn't played on previous consoles. Portal 2 was one of the games that I hadn't played before and after the completing the first game a while ago I started the sequel. I can't play it for long periods of time though, jumping through portals for too long gives me motion sickness due to the way the game camera corrects itself.
 
-### What has changed on this site:
+## What has changed on this site:
 
 - I wrote about how I've [syndicated my Mastodon posts](/journal/2022/mastodon-pesos/) to this site to create a social media archive.
 - I made some changes to how webmentions are displayed on this site.
 
-### What I've been reading:
+## What I've been reading:
 
 - I read two chapters of [The Apollo Murders by Chris Hadfield](/reading/9780735282353/) this week.
 
-### What I've been watching:
+## What I've been watching:
 
 - [Episode 9](https://www.themoviedb.org/tv/92783-she-hulk-attorney-at-law/season/1/episode/9) of [She-Hulk: Attorney at Law (2022)](https://www.themoviedb.org/tv/92783-she-hulk-attorney-at-law/).
 - [Episode 16](https://www.themoviedb.org/tv/126929-welcome-to-wrexham/season/1/episode/16), [episode 17](https://www.themoviedb.org/tv/126929-welcome-to-wrexham/season/1/episode/17) and [episode 18](https://www.themoviedb.org/tv/126929-welcome-to-wrexham/season/1/episode/18) of [Welcome to Wrexham (2022)](https://www.themoviedb.org/tv/126929-welcome-to-wrexham/season/1).
