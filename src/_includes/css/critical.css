@@ -210,13 +210,13 @@ footer {
   margin-top: var(--step-4);
 }
 
-nav[aria-label='footer navigation'] {
+nav[aria-label='main navigation'] {
   padding-top: var(--step-4);
   padding-bottom: var(--step-4);
   border-top: 0.0125rem solid var(--external-link);
 }
 
-nav[aria-label='footer navigation'] ul {
+nav[aria-label='main navigation'] ul {
   max-width: 90ch;
   display: grid;
   list-style: none;
@@ -224,7 +224,7 @@ nav[aria-label='footer navigation'] ul {
   gap: 3rem;
 }
 
-nav[aria-label='footer navigation'] a {
+nav[aria-label='main navigation'] a {
   color: var(--text-color);
   font-size: var(--step-0);
   font-family: var(--heading-font);
