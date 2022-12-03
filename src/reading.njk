@@ -22,6 +22,10 @@ eleventyComputed:
 {% block content %}
   <section>
     <h1>{{ title }}</h1>
+    <div>
+      <h2>Currently reading</h2>
+      {% nowReading now.reading %}
+    </div>
     {% for year, booksInYear in collections.books %}
       <h2>{{year}}</h2>
       <ul class="[ bookshelf ]">

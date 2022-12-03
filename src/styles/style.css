@@ -288,6 +288,15 @@ article.max-width-90 {
   border-bottom: 0.0125rem solid var(--text-color);
 }
 
+.book-container.now-reading {
+  border-bottom: none;
+}
+
+.book-container.now-reading a {
+  font-family: var(--heading-font);
+  font-size: var(--step-1);
+}
+
 .book-container.preview {
   display: grid;
   grid-template-columns: auto;
