@@ -1,9 +1,10 @@
 ---
 title: Reading
-description: Books that Declan Byrd has read and the notes he's written about each book.
-eleventyNavigation:
-  key: Reading
-  order: 3
+description: "Books that I've been reading, ordered by the date I read them."
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    description: "{{ description }}"
 ---
 
 {% extends 'layouts/base.njk' %}
@@ -19,17 +20,18 @@ eleventyNavigation:
 {% endblock %}
 
 {% block content %}
-<section class="full-width">
-  <h1>What I've been <span class="accent">{{ title }}</span></h1>
+  <section>
+    <h1>{{ title }}</h1>
     {% for year, booksInYear in collections.books %}
-    <h3>{{year}}</h3>
-    <ul class="[ bookshelf ]">
-      {% for book in booksInYear %}
-        <li>
-            {% book book.data.isbn, true %}
-        </li>
-      {% endfor %}
-    </ul>
+      <h2>{{year}}</h2>
+      <ul class="[ bookshelf ]">
+        {% for book in booksInYear %}
+          <li>
+            {% book book.data.isbn,
+            true %}
+          </li>
+        {% endfor %}
+      </ul>
     {% endfor %}
-</section>
+  </section>
 {% endblock %}

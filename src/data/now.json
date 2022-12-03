@@ -1,0 +1,14 @@
+{
+  "work": {
+    "role": "software engineer",
+    "company": {
+      "name": "Twilio",
+      "website": "https://twilio.com"
+    }
+  },
+  "reading": "9780735282353",
+  "gaming": {
+    "game": "Spider-man",
+    "platform": "Playstation 5"
+  }
+}

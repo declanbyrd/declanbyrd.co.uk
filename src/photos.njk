@@ -1,15 +1,16 @@
 ---
 title: Photos
-description: Declan Byrd's photos.
-eleventyNavigation:
-  key: Photos
-  order: 3
+description: A selection of photos that I've taken.
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    description: "{{ description }}"
 ---
 
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-<section class="full-width">
+<section>
   <h1>My <span class="accent">{{title}}</span></h1>
   <ul class="[ autofit-grid ] [ photos ]">
     {% for item in collections.photos %}

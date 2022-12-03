@@ -56,8 +56,8 @@ h1 {
 }
 
 h2 {
-  font-size: var(--step-3);
-  min-height: calc(var(--step-3) + 0.5rem);
+  font-size: var(--step-2);
+  min-height: calc(var(--step-2) + 0.5rem);
 }
 
 h3 {
@@ -210,6 +210,26 @@ footer {
   margin-top: var(--step-4);
 }
 
+nav[aria-label='footer navigation'] {
+  padding-top: var(--step-4);
+  padding-bottom: var(--step-4);
+  border-top: 0.0125rem solid var(--external-link);
+}
+
+nav[aria-label='footer navigation'] ul {
+  max-width: 90ch;
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+nav[aria-label='footer navigation'] a {
+  color: var(--text-color);
+  font-size: var(--step-0);
+  font-family: var(--heading-font);
+}
+
 .accent {
   color: var(--external-link);
 }
@@ -283,8 +303,8 @@ header .horizontal-links {
 .autofit-grid {
   display: grid;
   list-style: none;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-auto-rows: 20rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-auto-rows: 15rem;
   padding: 0;
 }
 

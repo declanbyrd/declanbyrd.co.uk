@@ -42,6 +42,13 @@ module.exports.posts = (collection) => {
   return collection.getFilteredByGlob('src/content/journal/*.md').reverse();
 };
 
+module.exports.headerNavigationItems = (collection) => {
+  return collection.getFilteredByGlob([
+    'src/journal/journal.njk',
+    'src/photos.njk',
+  ]);
+};
+
 module.exports.weeknotesByYear = (collection) => {
   const notes = collection
     .getFilteredByGlob('src/content/weekNotes/**/*.md')

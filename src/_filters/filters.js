@@ -72,3 +72,7 @@ module.exports.getWebmentionSource = (url) => {
   const { hostname } = new URL(url);
   return hostname;
 };
+
+module.exports.sortNavigationByTitle = (collection) => {
+  return collection.sort((a, b) => a.title.localeCompare(b.title));
+};

@@ -1,6 +1,6 @@
 <nav aria-label="Primary navigation">
   <ul class="[ horizontal-links ]">
-    {%- for entry in collections.all | eleventyNavigation %}
+    {%- for entry in collections.headerNavigationItems | eleventyNavigation | sortNavigationByTitle %}
       <li>
         <a href="{{ entry.url | url }}"
         {% if entry.url == page.url %}
