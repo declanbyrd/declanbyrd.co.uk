@@ -2,7 +2,7 @@ const isbn = require('node-isbn');
 const image = require('./cloudImage');
 
 const bookShortcode = async (bookIsbn, preview = false) => {
-  const book = await isbn.resolve(bookIsbn);
+  const book = await isbn.provider(['google']).resolve(bookIsbn);
 
   if (preview) {
     return `<a href="/reading/${bookIsbn}/" class="book-container preview" >
