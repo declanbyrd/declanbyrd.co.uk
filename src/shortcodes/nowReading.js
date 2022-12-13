@@ -9,7 +9,7 @@ const nowReading = async (bookIsbn) => {
       `book cover for ${book.title}`
     )}
     <div>
-      <a href="/reading/${bookIsbn}/">${book.title}</a>
+      <p class="book-title">${book.title}</p>
       <p>by ${book.authors.join(', ')}</p>
     </div>
   </div>`;
