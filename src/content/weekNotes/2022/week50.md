@@ -13,7 +13,7 @@ Becka and I visited Gunwharf Quays for some shopping on Friday. I hadn't been ba
 
 It wouldn't be time off work without me spending hours playing video games. I managed to spend most of an afternoon playing seasons mode in FIFA 23, often getting frustrated at the colour contrast between team kits. When the frustration got too much I switched to playing Spider-man and have apparently reached 80% completion of the campaign despite choosing to complete as many of the side missions as possible.
 
-I also watched the world cup final on Sunday. Thrilled to see Brighton's Alexis McAllister play so well and get to lift the trophy!
+I also watched the world cup final on Sunday. Thrilled to see Brighton's Alexis MacAllister play so well and get to lift the trophy!
 
 ## What has changed on this site:
 
