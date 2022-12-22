@@ -1,8 +1,25 @@
+---
+renderData:
+  title: "{{ book.title }}"
+  description: "Declan's notes for {{ book.title }} by {{book.authors}}"
+---
+
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
 
   <article class="[ markdown-container book-entry ]">
+    <div class="book-container">
+      {% cloudImage book.thumbnail,
+      "Book cover for {{book.title}} by {{book.authors}}" %}
+      <div class="book-container-meta">
+        <h1>{{book.title}}</h1>
+        <p>by {{book.authors}}</p>
+        <p>{{book.pageCount}} pages</p>
+        <details>
+          <summary>{{book.summary}}</summary>{{book.description}}</details>
+      </div>
+    </div>
     {{ content | safe }}
 
     {% set previousPost = collections.books | reverse | getPreviousCollectionItem(page) %}

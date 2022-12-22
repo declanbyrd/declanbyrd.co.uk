@@ -31,10 +31,16 @@ eleventyComputed:
       <ul class="[ bookshelf ]">
         {% for book in booksInYear %}
           <li>
-            {% book book.data.isbn,
-            true %}
-          </li>
-        {% endfor %}
+            <a href="/reading/{{book.data.isbn}}/" class="book-container preview">
+              {% if book.data.book.thumbnail %}
+                {% cloudImage book.data.book.thumbnail,
+                "Book cover for {{book.data.title}}" %}
+              {% endif %}
+              <span class="[ visually-hidden ]">
+              Read Declan's notes for {{book.data.book.title}} by {{book.data.book.authors}}
+              </span>
+            </a>
+          {% endfor %}
       </ul>
     {% endfor %}
   </section>

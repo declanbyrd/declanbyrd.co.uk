@@ -314,8 +314,9 @@ article.max-width-90 {
   column-gap: 1rem;
 }
 
-.book-container * {
+.book-container-meta {
   grid-column: 2;
+  display: block;
 }
 
 @media screen and (max-width: 575px) {
@@ -328,7 +329,7 @@ article.max-width-90 {
   }
 }
 
-.book-container h2 {
+.book-container h1 {
   margin-top: 0;
   margin-bottom: 0.25rem;
 }
@@ -338,6 +339,7 @@ article.max-width-90 {
 }
 
 .book-container details {
+  margin-top: var(--step--1);
   display: inline;
 }
 
