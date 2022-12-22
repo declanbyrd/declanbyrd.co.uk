@@ -6,28 +6,6 @@ a:not(.icon-container):focus {
   top: 0;
 }
 
-.hover-link:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-
-.hover-link:focus:before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-
-.hover-link[aria-current='page']::before {
-  content: '';
-  position: absolute;
-  width: calc(100% - 1rem);
-  height: 0.125rem;
-  bottom: 0.125rem;
-  left: 0.5rem;
-  visibility: visible;
-  transform: scaleX(1);
-  background: var(--text-color);
-}
-
 .social-icon:hover {
   fill: var(--external-link);
 }
@@ -60,18 +38,14 @@ a:focus > .social-icon {
   margin: 0.25rem 0;
 }
 
-.vertical-list .hover-link {
-  margin: 0 0.5rem;
-}
-
-.horizontal-list .hover-link {
-  margin: 0 0.25rem;
-}
-
 li.tag {
   display: flex;
   align-items: center;
   fill: var(--external-link);
+}
+
+li.tag a {
+  text-decoration: none;
 }
 
 .horizontal-list li.tag:first-child {

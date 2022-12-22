@@ -10,7 +10,7 @@
         {%- if collections.tagList.indexOf(tag) != -1 -%}
           {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
           <li class="[ tag ]">
-            <a href="{{ tagUrl | url }}" class="p-category [ hover-link ]">
+            <a href="{{ tagUrl | url }}" class="p-category">
               <span class="accent">#</span>{{ tag }}</a>
           </li>
         {%- endif -%}

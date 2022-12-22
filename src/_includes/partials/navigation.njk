@@ -1,4 +1,4 @@
-<nav aria-label="Primary navigation">
+<nav aria-label="header navigation">
   <ul class="[ horizontal-links ]">
     {%- for entry in collections.headerNavigationItems | eleventyNavigation | sortNavigationByTitle %}
       <li>
@@ -6,7 +6,7 @@
         {% if entry.url == page.url %}
           aria-current="page"
         {% endif %}
-        class="[ hover-link ]">{{ entry.title }}</a>
+        >{{ entry.title }}</a>
       </li>
     {%- endfor %}
     <li>
