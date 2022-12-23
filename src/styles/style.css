@@ -233,6 +233,12 @@ article.max-width-90 {
   gap: 0.5rem;
 }
 
+@media screen and (max-width: 455px) {
+  .bookshelf {
+    justify-content: center;
+  }
+}
+
 .bookshelf li {
   list-style: none;
   display: flex;
@@ -293,13 +299,19 @@ article.max-width-90 {
   display: block;
 }
 
+.book-container picture {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
 @media screen and (max-width: 575px) {
-  .book-container details {
+  .book-container-meta {
     grid-column: 1 / span 2;
   }
 
   .book-container picture {
-    grid-row: 1;
+    grid-column: 1 / span 2;
+    margin: auto;
   }
 }
 
@@ -325,11 +337,6 @@ article.max-width-90 {
 .book-container p {
   margin: 0;
   line-height: 1.5;
-}
-
-.book-container picture {
-  grid-column: 1;
-  grid-row: 1 / span 2;
 }
 
 .book-container.preview picture {
