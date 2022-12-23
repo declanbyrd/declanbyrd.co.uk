@@ -24,7 +24,14 @@ eleventyComputed:
     <h1>{{ title }}</h1>
     <div>
       <h2>Currently reading</h2>
-      {% nowReading now.reading %}
+      <div class="book-container now-reading">
+        {% bookCover now.reading %}
+        <div>
+          <p class="book-title">{{now.reading.title}}</p>
+          <p>by {{now.reading.authors}}</p>
+          <p>{{now.reading.pageCount}} pages</p>
+        </div>
+      </div>
     </div>
     {% for year, booksInYear in collections.books %}
       <h2>{{year}}</h2>
@@ -32,10 +39,7 @@ eleventyComputed:
         {% for book in booksInYear %}
           <li>
             <a href="/reading/{{book.data.isbn}}/" class="book-container preview">
-              {% if book.data.book.thumbnail %}
-                {% cloudImage book.data.book.thumbnail,
-                "Book cover for {{book.data.title}}" %}
-              {% endif %}
+              {% bookCover book.data.book %}
               <span class="[ visually-hidden ]">
               Read Declan's notes for {{book.data.book.title}} by {{book.data.book.authors}}
               </span>

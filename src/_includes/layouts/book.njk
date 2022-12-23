@@ -10,8 +10,7 @@ renderData:
 
   <article class="[ markdown-container book-entry ]">
     <div class="book-container">
-      {% cloudImage book.thumbnail,
-      "Book cover for {{book.title}} by {{book.authors}}" %}
+      {% bookCover book %}
       <div class="book-container-meta">
         <h1>{{book.title}}</h1>
         <p>by {{book.authors}}</p>
