@@ -1,4 +1,5 @@
 // @ts-check
+const { DateTime } = require('luxon');
 
 module.exports.tagList = (collection) => {
   const tagSet = new Set();
@@ -23,6 +24,7 @@ module.exports.tagList = (collection) => {
             case 'tagList':
             case 'article':
             case 'note':
+            case 'summary':
               return false;
           }
 
@@ -49,25 +51,38 @@ module.exports.headerNavigationItems = (collection) => {
   ]);
 };
 
+const getNoteYearFromStartWeek = (date) => {
+  return DateTime.fromJSDate(date).minus({ days: 7 }).toJSDate().getFullYear();
+};
+
 module.exports.weeknotesByYear = (collection) => {
-  const notes = collection
-    .getFilteredByGlob('src/content/weekNotes/**/*.md')
-    .reverse();
-  const years = notes.map((note) => note.date.getFullYear());
+  const weekNotes = collection.getFilteredByGlob(
+    'src/content/weekNotes/**/*.md'
+  );
+  const yearReviews = collection.getFilteredByTag('summary');
+  const notes = [...weekNotes, ...yearReviews];
+  const years = notes.map((note) => getNoteYearFromStartWeek(note.date));
   const uniqueYears = [...new Set(years)];
-
+  //@ts-ignore: below works without needing changes
   const notesByYear = uniqueYears.reduce((prev, year) => {
-    const filtered = notes.filter((note) => note.date.getFullYear() === year);
+    const filtered = notes.filter(
+      (note) => getNoteYearFromStartWeek(note.date) === year
+    );
 
-    return [...prev, [year, filtered]];
+    return [...prev, [year, filtered]].reverse();
   }, []);
 
   return notesByYear;
 };
 
 module.exports.weeknotes = (collection) => {
-  return collection
-    .getFilteredByGlob('src/content/weekNotes/**/*.md')
+  const weekNotes = collection.getFilteredByGlob(
+    'src/content/weekNotes/**/*.md'
+  );
+  const yearReviews = collection.getFilteredByTag('summary');
+  const allSummaries = [...weekNotes, ...yearReviews];
+  return allSummaries
+    .sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
     .reverse();
 };
 
