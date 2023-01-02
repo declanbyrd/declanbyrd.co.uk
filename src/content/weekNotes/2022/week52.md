@@ -3,6 +3,7 @@ title: Week Notes - Week 52
 date: 2023-01-02
 description: Seeing in the new year and what else I've been up to over the last seven days.
 tags: ['Week Notes']
+permalink: '/week-notes/2022/week52/',
 ---
 
 I've been spending quite a lot of time on the PlayStation this week. I finished Stray which I really enjoyed. What the game lacked in length, it made up with its storyline and puzzles. I liked that the gameplay kept the controls simple and all the actions were mapped to single buttons and not combinations. Need for Speed: Heat, Star Wars Battlefront 2 and FIFA 23 also got some play time this week.
