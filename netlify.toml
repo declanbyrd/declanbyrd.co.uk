@@ -39,6 +39,10 @@
 [functions]
   directory = "functions"
 
+[[redirects]]
+  from = "/.well-known/webfinger"
+  to = "https://indieweb.social/.well-known/webfinger?resource=acct:declan_byrd@indieweb.social"
+  status = 200
 
 [[plugins]]
 package = "netlify-plugin-cache"
