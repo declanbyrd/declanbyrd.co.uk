@@ -34,7 +34,7 @@ eleventyComputed:
       </div>
     </div>
     {% for year, booksInYear in collections.books %}
-      <h2>{{year}}</h2>
+      <h2 id="{{year}}">{{year}}</h2>
       <ul class="[ bookshelf ]">
         {% for book in booksInYear %}
           <li>

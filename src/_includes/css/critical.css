@@ -60,6 +60,10 @@ h2 {
   min-height: calc(var(--step-2) + 0.5rem);
 }
 
+h2[id] {
+  scroll-margin-top: var(--step-3);
+}
+
 h3 {
   font-size: var(--step-1);
   min-height: calc(var(--step-1) + 0.5rem);
