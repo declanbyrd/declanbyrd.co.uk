@@ -2,7 +2,7 @@
 title: What did Declan do in 2022?
 description: One of those year in review posts that summarises what I did in 2022.
 tags: ['Year in Review', 'summary']
-date: 2023-01-03
+date: 2023-01-08
 
 ---
 
