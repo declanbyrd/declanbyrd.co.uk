@@ -1,6 +1,6 @@
 const { getBook } = require('../utils');
 
-const BOOK = '9781804910184';
+const BOOK = '9781804910252';
 
 module.exports = async () => {
   return {
