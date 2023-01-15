@@ -1,7 +1,7 @@
 ---
 renderData:
-  title: "{{ book.title }}"
-  description: "Declan's notes for {{ book.title }} by {{book.authors}}"
+  title: "{{ book.title | safe }}"
+  description: "Declan's notes for {{ book.title | safe }} by {{book.authors}}"
 ---
 
 {% extends 'layouts/base.njk' %}
