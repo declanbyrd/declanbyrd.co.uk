@@ -31,4 +31,4 @@ That brings an end to my week notes for 2022. If you've been reading these notes
 - [Episode 2 in Season 3 ](https://www.themoviedb.org/tv/68507-his-dark-materials/season/3/episode/2) of [His Dark Materials](https://www.themoviedb.org/tv/68507-his-dark-materials).
 - [Dune (2021)](https://www.themoviedb.org/movie/438631-dune).
 - [The Suicide Squad (2021)](https://www.themoviedb.org/movie/436969-the-suicide-squad).
-- [Taskmaster's New Year Treat 2023](https://www.comedy.co.uk/tv/taskmaster/episodes/2023/1/).
+- [Taskmaster's New Year Treat 2023](https://www.themoviedb.org/tv/63404-taskmaster/season/0/episode/4).
