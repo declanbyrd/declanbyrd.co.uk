@@ -26,7 +26,7 @@ I started playing Guardians of the Galaxy on the PlayStation. Some of the early 
 
 ## What I've been watching:
 
-- Episodes 4 and 5 in [Season 3](https://www.themoviedb.org/tv/68507-his-dark-materials/season/3/) of [His Dark Materials](https://www.themoviedb.org/tv/68507-his-dark-materials).
+- Episodes 3 and 4 in [Season 3](https://www.themoviedb.org/tv/68507-his-dark-materials/season/3/) of [His Dark Materials](https://www.themoviedb.org/tv/68507-his-dark-materials).
 - Episode 1 and 2 in [Season 3 of Happy Valley](https://www.themoviedb.org/tv/61244-happy-valley/season/3).
 - Episodes 1-7 in [Season 4 of Atlanta](https://www.themoviedb.org/tv/65495-atlanta/season/4).
 - [Glass Onion: A Knives Out Mystery (2022)](https://www.themoviedb.org/movie/661374-glass-onion-a-knives-out-mystery).
