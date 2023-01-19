@@ -7,7 +7,7 @@ tags: ['Week Notes']
 
 I had my first basketball session of the new year this week. I felt like I had a good session, shooting the ball well and I still being able to run by the end. I hadn't done any exercise over the Christmas period so I was somewhat pleased that I didn't need to take a breaks and could continue playing. I felt the consequences a couple of days later though, feeling very achy.
 
-Something I struggled with last year was choosing to read when I had spare time instead of reaching for my phone. Part of the reason for that was my choice of reading material and the pressure I placed on myself to finish a book if I has started reading it. This week I managed to read most days, finishing two books and I started a third.
+Something I struggled with last year was choosing to read when I had spare time instead of reaching for my phone. Part of the reason for that was my choice of reading material and the pressure I placed on myself to finish a book if I had started reading it. This week I managed to read most days, finishing two books and I started a third.
 
 I spent a couple of evenings on the PlayStation this week, engrossed in the Guardians of the Galaxy game. I discovered that the non-playable characters (NPCs) react when I don't follow them to the next objective, making sarcastic comments when I choose to look for collectibles instead.
 
