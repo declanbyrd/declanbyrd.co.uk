@@ -1,6 +1,6 @@
 const isbn = require('node-isbn');
 
-module.exports.getBook = async (bookIsbn) => {
+module.exports.getBook = async (bookIsbn, pages) => {
   const TIMEOUT = 30000;
   return isbn
     .provider([isbn.PROVIDER_NAMES.GOOGLE])
@@ -13,7 +13,7 @@ module.exports.getBook = async (bookIsbn) => {
         title: book.title,
         authors: book.authors.join(', '),
         thumbnail: book.imageLinks.smallThumbnail,
-        pageCount: book.pageCount,
+        pageCount: book.pageCount !== 0 ? book.pageCount : pages,
         description: rest,
         summary: start,
       };
