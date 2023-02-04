@@ -14,10 +14,9 @@
   },
   "author": {
     "name": "Declan Byrd",
-    "email": "declan.byrd@gmail.com",
     "url": "https://www.declanbyrd.co.uk/"
   },
-  "license": "MIT",
+  "license": "CC-BY-NC-ND-4.0",
   "bugs": {
     "url": "https://github.com/declanbyrd/declanbyrd.co.uk/issues"
   },
