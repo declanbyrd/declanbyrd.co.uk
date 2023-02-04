@@ -87,18 +87,16 @@ module.exports.weeknotes = (collection) => {
 };
 
 module.exports.allSocial = (collection) => {
-  const twitter = collection.getAll()[0].data.tweets.children;
   const mastodon = collection.getAll()[0].data.mastodon.children;
-  const allPosts = [...twitter, ...mastodon];
+  const allPosts = [...mastodon];
   return allPosts
     .sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
     .reverse();
 };
 
 module.exports.allPosts = (collection) => {
-  const twitter = collection.getAll()[0].data.tweets.children;
   const mastodon = collection.getAll()[0].data.mastodon.children;
-  const social = [...twitter, ...mastodon];
+  const social = [...mastodon];
   const localPosts = collection
     .getFilteredByGlob([
       'src/content/weekNotes/**/*.md',
