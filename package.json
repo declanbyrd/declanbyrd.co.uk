@@ -37,8 +37,7 @@
     "clean-css": "^4.2.3",
     "dotenv": "^8.2.0",
     "luxon": "^2.5.2",
-    "node-isbn": "^1.6.1",
-    "twitter": "^1.7.1"
+    "node-isbn": "^1.6.1"
   },
   "browserslist": [
     "defaults",
