@@ -1,10 +1,10 @@
 const { getBook } = require('../utils');
 
-const BOOK = '9781839762024';
-const PAGES = 200;
+const BOOK = '9781804910238';
+const PAGES = 144;
 
 module.exports = async () => {
   return {
-    reading: await getBook(BOOK),
+    reading: await getBook(BOOK, PAGES),
   };
 };
