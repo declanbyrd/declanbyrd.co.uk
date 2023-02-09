@@ -61,7 +61,10 @@ module.exports.weeknotesByYear = (collection) => {
   );
   const yearReviews = collection.getFilteredByTag('summary');
   const notes = [...weekNotes, ...yearReviews];
-  const years = notes.map((note) => getNoteYearFromStartWeek(note.date));
+  const sortedNotes = notes.sort(
+    (a, b) => Date.parse(a.date) - Date.parse(b.date)
+  );
+  const years = sortedNotes.map((note) => getNoteYearFromStartWeek(note.date));
   const uniqueYears = [...new Set(years)];
   //@ts-ignore: below works without needing changes
   const notesByYear = uniqueYears.reduce((prev, year) => {
