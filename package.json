@@ -5,8 +5,7 @@
   "scripts": {
     "debug": "set DEBUG=Eleventy* & npx @11ty/eleventy",
     "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve",
-    "dev": "npx netlify dev"
+    "start": "npx @11ty/eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -35,6 +34,7 @@
     "@11ty/eleventy": "^2.0.0",
     "clean-css": "^4.2.3",
     "dotenv": "^8.2.0",
+    "flat-cache": "^3.0.4",
     "luxon": "^2.5.2",
     "node-isbn": "^1.6.1"
   },
