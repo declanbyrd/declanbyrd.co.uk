@@ -1,0 +1,29 @@
+{
+	"newBook": {
+		"prefix": "nbk",
+		"body": [
+			"---",
+			"isbn: '$TM_FILENAME_BASE'",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      "pages: $1",
+			"---",
+			"",
+			"$2"
+		],
+		"description": "Add template for new book notes"
+	},
+	"newArticle": {
+		"prefix": "nar",
+		"body": [
+			"---",
+			"title: $1",
+			"description: $2",
+			"tags: [$3]",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"---",
+			"",
+			"$4"
+		],
+		"description": "Add template for new article"
+	},
+}
