@@ -1,13 +1,14 @@
 ---
 title: Using variables in VS Code snippets
 description: Writing custom VS Code snippets to auto-fill front matter in markdown files.
-tags: [Snippets]
+tags: ['Snippets', 'article']
 date: 2023-02-16
 ---
 
 The posts on my site are all written in Markdown and have some front matter at the top of each file. I get bored of having to copy and paste the front matter from a previous post and then change the values for the post I want to write.
 
 For example, once I've finished reading a book and I want to add my notes, I have to create a Markdown file with the book's ISBN as the file name and then add some front matter to the top of the file. The front matter looks like below:
+
 ```yaml
 ---
 isbn: '9781804910252'
@@ -16,24 +17,16 @@ pages: 164
 ---
 ```
 
-My first thoughts were to write a [custom snippet for VS Code](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets) so that I could create a template for the front matter. I'd previously written snippets that used [tabstops](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_tabstops) which would set the cursor position each time the tab key was pressed. Using tabstops resulted in the snippet below: 
+My first thoughts were to write a [custom snippet for VS Code](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets) so that I could create a template for the front matter. I'd previously written snippets that used [tabstops](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_tabstops) which would set the cursor position each time the tab key was pressed. Using tabstops resulted in the snippet below:
 
 ```json
 // in Code/User/snippets/markdown.json
 {
-	"newBook": {
-		"prefix": "nbk",
-		"body": [
-			"---",
-			"isbn: $1",
-			"date: $2",
-            "pages: $3",
-			"---",
-			"",
-			"$4"
-		],
-		"description": "Add template for new book notes"
-	}
+  "newBook": {
+    "prefix": "nbk",
+    "body": ["---", "isbn: $1", "date: $2", "pages: $3", "---", "", "$4"],
+    "description": "Add template for new book notes"
+  }
 }
 ```
 
@@ -50,19 +43,19 @@ Using these variables I can replace some of the tabstops and this resulted in th
 ```json
 // in Code/User/snippets/markdown.json
 {
-	"newBook": {
-		"prefix": "nbk",
-		"body": [
-			"---",
-			"isbn: '$TM_FILENAME_BASE'",
-			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
-            "pages: $1",
-			"---",
-			"",
-			"$2"
-		],
-		"description": "Add template for new book notes"
-	}
+  "newBook": {
+    "prefix": "nbk",
+    "body": [
+      "---",
+      "isbn: '$TM_FILENAME_BASE'",
+      "date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      "pages: $1",
+      "---",
+      "",
+      "$2"
+    ],
+    "description": "Add template for new book notes"
+  }
 }
 ```
 
@@ -72,7 +65,7 @@ Now, when I type `nbk` and press <kbd>tab</kbd> in a Markdown file that has an I
 ---
 isbn: '9781804911136'
 date: 2023-02-16
-pages: 
+pages:
 ---
 ```
 
