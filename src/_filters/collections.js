@@ -90,7 +90,7 @@ module.exports.weeknotes = (collection) => {
 };
 
 module.exports.allSocial = (collection) => {
-  const mastodon = collection.getAll()[0].data.mastodon.children;
+  const mastodon = collection.getAll()[0].data.mastodon.posts;
   const allPosts = [...mastodon];
   return allPosts
     .sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
@@ -98,7 +98,7 @@ module.exports.allSocial = (collection) => {
 };
 
 module.exports.allPosts = (collection) => {
-  const mastodon = collection.getAll()[0].data.mastodon.children;
+  const mastodon = collection.getAll()[0].data.mastodon.posts;
   const social = [...mastodon];
   const localPosts = collection
     .getFilteredByGlob([

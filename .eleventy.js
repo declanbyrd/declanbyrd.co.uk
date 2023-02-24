@@ -7,6 +7,7 @@ const cloudImageShortcode = require('./src/shortcodes/cloudImage');
 const bookCoverShortcode = require('./src/shortcodes/bookCover');
 const filters = require('./src/_filters/filters');
 const collections = require('./src/_filters/collections');
+const mastoArchive = require('eleventy-plugin-mastoarchive');
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setUseGitIgnore(false);
@@ -14,6 +15,12 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.setWatchJavaScriptDependencies(false);
 
   eleventyConfig.ignores.add('src/content/**/template.md');
+
+  eleventyConfig.addPlugin(mastoArchive, {
+    host: 'https://indieweb.social',
+    userId: '108153453598932887',
+    removeSyndicates: ['declanbyrd.co.uk'],
+  });
 
   // Shortcodes
 
