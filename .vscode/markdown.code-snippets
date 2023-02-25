@@ -30,13 +30,21 @@
 		"prefix": "nwn",
 		"body": [
 			"---",
-			"title: $CURRENT_YEAR Week Notes - Week $1",
+			"title: $CURRENT_YEAR Week Notes - Week ${TM_FILENAME/[^0-9]//g}",
 			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
 			"description: $2",
 			"tags: ['Week Notes']",
 			"---",
 			"",
-			"$4"
+			"## What has changed on this site:",
+			"- $4",
+
+			"## What I've been reading:",
+			"- $5",
+
+			"## What I've been watching:",
+			"- $6",
+
 		],
 		"description": "Add template for new week note"
 	},
