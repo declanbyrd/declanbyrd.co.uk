@@ -18,7 +18,7 @@
 			"---",
 			"title: $1",
 			"description: $2",
-			"tags: [$3]",
+			"tags: ['article', $3]",
 			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
 			"---",
 			"",
