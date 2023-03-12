@@ -1,6 +1,6 @@
 ---
 title: 2023 Week Notes - Week 10
-date: 2023-03-12
+date: 2023-03-13
 description: Two football games and comics from the library.
 tags: ['Week Notes']
 ---
