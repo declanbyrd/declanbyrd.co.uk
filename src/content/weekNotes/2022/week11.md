@@ -2,7 +2,6 @@
 title: Week 11
 date: 2022-03-21
 description: Development day, version 2 of this site and assessing interviews.
-tags: ['Week Notes']
 ---
 
 For the week starting 14th March, I:

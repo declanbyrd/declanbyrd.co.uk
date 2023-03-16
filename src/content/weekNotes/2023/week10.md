@@ -2,10 +2,9 @@
 title: 2023 Week Notes - Week 10
 date: 2023-03-13
 description: Two football games and comics from the library.
-tags: ['Week Notes']
 ---
 
-I managed to watch Brighton play twice this week. On Wednesday, I was at Brighton's training ground in Lancing to watch the [men's under 21 team play against Valencia in the Premier League International Cup](https://www.brightonandhovealbion.com/news/3100665/albion-knocked-out-by-injury-time-goal). A very entertaining game of football saw Valencia win 3-2, scoring the winning goal in the last minute of added time at the end of the second half. Brighton played very well and it was interesting to see how they've tried to adapt to play a similar style of play to the first team. 
+I managed to watch Brighton play twice this week. On Wednesday, I was at Brighton's training ground in Lancing to watch the [men's under 21 team play against Valencia in the Premier League International Cup](https://www.brightonandhovealbion.com/news/3100665/albion-knocked-out-by-injury-time-goal). A very entertaining game of football saw Valencia win 3-2, scoring the winning goal in the last minute of added time at the end of the second half. Brighton played very well and it was interesting to see how they've tried to adapt to play a similar style of play to the first team.
 
 On Saturday I travelled up to Leeds to watch [Brighton and Leeds draw 2-2](https://www.brightonandhovealbion.com/news/3103193/mac-allister-and-march-on-target-but-albion-are-held) at Elland Road. It felt like two points dropped but Brighton never really did enough to win the game. Too often it felt like Leeds were running faster and wanting to win more than the Brighton players.
 

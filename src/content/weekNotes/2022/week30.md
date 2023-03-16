@@ -2,7 +2,6 @@
 title: Week Notes - Week 30
 date: 2022-08-01
 description: Pre-season football at The Amex, a trip to the office and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 My basketball session this week got off to a fast start with my team winning 6 games in a row and therefore occupying the court for half an hour of the 90 minute session. This was a much better test of my fitness levels than in previous weeks where it was much harder to get that amount of court time. By the last half an hour most of my team tired and we didn't win any more games.

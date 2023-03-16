@@ -2,7 +2,6 @@
 title: Week 5
 date: 2022-02-07
 description: Fast websites, React native and FA cup football.
-tags: ['Week Notes']
 ---
 
 For the week starting 31st January, I:

@@ -2,7 +2,6 @@
 title: Week Notes - Week 31
 date: 2022-08-08
 description: Performance fixes for this site and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 This week started with a trip to the office. There were some IT issues with my laptop the last time I was in the office but those were quickly fixed and I was able to get some work done. I find it harder to concentrate in the office and missed the productive routines that I'd formed when working from home like when to take breaks and having long periods of productivity without interruptions.

@@ -2,7 +2,6 @@
 title: 2023 Week Notes - Week 7
 date: 2023-02-20
 description: Bruno's birthday, Ant-man, VS Code snippets.
-tags: ['Week Notes']
 ---
 
 Most weeks I try to avoid writing about work, but work this week took a toll on my mental health and I want to acknowledge that. There were layoffs this week at work, and while I wasn't impacted, it caused uncertainty. Having to process the changes that were happening and attend meetings about those changes, in addition to the demands of my role, caused me to feel completely drained. I didn't really have the motivation or energy to achieve anything outside of work, even playing on the PlayStation felt like a chore as I was too tired to focus on the game I was playing.

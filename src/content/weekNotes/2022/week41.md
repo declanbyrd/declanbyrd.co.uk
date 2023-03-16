@@ -2,7 +2,6 @@
 title: Week Notes - Week 41
 date: 2022-10-17
 description: I wrote something and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 A rather quiet week this week so shorter notes than usual. Again I had no basketball due to my hand injury which has been very frustrating as it hasn't healed as fast as I had hoped. The sports hall is closed for the next few weeks as it is being used for exams so I'm hoping that I'll be back playing again when the hall is reopened.

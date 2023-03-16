@@ -2,7 +2,6 @@
 title: Week 21
 date: 2022-05-30
 description: Everything Everywhere All at Once and thoughts on Obi-Wan Kenobi on Disney+.
-tags: ['Week Notes']
 ---
 
 For the week starting 23rd May:

@@ -2,7 +2,6 @@
 title: Week Notes - Week 25
 date: 2022-06-27
 description: Notes for the 25th week of 2022.
-tags: ['Week Notes']
 ---
 
 I'm kind of surprised I've managed 25 weeks of consecutive notes. Some weeks have been much more detailed than others and this week definitely feels like one of the weeks where I've just about scraped enough together to create a post. It also makes writing a summary of these notes much harder when there's not a lot to summarise. Anyway, here's a brief overview of what I've been up to the past 7 days.

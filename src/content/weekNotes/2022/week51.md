@@ -2,7 +2,6 @@
 title: Week Notes - Week 51
 date: 2022-12-26
 description: Making sausage rolls, Christmas, and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 With no work this week, I put my work laptop out of sight and I've been enjoying some time off.
@@ -18,7 +17,7 @@ On Wednesday, I went to watch Brighton play Charlton Athletic in the Carabao Cup
     <figcaption>Normal service resumed.</figcaption>
 </figure>
 
-I was a bit late adding these notes, forgetting that Christmas day was the end of the week when I'd normally be writing my notes. I spent Christmas day eating too much and playing board games with Becka and her family. Merry Christmas if you celebrate and if you don't I hope you had a good week regardless. 
+I was a bit late adding these notes, forgetting that Christmas day was the end of the week when I'd normally be writing my notes. I spent Christmas day eating too much and playing board games with Becka and her family. Merry Christmas if you celebrate and if you don't I hope you had a good week regardless.
 
 ## What has changed on this site:
 

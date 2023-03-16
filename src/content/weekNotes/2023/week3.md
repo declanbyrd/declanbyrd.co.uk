@@ -2,7 +2,6 @@
 title: 2023 Week Notes - Week 3
 date: 2023-01-23
 description: A basketball game in Bognor and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 I had a basketball game for Worthing D&D White this week. We played [away at Bognor GSD and won 66-75](https://www.basketballsussex.co.uk/match/33593482.html). I finished with 6 points, scoring twice from behind the three-point line.

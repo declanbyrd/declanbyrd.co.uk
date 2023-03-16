@@ -2,7 +2,6 @@
 title: Week Notes - Week 26
 date: 2022-07-04
 description: Reaching the half way point in 2022, here is what I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 At the half way point of a level in a Super Mario game there's a checkpoint flag that appears where you can respawn from if things don't go to plan. There's no save point here though, just my notes from the last seven days.

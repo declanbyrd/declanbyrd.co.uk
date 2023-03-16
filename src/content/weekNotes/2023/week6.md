@@ -2,10 +2,9 @@
 title: 2023 Week Notes - Week 6
 date: 2023-02-13
 description: Upgrading to Eleventy 2.0, frozen kneecaps, and going to the cinema to avoid the football scores.
-tags: ['Week Notes']
 ---
 
-I managed to spend some time on the PlayStation this week, completing a few levels in the Guardians of the Galaxy game. I find it difficult to start and stop playing this game as I prefer to complete whole levels rather than leaving them part way through. I also picked up Star wars Battlefront 2 and FIFA 23 for a couple of quick games later in the week when I didn't think I had enough time to complete a level in Guardians of the Galaxy. 
+I managed to spend some time on the PlayStation this week, completing a few levels in the Guardians of the Galaxy game. I find it difficult to start and stop playing this game as I prefer to complete whole levels rather than leaving them part way through. I also picked up Star wars Battlefront 2 and FIFA 23 for a couple of quick games later in the week when I didn't think I had enough time to complete a level in Guardians of the Galaxy.
 
 In a slight change to my seemingly weekly routine of watching Brighton play football, I visited the American Express Elite Football Performance Centre (Brighton's training ground) to watch [Brighton's under-21 team play Sparta Prague in the Premier League International Cup](https://www.brightonandhovealbion.com/news/3055010/under-21s-through-in-international-cup-despite-defeat). It was entertaining game despite Brighton losing 1-0. It was probably the coldest I've been at a football game in a long time (double socks and thermals did little to keep me warm) and I'm pretty sure my kneecaps were frozen by full-time.
 

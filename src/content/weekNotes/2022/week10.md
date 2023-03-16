@@ -2,7 +2,6 @@
 title: Week 10
 date: 2022-03-14
 description: Two basketball games, how I built the now playing section on the home page and another home defeat for Brighton.
-tags: ['Week Notes']
 ---
 
 For the week starting 7th March, I:

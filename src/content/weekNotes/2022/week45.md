@@ -2,7 +2,6 @@
 title: Week Notes - Week 45
 date: 2022-11-14
 description: Getting nostalgic about basketball video games and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 I was back playing basketball this week! Admittedly, I was very rusty and didn't shoot the ball well. I had some kinesiology tape wrapped round the index finger of my right hand which didn't help trying to grip the ball and it needed replacing a couple of times, but it added some support to the tendon that I damaged a few weeks ago. Eventually I just took the tape off which made quite a big difference and my shot improved. My basketball season starts next week so it was good to have a practice after not playing for a while.

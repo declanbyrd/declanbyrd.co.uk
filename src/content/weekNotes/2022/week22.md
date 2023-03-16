@@ -2,7 +2,6 @@
 title: Week 22
 date: 2022-06-06
 description: A week off work and Dave Made a Maze.
-tags: ['Week Notes']
 ---
 
 For the week starting 30th May:

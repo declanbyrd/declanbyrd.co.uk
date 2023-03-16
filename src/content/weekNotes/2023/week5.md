@@ -2,7 +2,6 @@
 title: 2023 Week Notes - Week 5
 date: 2023-02-06
 description: Switching off automated tweets, Brighton v Bournemouth, and Internet for the People.
-tags: ['Week Notes']
 ---
 
 I played in [Worthing D&D White's 84-62 win against Bognor GSD](https://www.basketballsussex.co.uk/match/33593487.html) this week, but finished with 0 points. It was one of those games where it felt like every pass to me was either at my ankles or over my head, so I frequently found myself having to pass the ball out of a position that I normally would have shot the ball from.

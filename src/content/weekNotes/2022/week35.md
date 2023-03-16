@@ -2,7 +2,6 @@
 title: Week Notes - Week 35
 date: 2022-09-05
 description: Watching a seven goal football game and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 A frustrating basketball session this week. Occasionally, one player will try to do _everything_ themselves and score all the team's baskets without the input of the remaining four players on their team. I was on a team like that this week and I wasn't the one player trying to break the record for the most consecutive missed shots without passing the ball to another player on their team. Still, I ran around a bit which is better than spending more time sat down.

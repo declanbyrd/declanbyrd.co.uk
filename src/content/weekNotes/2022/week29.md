@@ -2,7 +2,6 @@
 title: Week Notes - Week 29
 date: 2022-07-25
 description: Fatboy Slim on Brighton beach, PESOS and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 It's been an exciting one this week. There's some things I can share now and some things that I'm going to have to wait a while before publishing.

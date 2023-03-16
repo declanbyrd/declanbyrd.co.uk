@@ -2,7 +2,6 @@
 title: Week 16
 date: 2022-04-25
 description: End sewage pollution protest, my development day and Worthing D&D win the league title.
-tags: ['Week Notes']
 ---
 
 For the week starting 18th April:

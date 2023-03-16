@@ -2,7 +2,6 @@
 title: Week Notes - Week 50
 date: 2022-12-19
 description: Wrapping up work for the year and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 My week started with a very cold basketball session. The temperature in the sports hall was 1&deg;C and we had more players at the session this week so I had to try and keep warm when I was on the bench. When I was on the court I didn't shoot the ball well and noticed more aches and pains as the session went on. I didn't enjoy this weeks session as much as the session last week.

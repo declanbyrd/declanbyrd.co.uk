@@ -2,7 +2,6 @@
 title: Week Notes - Week 27
 date: 2022-07-11
 description: A holiday in Bude and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 A much needed break from work this week as I went on holiday to [Bude](https://www.visitbude.info/) in Cornwall with [Becka](https://twitter.com/becka_louise_). In addition to snacking on pasties, we ate at some great places in Bude, namely [Potters](https://pottersbude.co.uk/), [The Bank at Bude](https://www.thebankatbude.com/) and [La Bocca](https://www.laboccabude.co.uk/). Admittedly I was too busy eating to remember to take any photos of what I ate.

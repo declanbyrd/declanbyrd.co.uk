@@ -2,7 +2,6 @@
 title: Week Notes - Week 49
 date: 2022-12-12
 description: Making my desk a nicer place to work at and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 My week started with the arrival of a dual monitor arm that I'd ordered last week. I had to wait until I'd finished working for the day so that I could set it up. I've since spent most of the week moving the monitors around so they're at the correct height and position. It has freed up a lot of additional space on my desk which is great and I noticed that I wasn't slouching while working.

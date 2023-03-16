@@ -2,7 +2,6 @@
 title: Week Notes - Week 32
 date: 2022-08-15
 description: First trip to The AMEX this season and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 Basketball this week was a struggle again. Our teams are picked based off the order in which everyone scores a free-throw which is normally random enough to generate teams that are able to compete with each other but some weeks this causes "super teams" where the distribution of better players is not particularly even. This week was one of those weeks and my team didn't win many games.

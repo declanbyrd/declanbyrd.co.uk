@@ -2,7 +2,6 @@
 title: Week Notes - Week 23
 date: 2022-06-13
 description: A new format to my week notes and an improved breakdown of what I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 I'm trying a new format to my notes this week. I felt the past couple of weeks worth of notes had become a bit of a chore to write and in some cases didn't show much else than what I'd been watching. By breaking down my weekly activities into defined categories I'm hoping that it will help form better habits (like reading regularly) and also more accurately log what I've been up to.

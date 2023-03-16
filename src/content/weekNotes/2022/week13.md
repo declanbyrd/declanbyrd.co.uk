@@ -2,7 +2,6 @@
 title: Week 13
 date: 2022-04-04
 description: Covid, indieweb and a brag folder.
-tags: ['Week Notes']
 ---
 
 For the week starting 28th March:

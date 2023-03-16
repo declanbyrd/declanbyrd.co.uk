@@ -2,7 +2,6 @@
 title: Week Notes - Week 48
 date: 2022-12-05
 description: Looking at feed readers, working on this site and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 No basketball for me this week as the session was cancelled. Instead I used that evening looking at feed readers, eventually settling on the 14 day free trial of [Feedbin](https://feedbin.com/). I've got a couple of feeds in there already and will look to add some more before I decide if I want to commit to paying for a subscription.
@@ -18,7 +17,7 @@ The Christmas tree and decorations are now up. 🎄
 ## What has changed on this site:
 
 - There's now navigation in the footer. At the bottom of each page is a set of links for all the pages on this site.
-- I removed the links to the colophon and the reading page from the header. These are now found in the footer of every page  .
+- I removed the links to the colophon and the reading page from the header. These are now found in the footer of every page .
 - I removed the about section from the home page. I'm in the process of moving this to a new page.
 - I wrote some bad HTML before. The `<h1>` on each page is now the title of the page, and not my name.
 - I'm now highlighting the book I'm currently reading on the reading page.

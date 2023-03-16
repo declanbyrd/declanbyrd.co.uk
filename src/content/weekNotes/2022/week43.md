@@ -2,7 +2,6 @@
 title: Week Notes - Week 43
 date: 2022-10-31
 description: Celebrating four goals at the football and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 I've been catching up on the NBA this week by watching the full game replays on NBA League Pass. I wish they had an option to watch the full game without the breaks between quarters and the half-time entertainment. There is an all possessions option but that doesn't preserve the flow of the game and will skip the players bringing the ball over half court.

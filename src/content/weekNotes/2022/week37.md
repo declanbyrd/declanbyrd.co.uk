@@ -2,7 +2,6 @@
 title: Week Notes - Week 37
 date: 2022-09-19
 description: My last day at Honeywell and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 I had to manually delete 36 tweets to start this week. The pipedream workflow that I configured last week, to tweet a link for new week note posts by reading the RSS feed, needed to know which posts were new. I might have forgotten to set this to be anything newer than the previous week's post. This meant that at 9am on Monday, 36 tweets were published which each contained a link to one of the 36 previous week note posts. I'm pretty sure I've corrected now.

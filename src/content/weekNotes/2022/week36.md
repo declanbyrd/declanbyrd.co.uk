@@ -2,7 +2,6 @@
 title: Week Notes - Week 36
 date: 2022-09-12
 description: Experimenting with Pipedream, moving my Mastodon account and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 A much improved basketball session this week. I made a couple of three-point shots, got some exercise and most importantly had fun playing basketball.

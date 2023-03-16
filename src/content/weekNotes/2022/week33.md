@@ -2,7 +2,6 @@
 title: Week Notes - Week 33
 date: 2022-08-22
 description: Watching Brighton play away at West Ham and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 Basketball was a bit more fun this week. Teams were selected before the session started which was different compared to the way they've been selected in previous weeks and as a result talent was more evenly distributed. Court time wasn't dominated by a single team this week and each game was competitive.

@@ -2,7 +2,6 @@
 title: Week Notes - Week 44
 date: 2022-11-07
 description: A trip to Wolverhampton and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 After deciding to make my Twitter read-only last week, this week I worked on making Mastodon the social media that I actually want to read. I feel that it's going well so far and I'm spending less time on Twitter as a result. I also set up a monthly contribution via Patreon to help with the costs associated with running [indieweb.social](https://indieweb.social) that was cheaper and better value than a blue checkmark next to my name.

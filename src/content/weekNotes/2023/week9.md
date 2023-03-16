@@ -2,7 +2,6 @@
 title: 2023 Week Notes - Week 9
 date: 2023-03-06
 description: 'tldr: I played on the PlayStation and went to the football.'
-tags: ['Week Notes']
 ---
 
 Any free time I got this week was spent playing on the PlayStation, with a large amount of this time spent completing the story in [Guardians of the Galaxy](https://www.playstation.com/en-gb/games/marvels-guardians-of-the-galaxy/). I liked that puzzle solving was an important part of the game and that most boss battles required more than pressing the shoot button repetitively. I then moved onto playing [Assassin's Creed: Odyssey](https://www.ubisoft.com/en-gb/game/assassins-creed/odyssey). I chose to play in "exploration mode" rather than the guided mode that featured in previous Assassin's Creed games. I found it a bit confusing that I was able to trigger a side-quest that required a skill that I hadn't unlocked yet when I discovered a cave while playing the first part of the story. The exploring mode feels a lot more natural to how I would chose to play the game and places a lot less emphasis on advancing the story while rewarding the completion of side-quests.

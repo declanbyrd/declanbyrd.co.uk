@@ -2,7 +2,6 @@
 title: Week Notes - Week 39
 date: 2022-10-02
 description: Starting a new job and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 I enjoyed the break I had after leaving Honeywell and this week I started a new job at [Twilio](https://www.twilio.com/) as a software engineer. I enjoyed my first week and I'm excited about what's to come.

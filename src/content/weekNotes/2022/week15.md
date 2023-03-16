@@ -2,7 +2,6 @@
 title: Week 15
 date: 2022-04-18
 description: Mastodon and virtual power plants.
-tags: ['Week Notes']
 ---
 
 For the week starting 11th April:

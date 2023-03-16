@@ -2,7 +2,6 @@
 title: Week Notes - Week 28
 date: 2022-07-18
 description: A new laptop, first basketball session of pre-season and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 My big excitement this week was that I've upgraded my laptop and now have a [Surface Pro 8](https://www.microsoft.com/en-gb/d/surface-pro-8/8qwcrtq8v8xg?activetab=pivot%3aoverviewtab). It feels a little strange to be using a tablet as a development machine, but I've been surprised at how comfortably it has coped with some relatively power hungry applications. Being able to write these notes from somewhere other than my desk has greatly improved the writing experience.

@@ -2,7 +2,6 @@
 title: Week 9
 date: 2022-03-07
 description: Faster builds, I built a thing and an away win for Worthing D&D.
-tags: ['Week Notes']
 ---
 
 For the week starting 28th February, I:

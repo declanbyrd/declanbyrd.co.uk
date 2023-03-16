@@ -2,7 +2,6 @@
 title: Week Notes - Week 46
 date: 2022-11-21
 description: A trip to London, my first basketball game of the season and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 This week I had my first basketball game of the season. This season I'm playing for [Worthing D&D White](https://www.basketballsussex.co.uk/team/241860858/327699995.html) and we started the season with a [114-36 win against Horsham Hawks II](https://www.basketballsussex.co.uk/match/33593466.html). I finished the game with 4 points (I got fouled shooting a 3 pointer which went in and I made the resulting free throw).

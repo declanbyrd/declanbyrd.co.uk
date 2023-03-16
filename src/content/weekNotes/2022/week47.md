@@ -2,7 +2,6 @@
 title: Week Notes - Week 47
 date: 2022-11-28
 description: Another basketball game and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 I had another basketball game this week, but didn't win this time. I made a short appearance on the court as [Worthing D&D White lost 88-82 against Worthing D&D Black](https://www.basketballsussex.co.uk/match/33593475.html) in a very close game.

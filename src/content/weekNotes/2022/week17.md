@@ -2,7 +2,6 @@
 title: Week 17
 date: 2022-05-02
 description: Toots, an unexpected migration and the final basketball league game of the season.
-tags: ['Week Notes']
 ---
 
 For the week starting 25th April:

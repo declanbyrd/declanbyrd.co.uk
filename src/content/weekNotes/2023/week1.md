@@ -2,7 +2,6 @@
 title: 2023 Week Notes - Week 1
 date: 2023-01-09
 description: Back to work and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 I was back to work this week after a break over the Christmas period. Despite it being a shortened work week I definitely found it hard to adjust, feeling increasingly more tired as the week progressed.

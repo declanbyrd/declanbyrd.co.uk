@@ -2,7 +2,6 @@
 title: Week Notes - Week 38
 date: 2022-09-26
 description: A trip to Amsterdam and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 This week Becka and I went on a trip to Amsterdam. We took the Eurostar from London St Pancras to Amsterdam Centraal which took just over 4 hours. There are a _lot_ of bikes at Amsterdam Centraal station and apparently they are building an underground bike storage because they need more space to store their bikes.

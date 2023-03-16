@@ -2,7 +2,6 @@
 title: Week 14
 date: 2022-04-11
 description: Basketball Sussex Men's cup semi-final, Lego Star Wars and content syndication.
-tags: ['Week Notes']
 ---
 
 For the week starting 4th April:

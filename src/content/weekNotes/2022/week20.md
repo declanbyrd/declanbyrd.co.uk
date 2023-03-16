@@ -2,7 +2,6 @@
 title: Week 20
 date: 2022-05-23
 description: Basketball Sussex men's cup final and a side project.
-tags: ['Week Notes']
 ---
 
 For the week starting 16th May:

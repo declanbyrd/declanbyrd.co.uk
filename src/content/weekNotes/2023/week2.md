@@ -2,7 +2,6 @@
 title: 2023 Week Notes - Week 2
 date: 2023-01-16
 description: Back playing basketball and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 I had my first basketball session of the new year this week. I felt like I had a good session, shooting the ball well and I still being able to run by the end. I hadn't done any exercise over the Christmas period so I was somewhat pleased that I didn't need to take a breaks and could continue playing. I felt the consequences a couple of days later though, feeling very achy.

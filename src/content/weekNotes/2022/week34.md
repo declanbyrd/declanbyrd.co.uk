@@ -2,7 +2,6 @@
 title: Week Notes - Week 34
 date: 2022-08-29
 description: Two Brighton games and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 My basketball session this week was a better test of stamina than in previous weeks. Fast paced games that were finishing with tied scores after 7 minutes meant that "next basket wins" became the most used phrase that evening. I found the intensity of the games quite challenging and struggled to shoot the ball well but made a couple of lay-ups which I was pleased with.

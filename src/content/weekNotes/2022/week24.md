@@ -2,7 +2,6 @@
 title: Week Notes - Week 24
 date: 2022-06-20
 description: Limiting my consumption of social media and a sales conference.
-tags: ['Week Notes']
 ---
 
 Tasked with collecting some customer feedback regarding some of the products my team is developing, I attended an in-person sales conference this week. Thanks to some of the sales team who are significantly better at networking than I am, I didn't spend the entire event standing awkwardly by one of the stands and did manage to get the opinions of some of the attendees. I was able to present my findings to the rest of my team later in the week.

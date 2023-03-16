@@ -2,7 +2,6 @@
 title: Week Notes - Week 42
 date: 2022-10-24
 description: Playing Spider-man on the PlayStation and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 Aside from work, most of my time this week has been spent playing Spider-man on the PlayStation. I'd been really excited to play this, and it's definitely my kind of game. I chose to complete as many of the side quests as possible before progressing the story (something I have picked up from playing the Assassin's' Creed series) which has resulted in my character levelling up quite quickly and therefore unlocking more skills.

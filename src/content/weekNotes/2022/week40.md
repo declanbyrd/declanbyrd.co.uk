@@ -2,7 +2,6 @@
 title: Week Notes - Week 40
 date: 2022-10-10
 description: Another mastodon migration and what else I've been up to over the last seven days.
-tags: ['Week Notes']
 ---
 
 I had no basketball this week due to the injury I sustained on my shooting hand two weeks ago. I did however contact my GP about it this week who recommeded I have an x-ray to check for a potential fracture as there's still swelling on my hand and it's still causing pain. As I chose not to go straight to A&E when I did injure my hand, the results of the x-ray have gone back to my GP so I will hopefully find out next week exactly what I've done.

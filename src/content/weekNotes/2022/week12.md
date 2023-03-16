@@ -2,7 +2,6 @@
 title: Week 12
 date: 2022-03-28
 description: A quarter-final game in the Basketball Sussex cup and Royal Blood.
-tags: ['Week Notes']
 ---
 
 For the week starting 21st March, I:

@@ -2,7 +2,6 @@
 title: Week 4
 date: 2022-01-31
 description: Eleventy 1.0, Humankind and a basketball game.
-tags: ['Week Notes']
 ---
 
 For the week starting 24th January, I:

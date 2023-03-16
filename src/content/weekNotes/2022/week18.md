@@ -2,7 +2,6 @@
 title: Week 18
 date: 2022-05-09
 description: Two cinema trips, BHAFC run riot and Microformats2.
-tags: ['Week Notes']
 ---
 
 For the week starting 2nd May:
