@@ -12,7 +12,7 @@ I was at the Brighton Centre on Thursday to see Fatboy Slim. I particularly enjo
 
 <figure>
   {% image "/img/journal/weeknotes/2023/week11.jpg", "A crowd of people with their hands in the air, in front of a stage on which Fatboy Slim is stood with their arms raised. Above the stage is a disco ball that is reflecting white light. Above the disco ball is a big screen which shows a video feed of the stage and the crowd." %}
-  <figcaption>Entertaining game but felt like two points dropped.</figcaption>
+  <figcaption>Right Here, Right Now.</figcaption>
 </figure>
 
 
