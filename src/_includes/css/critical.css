@@ -384,7 +384,7 @@ html.no-js .toggle {
 .content-list {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: var(--step-4);
   padding-left: 0;
 }
 
@@ -444,4 +444,14 @@ footer .h-card {
   height: 100%;
   fill: var(--text-color);
   margin: auto;
+}
+
+.book-update a {
+  display: inline;
+}
+
+.journal-icon {
+  stroke: var(--text-color);
+  fill: var(--background);
+  margin-top: 0.25rem;
 }

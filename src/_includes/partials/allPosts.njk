@@ -1,10 +1,12 @@
 <ol class="content-list">
   {% for post in postslist %}
-    {% if post.data.title %}
+    {% if post.data.book %}
+      {% include "./bookUpdate.njk" %}
+    {% elif post.data.title %}
       {% include "./postPreview.njk" %}
     {% else %}
       <li class="social-card">
-        <img class="social-image" src="/img/meta_square.webp" alt="Declan's Twitter avatar" height="60" width="60">
+        <img class="social-image" src="/img/meta_square.webp" alt="Declan's social media avatar" height="60" width="60">
         <div>
           {% include "./socialPost.njk" %}
           <span>| <a href="/journal/notes/{{post.date | noteTimestamp}}/">Permalink</a>

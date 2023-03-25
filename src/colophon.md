@@ -25,6 +25,8 @@ The icon that appears on my photos where there is more than one photo from a par
 
 The logo for this site was generated in [Profile Pic Maker](https://pfpmaker.com/).
 
+The icons in the journal are from [feather icons](https://feathericons.com/).
+
 ## Typography
 
 All headings use the [Bungee](https://gwfh.mranftl.com/fonts/bungee?subsets=latin) font which was downloaded using the [google-webfonts-helper](https://gwfh.mranftl.com/fonts).
