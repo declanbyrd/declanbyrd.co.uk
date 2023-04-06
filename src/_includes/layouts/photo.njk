@@ -4,12 +4,8 @@
 
   <article class="photo-entry">
     <div class="[ flex-row ]">
-      {% set heading = "Photo from" %}
-      {% if photo.length > 1 %}
-        {% set heading = "Photos from" %}
-      {% endif %}
       <h1>
-        {{heading}}
+        {{intro}}
         <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | readableDates}}</time>
       </h1>
     </div>
