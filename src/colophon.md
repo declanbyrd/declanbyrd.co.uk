@@ -13,9 +13,7 @@ eleventyComputed:
 
 ## Stack
 
-This site was built using [Eleventy](https://www.11ty.dev/) with Nunjucks templates.
-
-It is being hosted on [Netlify](https://www.netlify.com/).
+This site was built using [Eleventy](https://www.11ty.dev/) with Nunjucks templates. It is being hosted on [Netlify](https://www.netlify.com/).
 
 ## Icons and Logos
 
@@ -32,3 +30,7 @@ The icons in the journal are from [feather icons](https://feathericons.com/).
 All headings use the [Bungee](https://gwfh.mranftl.com/fonts/bungee?subsets=latin) font which was downloaded using the [google-webfonts-helper](https://gwfh.mranftl.com/fonts).
 
 All other text uses your device's system font.
+
+## Fluid Design
+
+The sizing tokens for typography are generated using the [fluid type scale generator on Utopia.fyi](https://utopia.fyi/type/calculator?c=310,18,1.333,1240,24,1.333,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12). The spacing tokens were generated using the [fluid space generator on Utopia.fyi](https://utopia.fyi/space/calculator?c=310,18,1.333,1240,24,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,&g=s,l,xl,12).
