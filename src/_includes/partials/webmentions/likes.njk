@@ -1,9 +1,9 @@
 <li class="like" id="webmention-{{ webmention['wm-id'] }}">
   {% if webmention.author %}
     <a class="webmention-like h-card u-url" href="{{webmention.url}}" target="_blank" rel="noopener noreferrer">
-      <h4 class="visually-hidden p-name">
+      <span class="visually-hidden p-name">
         {{ webmention.author.name }}
-      </h4>
+      </span>
       {% if webmention.author.photo %}
         <img src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" class="webmention-avatar" width="48" height="48" loading="lazy">
       {% else %}
@@ -17,8 +17,8 @@
       {% endif %}
     </a>
   {% else %}
-    <h4 class="visually-hidden">
+    <span class="visually-hidden">
       Anonymous
-    </h4>
+    </span>
   {% endif %}
 </li>

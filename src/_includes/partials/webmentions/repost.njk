@@ -9,12 +9,12 @@
       <div class="meta-header">
         {% if webmention.author %}
           <a class="h-card u-url" {% if webmention.url %}href="{{ webmention.url }}" {% endif %} target="_blank" rel="noopener noreferrer">
-            <h4 class="p-name">{{ webmention.author.name }}</h4>
+            <span class="p-name">{{ webmention.author.name }}</span>
           </a>
         {% else %}
-          <h4>
+          <span>
         Anonymous
-      </h4>
+      </span>
         {% endif %}
         {% if webmention.author.url %}
           <span>shared via <a href="{{webmention.author.url}}">{{webmention.author.url | getWebmentionSource}}</a>

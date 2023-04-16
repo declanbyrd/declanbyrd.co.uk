@@ -11,12 +11,13 @@
 
 {% block content %}
 
-  <section>
-    <div class="intro">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="112" height="112" aria-hidden="true" focusable="false" class="[ logo ]">
-        <title id="logoTitle">Site logo</title>
-        <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)">
-          <path d="M2255 4994 c-408 -59 -615 -121 -910 -273 -232 -120 -421 -257 -606
+  <div class="home-page flow">
+    <section>
+      <div class="intro">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="112" height="112" aria-hidden="true" focusable="false" class="[ logo ]">
+          <title id="logoTitle">Site logo</title>
+          <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)">
+            <path d="M2255 4994 c-408 -59 -615 -121 -910 -273 -232 -120 -421 -257 -606
     -441 -211 -210 -350 -405 -484 -675 -177 -357 -255 -696 -255 -1105 0 -476
     116 -895 360 -1300 330 -549 866 -950 1495 -1120 82 -22 158 -40 170 -39 11 0
     -19 10 -67 21 l-88 21 0 237 c0 178 -3 240 -12 247 -7 6 -43 20 -80 32 -84 28
@@ -32,31 +33,32 @@
     203 59 358 53 609 -5 249 -20 362 -72 566 -45 175 -91 298 -180 479 -80 164
     -134 252 -238 392 -383 516 -958 867 -1597 974 -98 17 -178 22 -375 24 -137 2
     -263 1 -280 -1z"/>
-        </g>
-      </svg>
-      <h1>
-        <span>Welcome to the personal site of </span>
-        <span class="accent">Declan Byrd</span></h1>
-    </div>
-  </section>
+          </g>
+        </svg>
+        <h1>
+          <span>Welcome to the personal site of </span>
+          <span class="accent">Declan Byrd</span></h1>
+      </div>
+    </section>
 
-  <section>
-    <h2>
+    <section>
+      <h2>
       Recently added to the <a href="/journal" class="accent">Journal</a>
-    </h2>
+      </h2>
 
-    {% set postslist = collections.allPosts | previewCollection(5) %}
-    {% include "partials/allPosts.njk" %}
-  </section>
+      {% set postslist = collections.allPosts | previewCollection(5) %}
+      {% include "partials/allPosts.njk" %}
+    </section>
 
-  <section>
-    <h2>
+    <section>
+      <h2>
       Recent
       <a href="/photos/" class="accent">photos</a>
-    </h2>
+      </h2>
 
-    {% set photoslist = collections.photos | previewCollection(4) %}
-    {% include "partials/photoPreview.njk" %}
-  </section>
+      {% set photoslist = collections.photos | previewCollection(4) %}
+      {% include "partials/photoPreview.njk" %}
+    </section>
+  </div>
 
 {% endblock %}
