@@ -1,7 +1,7 @@
 ---
 title: 2023 Week Notes - Week 18
 date: 2023-05-08
-description: Frumpets, Star Wars Jedi: Survivor, and a Basketball Sussex play-off game.
+description: 'Frumpets, Star Wars Jedi: Survivor, and a Basketball Sussex play-off game.'
 ---
 
 I discovered Frumpets (French toast battered crumpets) this week. Becka and I went to [Oeuf Café in Hove](https://oeuf.cafe/) where they serve them with a range of toppings. I had mine topped with bacon, melted cheddar cheese, caramelised onion and chilli jam. I still think about that meal sometimes.
