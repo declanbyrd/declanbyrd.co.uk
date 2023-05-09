@@ -79,6 +79,24 @@
           {% endfor %}
       </ul>
     </section>
+
+    <section>
+      <h2>
+      Recent gaming
+      </h2>
+      <ul class="[ gaming ]">
+        {% for game in gaming %}
+          <li>
+            {% cloudImage game.image.url,
+            game.name + " PlayStation icon" %}
+            <div class="meta">
+              <p>{{game.name}} ({{game.platform}})</p>
+              <p>{{game.lastPlayedDateTime | readableDateFromTimestamp}}</p>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
   </div>
 
 {% endblock %}
