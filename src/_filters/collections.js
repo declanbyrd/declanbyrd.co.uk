@@ -104,7 +104,6 @@ module.exports.allPosts = (collection) => {
     .getFilteredByGlob([
       'src/content/weekNotes/**/*.md',
       'src/content/journal/*.md',
-      'src/content/bookshelf/*.md',
     ])
     .reverse();
   const allPosts = [...social, ...localPosts];
