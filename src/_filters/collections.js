@@ -132,6 +132,10 @@ module.exports.books = (collection) => {
   return booksByYear;
 };
 
+module.exports.allBooks = (collection) => {
+  return collection.getFilteredByGlob('src/content/bookshelf/*.md').reverse();
+};
+
 module.exports.articles = (collection) => {
   return collection.getFilteredByTag('article').reverse();
 };

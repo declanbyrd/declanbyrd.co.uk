@@ -9,6 +9,7 @@
         <h1>{{book.title}}</h1>
         <p>by {{book.authors}}</p>
         <p>{{book.pageCount}} pages</p>
+        <p>Finished on {{page.date | readableDates}}</p>
         <details>
           <summary>{{book.summary}}</summary>{{book.description}}</details>
       </div>
