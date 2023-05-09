@@ -209,7 +209,7 @@ article.max-width-90 {
 }
 
 @media screen and (max-width: 455px) {
-  .bookshelf {
+  .bookshelf:not(.gaming) {
     justify-content: center;
   }
 }
@@ -230,6 +230,25 @@ article.max-width-90 {
 
 .bookshelf li a :not(p:first-child) {
   font-weight: 300;
+}
+
+.gaming {
+  padding: 0;
+}
+
+.gaming img {
+  width: 8rem;
+  height: auto;
+}
+
+.gaming li {
+  list-style-type: none;
+  display: flex;
+  gap: var(--space-s);
+}
+
+.gaming li .meta > p {
+  margin-top: 0;
 }
 
 .book-container {
