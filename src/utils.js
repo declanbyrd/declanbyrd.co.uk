@@ -7,6 +7,9 @@ module.exports.getBook = async (bookIsbn, pages) => {
   const cachedBook = cache.getKey(bookIsbn);
   if (cachedBook) {
     console.log(`>>> Got data for ${bookIsbn} from the cache`);
+    // fix for cached books that have pageCount of 0
+    // way to update without clearing site cache.
+    cachedBook.pageCount = pages ? pages : cachedBook.pageCount;
     return cachedBook;
   }
   console.log(`>>> Fetching data for ${bookIsbn}`);
