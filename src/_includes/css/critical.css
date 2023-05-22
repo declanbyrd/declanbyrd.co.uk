@@ -256,11 +256,6 @@ header .horizontal-links {
   padding: 0;
 }
 
-.autofit-grid.preview {
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  grid-auto-rows: 10rem;
-}
-
 .photos a {
   position: relative;
   display: block;
