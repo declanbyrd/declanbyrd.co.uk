@@ -205,7 +205,7 @@ article.max-width-90 {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  gap: var(--space-xs);
+  gap: var(--space-s);
 }
 
 @media screen and (max-width: 455px) {
@@ -234,7 +234,7 @@ article.max-width-90 {
 
 .gaming {
   padding: 0;
-  --flow-space: var(--space-xs);
+  --flow-space: var(--space-s);
 }
 
 .gaming img {

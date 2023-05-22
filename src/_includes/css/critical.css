@@ -254,7 +254,7 @@ header .horizontal-links {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-auto-rows: 15rem;
   padding: 0;
-  gap: var(--space-xs);
+  gap: var(--space-s);
 }
 
 .photos a {
