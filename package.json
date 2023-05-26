@@ -37,8 +37,7 @@
     "eleventy-plugin-mastoarchive": "^0.1.1",
     "flat-cache": "^3.0.4",
     "luxon": "^2.5.2",
-    "node-isbn": "^1.6.1",
-    "psn-api": "^2.9.0"
+    "node-isbn": "^1.6.1"
   },
   "browserslist": [
     "defaults",
