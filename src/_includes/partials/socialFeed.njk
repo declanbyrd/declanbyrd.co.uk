@@ -1,7 +1,7 @@
 <ol class="content-list flow">
   {% for post in collections.allSocial %}
     <li class="social-card">
-      <img class="social-image" src="/img/meta_square.webp" alt="Declan's Twitter avatar" height="60" width="60">
+      {% image "/img/meta_square.jpg", "Declan - a white male with short brown hair, wearing a white t-shirt that has black sleeves.", "social-image"  %}
       <div>
         {% include "partials/socialPost.njk" %}
         <span>| <a href="/journal/notes/{{post.date | noteTimestamp}}/">Permalink</a>

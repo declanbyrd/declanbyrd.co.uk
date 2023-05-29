@@ -4,7 +4,7 @@
       {% include "./postPreview.njk" %}
     {% else %}
       <li class="social-card">
-        <img class="social-image" src="/img/meta_square.webp" alt="Declan's social media avatar" height="60" width="60">
+        {% image "/img/meta_square.jpg", "Declan - a white male with short brown hair, wearing a white t-shirt that has black sleeves.", "social-image"  %}
         <div>
           {% include "./socialPost.njk" %}
           <span>| <a href="/journal/notes/{{post.date | noteTimestamp}}/">Permalink</a>
