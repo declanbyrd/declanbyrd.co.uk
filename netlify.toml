@@ -13,13 +13,6 @@
   force = true
 
 [[redirects]]
-  from = "/"
-  to = "/not-found"
-  status = 404
-  Country = "fr"
-  force = true
-
-[[redirects]]
   from = "/api/event"
   to = "https://plausible.io/api/event"
   status = 202
