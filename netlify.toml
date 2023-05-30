@@ -16,7 +16,7 @@
   from = "/"
   to = "/not-found"
   status = 404
-  Country=fr
+  Country = "fr"
   force = true
 
 [[redirects]]
