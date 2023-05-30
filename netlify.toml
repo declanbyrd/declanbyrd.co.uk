@@ -7,6 +7,13 @@
   command = "npm start"
 
 [[redirects]]
+  from = "*"
+  to = "/404.html"
+  status = 404
+  country = "fr"
+  force = true
+
+[[redirects]]
   from = "/js/nalced.js"
   to = "https://plausible.io/js/plausible.js"
   status = 200
