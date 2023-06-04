@@ -11,20 +11,22 @@
 {% endblock %}
 
 {% block content %}
-  <section>
+  <article>
 
-    <h1>{{title}}</h1>
-    <p>
+    <section>
+      <h1>{{title}}</h1>
+      <p>
       Last updated: 
       <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">
-        {{page.date | readableDates}}
-      </time>
-    </p>
+          {{page.date | readableDates}}
+        </time>
+      </p>
+    </section>
 
     <div class="flow">
       {{content | safe}}
     </div>
-  </section>
+  </article>
 {% endblock %}
 
 {% block scripts %}{% endblock %}
