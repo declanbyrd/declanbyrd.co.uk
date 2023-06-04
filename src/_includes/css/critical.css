@@ -172,10 +172,9 @@ nav[aria-label='journal navigation'] {
 }
 
 nav[aria-label='main navigation'] ul {
-  display: grid;
-  list-style: none;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  gap: var(--space-l);
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
   padding: 0 var(--space-m);
 }
 
