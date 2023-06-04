@@ -232,24 +232,25 @@ article.max-width-90 {
   font-weight: 300;
 }
 
-.gaming {
-  padding: 0;
-  --flow-space: var(--space-s);
+.game-container {
+  display: grid;
+  grid-template-columns: auto 4fr;
+  grid-auto-rows: auto;
+  column-gap: var(--space-m);
+  row-gap: var(--space-xs);
+  height: 100%;
+  padding-bottom: var(--space-m);
 }
 
-.gaming img {
-  width: 8rem;
-  height: auto;
+.game-container .game-title {
+  font-family: var(--heading-font);
+  font-size: var(--step-1);
 }
 
-.gaming li {
-  list-style-type: none;
-  display: flex;
-  gap: var(--space-xs);
-}
-
-.gaming li .meta > p {
-  margin-top: 0;
+.game-container picture img {
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
 }
 
 .book-container {
@@ -260,14 +261,9 @@ article.max-width-90 {
   row-gap: var(--space-xs);
   height: 100%;
   padding-bottom: var(--space-m);
-  border-bottom: 0.0125rem solid var(--text-color);
 }
 
-.book-container.now-reading {
-  border-bottom: none;
-}
-
-.book-container.now-reading .book-title {
+.book-container .book-title {
   font-family: var(--heading-font);
   font-size: var(--step-1);
 }
@@ -308,7 +304,8 @@ article.max-width-90 {
     grid-column: 1 / span 2;
   }
 
-  .book-container picture {
+  .book-container picture,
+  .game-container picture {
     grid-column: 1 / span 2;
     margin: auto;
   }
@@ -328,7 +325,8 @@ article.max-width-90 {
   content: '...';
 }
 
-.book-container p {
+.book-container p,
+.game-container p {
   margin: 0;
   line-height: 1.5;
 }
@@ -467,4 +465,8 @@ figure > figcaption {
   margin: var(--space-xl) 0 var(--space-s);
   display: block;
   width: 15ch;
+}
+
+.now-page {
+  --flow-space: 6em;
 }

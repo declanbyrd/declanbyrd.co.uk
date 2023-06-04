@@ -1,0 +1,31 @@
+---
+title: Now
+description: "TBD"
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    description: "{{ description }}"
+layout: 'layouts/timestampedPage.njk'
+date: Last Modified
+---
+
+{% block content %}
+  <article class="now-page flow">
+    <section>
+      <p>This page is inspired by <a href="https://sive.rs/nowff">Derek Sivers' post on the /now movement</a> and the <a href="https://nownownow.com/about">collection of now pages</a>.
+      </p>
+      <p>Most of this page is automated, some of it needs to be updated manually. That means it won't be always up-to-date but it should be close.</p>
+    </section>
+    <section>
+      <h2>What I'm up to</h2>
+      <p>I'm working as a software engineer at Twilio.</p>
+      <p>I'm documenting what I do each week in the form of <a href="/journal/tags/week-notes/">week notes</a>.</p>
+      <p>The basketball season is over and the school halls are being used for exams. I've tried to take up running until pre-season starts.</p>
+      <p>I built and published an <a href="https://www.npmjs.com/package/eleventy-plugin-mastoarchive">11ty plugin to fetch Mastodon posts</a>. I'm focusing on improvements I can make to the onboarding process and making more post data available through the plugin.</p>
+    </section>
+
+    {% include 'partials/now/watching.njk' %}
+    {% include 'partials/now/reading.njk' %}
+    {% include 'partials/now/gaming.njk' %}
+  </article>
+{% endblock %}
