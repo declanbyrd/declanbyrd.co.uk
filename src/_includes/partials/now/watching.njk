@@ -1,0 +1,14 @@
+<section>
+  <h2>Watching</h2>
+  {% if now.watching %}
+    <ul>
+      {% for item in now.watching %}
+        <li>
+          <a href="{{item.tmdbUrl}}">{{item.nowString}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Nothing over the past 7 days.</p>
+  {% endif %}
+</section>

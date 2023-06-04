@@ -1,0 +1,16 @@
+<section>
+  <h2>Gaming</h2>
+  <ul class="content-list">
+    {% for game in now.gaming %}
+      <li>
+        <div class="game-container">
+          {% gameCover game %}
+          <div>
+            <p class="game-title">{{game.title}}</p>
+            <p>{{game.tags[0]}}</p>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
