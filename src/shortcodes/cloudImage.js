@@ -1,5 +1,4 @@
 const Image = require('@11ty/eleventy-img');
-const path = require('path');
 
 const imageShortcode = async (src, alt, className, sizes = '100vw') => {
   if (alt === undefined) {
