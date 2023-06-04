@@ -3,7 +3,7 @@ pagination:
   data: collections
   size: 1
   alias: tag
-permalink: /tags/{{ tag | slug }}/
+permalink: /journal/tags/{{ tag | slug }}/
 eleventyComputed:
   title: Journal entries about {{ tag }}. 
   description: All of the journal posts on Declan Byrd's website about {{ tag }}.
@@ -23,7 +23,7 @@ eleventyComputed:
     {% endif %}
     {%include "partials/postsList.njk" %}
     <p>
-    See <a href="{{ '/tags/' | url }}">more tags</a> that I have written about.
+    See <a href="{{ '/journal/tags/' | url }}">more tags</a> that I have written about.
   </p>
   </section>
 {% endblock %}
