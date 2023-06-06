@@ -124,6 +124,16 @@ main a {
   display: inline-block;
   padding: var(--space-3xs);
   color: var(--text-color);
+  /* From https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+  /* Break urls that won't wrap nice */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
 }
 
 a:not(.icon-container):is([href^="http://"], [href^="https://"]):not([href*="https://declanbyrd.co.uk"])
@@ -176,6 +186,8 @@ nav[aria-label='main navigation'] ul {
   list-style-type: none;
   justify-content: space-evenly;
   padding: 0 var(--space-m);
+  gap: var(--space-l);
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -306,8 +318,7 @@ html.no-js .toggle {
 }
 
 @media screen and (max-width: 500px) {
-  .autofit-grid,
-  nav[aria-label='main navigation'] ul {
+  .autofit-grid {
     display: flex;
     flex-direction: column;
   }
