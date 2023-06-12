@@ -110,7 +110,7 @@ li.tag a {
 }
 
 .webmentions-container div + div {
-  margin-top: var(--space-m);
+  margin-block-start: var(--space-m);
 }
 
 .webmention {
@@ -144,7 +144,7 @@ li.tag a {
 
 .webmention-reposts .webmention-avatar,
 .webmention-replies .webmention-avatar {
-  margin-top: var(--space-3xs);
+  margin-block-start: var(--space-3xs);
 }
 
 .markdown-container img.webmention-avatar,
@@ -165,11 +165,11 @@ li.webmention.mention {
 }
 
 .webmention + .webmention {
-  margin-top: var(--space-l);
+  margin-block-start: var(--space-l);
 }
 
 li.mention + li.mention {
-  margin-top: var(--space-xl);
+  margin-block-start: var(--space-xl);
 }
 
 li.webmention.mention q {
@@ -291,7 +291,7 @@ article.max-width-90 {
 }
 
 .book-container-meta > h1 {
-  margin-top: var(--space-3xs);
+  margin-block-start: var(--space-3xs);
 }
 
 .book-container picture {
@@ -316,7 +316,7 @@ article.max-width-90 {
 }
 
 .book-container details {
-  margin-top: var(--space-m);
+  margin-block-start: var(--space-m);
   display: inline;
 }
 
@@ -436,14 +436,25 @@ figure > figcaption {
   display: grid;
   grid-template-columns: 2.5rem 1fr;
   gap: var(--space-xs);
+  padding: var(--space-s);
+  border-radius: var(--space-3xs);
+  border: 0.0125rem solid var(--text-color);
 }
 
 .social-card p {
-  margin-top: 0;
+  margin-block-start: 0;
+}
+
+.social-card .meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  justify-content: flex-end;
+  margin-block-start: var(--space-m-l);
 }
 
 .social-image {
-  margin-top: var(--space-3xs);
+  margin-block-start: var(--space-3xs);
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;

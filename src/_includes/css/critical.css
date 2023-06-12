@@ -72,7 +72,7 @@ header {
   padding: 0.25rem 1rem;
   flex-wrap: wrap;
   min-height: 5rem;
-  margin-top: var(--space-xs);
+  margin-block-start: var(--space-xs);
 }
 
 @media screen and (max-width: 800px) {
@@ -394,7 +394,7 @@ footer .h-card {
 .journal-icon {
   stroke: var(--text-color);
   fill: var(--background);
-  margin-top: var(--space-3xs);
+  margin-block-start: var(--space-3xs);
 }
 
 .flow > * + * {
