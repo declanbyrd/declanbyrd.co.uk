@@ -451,6 +451,7 @@ figure > figcaption {
   gap: var(--space-2xs);
   justify-content: flex-end;
   margin-block-start: var(--space-m-l);
+  flex-wrap: wrap;
 }
 
 .social-image {
