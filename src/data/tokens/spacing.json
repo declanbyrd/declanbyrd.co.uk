@@ -1,0 +1,19 @@
+{
+  "space-3xs": "clamp(0.31rem, calc(0.29rem + 0.11vw), 0.38rem)",
+  "space-2xs": "clamp(0.56rem, calc(0.50rem + 0.32vw), 0.75rem)",
+  "space-xs": "clamp(0.88rem, calc(0.79rem + 0.43vw), 1.13rem)",
+  "space-s": "clamp(1.13rem, calc(1.00rem + 0.65vw), 1.50rem)",
+  "space-m": "clamp(1.69rem, calc(1.50rem + 0.97vw), 2.25rem)",
+  "space-l": "clamp(2.25rem, calc(2.00rem + 1.29vw), 3.00rem)",
+  "space-xl": "clamp(3.38rem, calc(3.00rem + 1.94vw), 4.50rem)",
+  "space-2xl": "clamp(4.50rem, calc(4.00rem + 2.58vw), 6.00rem)",
+  "space-3xl": "clamp(6.75rem, calc(6.00rem + 3.87vw), 9.00rem)",
+  "space-3xs-2xs": "clamp(0.31rem, calc(0.17rem + 0.75vw), 0.75rem)",
+  "space-2xs-xs": "clamp(0.56rem, calc(0.38rem + 0.97vw), 1.13rem)",
+  "space-xs-s": "clamp(0.88rem, calc(0.67rem + 1.08vw), 1.50rem)",
+  "space-s-m": "clamp(1.13rem, calc(0.75rem + 1.94vw), 2.25rem)",
+  "space-m-l": "clamp(1.69rem, calc(1.25rem + 2.26vw), 3.00rem)",
+  "space-l-xl": "clamp(2.25rem, calc(1.50rem + 3.87vw), 4.50rem)",
+  "space-xl-2xl": "clamp(3.38rem, calc(2.50rem + 4.52vw), 6.00rem)",
+  "space-2xl-3xl": "clamp(4.50rem, calc(3.00rem + 7.74vw), 9.00rem)"
+}

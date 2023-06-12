@@ -1,0 +1,25 @@
+{
+  "dark": {
+    "background": "#1a1a1a",
+    "external-link": "#c1a91f",
+    "visited": "#c9bf86",
+    "text-color": "#f6f6f6",
+    "code-background": "#000",
+    "card-background": "#262626"
+  },
+  "light": {
+    "background": "#f6f6f6",
+    "external-link": "#891e26",
+    "visited": "#34090f",
+    "text-color": "#1a1a1a",
+    "code-background": "#1a1919",
+    "card-background": "#e6e6e6"
+  },
+  "jaffaCake": {
+    "background": "#0B132B",
+    "external-link": "#FE7F2D",
+    "visited": "#B66027",
+    "text-color": "#f6f6f6",
+    "code-background": "#f6f6fe"
+  }
+}
