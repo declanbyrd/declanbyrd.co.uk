@@ -19,7 +19,7 @@ description: Summary notes that contain details about a defined time period.
     </div>
     <p>Summary notes that contain details about a defined time period.</p>
     {% include "partials/journalNavigation.njk" %}
-    {% for year, notes in collections.weeknotesByYear %}
+    {% for year, notes in collections.weeknotesByYear | reverse %}
       <h2 class="accent">{{year}}</h2>
       {% set postslist = notes | reverse %}
       {% set postslistCounter = notes | length %}

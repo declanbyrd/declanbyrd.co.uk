@@ -10,7 +10,7 @@ eleventyComputed:
 ---
 
 {% extends 'layouts/base.njk' %}
-{% set postslist = collections[tag].reverse() %}
+{% set postslist = collections[tag] | reverse %}
 
 {% block content %}
   <section>

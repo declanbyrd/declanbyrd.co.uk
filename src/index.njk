@@ -46,7 +46,7 @@
       Recently added to the <a href="/journal" class="accent">Journal</a>
       </h2>
 
-      {% set postslist = collections.allPosts | previewCollection(4) %}
+      {% set postslist = collections.allPosts | reverse | previewCollection(4) %}
       {% include "partials/allPosts.njk" %}
     </section>
 
@@ -56,7 +56,7 @@
       <a href="/photos/" class="accent">photos</a>
       </h2>
 
-      {% set photoslist = collections.photos | previewCollection(4) %}
+      {% set photoslist = collections.photos | reverse | previewCollection(4) %}
       {% include "partials/photoPreview.njk" %}
     </section>
 
@@ -66,7 +66,7 @@
       <a href="/reading/" class="accent">reading</a>
       </h2>
 
-      {% set books = collections.allBooks | previewCollection(4) %}
+      {% set books = collections.allBooks | reverse | previewCollection(4) %}
       <ul class="[ bookshelf ]">
         {% for book in books %}
           <li>

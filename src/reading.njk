@@ -26,10 +26,10 @@ eleventyComputed:
       <h2 id="currentlyReading">Currently reading</h2>
       {% include 'partials/nowReadingWidget.njk' %}
     </div>
-    {% for year, booksInYear in collections.books %}
+    {% for year, booksInYear in collections.books | reverse %}
       <h2 id="{{year}}">{{year}}</h2>
       <ul class="[ bookshelf ]">
-        {% for book in booksInYear %}
+        {% for book in booksInYear | reverse %}
           <li>
             <a href="/reading/{{book.data.isbn}}/" class="book-container preview">
               {% bookCover book.data.book %}

@@ -13,7 +13,7 @@ eleventyComputed:
 <section>
   <h1>My <span class="accent">{{title}}</span></h1>
   <ul class="[ autofit-grid ] [ photos ]">
-    {% for item in collections.photos %}
+    {% for item in collections.photos | reverse %}
     <li>
       <a href="{{item.url}}">
         {% image item.data.photo[0].url, item.data.photo[0].alt, "[ photo-item ]"  %}

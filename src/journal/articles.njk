@@ -19,7 +19,7 @@ description: Articles that have been included in the Journal.
     </div>
     <p>Long form writings that have been included in the journal.</p>
     {% include "partials/journalNavigation.njk" %}
-    {% set postslist = collections.articles %}
+    {% set postslist = collections.articles | reverse %}
     {% set postslistCounter = collections.articles | length %}
     {% include "partials/postsList.njk" %}
   </section>

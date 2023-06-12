@@ -18,8 +18,8 @@
     {% include 'partials/webmentions.njk' %}
 
     <section>
-      {% set previousPost = collections.photos | reverse | getPreviousCollectionItem(page) %}
-      {% set nextPost = collections.photos | reverse | getNextCollectionItem(page) %}
+      {% set previousPost = collections.photos | getPreviousCollectionItem(page) %}
+      {% set nextPost = collections.photos | getNextCollectionItem(page) %}
       <nav aria-label="Photo Navigation">
         <ul class="[ horizontal-links more-reading ]">
           {% if previousPost %}

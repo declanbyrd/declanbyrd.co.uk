@@ -24,7 +24,7 @@ eleventyComputed:
     <p>All entries to the Journal.</p>
     {% include "partials/journalNavigation.njk" %}
 
-    {% set postslist = collections.allPosts %}
+    {% set postslist = collections.allPosts | reverse %}
     {% set postslistCounter = collections.allPosts | length %}
     {% include "partials/allPosts.njk" %}
   </section>

@@ -1,5 +1,5 @@
 <ol class="content-list flow">
-  {% for post in collections.allSocial %}
+  {% for post in collections.allSocial | reverse %}
     <li class="social-card">
       {% image "/img/meta_square.jpg", "Declan - a white male with short brown hair, wearing a white t-shirt that has black sleeves.", "social-image"  %}
       <div>

@@ -41,7 +41,7 @@ module.exports.tagList = (collection) => {
 };
 
 module.exports.posts = (collection) => {
-  return collection.getFilteredByGlob('src/content/journal/*.md').reverse();
+  return collection.getFilteredByGlob('src/content/journal/*.md');
 };
 
 module.exports.headerNavigationItems = (collection) => {
@@ -72,7 +72,7 @@ module.exports.weeknotesByYear = (collection) => {
       (note) => getNoteYearFromStartWeek(note.date) === year
     );
 
-    return [...prev, [year, filtered]].reverse();
+    return [...prev, [year, filtered]];
   }, []);
 
   return notesByYear;
@@ -84,42 +84,32 @@ module.exports.weeknotes = (collection) => {
   );
   const yearReviews = collection.getFilteredByTag('summary');
   const allSummaries = [...weekNotes, ...yearReviews];
-  return allSummaries
-    .sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
-    .reverse();
+  return allSummaries.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
 };
 
 module.exports.allSocial = (collection) => {
   const mastodon = collection.getAll()[0].data.mastodon.posts;
   const allPosts = [...mastodon];
-  return allPosts
-    .sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
-    .reverse();
+  return allPosts.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
 };
 
 module.exports.allPosts = (collection) => {
   const mastodon = collection.getAll()[0].data.mastodon.posts;
   const social = [...mastodon];
-  const localPosts = collection
-    .getFilteredByGlob([
-      'src/content/weekNotes/**/*.md',
-      'src/content/journal/*.md',
-    ])
-    .reverse();
+  const localPosts = collection.getFilteredByGlob([
+    'src/content/weekNotes/**/*.md',
+    'src/content/journal/*.md',
+  ]);
   const allPosts = [...social, ...localPosts];
-  return allPosts
-    .sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
-    .reverse();
+  return allPosts.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
 };
 
 module.exports.photos = (collection) => {
-  return collection.getFilteredByGlob('src/content/photos/*.md').reverse();
+  return collection.getFilteredByGlob('src/content/photos/*.md');
 };
 
 module.exports.books = (collection) => {
-  const books = collection
-    .getFilteredByGlob('src/content/bookshelf/*.md')
-    .reverse();
+  const books = collection.getFilteredByGlob('src/content/bookshelf/*.md');
   const years = books.map((book) => book.date.getFullYear());
   const uniqueYears = [...new Set(years)];
 
@@ -133,18 +123,16 @@ module.exports.books = (collection) => {
 };
 
 module.exports.allBooks = (collection) => {
-  return collection.getFilteredByGlob('src/content/bookshelf/*.md').reverse();
+  return collection.getFilteredByGlob('src/content/bookshelf/*.md');
 };
 
 module.exports.articles = (collection) => {
-  return collection.getFilteredByTag('article').reverse();
+  return collection.getFilteredByTag('article');
 };
 
 module.exports.localPosts = (collection) => {
-  return collection
-    .getFilteredByGlob([
-      'src/content/weekNotes/**/*.md',
-      'src/content/journal/*.md',
-    ])
-    .reverse();
+  return collection.getFilteredByGlob([
+    'src/content/weekNotes/**/*.md',
+    'src/content/journal/*.md',
+  ]);
 };
