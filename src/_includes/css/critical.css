@@ -381,11 +381,7 @@ footer .h-card {
 }
 
 .intro .logo {
-  flex: 1 1 auto;
-  min-width: 7rem;
-  max-width: 10rem;
-  width: clamp(7rem, 7rem + 0.1vw, 20rem);
-  height: 100%;
+  flex: 0 1 auto;
   fill: var(--text-color);
   margin: auto;
 }
