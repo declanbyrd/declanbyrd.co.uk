@@ -1,16 +1,17 @@
-/* bungee-regular - latin */
+/* quattrocento-700 - latin */
 @font-face {
-  font-family: 'Bungee';
-  font-style: normal;
-  font-weight: 400;
   font-display: swap;
-  src: local(''), url(/assets/fonts/bungee.woff2) format('woff2'),
-    url(/assets/fonts/bungee.woff) format('woff');
+  font-family: 'Quattrocento';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/quattrocento-v18-latin-700.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('/assets/fonts/quattrocento-v18-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 :is(h1, h2, h3, h4) {
   font-family: var(--heading-font);
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 1.1;
 }
@@ -79,10 +80,12 @@ header {
   header {
     justify-content: center;
     flex-direction: column;
+    gap: var(--space-xs);
   }
 
   header > a.logo {
     margin-right: 0;
+    height: var(--space-xl);
   }
 
   .more-reading {
@@ -169,6 +172,10 @@ footer {
 
 footer p.license {
   padding: 0 var(--space-m);
+}
+
+nav[aria-label='header navigation'] {
+  height: var(--space-l);
 }
 
 nav[aria-label='main navigation'] {
@@ -373,10 +380,6 @@ footer .h-card {
   line-height: 1.125;
 }
 
-.intro h1 span {
-  display: block;
-}
-
 .intro .logo {
   flex: 1 1 auto;
   min-width: 7rem;
@@ -428,4 +431,26 @@ article.max-width-90 {
   max-width: 90ch;
   margin: auto;
   padding: var(--space-s) var(--space-xs);
+}
+
+.horizontal-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+li.tag {
+  display: flex;
+  align-items: center;
+  fill: var(--external-link);
+}
+
+.horizontal-list li.tag:first-child {
+  margin-left: calc(var(--space-3xs) * -1);
+}
+
+.markdown-container li {
+  margin: var(--space-xs) 0;
 }

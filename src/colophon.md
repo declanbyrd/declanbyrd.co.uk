@@ -29,7 +29,7 @@ The icons in the journal are from [feather icons](https://feathericons.com/).
 
 ## Typography
 
-All headings use the [Bungee](https://gwfh.mranftl.com/fonts/bungee?subsets=latin) font which was downloaded using the [google-webfonts-helper](https://gwfh.mranftl.com/fonts).
+All headings use the [Quattrocento](https://fonts.google.com/specimen/Quattrocento) font which was downloaded using the [google-webfonts-helper](https://gwfh.mranftl.com/fonts).
 
 All other text uses your device's system font.
 

@@ -18,14 +18,6 @@ a:focus > .social-icon {
   filter: brightness(0.75);
 }
 
-.horizontal-list {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-}
-
 .vertical-list {
   padding: 0;
   margin: 0;
@@ -34,20 +26,6 @@ a:focus > .social-icon {
 
 .vertical-list .tag {
   margin: var(--space-3xs) 0;
-}
-
-li.tag {
-  display: flex;
-  align-items: center;
-  fill: var(--external-link);
-}
-
-li.tag a {
-  text-decoration: none;
-}
-
-.horizontal-list li.tag:first-child {
-  margin-left: calc(var(--space-3xs) * -1);
 }
 
 .flex-row {
@@ -388,10 +366,6 @@ figure > figcaption {
   width: 100%;
 }
 
-.markdown-container li {
-  margin: var(--space-xs) 0;
-}
-
 .markdown-container :is(p, li) a {
   display: inline;
 }
@@ -472,4 +446,8 @@ figure > figcaption {
 
 .now-page {
   --flow-space: 6em;
+}
+
+li.tag a {
+  text-decoration: none;
 }
