@@ -176,15 +176,6 @@ li.webmention.mention q {
   margin-inline-start: var(--space-l);
 }
 
-article.h-entry,
-article.photo-entry,
-article.book-entry,
-article.max-width-90 {
-  max-width: 90ch;
-  margin: auto;
-  padding: var(--space-s) var(--space-xs);
-}
-
 .webmentions-container {
   padding: var(--space-s) 0;
 }

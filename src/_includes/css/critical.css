@@ -10,7 +10,7 @@
 
 :is(h1, h2, h3, h4) {
   font-family: var(--heading-font);
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
   line-height: 1.1;
 }
@@ -419,4 +419,13 @@ footer .h-card {
 
 .e-content :is(pre, pre + *, figure, figure + *, h2, h3, h4) {
   --flow-space: var(--space-l-xl);
+}
+
+article.h-entry,
+article.photo-entry,
+article.book-entry,
+article.max-width-90 {
+  max-width: 90ch;
+  margin: auto;
+  padding: var(--space-s) var(--space-xs);
 }
