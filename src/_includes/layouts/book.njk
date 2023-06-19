@@ -4,7 +4,8 @@
 
   <article class="[ markdown-container book-entry ]">
     <div class="book-container">
-      {% bookCover book %}
+      {% cloudImage book.thumbnail,
+      "" %}
       <div class="book-container-meta">
         <h1>{{book.title}}</h1>
         <p>by {{book.authors}}</p>

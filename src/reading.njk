@@ -32,7 +32,8 @@ eleventyComputed:
         {% for book in booksInYear | reverse %}
           <li>
             <a href="/reading/{{book.data.isbn}}/" class="book-container preview">
-              {% bookCover book.data.book %}
+              {% cloudImage book.data.book.thumbnail,
+              "" %}
               <span class="[ visually-hidden ]">
               Read Declan's notes for {{book.data.book.title}} by {{book.data.book.authors}}
               </span>

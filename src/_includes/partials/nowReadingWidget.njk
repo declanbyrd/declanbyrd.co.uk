@@ -1,5 +1,6 @@
 <div class="book-container">
-  {% bookCover now.reading %}
+  {% cloudImage now.reading.thumbnail,
+  "" %}
   <div>
     <p class="book-title">{{now.reading.title}}</p>
     <p>by {{now.reading.authors}}</p>

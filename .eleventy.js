@@ -4,8 +4,6 @@ const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const imageShortcode = require('./src/shortcodes/image');
 const cloudImageShortcode = require('./src/shortcodes/cloudImage');
-const bookCoverShortcode = require('./src/shortcodes/bookCover');
-const gameCoverShortcode = require('./src/shortcodes/gameCover');
 const filters = require('./src/_filters/filters');
 const collections = require('./src/_filters/collections');
 const mastoArchive = require('eleventy-plugin-mastoarchive');
@@ -27,8 +25,6 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
   eleventyConfig.addNunjucksAsyncShortcode('cloudImage', cloudImageShortcode);
-  eleventyConfig.addNunjucksAsyncShortcode('bookCover', bookCoverShortcode);
-  eleventyConfig.addNunjucksAsyncShortcode('gameCover', gameCoverShortcode);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
   // Filters

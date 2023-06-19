@@ -4,7 +4,8 @@
     {% for game in now.gaming %}
       <li>
         <div class="game-container">
-          {% gameCover game %}
+          {% cloudImage game.cover,
+          "" %}
           <div>
             <p class="game-title">{{game.title}}</p>
             <p>{{game.tags[0]}}</p>
