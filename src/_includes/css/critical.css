@@ -449,3 +449,7 @@ li.tag {
 .markdown-container li {
   margin: var(--space-xs) 0;
 }
+
+.flow-large {
+  --flow-space: var(--space-2xl);
+}

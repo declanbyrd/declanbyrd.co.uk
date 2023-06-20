@@ -1,0 +1,98 @@
+---
+permalink: '/journal/feedStylesheet.xsl'
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+
+<xsl:stylesheet version="3.0"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
+
+  <xsl:template match="/">
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+      <head>
+        <title>
+        Journal RSS Feed | <xsl:value-of select="/atom:feed/atom:title"/>
+        </title>
+        {% set css %}
+        {% include "css/theme.njk" %}
+        {% include "css/critical.css" %}
+        {% endset %}
+        <style>
+          {{css | cssmin | safe}}
+        </style>
+      </head>
+      <body>
+        <main class="flow flow-large">
+          <section>
+            <div class="intro">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="112" height="112" aria-hidden="true" focusable="false" class="[ logo ]">
+                <title id="logoTitle">Site logo</title>
+                <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)">
+                  <path d="M2255 4994 c-408 -59 -615 -121 -910 -273 -232 -120 -421 -257 -606
+    -441 -211 -210 -350 -405 -484 -675 -177 -357 -255 -696 -255 -1105 0 -476
+    116 -895 360 -1300 330 -549 866 -950 1495 -1120 82 -22 158 -40 170 -39 11 0
+    -19 10 -67 21 l-88 21 0 237 c0 178 -3 240 -12 247 -7 6 -43 20 -80 32 -84 28
+    -132 60 -136 90 -2 13 19 94 46 180 28 86 69 217 92 291 121 401 223 704 264
+    793 18 40 44 95 57 122 29 64 136 170 217 215 35 19 96 56 135 81 86 56 209
+    118 312 159 58 23 85 29 114 24 34 -5 45 -2 84 27 25 19 52 45 59 58 33 60 -4
+    251 -63 318 -19 22 -29 48 -33 80 -3 26 -16 77 -28 113 -12 37 -23 98 -25 140
+    -4 99 -22 317 -29 358 -13 67 4 117 68 202 72 96 192 182 302 218 147 48 348
+    38 471 -23 94 -46 191 -142 235 -230 32 -64 33 -73 40 -221 4 -85 3 -191 -2
+    -237 -5 -45 -11 -138 -15 -207 -3 -69 -11 -136 -18 -150 -7 -14 -22 -61 -34
+    -105 -12 -44 -42 -117 -67 -162 -24 -44 -44 -86 -44 -91 0 -12 17 -19 100 -42
+    492 -134 699 -235 825 -402 54 -72 152 -261 181 -348 21 -63 21 -63 58 101 45
+    203 59 358 53 609 -5 249 -20 362 -72 566 -45 175 -91 298 -180 479 -80 164
+    -134 252 -238 392 -383 516 -958 867 -1597 974 -98 17 -178 22 -375 24 -137 2
+    -263 1 -280 -1z"/>
+                </g>
+              </svg>
+              <h1>
+                <span>RSS Feed from the personal site of </span>
+                <span class="accent">Declan Byrd</span></h1>
+            </div>
+          </section>
+          <section>
+
+            <p>
+        This is an RSS feed. Visit
+        <a href="https://aboutfeeds.com">About Feeds</a>
+        to learn more and get started.
+      </p>
+            <p>
+        This feed contains all the posts that I add to the Journal.
+      </p>
+            <p>
+              <a href="https://declanbyrd.co.uk/">
+                Visit Website &#x2192;</a>
+            </p>
+          </section>
+          <section>
+
+            <h1>Recent journal entries</h1>
+            <ol class="content-list flow">
+
+              <xsl:for-each select="/atom:feed/atom:entry">
+                <li>
+                  <a class="post-preview-title">
+
+                    <xsl:attribute name="href">
+                      <xsl:value-of select="atom:link/@href"/>
+                    </xsl:attribute>
+
+                    <xsl:value-of select="atom:title"/>
+                  </a>
+        Last updated:
+        <xsl:value-of select="substring(atom:updated, 0, 11)"/>
+                </li>
+              </xsl:for-each>
+            </ol>
+          </section>
+        </main>
+
+      </body>
+    </html>
+  </xsl:template>
+</xsl:stylesheet>
