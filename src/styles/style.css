@@ -318,6 +318,7 @@ li.webmention.mention q {
 }
 
 .more-reading {
+  margin-block-start: var(--space-2xl);
   display: flex;
   justify-content: space-between;
   gap: var(--space-l);
