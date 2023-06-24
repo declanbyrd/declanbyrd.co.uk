@@ -1,20 +1,45 @@
-{% extends 'layouts/timestampedPage.njk' %}
+{% extends 'layouts/base.njk' %}
+
+{% block stylesheets %}
+
+  {% set css %}
+  {% include "css/markdown.css" %}
+  {% endset %}
+  <style>
+    {{css | cssmin | safe}}
+  </style>
+{% endblock %}
 
 {% block content %}
-  <article class="now-page flow">
+  <article>
+
     <section>
-      <p>This page is inspired by Derek Sivers' post on the <a href="https://sive.rs/nowff">/now movement</a> and the <a href="https://nownownow.com/about">collection of now pages</a>.
+      <h1>{{title}}</h1>
+      <p>
+      Last updated: 
+      <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">
+          {{page.date | readableDates}}
+        </time>
       </p>
-      <p>Most of this page is automated, some of it needs to be updated manually. That means it won't be always up-to-date but it should be close.</p>
-    </section>
-    <section>
-      <h2>What I'm up to</h2>
-      {{content | safe}}
     </section>
 
-    {% include 'partials/now/watching.njk' %}
-    {% include 'partials/now/reading.njk' %}
-    {% include 'partials/now/gaming.njk' %}
+    <div class="flow">
+      <article class="now-page flow">
+        <section>
+          <p>This page is inspired by Derek Sivers' post on the <a href="https://sive.rs/nowff">/now movement</a> and the <a href="https://nownownow.com/about">collection of now pages</a>.
+      </p>
+          <p>Most of this page is automated, some of it needs to be updated manually. That means it won't be always up-to-date but it should be close.</p>
+        </section>
+        <section>
+          <h2>What I'm up to</h2>
+          {{content | safe}}
+        </section>
+
+        {% include 'partials/now/watching.njk' %}
+        {% include 'partials/now/reading.njk' %}
+        {% include 'partials/now/gaming.njk' %}
+      </article>
+    </div>
   </article>
 {% endblock %}
 
