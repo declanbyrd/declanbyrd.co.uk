@@ -24,7 +24,7 @@ eleventyComputed:
           <use href="/assets/icons/icons.svg#gallery"></use>
         </svg>
         {% endif %}
-        <span class="[ visually-hidden ]">View the photo of {{item.data.photo[0].alt}}</span>
+        <span class="[ visually-hidden ]">View the photos from {{item.data.date | readableDates}}</span>
       </a>
     </li>
     {% endfor %}
