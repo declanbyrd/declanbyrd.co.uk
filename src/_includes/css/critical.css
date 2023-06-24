@@ -368,6 +368,7 @@ footer .h-card {
 .intro {
   display: flex;
   align-items: center;
+  flex-direction: row;
   gap: 2rem;
   flex-wrap: wrap;
   min-height: 13.125rem;
@@ -409,6 +410,14 @@ footer .h-card {
 
 .home-page {
   --flow-space: 8em;
+  container-type: inline-size;
+  container-name: home-page;
+}
+
+@container home-page (max-width: 505px) {
+  div.intro {
+    flex-direction: column;
+  }
 }
 
 .e-content {
