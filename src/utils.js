@@ -1,6 +1,8 @@
 const isbn = require('node-isbn');
 const flatCache = require('flat-cache');
 const path = require('path');
+const EleventyFetch = require('@11ty/eleventy-fetch');
+require('dotenv').config();
 
 module.exports.getBook = async (bookIsbn, pages) => {
   const cache = flatCache.load(bookIsbn, path.resolve('.cache'));
@@ -33,4 +35,18 @@ module.exports.getBook = async (bookIsbn, pages) => {
       cache.save();
       return newBook;
     });
+};
+
+module.exports.getGames = async () => {
+  const url = `https://api.raindrop.io/rest/v1/raindrops/${process.env.RAINDROPP_GAMES_COLLECTION_ID}`;
+  const games = await EleventyFetch(url, {
+    fetchOptions: {
+      headers: {
+        Authorization: `Bearer ${process.env.RAINDROP_TOKEN}`,
+      },
+    },
+    duration: '1d',
+    type: 'json',
+  });
+  return games.items;
 };

@@ -1,6 +1,6 @@
 // @ts-check
 
-const fetch = require('node-fetch');
+const EleventyFetch = require('@11ty/eleventy-fetch');
 const fs = require('fs');
 const unionBy = require('lodash/unionBy');
 
@@ -21,16 +21,19 @@ const fetchWebmentions = async (since) => {
   let url = `${API}?domain=${domain}&token=${TOKEN}`;
   if (since) url += `&since=${since}`; // only fetch new mentions
 
-  const response = await fetch(url);
-  if (response.ok) {
-    const feed = await response.json();
+  try {
+    const feed = await EleventyFetch(url, {
+      duration: '1d',
+      type: 'json',
+    });
     console.log(
       `>>> ${feed.children.length} new webmentions fetched from ${API}`
     );
     return feed;
+  } catch (error) {
+    console.warn('>>> unable to fetch webmentions', error);
+    return null;
   }
-  console.warn('>>> unable to fetch webmentions', response.statusText);
-  return null;
 };
 
 const readFromCache = () => {

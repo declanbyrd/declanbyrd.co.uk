@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+const EleventyFetch = require('@11ty/eleventy-fetch');
 const { DateTime } = require('luxon');
 require('dotenv').config();
 
@@ -15,15 +15,17 @@ module.exports = async () => {
     return `https://www.themoviedb.org/movie/${movieId}`;
   };
 
-  const req = await fetch(url, {
-    headers: {
-      'trakt-api-version': 2,
-      'trakt-api-key': process.env.TRACKT_CLIENT_ID,
-      'Content-type': 'application/json',
+  const history = await EleventyFetch(url, {
+    fetchOptions: {
+      headers: {
+        'trakt-api-version': 2,
+        'trakt-api-key': process.env.TRACKT_CLIENT_ID,
+        'Content-type': 'application/json',
+      },
     },
+    duration: '1d',
+    type: 'json',
   });
-
-  const history = await req.json();
 
   if (history.length === 0) {
     return undefined;
