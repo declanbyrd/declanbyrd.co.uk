@@ -10,7 +10,7 @@ module.exports.htmlDateTime = (date) => {
 };
 
 module.exports.noteTimestamp = (date) => {
-  return DateTime.fromISO(date, { zone: 'utc' })
+  return DateTime.fromISO(date, { zone: 'Europe/London' })
     .setLocale('en-gb')
     .toFormat('yyyy-LL-dd-HH-mm-ss');
 };
