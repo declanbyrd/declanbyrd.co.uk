@@ -452,3 +452,7 @@ figure > figcaption {
 li.tag a {
   text-decoration: none;
 }
+
+.capitalise {
+  text-transform: capitalize;
+}

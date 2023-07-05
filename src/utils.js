@@ -25,7 +25,7 @@ module.exports.getBook = async (bookIsbn, pages) => {
       const rest = [' ', ...words.slice(25)].join(' ');
       const newBook = {
         title: book.title,
-        authors: book.authors.join(', '),
+        authors: book.authors.join(', ').toLowerCase(),
         thumbnail: book.imageLinks.smallThumbnail,
         pageCount: book.pageCount !== 0 ? book.pageCount : pages,
         description: rest,
