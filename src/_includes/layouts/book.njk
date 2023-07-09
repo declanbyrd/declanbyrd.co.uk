@@ -8,10 +8,7 @@
       "" %}
       <div class="book-container-meta">
         <h1>{{book.title}}</h1>
-        <p>by <span class="capitalise">
-            {{book.authors}}
-          </span>
-        </p>
+        <p>by {{book.authors}}</p>
         <p>{{book.pageCount}} pages</p>
         <p>Finished on {{page.date | readableDates}}</p>
         <details>

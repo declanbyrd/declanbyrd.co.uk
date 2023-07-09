@@ -4,7 +4,7 @@ const path = require('path');
 const EleventyFetch = require('@11ty/eleventy-fetch');
 require('dotenv').config();
 
-module.exports.getBook = async (bookIsbn, pages) => {
+module.exports.getBook = async (bookIsbn, pages, authors) => {
   const cache = flatCache.load(bookIsbn, path.resolve('.cache'));
   const cachedBook = cache.getKey(bookIsbn);
   if (cachedBook) {
@@ -12,6 +12,7 @@ module.exports.getBook = async (bookIsbn, pages) => {
     // fix for cached books that have pageCount of 0
     // way to update without clearing site cache.
     cachedBook.pageCount = pages ? pages : cachedBook.pageCount;
+    cachedBook.authors = authors ? authors : cachedBook.authors;
     return cachedBook;
   }
   console.log(`>>> Fetching data for ${bookIsbn}`);
@@ -25,7 +26,7 @@ module.exports.getBook = async (bookIsbn, pages) => {
       const rest = [' ', ...words.slice(25)].join(' ');
       const newBook = {
         title: book.title,
-        authors: book.authors.join(', ').toLowerCase(),
+        authors: book.authors || book.authors.join(', '),
         thumbnail: book.imageLinks.smallThumbnail,
         pageCount: book.pageCount !== 0 ? book.pageCount : pages,
         description: rest,
