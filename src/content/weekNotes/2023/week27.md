@@ -1,6 +1,6 @@
 ---
 title: 2023 Week Notes - Week 27
-date: 2023-07-08
+date: 2023-07-10
 description: "API requests at build time and  Fantasy Premier League"
 ---
 
