@@ -23,7 +23,7 @@ eleventyComputed:
   <section>
     <h1>{{ title }}</h1>
     <div>
-      <h2 id="currentlyReading">Currently reading</h2>
+      <h2 id="now">Currently reading</h2>
       {% include 'partials/nowReadingWidget.njk' %}
     </div>
     {% for year, booksInYear in collections.books | reverse %}
