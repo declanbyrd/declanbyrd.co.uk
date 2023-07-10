@@ -4,15 +4,15 @@
 
   <article class="[ markdown-container book-entry ]">
     <div class="book-container">
-      {% cloudImage book.thumbnail,
+      {% cloudImage thumbnail,
       "" %}
       <div class="book-container-meta">
-        <h1>{{book.title}}</h1>
-        <p>by {{book.authors}}</p>
-        <p>{{book.pageCount}} pages</p>
+        <h1>{{title}}</h1>
+        <p>by {{authors}}</p>
+        <p>{{pageCount}} pages</p>
         <p>Finished on {{page.date | readableDates}}</p>
         <details>
-          <summary>{{book.summary}}</summary>{{book.description}}</details>
+          <summary>{{summary}}</summary>{{details}}</details>
       </div>
     </div>
     {{ content | safe }}

@@ -71,10 +71,10 @@
         {% for book in books %}
           <li>
             <a href="/reading/{{book.data.isbn}}/" class="book-container preview">
-              {% cloudImage book.data.book.thumbnail,
+              {% cloudImage book.data.thumbnail,
               "" %}
               <span class="[ visually-hidden ]">
-              Read Declan's notes for {{book.data.book.title}} by {{book.data.book.authors}}
+              Read Declan's notes for {{book.data.title}} by {{book.data.authors}}
               </span>
             </a>
           {% endfor %}
