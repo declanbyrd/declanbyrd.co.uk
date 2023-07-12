@@ -1,7 +1,7 @@
 ---
 title: Syndicating blog posts from an 11ty site to Dev.to using RSS
 description: How I syndicate the blog posts from my website to Dev.to by providing an RSS feed for my journal page.
-tags: ['RSS', '11ty', 'article']
+tags: ['RSS', 'Eleventy', 'article']
 date: 2021-04-02
 ---
 
