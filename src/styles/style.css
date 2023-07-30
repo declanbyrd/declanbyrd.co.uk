@@ -322,7 +322,7 @@ li.webmention.mention q {
   display: flex;
   justify-content: space-between;
   gap: var(--space-l);
-  padding-left: 0;
+  padding-inline-start: 0;
   padding-right: 0;
   width: 100%;
 }
@@ -338,6 +338,13 @@ li.webmention.mention q {
 .next,
 .previous {
   flex: 0 1 45%;
+  width: 100%;
+}
+
+.next a,
+.previous a {
+  margin-inline-start: 0;
+  padding-inline-start: 0;
 }
 
 .markdown-container {
