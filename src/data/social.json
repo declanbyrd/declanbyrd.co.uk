@@ -14,11 +14,6 @@
       "name": "Mastodon",
       "url": "https://indieweb.social/@declan_byrd",
       "icon": "mastodon"
-    },
-    {
-      "name": "Twitter",
-      "url": "https://twitter.com/Declan_Byrd",
-      "icon": "twitter"
     }
   ]
 }
