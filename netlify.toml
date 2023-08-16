@@ -18,24 +18,6 @@
   status = 202
   force = true
 
-[[redirects]]
-  from = "/journal/week-notes/"
-  to = "/week-notes/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/journal/:year/week-notes/*"
-  to = "/week-notes/:year/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/api/latestTracks"
-  to = "/functions/GetLatestTracks"
-  status = 200
-  force = true
-
 [functions]
   directory = "functions"
 
