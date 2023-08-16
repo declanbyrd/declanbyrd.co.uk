@@ -59,4 +59,4 @@ The artist I enjoyed listening to most in 2022 was [Fred again..](https://open.s
 
 <h2 id="travel">Travel</h2>
 
-I was fortunate enough to go on two holidays in 2022. Becka and I [visited Bude in Cornwall](/week-notes/2022/week27/) in July for a UK based holiday that didn't require thinking about international travel and COVID restrictions. I'd been to Bude before but it was interesting to see how it changed since my childhood. Before I started my new job, we decided to take the Eurostar and [visit Amsterdam](/week-notes/2022/week38/). I hadn't been to the Netherlands before but we both very much enjoyed Amsterdam.
+I was fortunate enough to go on two holidays in 2022. Becka and I [visited Bude in Cornwall](/journal/2022/week27/) in July for a UK based holiday that didn't require thinking about international travel and COVID restrictions. I'd been to Bude before but it was interesting to see how it changed since my childhood. Before I started my new job, we decided to take the Eurostar and [visit Amsterdam](/journal/2022/week38/). I hadn't been to the Netherlands before but we both very much enjoyed Amsterdam.
