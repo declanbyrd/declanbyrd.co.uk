@@ -18,6 +18,12 @@
   status = 202
   force = true
 
+[[redirects]]
+  from = "/week-notes/tags/"
+  to = "/journal/tags/week-notes/"
+  status = 301
+  force = true
+
 [functions]
   directory = "functions"
 
