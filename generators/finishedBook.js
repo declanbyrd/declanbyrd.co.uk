@@ -13,7 +13,7 @@ const createPageFrontmatter = (isbn, book) => {
     'yyyy-LL-dd'
   );
 
-  return `---\nisbn: ${isbn}\ntitle: "${title}"\nauthors: "${authors}"\ndescription: "Declan's notes for ${title} by ${authors}.\nthumbnail: "${thumbnail}"\npageCount: ${pageCount}\nsummary: "${summary}"\ndescription: "${description}"\ndate: ${date}\n---`;
+  return `---\nisbn: ${isbn}\ntitle: "${title}"\nauthors: "${authors}"\ndescription: "Declan's notes for ${title} by ${authors}".\nthumbnail: "${thumbnail}"\npageCount: ${pageCount}\nsummary: "${summary}"\ndescription: "${description}"\ndate: ${date}\n---`;
 };
 
 const writeTemplate = async () => {
