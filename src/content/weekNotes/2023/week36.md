@@ -8,7 +8,7 @@ I had a frustrating basketball session this week. Not long into the  session, I 
 
 I started playing Shadow of the Tomb Raider on the PlayStation. I played the previous Square Enix Tomb Raider games on Google Stadia and had enjoyed  them both so I had been looking forward to starting this game. I managed around 6 hours of gameplay according to the PlayStation app, and I managed to pet all the llamas!
 
-The weather has been uncomfortably warm this week. Temperatures have peaked at upwards of 30°C during the daytime and the evenings haven't been much cooler. I've avoided going outside (more than I normally would) and chose to site in front of a fan instead.
+The weather has been uncomfortably warm this week. Temperatures have peaked at upwards of 30&deg;C during the daytime and the evenings haven't been much cooler. I've avoided going outside (more than I normally would) and chose to site in front of a fan instead.
 
 I spent a bit of time this week working out the format that I need my short notes to be in so that they can be displayed on this site. Most of this work is making sure that I set frontmatter properties to values that work with the existing data that I have, and the templates that I already use to display my Mastodon posts. It is possible that this could result in a major refactor but I'm keen to avoid that scenario.
 
