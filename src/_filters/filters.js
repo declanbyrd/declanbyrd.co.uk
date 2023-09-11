@@ -9,8 +9,9 @@ module.exports.htmlDateTime = (date) => {
   return DateTime.fromJSDate(date, { zone: 'utc' }).toFormat('yyyy-LL-dd');
 };
 
-module.exports.noteTimestamp = (date) => {
-  return DateTime.fromISO(date, { zone: 'Europe/London' })
+module.exports.noteTimestamp = (dateStr) => {
+  const date = new Date(dateStr);
+  return DateTime.fromJSDate(date, { zone: 'Europe/London' })
     .setLocale('en-gb')
     .toFormat('yyyy-LL-dd-HH-mm-ss');
 };

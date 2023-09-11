@@ -1,55 +1,16 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-  <article class="h-entry [ markdown-container ]">
-    <h1 class="p-name">{{ title }}</h1>
-    <time class="[ date ]" datetime="{{ page.date | htmlDateTime }}">{{page.date | readableDates}}</time>
-    <time class="dt-published [ hidden-metadata ]" datetime="{{ page.date | metadataDate }}">{{page.date | metadataDate}}</time>
-    <ul class="[ horizontal-list ]">
-      {% for tag in tags %}
-        {%- if collections.tagList.indexOf(tag) != -1 -%}
-          {% set tagUrl %}/journal/tags/{{ tag | slug }}/{% endset %}
-          <li class="[ tag ]">
-            <a href="{{ tagUrl | url }}" class="p-category">
-              <span class="accent">#</span>{{ tag }}</a>
-          </li>
-        {%- endif -%}
-      {% endfor %}
-    </ul>
-
-    <p class="hidden-metadata p-summary">{{page.data.description}}</p>
+  <article class="max-width-90 h-entry">
+    <h1>{{page.date | noteTitle}}</h1>
+    <time class="dt-published hidden-metadata" datetime="{{ page.date | metadataDate }}">{{page.date | metadataDate}}</time>
     <a class="hidden-metadata p-author h-card" href="https://declanbyrd.co.uk">Declan Byrd</a>
-
-    <hr>
-
-    <div class="e-content flow">
-      {{ content | safe }}
+    <div class='e-content flow'>
+      {{content | safe}}
     </div>
-
-    {% set webmentionUrl %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
-    {% include 'partials/webmentions.njk' %}
-
-    <section>
-      {% set previousPost = collections.weeknotes | getPreviousCollectionItem(page) %}
-      {% set nextPost = collections.weeknotes | getNextCollectionItem(page) %}
-      <nav aria-label="Post Navigation">
-        <ul class="[ horizontal-links more-reading ]">
-          {% if previousPost %}
-            <li class="previous">
-              <p>Previous Entry:</p>
-              <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
-            </li>
-          {% endif %}
-          {% if nextPost %}
-            <li class="next">
-              <p>Next Entry:</p>
-              <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-            </li>
-          {% endif %}
-        </ul>
-      </nav>
-    </section>
+    <a class="notes-back" href="/journal/notes/">&larr; Back to notes</a>
   </article>
+
 {% endblock %}
 
 {% block scripts %}{% endblock %}

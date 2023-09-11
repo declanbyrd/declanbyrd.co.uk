@@ -89,7 +89,8 @@ module.exports.weeknotes = (collection) => {
 
 module.exports.allSocial = (collection) => {
   const mastodon = collection.getAll()[0].data.mastodon.posts;
-  const allPosts = [...mastodon];
+  const localNotes = collection.getFilteredByGlob(['src/content/notes/*.md']);
+  const allPosts = [...mastodon, ...localNotes];
   return allPosts.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
 };
 
@@ -99,6 +100,7 @@ module.exports.allPosts = (collection) => {
   const localPosts = collection.getFilteredByGlob([
     'src/content/weekNotes/**/*.md',
     'src/content/journal/*.md',
+    'src/content/notes/*.md',
   ]);
   const allPosts = [...social, ...localPosts];
   return allPosts.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
@@ -134,5 +136,6 @@ module.exports.localPosts = (collection) => {
   return collection.getFilteredByGlob([
     'src/content/weekNotes/**/*.md',
     'src/content/journal/*.md',
+    'src/content/notes/*.md',
   ]);
 };

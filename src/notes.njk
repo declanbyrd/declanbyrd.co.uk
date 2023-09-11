@@ -1,12 +1,11 @@
 ---
 pagination:
-  data: collections.allSocial
+  data: mastodon.posts
   size: 1
   alias: post
 permalink: /journal/notes/{{ post.date | noteTimestamp }}/
+layout: 'layouts/base.njk'
 ---
-
-{% extends 'layouts/base.njk' %}
 
 {% block content %}
   <article class="max-width-90">
@@ -15,7 +14,31 @@ permalink: /journal/notes/{{ post.date | noteTimestamp }}/
     <div class="social-card note">
       {% image "/img/meta_square.jpg", "Declan - a white male with short brown hair, wearing a white t-shirt that has black sleeves.", "social-image"  %}
       <div>
-        {% include "partials/socialPost.njk" %}
+        {{post.content | safe}}
+        {% if post.links %}
+          {% for link in post.links %}
+            <p>
+          🔗
+          <a href="{{link.expanded_url}}">{{link.display_url}}</a>
+            </p>
+          {% endfor %}
+        {% endif %}
+        {% if post.media.image %}
+          <img class="social-post-image" style="aspect-ratio: {{post.media.aspect}}; max-width: {{post.media.width}}px" src="{{post.media.image}}" alt="{{post.media.alt}}" width="{{post.media.width}}" height="{{post.media.height}}">
+        {% elif post.media | length %}
+          <div style="columns: {{post.media.length}}">
+            {% for image in post.media %}
+              <img class="social-post-image" style="aspect-ratio: {{image.aspect}}; max-width: {{image.width}}px" src="{{image.image}}" alt="{{image.alt}}" width="{{image.width}}" height="{{image.height}}">
+            {% endfor %}
+          </div>
+        {% endif %}
+        <div class="meta">
+          <time datetime="{{ post.date }}" class="[ date ]">
+            {{ post.date | readableDateFromTimestamp }}
+          </time>
+          <span>via <a href={{post.source_url}}>{{post.site}}</a>
+          </span>
+        </div>
       </div>
     </div>
     <a class="notes-back" href="/journal/notes/">&larr; Back to notes</a>

@@ -6,7 +6,11 @@
       <li class="social-card">
         {% image "/img/meta_square.jpg", "Declan - a white male with short brown hair, wearing a white t-shirt that has black sleeves.", "social-image"  %}
         <div>
-          {% include "./socialPost.njk" %}
+          {% if post.site === 'Mastodon' %}
+            {% include "partials/socialPost.njk" %}
+          {% else %}
+            {% include "partials/note.njk" %}
+          {% endif %}
         </div>
       </li>
     {% endif %}

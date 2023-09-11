@@ -1,8 +1,4 @@
-{% if post.site == 'Twitter' %}
-  <p>{{post.content}}</p>
-{% else %}
-  {{post.content | safe}}
-{% endif %}
+{{post.content | safe}}
 {% if post.links %}
   {% for link in post.links %}
     <p>

@@ -1,5 +1,5 @@
 module.exports = {
-  layout: 'layouts/note.njk',
+  layout: 'layouts/weekNote.njk',
   permalink: '/journal/{{page.date | getYear}}/{{page.fileSlug}}/',
   tags: ['Week Notes'],
 };
