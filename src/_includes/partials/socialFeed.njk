@@ -3,10 +3,10 @@
     <li class="social-card">
       {% image "/img/meta_square.jpg", "Declan - a white male with short brown hair, wearing a white t-shirt that has black sleeves.", "social-image"  %}
       <div>
-        {% if post.data.source === 'declanbyrd.dev' %}
-          {% include "partials/note.njk" %}
-        {% else %}
+        {% if post.data.source === "Mastodon" %}
           {% include "partials/socialPost.njk" %}
+        {% else %}
+          {% include "partials/note.njk" %}
         {% endif %}
       </div>
     </li>

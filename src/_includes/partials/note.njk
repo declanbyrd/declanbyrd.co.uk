@@ -1,0 +1,8 @@
+{{post.content | safe}}
+<div class="meta">
+  <time datetime="{{ post.date }}" class="[ date ]">
+    {{ post.date | readableDateFromTimestamp }}
+  </time>
+  <span>| <a href="/journal/notes/{{post.date | noteTimestamp}}/">Permalink</a>
+  </span>
+</div>
