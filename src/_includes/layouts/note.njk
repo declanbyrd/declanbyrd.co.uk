@@ -2,12 +2,23 @@
 
 {% block content %}
   <article class="max-width-90 h-entry">
-    <h1>{{page.date | noteTitle}}</h1>
+    <h1>{{title}}</h1>
     <time class="dt-published hidden-metadata" datetime="{{ page.date | metadataDate }}">{{page.date | metadataDate}}</time>
     <a class="hidden-metadata p-author h-card" href="https://declanbyrd.co.uk">Declan Byrd</a>
     <div class='e-content flow'>
       {{content | safe}}
     </div>
+    {% if syndicatedTo %}
+      <section>
+        <p>Also on
+          {% for syndicationTarget in syndicatedTo %}
+            <a href="{{syndicationTarget.url}}">
+              {{syndicationTarget.site}}
+            </a>
+          {% endfor %}
+        </p>
+      </section>
+    {% endif %}
     <section>
       <a class="notes-back" href="/journal/notes/">&larr; Back to notes</a>
     </section>
