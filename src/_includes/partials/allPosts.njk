@@ -1,6 +1,6 @@
 <ol class="content-list flow">
   {% for post in postslist %}
-    {% if post.data.title %}
+    {% if post.data.title and not post.data.syndicatedTo %}
       {% include "./postPreview.njk" %}
     {% else %}
       <li class="social-card">
