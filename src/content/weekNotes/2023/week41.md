@@ -31,10 +31,10 @@ Some of the places we ate:
 
 - [Fish A'Gogo](https://www.fishagogo.be/). A tiny restaurant that has a handful of tables. We ate mussels and chips here.
 - [Meat Factory](https://meat-factory.be/). Round the corner from Fish A'Gogo, we had steak and chips here one evening.
-- [Compagnie Belge](https://compagniebelge.com/). Belgian waffles and ice cream.
+- [Compagnie Belge](https://compagniebelge.com/). Belgian waffles.
 - [Have a Roll](https://havearoll.com/). Cinnamon rolls.
 
-We had a rather strange ending to our stay in Antwerp. I mentioned that the hotel we stayed in was right next to Antwerp Central train station. On the day we were due to travel home, [Antwerp Central station was closed due to two suitcases being left unattended](https://www.vrt.be/vrtnws/en/2023/10/13/antwerp-central-station-reopens/) in the train station. We were initially unable to leave our hotel due to its close proximity to the train station, and we had armed police outside the front of the hotel updating us on the situation. Eventually we were allowed to leave the hotel but we were not allowed near the train station. Kind of annoying when your travel plans were heavily dependent on rail travel. We made it on a bus that took us to Brussels-Nord train station and managed to get to Brussels-Midi/Zuid station in time for our Eurostar train back to London.
+We had a rather strange ending to our stay in Antwerp. I mentioned that the hotel we stayed in was right next to Antwerp Central train station. On the day we were due to travel home, [Antwerp Central station was closed due to two suitcases being left unattended](https://www.vrt.be/vrtnws/en/2023/10/13/antwerp-central-station-reopens/) in the train station. We were initially unable to leave our hotel due to its close proximity to the train station, and we had armed police outside the front of the hotel updating us on the situation. Eventually we were allowed to leave the hotel with police supervision but we were not allowed near the train station. Kind of annoying when your travel plans were heavily dependent on rail travel. We made it on a bus that took us to Brussels-Nord train station and managed to get to Brussels-Midi/Zuid station in time for our Eurostar train back to London.
 
 The hotel staff could not have done more in that situation. They were really helpful in trying to find us alternative transport to Brussels, constantly kept us updated with information, and somehow managed to keep calm throughout.
 
@@ -44,6 +44,7 @@ On reflection, I'm not surprised that I felt really tired by the end of the week
    {% image "/img/journal/weeknotes/2023/week41-2.jpg", "The Antwerp Central train station building at night. The facade of the train station is lit up with white lights that reflect off the gold fixtures on the extorior of the building. The dome at the top of the station is illuminated with a soft yellow light." %}
   <figcaption>Antwerp Central train station.</figcaption>
 </figure>
+
 
 ## What has changed on this site:
 
