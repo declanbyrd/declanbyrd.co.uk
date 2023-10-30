@@ -88,7 +88,7 @@ header {
   }
 
   .more-reading {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1.5rem;
   }
 }
@@ -473,4 +473,8 @@ li.tag {
 
 .photo-feed {
   --flow-space: var(--space-4xl);
+}
+
+.e-content ~ div {
+  margin-block-start: var(--space-2xl);
 }
