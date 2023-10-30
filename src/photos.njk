@@ -11,7 +11,17 @@ eleventyComputed:
 
 {% block content %}
 <section>
-  <h1>My <span class="accent">{{title}}</span></h1>
+  <div class="rss-container">
+      <h1>My <span class="accent">{{title}}</span></h1>
+      <a href="/photos/feed.xml" rel="me" class="[ icon ]">
+        <svg width="30" height="30" role="img" aria-labelledby="rssTitle" focusable="false" class="[ social-icon ]">
+          <title id="rssTitle">RSS</title>
+          <use href="/assets/icons/icons.svg#rss"></use>
+        </svg>
+        <span class='[ visually-hidden ]'>View the RSS feed for my photos.</span>
+      </a>
+    </div>
+  
   <ul class="[ autofit-grid ] [ photos ]">
     {% for item in collections.photos | reverse %}
     <li>

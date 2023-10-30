@@ -462,3 +462,15 @@ li.tag {
 .flow-large {
   --flow-space: var(--space-2xl);
 }
+
+.large-photo {
+  height: 100%;
+  width: 100%;
+  max-width: 120ch;
+  display: block;
+  margin: 0 auto var(--space-m) auto;
+}
+
+.photo-feed {
+  --flow-space: var(--space-4xl);
+}

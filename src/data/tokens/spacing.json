@@ -8,6 +8,7 @@
   "space-xl": "clamp(3.38rem, calc(3.00rem + 1.94vw), 4.50rem)",
   "space-2xl": "clamp(4.50rem, calc(4.00rem + 2.58vw), 6.00rem)",
   "space-3xl": "clamp(6.75rem, calc(6.00rem + 3.87vw), 9.00rem)",
+  "space-4xl": "clamp(11.25rem, 10rem + 6.4516vw, 15rem)",
   "space-3xs-2xs": "clamp(0.31rem, calc(0.17rem + 0.75vw), 0.75rem)",
   "space-2xs-xs": "clamp(0.56rem, calc(0.38rem + 0.97vw), 1.13rem)",
   "space-xs-s": "clamp(0.88rem, calc(0.67rem + 1.08vw), 1.50rem)",

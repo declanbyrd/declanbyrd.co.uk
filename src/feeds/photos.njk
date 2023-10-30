@@ -1,0 +1,39 @@
+---
+permalink: '/photos/feed.xml'
+eleventyExcludeFromCollections: true
+metadata:
+  title: 'Declan Byrd's Personal Site: Photos'
+  subtitle: All photos published to Declan Byrd's personal site.
+  url: 'https://declanbyrd.co.uk/'
+  feedUrl: 'https://declanbyrd.co.uk/photos/feed.xml'
+  author:
+    name: 'Declan Byrd'
+    email: 'declan.byrd@gmail.com'
+---
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/photos/photoStylesheet.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections.photos | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for post in collections.photos | reverse %}
+    {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="{{ absolutePostUrl }}"/>
+      <published>{{ post.date | dateToRfc3339 }}</published>
+      <updated>{{ post.date | dateToRfc3339 }}</updated>
+      <id>{{ absolutePostUrl }}</id>
+      <media:thumbnail url="{{ post.data.photo[0].url | url | absoluteUrl(metadata.url)}}"/>
+      <description>{{post.date | readableDates}} - {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}</description>
+      <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    </entry>
+  {%- endfor %}
+</feed>
