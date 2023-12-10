@@ -4,7 +4,6 @@
   "feedUrl": "https://declanbyrd.co.uk/journal/feed.xml",
   "description": "The personal website of Declan Byrd.",
   "author": {
-    "name": "Declan Byrd",
-    "email": "declan.byrd@gmail.com"
+    "name": "Declan Byrd"
   }
 }

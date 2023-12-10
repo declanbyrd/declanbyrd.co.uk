@@ -8,7 +8,6 @@ metadata:
   feedUrl: 'https://declanbyrd.co.uk/photos/feed.xml'
   author:
     name: 'Declan Byrd'
-    email: 'declan.byrd@gmail.com'
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="/photos/photoStylesheet.xsl" type="text/xsl"?>
@@ -21,7 +20,6 @@ metadata:
   <id>{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
   </author>
   {%- for post in collections.photos | reverse %}
     {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
