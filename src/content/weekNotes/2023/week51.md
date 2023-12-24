@@ -1,7 +1,7 @@
 ---
 title: 2023 Week Notes - Week 51
 date: 2023-12-25
-description: Notes for the 50th week of 2023.
+description: Notes for the 51st week of 2023.
 ---
 
 On Tuesday, I had a basketball game for [Worthing D&D White against Worthing D&D Black](https://www.basketballsussex.co.uk/match/35866682.html). Unfortunately, the game was cancelled part-way through. The court became too slippery due to the condensation in the sports hall and in the interest of health of safety, the referees decided it was best for the game to stop before anyone got seriously injured.
