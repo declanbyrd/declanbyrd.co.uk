@@ -97,7 +97,7 @@ header > .logo {
   display: flex;
   align-items: center;
   margin-right: auto;
-  text-decoration: none;
+  color: var(--text-color);
 }
 
 header > .logo span {

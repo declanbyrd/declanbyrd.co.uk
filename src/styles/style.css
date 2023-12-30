@@ -188,19 +188,6 @@ li.webmention.mention q {
   display: flex;
 }
 
-.bookshelf li a {
-  text-decoration: none;
-}
-
-.bookshelf li a p:first-child {
-  text-decoration: underline;
-  font-weight: 600;
-}
-
-.bookshelf li a :not(p:first-child) {
-  font-weight: 300;
-}
-
 .game-container {
   display: grid;
   grid-template-columns: auto 4fr;
@@ -454,8 +441,4 @@ figure > figcaption {
 
 .now-page {
   --flow-space: 6em;
-}
-
-li.tag a {
-  text-decoration: none;
 }
