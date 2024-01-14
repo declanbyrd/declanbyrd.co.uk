@@ -1,6 +1,6 @@
 ---
 title: 2023 in review
-description:
+description: Reviewing what I got up to in 2023.
 tags: ['Year in Review', 'summary']
 date: 2024-01-14
 permalink: '/journal/2023/review/'
@@ -8,7 +8,7 @@ permalink: '/journal/2023/review/'
 
 <h2 id="reading">Reading</h2>
 
-I finished 26 books in 2023. That is very likely the largest number of books I've ever read over the course of a year. The biggest reason for the increase in the number of books I finished were [Marvel "bookazines"](https://www.panini.co.uk/shp_gbr_en/magazines-comics-books/marvel/superheroes/bookazines.html) which were short stories that didn't take long for me to read and reminded me of how much I liked reading graphic novels. 14 of the 26 books that I finished in 2023 were Marvel stories. 
+I finished 26 books in 2023. That is very likely the largest number of books I've ever read over the course of a year. The biggest reason for the increase in the number of books I finished were [Marvel "bookazines"](https://www.panini.co.uk/shp_gbr_en/magazines-comics-books/marvel/superheroes/bookazines.html) which were short stories that didn't take long for me to read and reminded me of how much I liked reading graphic novels. 14 of the 26 books that I finished in 2023 were Marvel stories.
 
 I don't really want to start comparing how many books I read year on year. Life happens and I see reading as a healthy habit so I don't want to discourage myself because I didn't read as many books as I did in a previous year.
 
