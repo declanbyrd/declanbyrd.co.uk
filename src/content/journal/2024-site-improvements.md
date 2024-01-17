@@ -14,7 +14,7 @@ Every time I try to write a post I find something on this site that distracts me
 
 Checkboxes don't have any context. Was it implemented? Why was it done a particular way?
 
-Instead, each item will be a post in the journal which I will link to from this page which will document what I did, why I did it, and give me a point of reference if a particular item requires multiple iterations.
+Instead, each item will be a post in the journal which I will link to from this page. That post will document what I did, why I did it, and give me a point of reference if a particular item requires multiple iterations.
 
 ## The list
 
