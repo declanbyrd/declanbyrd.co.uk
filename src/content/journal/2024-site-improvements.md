@@ -18,7 +18,7 @@ Instead, each item will be a post in the journal which I will link to from this 
 
 ## The list
 
-_Last updated 17 January 2024_.
+_Last updated 5 February 2024_.
 
 - Site navigation.
   - Currently the navigation links are split between the header and footer.
@@ -39,3 +39,7 @@ _Last updated 17 January 2024_.
   - I never introduce myself anywhere on this site.
   - The homepage only shows the latest updates from collections that I update.
   - Create an introduction section on the homepage that makes my personal website a bit more personal.
+- Source code restructure.
+  - All my journal posts that aren't week notes are located in the same folder.
+  - Posts should be in folders that are labelled by the year that the post was published in.
+  - No additional work is required to change the URLs. These are already in the format `/journal/{year}/{post title}`.
