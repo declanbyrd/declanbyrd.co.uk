@@ -27,6 +27,6 @@ Sunday was Bruno's birthday. He got a new beanbag for the lounge so he now has s
 
 ## What I've been watching:
 
-- [Episodes 1 & 2 in season 2 of Kin](https://www.themoviedb.org/tv/112693/season/2).
+- [Episodes 1-3 in season 2 of Kin](https://www.themoviedb.org/tv/112693/season/2).
 - [Season 3 of Sunderland 'Til I Die](https://www.themoviedb.org/tv/84777/season/3).
 - [The Marvels (2023)](https://www.themoviedb.org/movie/609681).
