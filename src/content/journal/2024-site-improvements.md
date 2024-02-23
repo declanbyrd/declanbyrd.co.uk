@@ -1,7 +1,7 @@
 ---
 title: Room for improvement
 description: A to-do list of all the things that I would like to change or investigate for declanbyrd.co.uk throughout 2024.
-tags: ['article', '2024 to-do list']
+tags: ['article', 'Changelog']
 date: 2024-01-17
 permalink: '/journal/2024/room-for-improvement/'
 ---
@@ -18,7 +18,7 @@ Instead, each item will be a post in the journal which I will link to from this 
 
 ## The list
 
-_Last updated 5 February 2024_.
+_Last updated 23 February 2024_.
 
 - Site navigation.
   - Currently the navigation links are split between the header and footer.
@@ -35,10 +35,11 @@ _Last updated 5 February 2024_.
   - The current theme switcher only toggles between light and dark.
   - If there are more than two themes, how can the theme be changed?
   - Can fonts be applied per theme while only requesting the font for the applied theme?
-- A more human homepage.
+- [A more human homepage](/journal/2024/introduction/).
   - I never introduce myself anywhere on this site.
   - The homepage only shows the latest updates from collections that I update.
   - Create an introduction section on the homepage that makes my personal website a bit more personal.
+  - Post added: 23rd February 2024.
 - Source code restructure.
   - All my journal posts that aren't week notes are located in the same folder.
   - Posts should be in folders that are labelled by the year that the post was published in.

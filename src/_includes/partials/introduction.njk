@@ -1,0 +1,40 @@
+<div class="markdown-container">
+  <p>
+  Hi I'm Declan, and this is my permanently in-progress website.
+</p>
+
+  <p>
+  Here you will find <a href="/journal">my journal</a> which includes a mixture of short notes, Mastodon posts, and
+  longer pieces of writing.
+</p>
+
+  {% set recentWeekNote = collections.weeknotes | reverse | previewCollection(1) %}
+  <p>
+  The journal also contains my <a href="/journal/tags/week-notes/">week notes</a>, in which I try to document what I do each week. There are some common themes
+  such as any basketball games I have played in, any Brighton &amp; Hove Albion football games that I've been to, and my
+  media consumption. The most recent week note is <a href="{{recentWeekNote[0].page.url}}">{{recentWeekNote[0].data.title}}</a>.
+  </p>
+
+  <p>
+  A keen photographer, I also publish <a href="/photos">my photos</a> to this website. These include photos that I've taken on my smartphone
+  as well as my DSLR.
+</p>
+
+  {% set lastRead = collections.allBooks | reverse | previewCollection(1) %}
+  <p>
+  Re-discovering the joy of reading books, I log all of the books that I've finished on this website. The last book I
+  finished was <a href="/reading/{{lastRead[0].data.isbn}}">
+      {{lastRead[0].data.title}} by {{lastRead[0].data.authors}}</a> and right now I'm reading <a href="/reading#now">{{now.reading.title}} by
+  {{now.reading.authors}}</a>.
+</p>
+
+  <p>
+  I enjoy playing single player video games. At the moment I'm playing {{now.gaming[0].title}} on the
+  {{now.gaming[0].tags[0]}}.
+
+</p>
+
+  <p>
+  If you want to know how this website was put together, everything I use is listed in the <a href="/colophon">colophon</a>.
+</p>
+</div>
