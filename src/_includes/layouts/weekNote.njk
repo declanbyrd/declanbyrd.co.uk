@@ -26,9 +26,6 @@
       {{ content | safe }}
     </div>
 
-    {% set webmentionUrl %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
-    {% include 'partials/webmentions.njk' %}
-
     <section>
       {% set previousPost = collections.weeknotes | getPreviousCollectionItem(page) %}
       {% set nextPost = collections.weeknotes | getNextCollectionItem(page) %}

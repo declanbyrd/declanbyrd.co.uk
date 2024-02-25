@@ -26,9 +26,6 @@
     </footer>
   </article>
 
-  {% set webmentionUrl %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
-  {% include 'partials/webmentions.njk' %}
-
 {% endblock %}
 
 {% block scripts %}{% endblock %}
