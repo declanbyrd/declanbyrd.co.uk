@@ -41,7 +41,7 @@ This will generate a folder in my output directory at the root level with the na
 
 ## Layout aliases
 
-Having moved all the layout files out of `_includes` and into `layouts`, I had to update the paths for the layout files in the templates that used them. To use a layout alias in my Eleventy configuration file, I had to change all of the Nunjucks specific extend statements to use frontmatter data instead. In addition to updating the paths, I also added some layout aliases to my Eleventy configuration file.
+Having moved all the layout files out of `_includes` and into `layouts`, I updated the paths for the layout files in the templates that used them. In order to use a layout alias in my templates I also had to change all of the Nunjucks specific extend statements to use frontmatter data instead. The last step was adding these layout aliases to my Eleventy configuration file.
 
 ```js
 ['base', 'book', 'note', 'photo', 'weekNote', 'now', 'timestampedPage'].forEach(
