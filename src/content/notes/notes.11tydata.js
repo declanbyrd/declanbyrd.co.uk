@@ -1,5 +1,5 @@
 module.exports = {
-  layout: 'layouts/note.njk',
+  layout: 'note',
   tags: ['Note'],
   source: 'declanbyrd.dev',
   permalink: '/journal/notes/{{ page.date | noteTimestamp }}/',

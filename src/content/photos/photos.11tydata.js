@@ -6,7 +6,7 @@ const pluralise = (string, data) => {
 };
 
 module.exports = {
-  layout: 'layouts/photo.njk',
+  layout: 'photo',
   permalink: '/photos/{{page.fileSlug}}/',
   eleventyComputed: {
     intro: (data) => `${pluralise('Photo', data.photo)} from`,

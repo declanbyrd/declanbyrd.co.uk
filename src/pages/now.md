@@ -5,7 +5,7 @@ eleventyComputed:
   eleventyNavigation:
     key: '{{ title }}'
     description: '{{ description }}'
-layout: 'layouts/now.njk'
+layout: now
 date: Last Modified
 ---
 

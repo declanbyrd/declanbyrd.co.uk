@@ -1,4 +1,6 @@
-{% extends 'layouts/base.njk' %}
+---
+layout: base
+---
 
 {% block content %}
   <article class="h-entry [ markdown-container ]">
@@ -26,8 +28,8 @@
     </div>
 
     <section>
-      {% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-      {% set nextPost = collections.posts | getNextCollectionItem(page) %}
+      {% set previousPost = collections.localPosts | getPreviousCollectionItem(page) %}
+      {% set nextPost = collections.localPosts | getNextCollectionItem(page) %}
       <nav aria-label="Post Navigation">
         <ul class="[ horizontal-links more-reading ]">
           {% if previousPost %}
@@ -47,5 +49,3 @@
     </section>
   </article>
 {% endblock %}
-
-{% block scripts %}{% endblock %}

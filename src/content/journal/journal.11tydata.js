@@ -1,4 +1,4 @@
 module.exports = {
-  layout: 'layouts/post.njk',
+  layout: 'post',
   permalink: '/journal/{{page.date | getYear}}/{{page.fileSlug}}/',
 };

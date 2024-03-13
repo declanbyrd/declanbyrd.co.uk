@@ -1,7 +1,7 @@
 ---
 title: Colophon
 description: Documenting the tools that were used to make declanbyrd.co.uk.
-layout: 'layouts/timestampedPage.njk'
+layout: timestampedPage
 date: Last Modified
 eleventyComputed:
   eleventyNavigation:

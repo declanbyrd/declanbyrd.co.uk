@@ -7,9 +7,8 @@ permalink: /journal/tags/{{ tag | slug }}/
 eleventyComputed:
   title: Journal entries about {{ tag }}. 
   description: All of the journal posts on Declan Byrd's website about {{ tag }}.
+layout: base
 ---
-
-{% extends 'layouts/base.njk' %}
 {% set postslist = collections[tag] | reverse %}
 
 {% block content %}

@@ -1,13 +1,7 @@
-{% extends 'layouts/base.njk' %}
-
-{% block stylesheets %}
-  {% set css %}
-  {% include "css/home.css" %}
-  {% endset %}
-  <style>
-    {{css | cssmin | safe}}
-  </style>
-{% endblock %}
+---
+permalink: '/index.html'
+layout: base
+---
 
 {% block content %}
 

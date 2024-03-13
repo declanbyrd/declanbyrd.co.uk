@@ -2,10 +2,9 @@ const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const syntaxHighlighting = require('@11ty/eleventy-plugin-syntaxhighlight');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
-const imageShortcode = require('./src/shortcodes/image');
-const cloudImageShortcode = require('./src/shortcodes/cloudImage');
-const filters = require('./src/_filters/filters');
-const collections = require('./src/_filters/collections');
+const filters = require('./src/config/filters');
+const shortcodes = require('./src/config/shortcodes');
+const collections = require('./src/config/collections');
 const mastoArchive = require('eleventy-plugin-mastoarchive');
 
 module.exports = (eleventyConfig) => {
@@ -13,19 +12,30 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.setWatchJavaScriptDependencies(false);
 
-  eleventyConfig.ignores.add('src/content/**/template.md');
-
   eleventyConfig.addPlugin(mastoArchive, {
     host: 'https://indieweb.social',
     userId: '108153453598932887',
     removeSyndicates: ['declanbyrd.co.uk'],
   });
 
+  // Layouts
+  [
+    'base',
+    'book',
+    'note',
+    'photo',
+    'weekNote',
+    'now',
+    'timestampedPage',
+  ].forEach((layout) => {
+    eleventyConfig.addLayoutAlias(layout, `${layout}.njk`);
+  });
+
   // Shortcodes
 
-  eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
-  eleventyConfig.addNunjucksAsyncShortcode('cloudImage', cloudImageShortcode);
-  eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
+  Object.keys(shortcodes).forEach((shortcode) => {
+    eleventyConfig.addShortcode(shortcode, shortcodes[shortcode]);
+  });
 
   // Filters
 
@@ -51,13 +61,15 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('src/assets/icons');
   eleventyConfig.addPassthroughCopy('src/assets/scripts');
   eleventyConfig.addPassthroughCopy('src/assets/site.webmanifest');
-  eleventyConfig.addPassthroughCopy('src/styles');
+  eleventyConfig.addPassthroughCopy('src/assets/styles');
 
   return {
     dir: {
       input: 'src',
       output: 'dist',
       data: 'data',
+      layouts: 'layouts',
+      includes: '_includes',
     },
     templateFormats: ['njk', 'md'],
     htmlTemplateEngine: 'njk',

@@ -1,4 +1,4 @@
 module.exports = {
-  layout: 'layouts/book.njk',
+  layout: 'book',
   permalink: '/reading/{{page.fileSlug}}/',
 };

@@ -1,0 +1,28 @@
+---
+title: "Summaries"
+description: Summary notes that contain details about a defined time period.
+layout: base
+---
+
+{% block content %}
+    <section>
+        <div class="rss-container">
+            <h1>Journal: <span class="accent">{{ title }}</span></h1>
+            <a href="/journal/summaries.xml" rel="me" class="[ icon ]">
+                <svg width="30" height="30" role="img" aria-labelledby="rssTitle" focusable="false" class="[ social-icon ]">
+                    <title id="rssTitle">RSS</title>
+                    <use href="/assets/icons/icons.svg#rss"></use>
+                </svg>
+                <span class='[ visually-hidden ]'>View the RSS feed for summary posts in the Journal</span>
+            </a>
+        </div>
+        <p>Summary notes that contain details about a defined time period.</p>
+        {% include "partials/journalNavigation.njk" %}
+        {% for year, notes in collections.weeknotesByYear | reverse %}
+            <h2 class="accent">{{year}}</h2>
+            {% set postslist = notes | reverse %}
+            {% set postslistCounter = notes | length %}
+            {% include "partials/postsList.njk" %}
+        {% endfor %}
+    </section>
+{% endblock %}

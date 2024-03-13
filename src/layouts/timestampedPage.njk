@@ -1,14 +1,6 @@
-{% extends 'layouts/base.njk' %}
-
-{% block stylesheets %}
-
-  {% set css %}
-  {% include "css/markdown.css" %}
-  {% endset %}
-  <style>
-    {{css | cssmin | safe}}
-  </style>
-{% endblock %}
+---
+layout: base
+---
 
 {% block content %}
   <article>
@@ -28,5 +20,3 @@
     </div>
   </article>
 {% endblock %}
-
-{% block scripts %}{% endblock %}

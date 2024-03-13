@@ -6,7 +6,7 @@ module.exports.tagList = (collection) => {
   collection
     .getFilteredByGlob([
       'src/content/weekNotes/**/*.md',
-      'src/content/journal/*.md',
+      'src/content/journal/**/*.md',
     ])
     .forEach(function (item) {
       if ('tags' in item.data) {
@@ -41,13 +41,13 @@ module.exports.tagList = (collection) => {
 };
 
 module.exports.posts = (collection) => {
-  return collection.getFilteredByGlob('src/content/journal/*.md');
+  return collection.getFilteredByGlob('src/content/journal/**/*.md');
 };
 
 module.exports.headerNavigationItems = (collection) => {
   return collection.getFilteredByGlob([
-    'src/journal/journal.njk',
-    'src/photos.njk',
+    'src/pages/journal.njk',
+    'src/pages/photos.njk',
   ]);
 };
 
@@ -99,7 +99,7 @@ module.exports.allPosts = (collection) => {
   const social = [...mastodon];
   const localPosts = collection.getFilteredByGlob([
     'src/content/weekNotes/**/*.md',
-    'src/content/journal/*.md',
+    'src/content/journal/**/*.md',
     'src/content/notes/*.md',
   ]);
   const allPosts = [...social, ...localPosts];
@@ -135,7 +135,7 @@ module.exports.articles = (collection) => {
 module.exports.localPosts = (collection) => {
   return collection.getFilteredByGlob([
     'src/content/weekNotes/**/*.md',
-    'src/content/journal/*.md',
+    'src/content/journal/**/*.md',
     'src/content/notes/*.md',
   ]);
 };

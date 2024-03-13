@@ -13,11 +13,11 @@
     <meta property="og:title" content="{{title or metadata.title}}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{metadata.url}}{{page.url}}">
-    <meta property="og:image" content="https://www.declanbyrd.co.uk/img/og-image.jpg">
+    <meta property="og:image" content="https://www.declanbyrd.co.uk/assets/icons/og-image.jpg">
     <meta property="og:image:alt" content="Logo for the personal site of Declan Byrd.">
     <meta name="twitter:creator" content="@declan_byrd">
     <meta name="twitter:description" content="{{description or metadata.description}}">
-    <meta name="twitter:image" content="https://www.declanbyrd.co.uk/img/og-image.jpg">
+    <meta name="twitter:image" content="https://www.declanbyrd.co.uk/assets/icons/og-image.jpg">
     <meta name="twitter:image:alt" content="Logo for the personal site of Declan Byrd.">
     <meta name="generator" content="{{eleventy.generator}}">
     <link rel="webmention" href="https://webmention.io/declanbyrd.co.uk/webmention"/>
@@ -38,10 +38,10 @@
       {{css | cssmin | safe}}
     </style>
 
-    <link rel="preload" href="/styles/style.css" as="style" onload='this.onload=null;this.rel="stylesheet"'>
-    <noscript><link rel="stylesheet" href="/styles/style.css"></noscript>
-    <link rel="preload" href="/styles/syntax.css" as="style" onload='this.onload=null;this.rel="stylesheet"'>
-    <noscript><link rel="stylesheet" href="/styles/syntax.css"></noscript>
+    <link rel="preload" href="/assets/styles/style.css" as="style" onload='this.onload=null;this.rel="stylesheet"'>
+    <noscript><link rel="stylesheet" href="/assets/styles/style.css"></noscript>
+    <link rel="preload" href="/assets/styles/syntax.css" as="style" onload='this.onload=null;this.rel="stylesheet"'>
+    <noscript><link rel="stylesheet" href="/assets/styles/syntax.css"></noscript>
 
     <script>
       const theme = localStorage.getItem("user-color-scheme");
@@ -72,9 +72,6 @@
       <p class="license">All content licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> unless otherwise stated.</p>
       {% include 'partials/socialLinks.njk' %}
       <script type="text/javascript" src="/assets/scripts/main.js" defer></script>
-      {% block scripts %}
-        {{ content | safe }}
-      {% endblock %}
       <a class="h-card hidden-metadata" rel="me" href="https://declanbyrd.co.uk/">Declan Byrd</a>
     </footer>
   </body>
