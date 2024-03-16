@@ -10,10 +10,14 @@ layout: base
 {% block content %}
   <article class="max-width-90">
 
-    <h1>{{post.date | noteTitle}}</h1>
     <div class="social-card note">
       {% image "/img/meta_square.jpg", "Declan - a white male with short brown hair, wearing a white t-shirt that has black sleeves.", "social-image"  %}
       <div>
+        <h1 class="note-title">
+          <time datetime="{{ post.date }}" class="[ date ]">
+            {{ post.date | readableDateFromTimestamp }}
+          </time>
+        </h1>
         {{post.content | safe}}
         {% if post.links %}
           {% for link in post.links %}
@@ -33,9 +37,7 @@ layout: base
           </div>
         {% endif %}
         <div class="meta">
-          <time datetime="{{ post.date }}" class="[ date ]">
-            {{ post.date | readableDateFromTimestamp }}
-          </time>
+
           <span>via <a href={{post.source_url}}>{{post.site}}</a>
           </span>
         </div>

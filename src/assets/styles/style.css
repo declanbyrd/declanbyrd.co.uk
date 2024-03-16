@@ -401,6 +401,17 @@ figure > figcaption {
   border: 0.0125rem solid var(--text-color);
 }
 
+.social-card .note-title {
+  margin-block-end: var(--space-m);
+}
+
+.social-card h1.note-title {
+  margin-block-start: var(--space-2xs);
+  font-size: var(--step-0);
+  font-family: var(--body-font);
+  font-weight: 500;
+}
+
 .social-card p {
   margin-block-start: 0;
 }

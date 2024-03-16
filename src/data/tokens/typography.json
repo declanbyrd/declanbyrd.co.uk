@@ -1,6 +1,6 @@
 {
   "step--2": "clamp(0.63rem, calc(0.56rem + 0.36vw), 0.84rem)",
-  "step--1": "clamp(0.84rem, calc(0.75rem + 0.48vw), 1.13rem)",
+  "step--1": "clamp(1rem, calc(0.75rem + 0.48vw), 1.13rem)",
   "step-0": "clamp(1.13rem, calc(1.00rem + 0.65vw), 1.50rem)",
   "step-1": "clamp(1.50rem, calc(1.33rem + 0.86vw), 2.00rem)",
   "step-2": "clamp(2.00rem, calc(1.78rem + 1.15vw), 2.67rem)",

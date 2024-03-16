@@ -1,3 +1,9 @@
+<a href="/journal/notes/{{post.date | noteTimestamp}}/" class="note-title">
+  <time datetime="{{ post.date }}" class="[ date ]">
+    {{ post.date | readableDateFromTimestamp }}
+  </time>
+</a>
+
 {{post.content | safe}}
 {% if post.links %}
   {% for link in post.links %}
@@ -17,11 +23,7 @@
   </div>
 {% endif %}
 <div class="meta">
-  <time datetime="{{ post.date }}" class="[ date ]">
-    {{ post.date | readableDateFromTimestamp }}
-  </time>
+
   <span>via <a href={{post.source_url}}>{{post.site}}</a>
-  </span>
-  <span>| <a href="/journal/notes/{{post.date | noteTimestamp}}/">Permalink</a>
   </span>
 </div>
