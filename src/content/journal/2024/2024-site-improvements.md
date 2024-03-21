@@ -18,7 +18,7 @@ Instead, each item will be a post in the journal which I will link to from this 
 
 ## The list
 
-_Last updated 23 February 2024_.
+_Last updated 13 March 2024_.
 
 - Site navigation.
   - Currently the navigation links are split between the header and footer.
@@ -40,7 +40,8 @@ _Last updated 23 February 2024_.
   - The homepage only shows the latest updates from collections that I update.
   - Create an introduction section on the homepage that makes my personal website a bit more personal.
   - Post added: 23rd February 2024.
-- Source code restructure.
+- [Source code restructure](/journal/2024/how-i-eleventy/).
   - All my journal posts that aren't week notes are located in the same folder.
   - Posts should be in folders that are labelled by the year that the post was published in.
   - No additional work is required to change the URLs. These are already in the format `/journal/{year}/{post title}`.
+  - Post added: 13th March 2024.
