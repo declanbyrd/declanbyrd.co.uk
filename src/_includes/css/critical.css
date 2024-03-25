@@ -302,7 +302,6 @@ header .horizontal-links {
 
 .date {
   color: var(--text-color);
-  filter: contrast(80%);
   font-size: var(--step--1);
 }
 
