@@ -16,11 +16,11 @@
 }
 
 h1 {
-  font-size: var(--step-3);
+  font-size: var(--step-5);
 }
 
 h2 {
-  font-size: var(--step-2);
+  font-size: var(--step-4);
   min-height: calc(var(--step-2) + 0.5rem);
 }
 
@@ -29,12 +29,12 @@ h2[id] {
 }
 
 h3 {
-  font-size: var(--step-1);
+  font-size: var(--step-3);
   min-height: calc(var(--step-1) + 0.5rem);
 }
 
 h4 {
-  font-size: var(--step-0);
+  font-size: var(--step-2);
   min-height: calc(var(--step-0) + 0.5rem);
 }
 
@@ -303,6 +303,7 @@ header .horizontal-links {
 .date {
   color: var(--text-color);
   filter: contrast(80%);
+  font-size: var(--step--1);
 }
 
 html.no-js .toggle {
@@ -345,7 +346,7 @@ html.no-js .toggle {
 
 .content-list .post-preview-title {
   margin: 0.25rem 0;
-  font-size: var(--step-1);
+  font-size: var(--step-2);
   min-height: calc(var(--step-1) + 0.5rem);
   font-family: var(--heading-font);
   display: block;
@@ -449,6 +450,7 @@ li.tag {
   display: flex;
   align-items: center;
   fill: var(--external-link);
+  font-size: var(--step--1);
 }
 
 .horizontal-list li.tag:first-child {
