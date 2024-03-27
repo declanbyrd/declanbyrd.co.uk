@@ -1,67 +1,46 @@
 {
-  "dark": {
-    "background": "#1a1a1a",
-    "external-link": "#c1a91f",
-    "visited": "#c9bf86",
-    "text-color": "#f6f6f6",
-    "code-background": "#000",
-    "card-background": "#262626"
-  },
-  "light": {
-    "background": "#f6f6f6",
-    "external-link": "#891e26",
-    "visited": "#34090f",
-    "text-color": "#1a1a1a",
-    "code-background": "#1a1919",
-    "card-background": "#e6e6e6"
-  },
   "andOneOpenRun": {
-    "background": "#17191a",
-    "external-link": "#f2682c",
-    "visited": "#d35b26",
-    "text-color": "#fdfcff",
-    "code-background": "#000000"
-  },
-  "kobe5": {
-    "background": "#1f2029",
-    "external-link": "#EC986F",
-    "visited": "#E29C7E",
-    "text-color": "#cdc9c4",
-    "code-background": "#000000"
+    "name": "AND1 Open Run",
+    "thumbnail": "/img/theme-icons/and1-open-run.png",
+    "colours": {
+      "background": "#17191a",
+      "external-link": "#f2682c",
+      "visited": "#d35b26",
+      "text-color": "#fdfcff",
+      "code-background": "#000000"
+    }
   },
   "airJordanTeamIso5": {
-    "background": "#eeece8",
-    "external-link": "#ad2010",
-    "visited": "#520f02",
-    "text-color": "#101610",
-    "code-background": "#000000"
+    "name": "Air Jordan Team ISO 5",
+    "thumbnail": "/img/theme-icons/air-jordan-team-iso.png",
+    "colours": {
+      "background": "#eeece8",
+      "external-link": "#ad2010",
+      "visited": "#520f02",
+      "text-color": "#101610",
+      "code-background": "#000000"
+    }
   },
-  "airJordanAeroMania": {
-    "background": "#7D0507",
-    "external-link": "#EBC8AD",
-    "visited": "#FFFFFF",
-    "text-color": "#EBE2DB",
-    "code-background": "#302a20"
-  },
-  "nikeOverplay8": {
-    "background": "#232323",
-    "external-link": "#81B3E4",
-    "visited": "#97b6c7",
-    "text-color": "#dbdfe2",
-    "code-background": "#2a2a2a"
+  "kobe5": {
+    "name": "Nike ID Kobe 5",
+    "thumbnail": "/img/theme-icons/nike-kobe-5.png",
+    "colours": {
+      "background": "#1f2029",
+      "external-link": "#EC986F",
+      "visited": "#E29C7E",
+      "text-color": "#cdc9c4",
+      "code-background": "#000000"
+    }
   },
   "nikeHyperdunk2014": {
-    "background": "#1d2e20",
-    "external-link": "#b9d885",
-    "visited": "#94c734",
-    "text-color": "#bec0c1",
-    "code-background": "#1b1d1a"
-  },
-  "nikePg2dot5": {
-    "background": "#080808",
-    "external-link": "#8a898e",
-    "visited": "#b1adb6",
-    "text-color": "#a8aaab",
-    "code-background": "#161616"
+    "name": "Nike Hyperdunk 2014",
+    "thumbnail": "/img/theme-icons/nike-hyperdunk-2014.png",
+    "colours": {
+      "background": "#1d2e20",
+      "external-link": "#b9d885",
+      "visited": "#94c734",
+      "text-color": "#bec0c1",
+      "code-background": "#1b1d1a"
+    }
   }
 }

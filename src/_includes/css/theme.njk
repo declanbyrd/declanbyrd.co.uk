@@ -1,6 +1,6 @@
 :root {
   {# Light theme variables by default #}
-  {% for token, value in tokens.themes.light %}
+  {% for token, value in tokens.themes.airJordanTeamIso5.colours %}
     --{{token}}: {{value}};
   {% endfor %}
 
@@ -20,7 +20,7 @@
   {% for token, value in tokens.spacing %}
     --{{token}}: {{value}};
   {% endfor %}
-  
+
   {# set properties to default variable values #}
   background: var(--background);
   color: var(--text-color);
@@ -31,38 +31,22 @@
 
 @media (prefers-color-scheme: dark) {
   html {
-    {% for token, value in tokens.themes.dark %}
-      --{{token}}: {{value}};
-    {% endfor %}
-  }
-
-  [data-user-color-scheme='light'] {
-    {% for token, value in tokens.themes.light %}
-      --{{token}}: {{value}};
-    {% endfor %}
-  }
-
-  [data-user-color-scheme='jaffaCake'] {
-    {% for token, value in tokens.themes.jaffaCake %}
+    {% for token, value in tokens.themes.andOneOpenRun.colours %}
       --{{token}}: {{value}};
     {% endfor %}
   }
 
   html:not([data-user-color-scheme]) {
-    {% for token, value in tokens.themes.dark %}
+    {% for token, value in tokens.themes.andOneOpenRun.colours %}
       --{{token}}: {{value}};
     {% endfor %}
   }
 }
 
-[data-user-color-scheme='dark'] {
-  {% for token, value in tokens.themes.dark %}
-    --{{token}}: {{value}};
-  {% endfor %}
-}
-
-[data-user-color-scheme='jaffaCake'] {
-  {% for token, value in tokens.themes.jaffaCake %}
-    --{{token}}: {{value}};
-   {% endfor %}
-}
+{% for theme, data in tokens.themes %}
+  [data-user-color-scheme={{theme}}] {
+    {% for token, value in data.colours %}
+      --{{token}}: {{value}};
+    {% endfor %}
+  }
+{% endfor %}

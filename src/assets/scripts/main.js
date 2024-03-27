@@ -1,62 +1,78 @@
-'use strict';
+// @ts-check
 
-/**
- * Dark mode toggle from Andy Bell
- * https://hankchizljaw.com/wrote/create-a-user-controlled-dark-or-light-mode/
- */
+'use strict';
 
 document.documentElement.classList.remove('no-js');
 
 const COLOR_STORAGE_KEY = 'user-color-scheme';
-const COLOR_MODE_KEY = '--color-mode';
-const themeToggle = document.getElementById('themeToggle');
 
-const getCSSCustomProp = (propKey) => {
-  let response = getComputedStyle(document.documentElement).getPropertyValue(
-    propKey
-  );
-
-  if (response.length) {
-    response = response.replace(/\"/g, '').trim();
+class ThemeSwitcher {
+  constructor() {
+    this.activeTheme = 'airJordanTeamIso5';
+    this.hasLocalStorage = typeof localStorage !== 'undefined';
+    this.themeChangerButtons = document.querySelectorAll('button[data-theme]');
+    this.onLoad();
   }
 
-  return response;
-};
+  onLoad() {
+    const systemPreference = this.getSystemPreference();
+    const storedPreference = this.getStoredPreference();
 
-const applySetting = (passedSetting) => {
-  let currentSetting = passedSetting || localStorage.getItem(COLOR_STORAGE_KEY);
-  if (currentSetting) {
-    document.documentElement.setAttribute(
-      'data-user-color-scheme',
-      currentSetting
-    );
-  }
-};
+    if (storedPreference) {
+      this.activeTheme = storedPreference;
+      this.setThemeButtonAriaPressed(storedPreference);
+    } else if (systemPreference) {
+      this.activeTheme = systemPreference;
+      this.setThemeButtonAriaPressed(systemPreference);
+    }
 
-const toggleSetting = () => {
-  let currentSetting = localStorage.getItem(COLOR_STORAGE_KEY);
-
-  switch (currentSetting) {
-    case null:
-      currentSetting =
-        getCSSCustomProp(COLOR_MODE_KEY) === 'dark' ? 'light' : 'dark';
-      break;
-    case 'light':
-      currentSetting = 'dark';
-      break;
-    case 'dark':
-      currentSetting = 'light';
-      break;
+    Array.from(this.themeChangerButtons).forEach((button) => {
+      const themeId = button.getAttribute('data-theme');
+      // @ts-ignore
+      button.addEventListener('click', () => this.setTheme(themeId));
+    });
   }
 
-  localStorage.setItem(COLOR_STORAGE_KEY, currentSetting);
+  getSystemPreference() {
+    if (window.matchMedia('(preferes-colour-scheme: dark)').matches) {
+      return 'andOneOpenRun';
+    }
 
-  return currentSetting;
-};
+    return false;
+  }
 
-document.getElementById('themeToggle').addEventListener('click', (evt) => {
-  evt.preventDefault();
-  applySetting(toggleSetting());
-});
+  getStoredPreference() {
+    if (this.hasLocalStorage) {
+      return localStorage.getItem(COLOR_STORAGE_KEY);
+    }
+    return false;
+  }
 
-applySetting();
+  /**
+   * @param {string} themeId
+   */
+  setThemeButtonAriaPressed(themeId) {
+    const themeButton = document.querySelector(`[data-theme=${themeId}]`);
+    document
+      .querySelector('[data-theme][aria-pressed="true"]')
+      ?.setAttribute('aria-pressed', 'false');
+    themeButton?.setAttribute('aria-pressed', 'true');
+  }
+
+  /**
+   * @param {string } themeId
+   */
+  setTheme(themeId) {
+    this.activeTheme = themeId;
+    this.setThemeButtonAriaPressed(themeId);
+    document.documentElement.setAttribute('data-user-color-scheme', themeId);
+
+    if (this.hasLocalStorage) {
+      localStorage.setItem(COLOR_STORAGE_KEY, themeId);
+    }
+  }
+}
+
+if (window.CSS && CSS.supports('color', 'var(--my-variable)')) {
+  new ThemeSwitcher();
+}
