@@ -1,0 +1,10 @@
+<div class="theme-switche">
+  {% for themeName, data in tokens.themes %}
+    <button data-theme={{themeName}} aria-pressed="false">
+      {% image data.thumbnail, "", "[ theme-icon ]"  %}
+      <span class="visually-hidden">
+        Change the site theme to use the colours from Declan's {{data.name}} basketball shoes.
+      </span>
+    </button>
+  {% endfor %}
+</div>
