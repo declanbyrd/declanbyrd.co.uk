@@ -394,7 +394,6 @@ figure > figcaption {
 
 .social-card {
   display: grid;
-  grid-template-columns: 2.5rem 1fr;
   gap: var(--space-xs);
   padding: var(--space-s);
   border-radius: var(--space-3xs);
@@ -429,13 +428,6 @@ figure > figcaption {
   flex-wrap: wrap;
 }
 
-.social-image {
-  margin-block-start: var(--space-3xs);
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
 .social-post-image {
   display: block;
   margin: auto;
@@ -456,4 +448,16 @@ figure > figcaption {
 
 .now-page {
   --flow-space: 6em;
+}
+
+button[data-theme] {
+  background: inherit;
+  color: currentColor;
+  border: none;
+  cursor: pointer;
+}
+
+button[data-theme] .theme-icon {
+  width: auto;
+  height: var(--step-4);
 }
