@@ -401,6 +401,10 @@ figure > figcaption {
   border: 0.0125rem solid var(--text-color);
 }
 
+.social-card-body {
+  min-width: 100%;
+}
+
 .social-card .note-title {
   margin-block-end: var(--space-m);
 }
