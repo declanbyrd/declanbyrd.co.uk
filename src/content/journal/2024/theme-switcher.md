@@ -93,6 +93,7 @@ In my template, I then had the following:
 
 ```twig
 :root {
+  {% raw %}
   {# Light theme variables by default #}
   {% for token, value in tokens.themes.airJordanTeamIso5.colours %}
     --{{token}}: {{value}};
@@ -117,12 +118,13 @@ In my template, I then had the following:
     {% endfor %}
   }
 }
+{% endraw %}
 ```
 
 With default cases now handled, I loop over the theme data object to add variables for each theme colour scheme.
 
 ```twig
-
+{% raw %}
 {% for theme, data in tokens.themes %}
   [data-user-color-scheme={{theme}}] {
     {% for token, value in data.colours %}
@@ -130,17 +132,20 @@ With default cases now handled, I loop over the theme data object to add variabl
     {% endfor %}
   }
 {% endfor %}
+{% endraw %}
 ```
 
 The theme template is then injected into my base layout using the Nunjucks include syntax.
 
 ```twig
+{% raw %}
     {% set css %}
     {% include "css/theme.njk" %}
     {% endset %}
     <style>
       {{css | cssmin | safe}}
     </style>
+    {% endraw %}
 ```
 
 ## Theme Switcher Partial
@@ -148,6 +153,7 @@ The theme template is then injected into my base layout using the Nunjucks inclu
 I created a partial for the theme switcher so that I could include it in my layout templates. The partial loops over the theme data and creates a button for each theme containing the image of the shoe and some screen reader only text.
 
 ```twig
+{% raw %}
 <div>
   {% for themeName, data in tokens.themes %}
     <button data-theme={{themeName}} aria-pressed="false">
@@ -158,12 +164,15 @@ I created a partial for the theme switcher so that I could include it in my layo
     </button>
   {% endfor %}
 </div>
+{% endraw %}
 ```
 
 This partial is then added to the footer of my base layout using a Nunjucks include block.
 
 ```twig
+{% raw %}
 {% include 'partials/themeSwitcher.njk' %}
+{% endraw %}
 ```
 
 ## Some JavaScript
