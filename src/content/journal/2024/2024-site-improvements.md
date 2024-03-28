@@ -18,7 +18,7 @@ Instead, each item will be a post in the journal which I will link to from this 
 
 ## The list
 
-_Last updated 13 March 2024_.
+_Last updated 28 March 2024_.
 
 - Site navigation.
   - Currently the navigation links are split between the header and footer.
@@ -30,7 +30,7 @@ _Last updated 13 March 2024_.
 - Make this list easier to update.
   - To add or edit any item in this list I need to update the markdown file containing the whole list.
   - Can each item be stored in such a way that takes advantage of 11tys directory level data files and templating?
-- Multiple themes.
+- [Multiple themes](/journal/2024/theme-switcher/).
   - I already have [themes.json](https://github.com/declanbyrd/declanbyrd.co.uk/blob/3f4e53969654e02d7e6ffca216e615e421b16de3/src/data/tokens/themes.json) which contains the colour themes for declanbyrd.co.uk.
   - The current theme switcher only toggles between light and dark.
   - If there are more than two themes, how can the theme be changed?
