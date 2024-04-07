@@ -51,10 +51,13 @@ const populateReading = () => {
 
 const populateWatching = async () => {
   const mediaDiet = await nowWatching();
-  const list = mediaDiet.map((media) => {
-    return `- [${media.nowString}](${media.tmdbUrl}).`;
-  });
-  return `## What I've been watching:\n\n${list.join('\n')}`;
+  if (mediaDiet && mediaDiet.length) {
+    const list = mediaDiet.map((media) => {
+      return `- [${media.nowString}](${media.tmdbUrl}).`;
+    });
+    return `## What I've been watching:\n\n${list.join('\n')}`;
+  }
+  return `## What I've been watching:\n\n- Nothing watched this week`;
 };
 
 const populateChangelog = () => {
