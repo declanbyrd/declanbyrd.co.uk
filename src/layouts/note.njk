@@ -4,7 +4,11 @@ layout: base
 
 {% block content %}
   <article class="max-width-90 h-entry">
-    <h1>{{title}}</h1>
+    <h1>
+      <time datetime="{{ page.date | metadataDate }}">
+        {{title}}
+      </time>
+    </h1>
     <time class="dt-published hidden-metadata" datetime="{{ page.date | metadataDate }}">{{page.date | metadataDate}}</time>
     <a class="hidden-metadata p-author h-card" href="https://declanbyrd.co.uk">Declan Byrd</a>
     <div class='e-content flow'>
