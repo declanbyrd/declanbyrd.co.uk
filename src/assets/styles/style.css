@@ -384,14 +384,6 @@ figure > figcaption {
   color: var(--external-link);
 }
 
-.large-photo {
-  height: 100%;
-  width: 100%;
-  max-width: 120ch;
-  display: block;
-  margin: 0 auto var(--space-m) auto;
-}
-
 .social-card {
   display: grid;
   gap: var(--space-xs);
