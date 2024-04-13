@@ -14,11 +14,6 @@
       "name": "Mastodon",
       "url": "https://indieweb.social/@declan_byrd",
       "icon": "mastodon"
-    },
-    {
-      "name": "RSS",
-      "url": "/journal/feed.xml",
-      "icon": "rss"
     }
   ]
 }
