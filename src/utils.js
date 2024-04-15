@@ -31,7 +31,7 @@ module.exports.getGames = async () => {
         Authorization: `Bearer ${process.env.RAINDROP_TOKEN}`,
       },
     },
-    duration: '1d',
+    duration: '12h',
     type: 'json',
   });
   return games.items;
