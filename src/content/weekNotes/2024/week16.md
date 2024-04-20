@@ -10,6 +10,8 @@ I had another basketball game on Thursday this week, [losing 97-66 against Brigh
 
 Writing my notes early this week because I'm travelling for work over the weekend. This meant most of my Saturday was spent overpacking a suitcase to appease my anxiety levels, and then hours of deliberating over which items I could probably leave behind.
 
+This week, I wrote these notes as normal on my laptop but I'm updating them on my phone in the GitHub mobile app. I created a pull request before I left so that I can merge it when my notes are finished.
+
 ## What has changed on this site:
 
 - Halved the cache duration from 24 hours to 12 hours for the response from the fetch call that I make to get the video game that I'm currently playing.
