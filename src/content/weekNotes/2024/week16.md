@@ -18,7 +18,7 @@ This week, I wrote these notes as normal on my laptop but I'm updating them on m
 
 ## What I've been reading
 
-- No progress made with [Eye of the Sh*t Storm by Jackson Ford](/reading#now) this week.
+- I started and read nearly 300 pages of [Eye of the Sh*t Storm by Jackson Ford](/reading#now) this week.
 
 ## What I've been watching:
 
