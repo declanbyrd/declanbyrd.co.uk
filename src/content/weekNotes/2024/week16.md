@@ -1,16 +1,15 @@
 ---
 title: "2024 Week Notes - Week 16"
-date: 2024-04-22T08:30:00+01:00
+date: 2024-04-22T08:30:00+02:00
 description: "Notes for the 16th week of 2024"
 ---
 
 On Tuesday I had a basketball game for Worthing D&D White, [losing 69-56 against Worthing D&D Black](https://www.basketballsussex.co.uk/match/35866850.html). I didn't have a great game, but managed to make a three-point shot despite not seeing much of the ball.
 
-I had another basketball game on Thursday this week, [losing 97-66 against Brighton Cougars](https://www.basketballsussex.co.uk/match/35866895.html). This game was much more frustrating to play in. I made the mistake of making lots of shots in the warmup which resulted in the opposition team guarding me much higher up the court. I've got one speed and its slow, so I found it really difficult to receive the ball. When I did get the ball, I shot really badly - not making any of my 9 shot attempts.
+I had another basketball game on Thursday this week, [losing 97-66 against Brighton Cougars](https://www.basketballsussex.co.uk/match/35866895.html). This game was much more frustrating to play in. I made the mistake of making lots of shots in the warmup (with lots of people watching) which resulted in the opposition team guarding me much higher up the court. I've got one speed and its slow, so I found it really difficult to receive the ball. When I did get the ball, I shot really badly - not making any of my 9 shot attempts.
 
-Writing my notes early this week because I'm travelling for work over the weekend. This meant most of my Saturday was spent overpacking a suitcase to appease my anxiety levels, and then hours of deliberating over which items I could probably leave behind.
+As I'm travelling for work on the day I would normally write and publish these notes, I spent some time this week looking at how I could publish these notes without my laptop. I settled on using the GitHub mobile app to edit the notes in a branch, and then merge a pull request when I was ready to publish. The only issue I found was that you can't create pull requests from the mobile app, so I had to create one before I left.
 
-This week, I wrote these notes as normal on my laptop but I'm updating them on my phone in the GitHub mobile app. I created a pull request before I left so that I can merge it when my notes are finished.
 
 ## What has changed on this site:
 
