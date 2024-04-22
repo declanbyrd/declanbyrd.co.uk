@@ -10,7 +10,6 @@ I had another basketball game on Thursday this week, [losing 97-66 against Brigh
 
 As I'm travelling for work on the day I would normally write and publish these notes, I spent some time this week looking at how I could publish these notes without my laptop. I settled on using the GitHub mobile app to edit the notes in a branch, and then merge a pull request when I was ready to publish. The only issue I found was that you can't create pull requests from the mobile app, so I had to create one before I left.
 
-
 ## What has changed on this site:
 
 - Halved the cache duration from 24 hours to 12 hours for the response from the fetch call that I make to get the video game that I'm currently playing.
