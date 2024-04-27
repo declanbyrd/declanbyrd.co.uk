@@ -5,7 +5,9 @@
   "scripts": {
     "debug": "set DEBUG=Eleventy* & npx @11ty/eleventy",
     "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve --incremental"
+    "start": "npx @11ty/eleventy --serve --incremental",
+    "gen:book": "node ./generators/finishedBook.js",
+    "gen:wn": "node ./generators/weekNote.js"
   },
   "repository": {
     "type": "git",
