@@ -1,8 +1,10 @@
 ---
-title: "2024 Week Notes - Week 19"
-date: 2024-05-13
-description: "Notes for the 19th week of 2024"
+title: '2024 Week Notes - Week 19'
+date: 2024-05-13T08:30:00+01:00
+description: 'Notes for the 19th week of 2024'
 ---
+
+Monday was a public holiday in the UK, so a shorter work week this week. I treated Monday like an extended Sunday and spent most of the day reading.
 
 On Tuesday, I had a basketball session in the evening. I haven't had a session in a couple of weeks and it showed. I shot the ball badly, but did manage to score a basket early on in the session which boosted my confidence a bit. Due to schools using their sports halls for exams, its unlikely that I will have another session for a while now.
 
@@ -14,13 +16,15 @@ I was excited to get started with the training plan and got up early to start th
 
 I rescheduled the second run in my training plan from Saturday to Friday morning and got up way earlier than I normally would to complete the run before I started work. This run required me to keep within a specific pace which was something I had struggled with previously. It was incredibly useful having messages coming through my headphones that told me I was going to fast or too slow. I felt really good after 30 minutes of running within the pace guidelines and with a rush of adrenaline chose to complete the optional additional 15 minutes at the same pace. In hindsight, I should have stopped after 30 minutes, but the additional 15 minutes meant that I was able to set a new personal best time for completing 5km (35:56).
 
+The northern lights were visible in the UK over the weekend, but I slept through it when it was most visible and missed it.
+
 ## What has changed on this site:
 
 - No changes this week.
 
 ## What I've been reading
 
-- I read ten chapters of [Butter by Asako Yuzuki](/reading#now) this week.
+- I read fourteen chapters of [Butter by Asako Yuzuki](/reading#now) this week. Only two chapters left in the book.
 
 ## What I've been watching:
 
@@ -28,3 +32,4 @@ I rescheduled the second run in my training plan from Saturday to Friday morning
 - [Episode 7 in season 17 of Taskmaster](https://www.themoviedb.org/tv/63404/season/17/episode/7).
 - [Bullet Train (2022)](https://www.themoviedb.org/movie/718930).
 - [Episodes 1-3 in season 3 of Welcome to Wrexham](https://www.themoviedb.org/tv/126929/season/3).
+- [Episodes 4 and 5 in season 2 of Blue Lights](https://www.themoviedb.org/tv/218344/season/2).
