@@ -36,13 +36,15 @@ const getNextMonday = (date) => {
 
 const createPageFrontmatter = (weekNumber, year, date) => {
   const nextMonday = getNextMonday(date);
-  const formattedDate = nextMonday.toFormat('yyyy-LL-dd');
+  const publishDate = nextMonday
+    .set({ hour: 8, minute: 30, second: 0, millisecond: 0 })
+    .toISO();
   const title = `${year} Week Notes - Week ${weekNumber}`;
   const description = `Notes for the ${weekNumber}${getDateOrdinal(
     weekNumber
   )} week of ${year}`;
 
-  return `---\ntitle: "${title}"\ndate: ${formattedDate}\ndescription: "${description}"\n---\n`;
+  return `---\ntitle: "${title}"\ndate: ${publishDate}\ndescription: "${description}"\n---\n`;
 };
 
 const populateReading = () => {
