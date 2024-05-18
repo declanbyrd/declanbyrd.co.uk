@@ -18,8 +18,13 @@ Instead, each item will be a post in the journal which I will link to from this 
 
 ## The list
 
-_Last updated 28 March 2024_.
+_Last updated 18 May 2024_.
 
+- Pagination for week notes.
+  - The summaries page is now showing over two years worth of posts on a single page.
+  - I no longer have only a few posts on those pages, and one way to handle this is to cap the page size to 25 (or 26 if I want to show half a year per page).
+  - This has already been done for the rest of the pages in the journal.
+  - Pagination for week notes will need to account for the posts being grouped by year.
 - Site navigation.
   - Currently the navigation links are split between the header and footer.
   - Can I consolidate all of the navigation links into a single location?
