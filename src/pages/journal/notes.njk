@@ -2,6 +2,11 @@
 title: "Notes"
 description: Short form writings sourced from my social media pages.
 layout: base
+pagination: 
+    data: collections.allSocial
+    size: 25
+    reverse: true
+permalink: "/journal/{{page.fileSlug}}/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
 
 {% block content %}
@@ -11,6 +16,23 @@ layout: base
         </div>
         <p>Short form writings sourced from my social media pages.</p>
         {% include "partials/journalNavigation.njk" %}
+        {% set postslist = pagination.items %}
         {% include "partials/socialFeed.njk" %}
+    </section>
+    <section>
+        <nav aria-label="Paged notes navigation">
+            <ul class="horizontal-links more-reading">
+                {% if pagination.href.previous %}
+                    <li>
+                        <a href="{{ pagination.href.previous }}">Previous page</a>
+                    </li>
+                {% endif %}
+                {% if pagination.href.next %}
+                    <li>
+                        <a href="{{ pagination.href.next }}">Next page</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
     </section>
 {% endblock %}
