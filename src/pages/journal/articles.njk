@@ -2,6 +2,11 @@
 title: "Articles"
 description: Articles that have been included in the Journal.
 layout: base
+pagination: 
+    data: collections.articles
+    size: 25
+    reverse: true
+permalink: "/journal/{{page.fileSlug}}/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
 
 {% block content %}
@@ -18,8 +23,23 @@ layout: base
         </div>
         <p>Long form writings that have been included in the journal.</p>
         {% include "partials/journalNavigation.njk" %}
-        {% set postslist = collections.articles | reverse %}
-        {% set postslistCounter = collections.articles | length %}
+        {% set postslist = pagination.items %}
         {% include "partials/postsList.njk" %}
+    </section>
+    <section>
+        <nav aria-label="Paged articles navigation">
+            <ul class="horizontal-links more-reading">
+                {% if pagination.href.previous %}
+                    <li>
+                        <a href="{{ pagination.href.previous }}">Previous page</a>
+                    </li>
+                {% endif %}
+                {% if pagination.href.next %}
+                    <li>
+                        <a href="{{ pagination.href.next }}">Next page</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
     </section>
 {% endblock %}

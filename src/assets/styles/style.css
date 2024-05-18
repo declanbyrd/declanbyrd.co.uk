@@ -320,6 +320,7 @@ li.webmention.mention q {
 
 .more-reading a {
   margin: 0 calc(var(--space-3xs) * -1);
+  font-size: var(--step--1);
 }
 
 .next,

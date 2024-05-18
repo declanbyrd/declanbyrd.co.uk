@@ -6,6 +6,11 @@ eleventyComputed:
     key: "{{ title }}"
     description: "{{ description }}"
 layout: base
+pagination: 
+    data: collections.allPosts
+    size: 25
+    reverse: true
+permalink: "/{{page.fileSlug}}/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
 
 {% block content %}
@@ -23,8 +28,23 @@ layout: base
         <p>All entries to the Journal.</p>
         {% include "partials/journalNavigation.njk" %}
 
-        {% set postslist = collections.allPosts | reverse %}
-        {% set postslistCounter = collections.allPosts | length %}
+        {% set postslist = pagination.items %}
         {% include "partials/allPosts.njk" %}
+    </section>
+    <section>
+        <nav aria-label="Paged results navigation">
+            <ul class="horizontal-links more-reading">
+                {% if pagination.href.previous %}
+                    <li>
+                        <a href="{{ pagination.href.previous }}">Previous page</a>
+                    </li>
+                {% endif %}
+                {% if pagination.href.next %}
+                    <li>
+                        <a href="{{ pagination.href.next }}">Next page</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
     </section>
 {% endblock %}

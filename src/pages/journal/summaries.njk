@@ -21,7 +21,6 @@ layout: base
         {% for year, notes in collections.weeknotesByYear | reverse %}
             <h2 class="accent">{{year}}</h2>
             {% set postslist = notes | reverse %}
-            {% set postslistCounter = notes | length %}
             {% include "partials/postsList.njk" %}
         {% endfor %}
     </section>
