@@ -248,6 +248,7 @@ li.webmention.mention q {
 
 .book-container-meta > h1 {
   margin-block-start: var(--space-3xs);
+  margin-block-end: var(--space-s-m);
 }
 
 .book-container picture {
@@ -293,15 +294,9 @@ li.webmention.mention q {
 }
 
 .book-container picture img {
+  aspect-ratio: 10/16;
+  height: 12rem;
   width: 100%;
-  max-width: 10rem;
-  height: auto;
-}
-
-.book-container.preview picture img {
-  width: 100%;
-  max-width: 10rem;
-  height: 100%;
 }
 
 .more-reading {
