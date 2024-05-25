@@ -7,13 +7,13 @@ const { DateTime } = require('luxon');
 const BOOK_DIR = 'src/content/bookshelf';
 
 const createPageFrontmatter = (isbn, book) => {
-  const { title, authors, thumbnail, pageCount, description, summary } = book;
+  const { title, authors, thumbnail, pageCount } = book;
 
   const date = DateTime.fromJSDate(new Date(), { zone: 'utc' }).toFormat(
     'yyyy-LL-dd'
   );
 
-  return `---\nisbn: ${isbn}\ntitle: "${title}"\nauthors: "${authors}"\ndescription: "Declan's notes for ${title} by ${authors}."\nthumbnail: "${thumbnail}"\npageCount: ${pageCount}\nsummary: "${summary}"\ndetails: "${description}"\ndate: ${date}\n---`;
+  return `---\nisbn: ${isbn}\ntitle: "${title}"\nauthors: "${authors}"\ndescription: "Declan's notes for ${title} by ${authors}."\nthumbnail: "${thumbnail}"\npageCount: ${pageCount}\ndate: ${date}\n---`;
 };
 
 const writeTemplate = async () => {
