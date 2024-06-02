@@ -42,7 +42,7 @@ const createPageFrontmatter = (weekNumber, year, date) => {
   const title = `${year} Week Notes - Week ${weekNumber}`;
   const description = `Notes for the ${weekNumber}${getDateOrdinal(
     weekNumber
-  )} week of ${year}`;
+  )} week of ${year}.`;
 
   return `---\ntitle: "${title}"\ndate: ${publishDate}\ndescription: "${description}"\n---\n`;
 };
