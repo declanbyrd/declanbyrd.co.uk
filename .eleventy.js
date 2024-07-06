@@ -16,6 +16,7 @@ module.exports = (eleventyConfig) => {
     host: 'https://indieweb.social',
     userId: '108153453598932887',
     removeSyndicates: ['declanbyrd.co.uk'],
+    stripHashtags: true,
   });
 
   // Layouts
