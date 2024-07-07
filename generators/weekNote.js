@@ -48,7 +48,7 @@ const createPageFrontmatter = (weekNumber, year, date) => {
 };
 
 const populateReading = () => {
-  return `## What I've been reading\n\n- No progress made with [${nowReading.title} by ${nowReading.authors}](/reading#now) this week.\n`;
+  return `## What I've been reading:\n\n- No progress made with [${nowReading.title} by ${nowReading.authors}](/reading#now) this week.\n`;
 };
 
 const populateWatching = async () => {
