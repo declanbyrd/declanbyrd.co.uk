@@ -18,7 +18,7 @@ layout: base
       <div>
         <a class="notes-back" href="/journal/notes/">&larr; Back to notes</a>
       </div>
-      {% if syndicatedTo %}
+      {% if syndicatedTo.length > 0 %}
         <div class="syndication">
           <p>Also shared to
           {% for syndicationTarget in syndicatedTo %}
