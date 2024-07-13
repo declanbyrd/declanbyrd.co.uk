@@ -81,9 +81,7 @@ const writeTemplate = async () => {
     template,
     (err) => {
       if (err) throw err;
-      console.log(
-        `Created template for ${WEEK_NOTE_DIR}/${year}/week${weekNumber}.md`
-      );
+      console.log(`${WEEK_NOTE_DIR}/${year}/week${weekNumber}.md`);
     }
   );
 };
