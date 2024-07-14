@@ -61,12 +61,16 @@ module.exports.readableDateFromTimestamp = (
   formatStr = "dd LLLL yyyy 'at' HH:mm:ss"
 ) => {
   const date = new Date(dateStr);
-  return DateTime.fromJSDate(date).toFormat(formatStr);
+  return DateTime.fromJSDate(date, { zone: 'Europe/London' }).toFormat(
+    formatStr
+  );
 };
 
 module.exports.noteTitle = (dateStr, formatStr = "DDDD 'at' HH:mm") => {
   const date = new Date(dateStr);
-  return DateTime.fromJSDate(date).toFormat(formatStr);
+  return DateTime.fromJSDate(date, { zone: 'Europe/London' }).toFormat(
+    formatStr
+  );
 };
 
 module.exports.getWebmentionSource = (url) => {
