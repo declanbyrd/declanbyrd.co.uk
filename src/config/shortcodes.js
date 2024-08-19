@@ -7,7 +7,7 @@ module.exports.image = async (
   className,
   widths = [320, 640, 720, 1080],
   formats = ['webp', 'jpeg'],
-  sizes = '"(min-width: 30em) 50vw, 100vw"'
+  sizes = '(min-width: 30em) 50vw, 100vw'
 ) => {
   const { dir: imgDir } = path.parse(relativeSrc);
   const fullSrc = path.join('src', relativeSrc);
