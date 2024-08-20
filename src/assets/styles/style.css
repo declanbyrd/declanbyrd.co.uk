@@ -295,7 +295,7 @@ li.webmention.mention q {
 .book-container picture img {
   aspect-ratio: 10/16;
   height: 12rem;
-  width: 100%;
+  width: auto;
 }
 
 .more-reading {
