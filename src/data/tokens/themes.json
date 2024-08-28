@@ -1,7 +1,7 @@
 {
   "andOneOpenRun": {
     "name": "AND1 Open Run",
-    "thumbnail": "/img/theme-icons/and1-open-run.png",
+    "thumbnail": "/content/img/theme-icons/and1-open-run.png",
     "colours": {
       "background": "#17191a",
       "external-link": "#f2682c",
@@ -12,7 +12,7 @@
   },
   "airJordanTeamIso5": {
     "name": "Air Jordan Team ISO 5",
-    "thumbnail": "/img/theme-icons/air-jordan-team-iso.png",
+    "thumbnail": "/content/img/theme-icons/air-jordan-team-iso.png",
     "colours": {
       "background": "#eeece8",
       "external-link": "#ad2010",
@@ -23,7 +23,7 @@
   },
   "kobe5": {
     "name": "Nike ID Kobe 5",
-    "thumbnail": "/img/theme-icons/nike-kobe-5.png",
+    "thumbnail": "/content/img/theme-icons/nike-kobe-5.png",
     "colours": {
       "background": "#1f2029",
       "external-link": "#EC986F",
@@ -34,7 +34,7 @@
   },
   "nikeHyperdunk2014": {
     "name": "Nike Hyperdunk 2014",
-    "thumbnail": "/img/theme-icons/nike-hyperdunk-2014.png",
+    "thumbnail": "/content/img/theme-icons/nike-hyperdunk-2014.png",
     "colours": {
       "background": "#1d2e20",
       "external-link": "#b9d885",
