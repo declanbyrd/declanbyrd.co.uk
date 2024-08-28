@@ -4,7 +4,7 @@
   "description": "My homepage",
   "scripts": {
     "debug": "set DEBUG=Eleventy* & npx @11ty/eleventy",
-    "build": "git submodule update --remote && npx @11ty/eleventy",
+    "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve --incremental",
     "gen:book": "node ./generators/finishedBook.js",
     "gen:wn": "node ./generators/weekNote.js"
