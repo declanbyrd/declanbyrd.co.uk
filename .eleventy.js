@@ -57,7 +57,9 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addCollection(collection, collections[collection]);
   });
 
-  eleventyConfig.addPassthroughCopy('src/img');
+  eleventyConfig.addPassthroughCopy({
+    'src/content/img': 'img',
+  });
   eleventyConfig.addPassthroughCopy('src/assets/fonts');
   eleventyConfig.addPassthroughCopy('src/assets/icons');
   eleventyConfig.addPassthroughCopy('src/assets/scripts');

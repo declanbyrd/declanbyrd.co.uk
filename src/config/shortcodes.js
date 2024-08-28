@@ -12,11 +12,17 @@ module.exports.image = async (
   const { dir: imgDir } = path.parse(relativeSrc);
   const fullSrc = path.join('src', relativeSrc);
 
+  let outDir = path.join('dist', imgDir);
+
+  if (outDir.includes('/content')) {
+    outDir = outDir.replace('/content', '');
+  }
+
   const metadata = await Image(fullSrc, {
     widths,
     formats,
-    outputDir: path.join('dist', imgDir),
-    urlPath: imgDir,
+    outputDir: outDir,
+    urlPath: imgDir.replace('content', ''),
     filenameFormat: function (id, src, width, format, options) {
       const extension = path.extname(src);
       const name = path.basename(src, extension);
