@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "git submodule update -f --init && npm run build"
+  command = "git submodule update -f --remote && npm run build"
 
 [dev]
   publish = "dist"
