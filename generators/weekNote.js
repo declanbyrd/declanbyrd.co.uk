@@ -1,9 +1,9 @@
 // @ts-check
 
-const fs = require('fs');
-const { DateTime } = require('luxon');
-const nowReading = require('../src/data/now/reading.json');
-const nowWatching = require('../src/data/now/watching');
+import fs from 'fs';
+import { DateTime } from 'luxon';
+import nowReading from '../src/data/now/reading.json';
+import { nowWatching } from '../src/data/now/watching';
 
 const WEEK_NOTE_DIR = 'src/content/weekNotes';
 

@@ -1,7 +1,9 @@
-const Image = require('@11ty/eleventy-img');
-const path = require('path');
+// @ts-check
 
-module.exports.image = async (
+import Image from '@11ty/eleventy-img';
+import path from 'path';
+
+export const image = async (
   relativeSrc,
   alt,
   className,
@@ -31,8 +33,8 @@ module.exports.image = async (
     },
   });
 
-  let lowsrc = metadata.jpeg[0];
-  let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+  let lowsrc = metadata.jpeg?.[0];
+  let highsrc = metadata.jpeg?.[metadata.jpeg.length - 1];
 
   return `<picture>
     ${Object.values(metadata)
@@ -45,9 +47,9 @@ module.exports.image = async (
       })
       .join('\n')}
       <img
-        src="${lowsrc.url}"
-        width="${highsrc.width}"
-        height="${highsrc.height}"
+        src="${lowsrc?.url}"
+        width="${highsrc?.width}"
+        height="${highsrc?.height}"
         alt="${alt}"
         class="${className}"
         loading="lazy"
@@ -55,7 +57,7 @@ module.exports.image = async (
     </picture>`;
 };
 
-module.exports.cloudImage = async (src, alt, className, sizes = '100vw') => {
+export const cloudImage = async (src, alt, className, sizes = '100vw') => {
   if (alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
@@ -91,4 +93,4 @@ module.exports.cloudImage = async (src, alt, className, sizes = '100vw') => {
     </picture>`;
 };
 
-module.exports.year = () => `${new Date().getFullYear()}`;
+export const year = () => `${new Date().getFullYear()}`;

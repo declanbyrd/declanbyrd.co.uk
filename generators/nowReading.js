@@ -1,7 +1,7 @@
 // @ts-check
 
-const fs = require('fs');
-const { getBook } = require('../src/utils');
+import fs from 'fs';
+import { getBook } from '../src/utils';
 
 const NOW_READING = 'src/data/now/reading.json';
 

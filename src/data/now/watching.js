@@ -1,8 +1,9 @@
-const EleventyFetch = require('@11ty/eleventy-fetch');
-const { DateTime } = require('luxon');
-require('dotenv').config();
+import { DateTime } from 'luxon';
+import EleventyFetch from '@11ty/eleventy-fetch';
+import { config } from 'dotenv';
+config();
 
-module.exports = async () => {
+export const nowWatching = async () => {
   const endAt = encodeURIComponent(new Date().toISOString());
   const startAt = encodeURIComponent(DateTime.now().minus({ days: 7 }).toISO());
   const url = `https://api.trakt.tv/users/${process.env.TRACKT_USER}/history?start_at=${startAt}&end_at=${endAt}`;

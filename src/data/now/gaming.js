@@ -1,6 +1,6 @@
-const { getGames } = require('../../utils');
+import { getGames } from '../../utils.js';
 
-module.exports = async () => {
+export const nowGaming = async () => {
   const games = await getGames();
   return games.filter((game) => game.tags.includes('Now Playing'));
 };

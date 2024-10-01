@@ -1,23 +1,18 @@
-const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
-const syntaxHighlighting = require('@11ty/eleventy-plugin-syntaxhighlight');
-const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
-const pluginRss = require('@11ty/eleventy-plugin-rss');
-const filters = require('./src/config/filters');
-const shortcodes = require('./src/config/shortcodes');
-const collections = require('./src/config/collections');
-const mastoArchive = require('eleventy-plugin-mastoarchive');
+// @ts-check
 
-module.exports = (eleventyConfig) => {
+import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
+import syntaxHighlightPlugin from '@11ty/eleventy-plugin-syntaxhighlight';
+import rssPlugin from '@11ty/eleventy-plugin-rss';
+import mastoArchivePlugin from 'eleventy-plugin-mastoarchive';
+
+import * as collections from './src/config/collections.js';
+import * as filters from './src/config/filters.js';
+import * as shortcodes from './src/config/shortcodes.js';
+
+export default (eleventyConfig) => {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.setWatchJavaScriptDependencies(false);
-
-  eleventyConfig.addPlugin(mastoArchive, {
-    host: 'https://indieweb.social',
-    userId: '108153453598932887',
-    removeSyndicates: ['declanbyrd.co.uk'],
-    stripHashtags: true,
-  });
 
   // Layouts
   [
@@ -46,10 +41,15 @@ module.exports = (eleventyConfig) => {
 
   // Plugins
 
-  eleventyConfig.addPlugin(syntaxHighlighting, { templateFormats: 'md' });
+  eleventyConfig.addPlugin(syntaxHighlightPlugin, { templateFormats: 'md' });
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPlugin(inclusiveLangPlugin);
-  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(rssPlugin);
+  eleventyConfig.addPlugin(mastoArchivePlugin, {
+    host: 'https://indieweb.social',
+    userId: '108153453598932887',
+    removeSyndicates: ['declanbyrd.co.uk'],
+    stripHashtags: true,
+  });
 
   // Collections
 

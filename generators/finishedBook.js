@@ -1,8 +1,8 @@
 // @ts-check
 
-const fs = require('fs');
-const { getBook } = require('../src/utils');
-const { DateTime } = require('luxon');
+import fs from 'fs';
+import { DateTime } from 'luxon';
+import { getBook } from '../src/utils';
 
 const BOOK_DIR = 'src/content/bookshelf';
 

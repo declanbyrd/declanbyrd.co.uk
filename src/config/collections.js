@@ -1,7 +1,7 @@
 // @ts-check
-const { DateTime } = require('luxon');
+import { DateTime } from 'luxon';
 
-module.exports.tagList = (collection) => {
+export const tagList = (collection) => {
   const tagSet = new Set();
   collection
     .getFilteredByGlob([
@@ -40,11 +40,11 @@ module.exports.tagList = (collection) => {
   return [...tagSet].sort();
 };
 
-module.exports.posts = (collection) => {
+export const posts = (collection) => {
   return collection.getFilteredByGlob('src/content/journal/**/*.md');
 };
 
-module.exports.headerNavigationItems = (collection) => {
+export const headerNavigationItems = (collection) => {
   return collection.getFilteredByGlob([
     'src/pages/journal.njk',
     'src/pages/photos.njk',
@@ -55,7 +55,7 @@ const getNoteYearFromStartWeek = (date) => {
   return DateTime.fromJSDate(date).minus({ days: 7 }).toJSDate().getFullYear();
 };
 
-module.exports.weeknotesByYear = (collection) => {
+export const weeknotesByYear = (collection) => {
   const weekNotes = collection.getFilteredByGlob(
     'src/content/weekNotes/**/*.md'
   );
@@ -78,7 +78,7 @@ module.exports.weeknotesByYear = (collection) => {
   return notesByYear;
 };
 
-module.exports.weeknotes = (collection) => {
+export const weeknotes = (collection) => {
   const weekNotes = collection.getFilteredByGlob(
     'src/content/weekNotes/**/*.md'
   );
@@ -87,14 +87,14 @@ module.exports.weeknotes = (collection) => {
   return allSummaries.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
 };
 
-module.exports.allSocial = (collection) => {
+export const allSocial = (collection) => {
   const mastodon = collection.getAll()[0].data.mastodon.posts;
   const localNotes = collection.getFilteredByGlob(['src/content/notes/*.md']);
   const allPosts = [...mastodon, ...localNotes];
   return allPosts.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
 };
 
-module.exports.allPosts = (collection) => {
+export const allPosts = (collection) => {
   const mastodon = collection.getAll()[0].data.mastodon.posts;
   const social = [...mastodon];
   const localPosts = collection.getFilteredByGlob([
@@ -106,11 +106,11 @@ module.exports.allPosts = (collection) => {
   return allPosts.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
 };
 
-module.exports.photos = (collection) => {
+export const photos = (collection) => {
   return collection.getFilteredByGlob('src/content/photos/*.md');
 };
 
-module.exports.books = (collection) => {
+export const books = (collection) => {
   const books = collection.getFilteredByGlob('src/content/bookshelf/*.md');
   const years = books.map((book) => book.date.getFullYear());
   const uniqueYears = [...new Set(years)];
@@ -124,15 +124,15 @@ module.exports.books = (collection) => {
   return booksByYear;
 };
 
-module.exports.allBooks = (collection) => {
+export const allBooks = (collection) => {
   return collection.getFilteredByGlob('src/content/bookshelf/*.md');
 };
 
-module.exports.articles = (collection) => {
+export const articles = (collection) => {
   return collection.getFilteredByTag('article');
 };
 
-module.exports.localPosts = (collection) => {
+export const localPosts = (collection) => {
   return collection.getFilteredByGlob([
     'src/content/weekNotes/**/*.md',
     'src/content/journal/**/*.md',
