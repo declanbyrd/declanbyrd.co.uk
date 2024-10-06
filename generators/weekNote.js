@@ -2,8 +2,8 @@
 
 import fs from 'fs';
 import { DateTime } from 'luxon';
-import nowReading from '../src/data/now/reading.json';
-import { nowWatching } from '../src/data/now/watching';
+import nowReading from '../src/data/now/reading.json' with { type: 'json' };
+import nowWatching from '../src/data/now/watching.js';
 
 const WEEK_NOTE_DIR = 'src/content/weekNotes';
 
