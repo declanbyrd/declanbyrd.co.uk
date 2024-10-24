@@ -431,7 +431,7 @@ footer .h-card {
 article.h-entry,
 article.photo-entry,
 article.book-entry,
-article.max-width-90 {
+.max-width-90 {
   max-width: 90ch;
   margin: auto;
   padding: var(--space-s) var(--space-xs);

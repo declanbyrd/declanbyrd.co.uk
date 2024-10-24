@@ -1,5 +1,5 @@
 <a href="/journal/notes/{{post.date | noteTimestamp}}/"  class="note-title">
-  <time datetime="{{ post.date }}" class="[ date ]">
+  <time datetime="{{ post.date | htmlDateTime }}" class="[ date ]">
     {{ post.date | readableDateFromTimestamp }}
   </time>
 </a>

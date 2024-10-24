@@ -4,9 +4,10 @@
       <a href="{{item.url}}">
         {% image item.data.photo[0].url, item.data.photo[0].alt, "[ photo-item ]" %}
         {% if item.data.photo.length > 1 %}
-          <svg width="30" height="30" role="img" aria-labelledby="{{item.url}}Title" focusable="false"
+          <svg width="30" height="30" role="img" aria-labelledby="photos-from-{{item.date | htmlDateTime}}-title" focusable="false"
         class="[ gallery-icon ]">
-            <title id="{{item.url}}Title">Gallery</title>
+            <title id="photos-from-{{item.date | htmlDateTime}}-title">Multiple photos for {{item.data.date | readableDates}}
+            </title>
             <use href="/assets/icons/icons.svg#gallery"></use>
           </svg>
         {% endif %}

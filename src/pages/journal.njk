@@ -18,8 +18,8 @@ permalink: "/{{page.fileSlug}}/{% if pagination.pageNumber > 0 %}page-{{ paginat
         <div class="rss-container">
             <h1 >The <span class="accent">{{ title }}</span></h1>
             <a href="/journal/feed.xml" rel="me" class="[ icon ]">
-                <svg width="30" height="30" role="img" aria-labelledby="rssTitle" focusable="false" class="[ social-icon ]">
-                    <title id="rssTitle">RSS</title>
+                <svg width="30" height="30" role="img" aria-labelledby="journal-rss-icon" focusable="false" class="[ social-icon ]">
+                    <title id="journal-rss-icon">RSS feed for all journal posts</title>
                     <use href="/assets/icons/icons.svg#rss"></use>
                 </svg>
                 <span class='[ visually-hidden ]'>View the RSS feed for the Journal</span>
@@ -31,7 +31,7 @@ permalink: "/{{page.fileSlug}}/{% if pagination.pageNumber > 0 %}page-{{ paginat
         {% set postslist = pagination.items %}
         {% include "partials/allPosts.njk" %}
     </section>
-    <section>
+    <div class="max-width-90">
         <nav aria-label="Paged results navigation">
             <ul class="horizontal-links more-reading">
                 {% if pagination.href.previous %}
@@ -46,5 +46,5 @@ permalink: "/{{page.fileSlug}}/{% if pagination.pageNumber > 0 %}page-{{ paginat
                 {% endif %}
             </ul>
         </nav>
-    </section>
+    </div>
 {% endblock %}

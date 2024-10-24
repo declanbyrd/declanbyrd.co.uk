@@ -3,17 +3,14 @@ layout: base
 ---
 
 {% block content %}
-  <article>
-
-    <section>
-      <h1>{{title}}</h1>
-      <p>
+  <article class="max-width-90">
+    <h1>{{title}}</h1>
+    <p>
       Last updated: 
       <time datetime="{{ page.date | htmlDateTime }}">
-          {{page.date | readableDates}}
-        </time>
-      </p>
-    </section>
+        {{page.date | readableDates}}
+      </time>
+    </p>
 
     <div class="flow">
       {{content | safe}}

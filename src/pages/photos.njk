@@ -13,8 +13,8 @@ layout: base
   <div class="rss-container">
       <h1>My <span class="accent">{{title}}</span></h1>
       <a href="/photos/feed.xml" rel="me" class="[ icon ]">
-        <svg width="30" height="30" role="img" aria-labelledby="rssTitle" focusable="false" class="[ social-icon ]">
-          <title id="rssTitle">RSS</title>
+        <svg width="30" height="30" role="img" aria-labelledby="photo-page-rss" focusable="false" class="[ social-icon ]">
+          <title id="photo-page-rss">Photo's page RSS feed</title>
           <use href="/assets/icons/icons.svg#rss"></use>
         </svg>
         <span class='[ visually-hidden ]'>View the RSS feed for my photos.</span>
@@ -27,9 +27,9 @@ layout: base
       <a href="{{item.url}}">
         {% image item.data.photo[0].url, item.data.photo[0].alt, "[ photo-item ]"  %}
         {% if item.data.photo.length > 1 %}
-        <svg width="30" height="30" role="img" aria-labelledby="{{item.url}}Title" focusable="false"
+        <svg width="30" height="30" role="img" aria-labelledby="photos-from-{{item.date | htmlDateTime}}-title" focusable="false"
           class="[ gallery-icon ]">
-          <title id="{{item.url}}Title">Gallery</title>
+           <title id="photos-from-{{item.date | htmlDateTime}}-title">Multiple photos for {{item.data.date | readableDates}}</title>
           <use href="/assets/icons/icons.svg#gallery"></use>
         </svg>
         {% endif %}

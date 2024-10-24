@@ -27,25 +27,23 @@ layout: base
       {{ content | safe }}
     </div>
 
-    <section>
-      {% set previousPost = collections.localPosts | getPreviousCollectionItem(page) %}
-      {% set nextPost = collections.localPosts | getNextCollectionItem(page) %}
-      <nav aria-label="Post Navigation">
-        <ul class="[ horizontal-links more-reading ]">
-          {% if previousPost %}
-            <li class="previous">
-              <p>Previous Entry:</p>
-              <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
-            </li>
-          {% endif %}
-          {% if nextPost %}
-            <li class="next">
-              <p>Next Entry:</p>
-              <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-            </li>
-          {% endif %}
-        </ul>
-      </nav>
-    </section>
+    {% set previousPost = collections.localPosts | getPreviousCollectionItem(page) %}
+    {% set nextPost = collections.localPosts | getNextCollectionItem(page) %}
+    <nav aria-label="Post Navigation">
+      <ul class="[ horizontal-links more-reading ]">
+        {% if previousPost %}
+          <li class="previous">
+            <p>Previous Entry:</p>
+            <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+          </li>
+        {% endif %}
+        {% if nextPost %}
+          <li class="next">
+            <p>Next Entry:</p>
+            <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
   </article>
 {% endblock %}

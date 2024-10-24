@@ -9,8 +9,6 @@ eleventyComputed:
     description: '{{ description }}'
 ---
 
-<section class="flow">
-
 <blockquote class="[ callout ]">An inscription at the end of a book or manuscript usually with facts about its production.</blockquote>
 
 ## Stack
@@ -46,5 +44,3 @@ To fetch the book cover and data for each book, [node-isbn](https://www.npmjs.co
 The list of tv and film that I've watched recently are sourced from Trakt.tv using the [API](https://trakt.docs.apiary.io).
 
 The video games I'm currently playing are fetched using the [Raindrop.io API](https://developer.raindrop.io/). I bookmark the game's page on the console's website, which Raindrop.io extracts images from and I add a tag for the console that I played the game on.
-
-</section>
