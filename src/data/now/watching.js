@@ -6,7 +6,7 @@ config();
 export default async () => {
   const endAt = encodeURIComponent(new Date().toISOString());
   const startAt = encodeURIComponent(DateTime.now().minus({ days: 7 }).toISO());
-  const url = `https://api.trakt.tv/users/${process.env.TRACKT_USER}/history?start_at=${startAt}&end_at=${endAt}`;
+  const url = `https://api.trakt.tv/users/${process.env.TRACKT_USER}/history?start_at=${startAt}&end_at=${endAt}&limit=100&page=1`;
 
   const generateTvUrl = (showId, episodeInfo) => {
     return `https://www.themoviedb.org/tv/${showId}/season/${episodeInfo.season}/episode/${episodeInfo.number}`;
