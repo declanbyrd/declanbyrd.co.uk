@@ -1,21 +1,29 @@
-import Isbn from 'node-isbn';
 import EleventyFetch from '@11ty/eleventy-fetch';
-import { config } from 'dotenv';
-config();
+import 'dotenv/config';
 
-export const getBook = async (bookIsbn) => {
-  console.log(`>>> Fetching data for ${bookIsbn}`);
-  const TIMEOUT = 30000;
-  return Isbn.provider([isbn.PROVIDER_NAMES.GOOGLE])
-    .resolve(bookIsbn, { timeout: TIMEOUT })
-    .then((book) => {
-      return {
-        title: book.title,
-        authors: book.authors.join(', '),
-        thumbnail: book.imageLinks.smallThumbnail,
-        pageCount: book.pageCount,
-      };
-    });
+export const getBook = async (isbn) => {
+  const GOOGLE_BOOKS_API = `https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}`;
+
+  const res = await fetch(GOOGLE_BOOKS_API);
+
+  if (!res.ok) {
+    throw new Error('Request to get book data failed');
+  }
+
+  const data = await res.json();
+
+  if (!data.totalItems) {
+    throw new Error(`No books found with isbn: ${isbn}`);
+  }
+
+  const book = data.items[0].volumeInfo;
+
+  return {
+    title: book.title,
+    authors: book.authors.join(', '),
+    thumbnail: book.imageLinks.smallThumbnail.replace('&edge=curl', ''),
+    pageCount: book.pageCount,
+  };
 };
 
 export const getGames = async () => {

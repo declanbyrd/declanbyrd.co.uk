@@ -1,7 +1,7 @@
 // @ts-check
 
 import fs from 'fs';
-import { getBook } from '../src/utils';
+import { getBook } from '../src/utils.js';
 
 const NOW_READING = 'src/data/now/reading.json';
 

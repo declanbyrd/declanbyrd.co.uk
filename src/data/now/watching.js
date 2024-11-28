@@ -1,7 +1,6 @@
 import { DateTime } from 'luxon';
 import EleventyFetch from '@11ty/eleventy-fetch';
-import { config } from 'dotenv';
-config();
+import 'dotenv/config';
 
 export default async () => {
   const endAt = encodeURIComponent(new Date().toISOString());

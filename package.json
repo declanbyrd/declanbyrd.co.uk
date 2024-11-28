@@ -33,12 +33,11 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-fetch": "^4.0.0",
+    "@11ty/eleventy-fetch": "^5.0.0",
     "clean-css": "^5.3.2",
     "dotenv": "^8.2.0",
     "eleventy-plugin-mastoarchive": "0.3.0-alpha.2",
-    "luxon": "^2.5.2",
-    "node-isbn": "^1.6.1"
+    "luxon": "^2.5.2"
   },
   "browserslist": [
     "defaults",

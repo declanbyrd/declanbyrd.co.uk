@@ -2,7 +2,7 @@
 
 import fs from 'fs';
 import { DateTime } from 'luxon';
-import { getBook } from '../src/utils';
+import { getBook } from '../src/utils.js';
 
 const BOOK_DIR = 'src/content/bookshelf';
 
