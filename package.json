@@ -8,7 +8,7 @@
     "start": "npx @11ty/eleventy --serve --incremental",
     "gen:book": "node ./generators/finishedBook.js",
     "gen:wn": "node ./generators/weekNote.js",
-    "prebuild": "git submodule update --remote"
+    "prebuild": "git submodule update --init --recursive"
   },
   "type": "module",
   "repository": {
