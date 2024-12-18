@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/44b02513-6a10-4c0b-a2b7-60e4797fd78d/deploy-status)](https://app.netlify.com/sites/declanbyrd/deploys)
 
-Declan Byrd's personal site. Located at [https://declanbyrd.co.uk](https://declanbyrd.co.uk) and hosted on [Netlify](https://www.netlify.com/).
+Declan Byrd's personal site. Located at [https://declanbyrd.co.uk](https://declanbyrd.co.uk) and hosted on Cloudflare pages(?).
 
 ## Colophon
 
